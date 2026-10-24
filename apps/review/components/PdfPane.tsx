@@ -52,6 +52,7 @@ export function PdfPane() {
   const linking = useReview((s) => s.pdfLinking)
   const setLinking = useReview((s) => s.setPdfLinking)
   const focusSeq = useReview((s) => s.pdfFocusSeq)
+  const violationMarkers = useReview((s) => s.violationMarkers)
 
   const nodes = useScene((s) => s.nodes) as Record<string, AnyNode>
   const selectedId = useSelectedId()
@@ -477,6 +478,39 @@ export function PdfPane() {
                 }}
               />
             )}
+            {violationMarkers
+              .filter((m) => m.page === page)
+              .map((m) => (
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute"
+                  key={m.findingId}
+                  style={{
+                    left: `${m.x * 100}%`,
+                    top: `${m.y * 100}%`,
+                    transform: 'translate(-50%, -50%)',
+                  }}
+                >
+                  {/* Outer pulse ring */}
+                  <div
+                    className={[
+                      'absolute rounded-full border-2 border-fail',
+                      m.active ? 'animate-ping' : 'opacity-60',
+                    ].join(' ')}
+                    style={{ width: 20, height: 20, top: -10, left: -10 }}
+                  />
+                  {/* Inner dot */}
+                  <div
+                    className={[
+                      'absolute rounded-full bg-fail',
+                      m.active
+                        ? 'size-3 shadow-[0_0_6px_2px_rgba(255,32,32,0.7)]'
+                        : 'size-2 opacity-80',
+                    ].join(' ')}
+                    style={{ top: m.active ? -6 : -4, left: m.active ? -6 : -4 }}
+                  />
+                </div>
+              ))}
           </div>
         )}
       </div>

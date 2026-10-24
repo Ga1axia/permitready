@@ -8,6 +8,7 @@ import { fetchDrawingSet, openDrawingSet } from '@/lib/drawing-sets'
 import { loadModelFromFile, loadModelFromUrl, ModelMissingError } from '@/lib/load-model'
 import { useReview } from '@/lib/review-store'
 import { defaultSampleId, findSample, type Sample, samples } from '@/lib/samples'
+import { CodeCheckPanel } from './CodeCheckPanel'
 import { DrawingSetBar } from './DrawingSetBar'
 import { Inspector } from './Inspector'
 import { ModelTree } from './ModelTree'
@@ -45,6 +46,7 @@ export default function ReviewApp() {
   const [dragging, setDragging] = useState(false)
   const [showTree, setShowTree] = useState(true)
   const [showInspector, setShowInspector] = useState(true)
+  const [inspectorTab, setInspectorTab] = useState<'inspector' | 'checks'>('inspector')
   const fileInput = useRef<HTMLInputElement>(null)
   const pdfInput = useRef<HTMLInputElement>(null)
   const loadSeq = useRef(0)
@@ -345,9 +347,7 @@ export default function ReviewApp() {
                       <ViewToolbar />
                     </div>
                   </div>
-                  <div className="pointer-events-auto absolute top-16 left-3 z-[1]">
-                    <FloorPicker />
-                  </div>
+                  <FloorPicker />
                 </>
               )}
 
@@ -452,10 +452,46 @@ export default function ReviewApp() {
             aria-label="Inspector"
             className="hidden w-72 shrink-0 border-rule border-l bg-panel lg:block"
           >
-            <Inspector
-              fileName={fileName}
-              sample={source?.kind === 'sample' ? source.sample : undefined}
-            />
+            {/* Tab bar */}
+            <div className="flex shrink-0 border-rule border-b">
+              <button
+                aria-pressed={inspectorTab === 'inspector'}
+                className={[
+                  'flex-1 py-2 font-medium text-xs transition-colors',
+                  inspectorTab === 'inspector'
+                    ? 'border-b-2 border-accent text-accent'
+                    : 'text-ink-soft hover:text-ink',
+                ].join(' ')}
+                onClick={() => setInspectorTab('inspector')}
+                type="button"
+              >
+                Inspector
+              </button>
+              <button
+                aria-pressed={inspectorTab === 'checks'}
+                className={[
+                  'flex-1 py-2 font-medium text-xs transition-colors',
+                  inspectorTab === 'checks'
+                    ? 'border-b-2 border-accent text-accent'
+                    : 'text-ink-soft hover:text-ink',
+                ].join(' ')}
+                onClick={() => setInspectorTab('checks')}
+                type="button"
+              >
+                Code Check
+              </button>
+            </div>
+
+            <div className="h-[calc(100%-36px)] overflow-y-auto">
+              {inspectorTab === 'inspector' ? (
+                <Inspector
+                  fileName={fileName}
+                  sample={source?.kind === 'sample' ? source.sample : undefined}
+                />
+              ) : (
+                <CodeCheckPanel buildingId={activeSampleId} />
+              )}
+            </div>
           </aside>
         )}
       </div>

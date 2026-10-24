@@ -10,18 +10,28 @@ import { useViewer, Viewer } from '@pascal-app/viewer'
 import { CameraControls } from '@react-three/drei'
 import { useThree } from '@react-three/fiber'
 import { useEffect } from 'react'
-import { Box3, type Object3D, Sphere } from 'three'
+import { Box3, type Object3D, type PerspectiveCamera, Sphere } from 'three'
 import { applyFocusFade, clearFocusFade, setFocusFadeOpacity } from '@/lib/focus-fade'
+import { focusBounds, focusKeepIds } from '@/lib/focus-targets'
 import { levelOf } from '@/lib/node-info'
 import { useReview } from '@/lib/review-store'
+import { applyViolationHighlight, clearViolationHighlight } from '@/lib/violation-highlight'
+import { RoomHighlight } from './RoomHighlight'
 
 // Structural subset of drei's CameraControls (camera-controls is only a
 // transitive dependency, so its type isn't importable here).
 type Controls = {
   azimuthAngle: number
+  distance: number
+  dollyTo: (distance: number, transition: boolean) => Promise<unknown>
   rotateTo: (azimuth: number, polar: number, transition: boolean) => Promise<unknown>
   fitToSphere: (sphere: Sphere, transition: boolean) => Promise<unknown>
 }
+
+/** Tighter than Pascal's default 50° — less wide-angle distortion in a tall split pane. */
+const REVIEW_FOV = 38
+/** Extra air around a fit so the building doesn't press the edges. */
+const FIT_PADDING = 1.2
 
 function boundsOf(object: Object3D): Box3 | null {
   const box = new Box3().setFromObject(object)
@@ -71,12 +81,26 @@ function CameraFocus() {
 
     const tick = () => {
       if (cancelled) return
+      const nodes = useScene.getState().nodes as Record<string, AnyNode>
       const id = request.nodeId ?? buildingId()
       const target = id ? sceneRegistry.nodes.get(id) : undefined
-      const box = target ? boundsOf(target) : null
+      let box = target ? boundsOf(target) : null
+      if (request.nodeId) {
+        const fromNode = focusBounds(nodes, request.nodeId, box)
+        if (fromNode) {
+          // Polygon bounds are in the level's local frame — lift to world.
+          const level = levelOf(nodes, request.nodeId)
+          const levelObj = level ? sceneRegistry.nodes.get(level.id) : undefined
+          if (levelObj) {
+            levelObj.updateWorldMatrix(true, false)
+            fromNode.applyMatrix4(levelObj.matrixWorld)
+          }
+          box = fromNode
+        }
+      }
       const settled = box && last && box.equals(last)
       polls++
-      if (box && (settled || polls >= MAX_POLLS)) {
+      if (box && (settled || polls >= MAX_POLLS || nodes[request.nodeId ?? '']?.type === 'zone')) {
         // fitToSphere keeps the angle set here; fitToBox would snap the
         // camera back to the nearest axis-aligned elevation.
         if (request.nodeId) {
@@ -85,7 +109,9 @@ function CameraFocus() {
         } else {
           controls.rotateTo(BUILDING_AZIMUTH, BUILDING_POLAR, true)
         }
-        controls.fitToSphere(box.getBoundingSphere(new Sphere()), true)
+        const sphere = box.getBoundingSphere(new Sphere())
+        sphere.radius *= FIT_PADDING
+        controls.fitToSphere(sphere, true)
         return
       }
       if (polls >= MAX_POLLS) return
@@ -122,34 +148,26 @@ function FloorIsolation() {
 }
 
 /**
- * Keep the selected element solid; fade everything else by the user's
- * see-through setting. Rooms (zones) are skipped — their 3D overlays are off.
- *
- * Selection changes must not tear down the fade (that was the hitch). Opacity
- * changes write through to shared ghost materials. Wall-mode swaps are left
- * alone — re-fading on every geometryRevision recloned the whole building.
+ * Selection stays coloured; everything else goes gray and see-through.
+ * Rooms use the same path (plus a coloured room wash in RoomHighlight).
  */
 function SelectionEmphasis() {
   const scene = useThree((s) => s.scene)
   const selectedId = useViewer((s) => s.selection.selectedIds[0] as string | undefined)
   const zoneId = useViewer((s) => s.selection.zoneId as string | null)
   const seeThrough = useReview((s) => s.focusSeeThrough)
-  const nodes = useScene((s) => s.nodes) as Record<string, AnyNode>
 
   const focusId = selectedId ?? zoneId ?? null
-  const focusType = focusId ? nodes[focusId]?.type : undefined
   const opacity = 1 - seeThrough / 100
-  const active = focusId != null && focusType !== 'zone' && seeThrough > 0
+  const active = focusId != null && seeThrough > 0
 
-  // Apply / update fade when the focused element changes. Do not clear on
-  // cleanup — the next apply diffs in place. Opacity is read at apply time
-  // so the slider can stay on its cheap path without restarting this walk.
   useEffect(() => {
     if (!active || !focusId) return
     let cancel: () => void = () => {}
     const raf = requestAnimationFrame(() => {
       const see = useReview.getState().focusSeeThrough
-      cancel = applyFocusFade(scene, [focusId], 1 - see / 100).cancel
+      const ids = focusKeepIds(useScene.getState().nodes as Record<string, AnyNode>, focusId)
+      cancel = applyFocusFade(scene, ids, 1 - see / 100).cancel
     })
     return () => {
       cancelAnimationFrame(raf)
@@ -157,18 +175,88 @@ function SelectionEmphasis() {
     }
   }, [active, focusId, scene])
 
-  // Opacity slider: cheap path, no traversal of unfaded meshes.
   useEffect(() => {
     if (!active) return
     setFocusFadeOpacity(opacity)
   }, [active, opacity])
 
-  // Only clear when focus turns off (deselection or Focus toggle → 0%).
   useEffect(() => {
     if (!active) clearFocusFade()
   }, [active])
 
   return null
+}
+
+/**
+ * Subscribes directly to violationIds in the store and applies the highlight
+ * synchronously — no React render cycle, no rAF, no async hops.
+ * Mounted once inside the Viewer canvas so it has access to the Three.js scene.
+ */
+function ViolationEmphasis() {
+  useEffect(() => {
+    const apply = (ids: ReadonlyArray<string>) => {
+      if (ids.length === 0) clearViolationHighlight()
+      else applyViolationHighlight(ids)
+    }
+
+    // Run immediately with current state.
+    apply(useReview.getState().violationIds)
+
+    // Subscribe to future changes, filtering to violationIds only.
+    let prev = useReview.getState().violationIds
+    return useReview.subscribe((state) => {
+      if (state.violationIds !== prev) {
+        prev = state.violationIds
+        apply(state.violationIds)
+      }
+    })
+  }, [])
+
+  return null
+}
+
+/**
+ * Keep FOV architectural (not wide-angle) and re-frame when the PDF split
+ * changes the canvas aspect — otherwise the first fit is for full width and
+ * the half-pane view looks fisheyed.
+ */
+function ReviewCamera() {
+  const camera = useThree((s) => s.camera)
+  const controls = useThree((s) => s.controls) as Controls | null
+  const pdfOpen = useReview((s) => s.pdfOpen)
+  const focusNode = useReview((s) => s.focusNode)
+  const zoomRequest = useReview((s) => s.zoomRequest)
+
+  useEffect(() => {
+    const cam = camera as PerspectiveCamera
+    if (!cam.isPerspectiveCamera) return
+    if (cam.fov === REVIEW_FOV) return
+    cam.fov = REVIEW_FOV
+    cam.updateProjectionMatrix()
+  }, [camera])
+
+  // First fit often lands while the stage is still full-width; when drawings
+  // open beside it the aspect shrinks and the same distance reads as fisheye.
+  useEffect(() => {
+    const timer = window.setTimeout(() => focusNode(null), 180)
+    return () => window.clearTimeout(timer)
+  }, [pdfOpen, focusNode])
+
+  useEffect(() => {
+    if (!controls || zoomRequest.seq === 0) return
+    const next = Math.max(0.5, controls.distance * zoomRequest.factor)
+    void controls.dollyTo(next, true)
+  }, [zoomRequest, controls])
+
+  return (
+    <CameraControls
+      makeDefault
+      maxPolarAngle={Math.PI * 0.495}
+      minDistance={0.5}
+      // Smooth dolly reads less “lens jump” when the pane resizes.
+      smoothTime={0.35}
+    />
+  )
 }
 
 // Soft studio look without full SSGI/denoise (those tank large IFCs).
@@ -194,6 +282,8 @@ export default function ModelViewer({
     // Keep zone <Html> portals off across model swaps (see lib/bootstrap.ts).
     useViewer.getState().setShowZones(false)
     clearFocusFade()
+    clearViolationHighlight()
+    useReview.getState().setViolationIds([])
     setScene(graph.nodes as Record<AnyNodeId, AnyNode>, graph.rootNodeIds as AnyNodeId[])
     // Pre-selecting the building and a level lets the first click on a wall
     // or door select that element instead of drilling into the building.
@@ -222,10 +312,12 @@ export default function ModelViewer({
       renderPaused={paused}
       useBvh={false}
     >
-      <CameraControls makeDefault />
+      <ReviewCamera />
       <CameraFocus />
       <FloorIsolation />
       <SelectionEmphasis />
+      <ViolationEmphasis />
+      <RoomHighlight />
     </Viewer>
   )
 }
