@@ -154,6 +154,15 @@ export function PdfPane() {
   const pageLinks = useMemo(() => links.filter((l) => l.page === page), [links, page])
   const activeLink = linkForGlobalIdOnPage(links, selectedGid, page)
 
+  // The selected element is the code violation currently in focus when an
+  // active marker carries its GlobalId. Its PDF highlight turns red to match
+  // the red violation emphasis in the 3D model, instead of the blue link hue.
+  const violationGid = useMemo(() => {
+    const active = violationMarkers.find((m) => m.active)
+    return active?.globalId
+  }, [violationMarkers])
+  const selectionIsViolation = selectedGid != null && selectedGid === violationGid
+
   // Bring the highlighted hotspot into view when zoomed in.
   // biome-ignore lint/correctness/useExhaustiveDependencies: re-run when the highlight moves or the page re-renders.
   useEffect(() => {
@@ -429,13 +438,16 @@ export function PdfPane() {
             <canvas className="block rounded shadow-sm" ref={canvasRef} />
             {pageLinks.map((link) => {
               const active = link.globalId === selectedGid
+              const violation = active && selectionIsViolation
               return (
                 <button
                   className={[
                     'absolute rounded-sm border-2 transition-colors',
-                    active
-                      ? 'border-accent bg-accent/25 shadow-[0_0_0_1px_rgba(37,99,235,0.4)]'
-                      : 'border-accent/50 bg-accent/10 hover:bg-accent/20',
+                    violation
+                      ? 'border-fail bg-fail/25 shadow-[0_0_0_1px_rgba(214,52,43,0.45)]'
+                      : active
+                        ? 'border-accent bg-accent/25 shadow-[0_0_0_1px_rgba(37,99,235,0.4)]'
+                        : 'border-accent/50 bg-accent/10 hover:bg-accent/20',
                   ].join(' ')}
                   key={link.id}
                   onClick={(e) => {
@@ -467,7 +479,10 @@ export function PdfPane() {
             {activeLink && activeLink.page === page && (
               <div
                 aria-hidden
-                className="pointer-events-none absolute animate-pulse rounded-sm border-2 border-accent"
+                className={[
+                  'pointer-events-none absolute animate-pulse rounded-sm border-2',
+                  selectionIsViolation ? 'border-fail' : 'border-accent',
+                ].join(' ')}
                 data-active-link
                 key={focusSeq}
                 style={{
