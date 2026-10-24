@@ -28,7 +28,11 @@ from code_check import context  # noqa: E402
 from code_check.rules import CODE, RULES  # noqa: E402
 
 APP_DIR = Path(__file__).resolve().parent.parent
-BUILDINGS = {'duplex': ('Duplex Apartment', 'duplex.ifc')}
+BUILDINGS = {
+    'duplex': ('Duplex Apartment', 'duplex.ifc'),
+    'office': ('Office Building', 'kit-office.ifc'),
+    'clinic': ('Medical-Dental Clinic', 'clinic.ifc'),
+}
 
 
 def run(building: str) -> None:

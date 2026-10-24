@@ -447,7 +447,7 @@ export function PdfPane() {
                       ? 'border-fail bg-fail/25 shadow-[0_0_0_1px_rgba(214,52,43,0.45)]'
                       : active
                         ? 'border-accent bg-accent/25 shadow-[0_0_0_1px_rgba(37,99,235,0.4)]'
-                        : 'border-accent/50 bg-accent/10 hover:bg-accent/20',
+                        : 'border-transparent bg-transparent hover:border-accent/50 hover:bg-accent/10',
                   ].join(' ')}
                   key={link.id}
                   onClick={(e) => {

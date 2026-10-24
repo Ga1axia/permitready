@@ -13,7 +13,7 @@ import {
   ShieldCheck,
   XCircle,
 } from 'lucide-react'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   type CheckFinding,
   type CheckReport,
@@ -233,6 +233,11 @@ export function CodeCheckPanel({ buildingId }: Props) {
   const [status, setStatus] = useState<Status>('idle')
   const [report, setReport] = useState<CheckReport | null>(null)
   const [error, setError] = useState<string | null>(null)
+  // Rules being stepped through while status === 'loading', and how many have
+  // finished — drives the "checking through codes" progress list.
+  const [checkingRules, setCheckingRules] = useState<CheckRule[]>([])
+  const [checkingIndex, setCheckingIndex] = useState(0)
+  const checkRun = useRef(0)
   const nodes = useScene((s) => s.nodes) as Record<string, import('@pascal-app/core').AnyNode>
   const focusNode = useReview((s) => s.focusNode)
   const setViolationIds = useReview((s) => s.setViolationIds)
@@ -252,9 +257,13 @@ export function CodeCheckPanel({ buildingId }: Props) {
     return ids
   }
 
-  // Clear violation highlights when panel unmounts or buildingId changes.
+  // Clear violation highlights and cancel any staged check when the panel
+  // unmounts or the building changes. buildingId is an intentional trigger so
+  // switching samples mid-check tears the old run down.
+  // biome-ignore lint/correctness/useExhaustiveDependencies: buildingId re-runs cleanup on sample switch.
   useEffect(() => {
     return () => {
+      checkRun.current++ // cancel any in-flight staged check
       clearViolationHighlight()
       setViolationIds([])
       setViolationMarkers([])
@@ -264,17 +273,39 @@ export function CodeCheckPanel({ buildingId }: Props) {
   const runChecks = async () => {
     const id = buildingId
     if (!id) return
+    const run = ++checkRun.current
     setStatus('loading')
     setError(null)
+    setReport(null)
+    setCheckingRules([])
+    setCheckingIndex(0)
     clearViolationHighlight()
     setViolationIds([])
     setViolationMarkers([])
     const result = await fetchCheckReport(id)
+    if (run !== checkRun.current) return
     if (!result) {
       setError(`No check report found for "${id}". Run scripts/check_code.py ${id} first.`)
       setStatus('error')
       return
     }
+
+    // Walk the rules one at a time so the check reads as deliberate work —
+    // each code section lights up as it's "evaluated" before results appear.
+    // Total stays a few seconds regardless of how many rules there are.
+    const rules = result.rules
+    setCheckingRules(rules)
+    const total = 2400
+    const perRule = rules.length > 0 ? Math.min(650, Math.max(220, total / rules.length)) : 0
+    for (let i = 0; i < rules.length; i++) {
+      await new Promise((r) => setTimeout(r, perRule))
+      if (run !== checkRun.current) return
+      setCheckingIndex(i + 1)
+    }
+    // A final beat so the last row reads as "done" before the report shows.
+    await new Promise((r) => setTimeout(r, 260))
+    if (run !== checkRun.current) return
+
     setReport(result)
     setStatus('done')
   }
@@ -415,6 +446,49 @@ export function CodeCheckPanel({ buildingId }: Props) {
           Click <strong className="font-medium text-ink-soft">Run checks</strong> to load the code
           review findings for this building.
         </p>
+      )}
+
+      {status === 'loading' && (
+        <div className="flex flex-col gap-0">
+          <div className="flex items-center gap-2 px-3 py-3 text-ink-soft text-xs">
+            <Loader2 className="size-3.5 animate-spin text-accent" />
+            {checkingRules.length === 0
+              ? 'Loading code requirements…'
+              : `Checking ${Math.min(checkingIndex + 1, checkingRules.length)} of ${checkingRules.length} requirements…`}
+          </div>
+          <div className="border-rule border-t">
+            {checkingRules.map((rule, i) => {
+              const done = i < checkingIndex
+              const current = i === checkingIndex
+              return (
+                <div
+                  className={[
+                    'flex items-center gap-2 px-3 py-2 transition-colors',
+                    done ? 'opacity-100' : current ? 'opacity-100' : 'opacity-40',
+                  ].join(' ')}
+                  key={rule.id}
+                >
+                  {done ? (
+                    <CheckCircle className="size-3.5 shrink-0 text-pass" />
+                  ) : current ? (
+                    <Loader2 className="size-3.5 shrink-0 animate-spin text-accent" />
+                  ) : (
+                    <ShieldCheck className="size-3.5 shrink-0 text-ink-faint" />
+                  )}
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate font-medium text-[11px] text-ink">
+                      {rule.title}
+                    </span>
+                    <span className="block text-[10px] text-ink-faint">{rule.section}</span>
+                  </span>
+                  <span className="font-mono text-[10px] text-ink-faint tabular-nums">
+                    {done ? '✓' : current ? '…' : ''}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
+        </div>
       )}
 
       {status === 'error' && error && (

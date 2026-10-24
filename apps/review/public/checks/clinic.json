@@ -1,0 +1,5028 @@
+{
+ "version": 1,
+ "building": "clinic",
+ "title": "Medical-Dental Clinic",
+ "code": "2021 International Residential Code (IRC)",
+ "model": "clinic.ifc",
+ "generated": "2026-10-24",
+ "coordinates": "IFC model coordinates in metres, Z up; sheet x/y are 0-1 from the top left of the page",
+ "summary": {
+  "rules": 10,
+  "fail": 11,
+  "pass": 131
+ },
+ "rules": [
+  {
+   "id": "IRC-R310.1",
+   "section": "R310.1, R310.2",
+   "title": "Emergency escape and rescue opening in every sleeping room",
+   "complies": "Every bedroom has an operable window or exterior door with at least 5.7 sq ft net clear opening (5.0 sq ft at grade floor), at least 24 in clear height and 20 in clear width, sill no more than 44 in above the floor.",
+   "violates": "A bedroom whose only windows are fixed glazing, or whose operable window is too small or too high.",
+   "fix": "Change one window per bedroom to an egress casement (for example 30 × 54 in rough opening, sill ≤ 44 in).",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R311.7.5.2",
+   "section": "R311.7.5.2",
+   "title": "Stair tread depth",
+   "complies": "Tread depth at least 10 in (254 mm), measured horizontally nosing to nosing; the largest and smallest tread in a flight within 3/8 in.",
+   "violates": "Any tread shallower than 10 in.",
+   "fix": "Lengthen the run: 15 treads × 254 mm needs 3.81 m of run instead of 3.75 m, or redistribute with one more riser.",
+   "fail": 0,
+   "pass": 3
+  },
+  {
+   "id": "IRC-R311.7.5.3",
+   "section": "R311.7.5.3",
+   "title": "Stair nosing projection",
+   "complies": "Where treads are under 11 in deep, a nosing of 3/4 in to 1-1/4 in (19–32 mm) on every tread of a stair with solid risers, uniform within 3/8 in.",
+   "violates": "Treads under 11 in with no nosing or one under 3/4 in.",
+   "fix": "Specify a 25 mm (1 in) nosing on every tread, or deepen treads to 11 in where no nosing is wanted.",
+   "fail": 0,
+   "pass": 3
+  },
+  {
+   "id": "IRC-R308.4.3",
+   "section": "R308.4.3",
+   "title": "Safety glazing in hazardous window locations",
+   "complies": "Glazing that meets all four conditions (pane over 9 sq ft, bottom edge under 18 in above the floor, top edge over 36 in, walking surface within 36 in) is tempered or laminated safety glazing; any other window may be annealed.",
+   "violates": "A large, low pane like this that is specified as ordinary glass.",
+   "fix": "Specify tempered (or laminated) glass for these window types, or raise the sill to 18 in.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R302.3",
+   "section": "R302.3",
+   "title": "Two-family dwelling separation",
+   "complies": "The wall separating the two dwelling units is fire-resistance rated for 1 hour (1/2 hour where the building is sprinklered per NFPA 13D), continuous to the underside of the roof deck.",
+   "violates": "A separation wall with no fire-resistance rating in an unsprinklered two-family dwelling.",
+   "fix": "Assign a tested 1-hour assembly (for example UL U905 masonry) to the party wall type and carry it to the roof deck.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R314.3",
+   "section": "R314.3",
+   "title": "Smoke alarm locations",
+   "complies": "A smoke alarm in each sleeping room, outside each separate sleeping area in the immediate vicinity of the bedrooms, and on each story.",
+   "violates": "A sleeping area whose hallway has no smoke alarm (or a bedroom or story without one).",
+   "fix": "Add an interconnected smoke alarm on the hallway ceiling outside the bedrooms.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R315.2",
+   "section": "R315.2.1, R315.3",
+   "title": "Carbon monoxide alarms where there are fuel-burning appliances",
+   "complies": "A dwelling unit with a fuel-burning appliance has a CO alarm outside each separate sleeping area in the immediate vicinity of the bedrooms (and in any bedroom that contains such an appliance).",
+   "violates": "A unit with a gas-fired appliance and no CO alarm outside its bedrooms.",
+   "fix": "Add a CO alarm (or combination smoke/CO alarm) on the hallway ceiling outside the bedrooms.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R303.1",
+   "section": "R303.1",
+   "title": "Habitable room ventilation",
+   "complies": "Openable area to the outdoors (operable windows, exterior doors) of at least 4% of each habitable room’s floor area, or a whole-house mechanical ventilation system per M1505.4.",
+   "violates": "A habitable room with only fixed glazing and no whole-house mechanical ventilation.",
+   "fix": "Make part of the glazing operable, or add a whole-house ventilation system (ERV/HRV or exhaust-only per M1505.4).",
+   "fail": 0,
+   "pass": 34
+  },
+  {
+   "id": "IRC-R303.3",
+   "section": "R303.3, M1505",
+   "title": "Bathroom ventilation",
+   "complies": "Each bathroom has a window of at least 3 sq ft, half of it openable, or a mechanical exhaust to the outdoors (50 cfm intermittent or 20 cfm continuous).",
+   "violates": "A bathroom with no window and no exhaust fan or exhaust duct.",
+   "fix": "Add a ceiling exhaust fan ducted to the outdoors (50 cfm intermittent).",
+   "fail": 2,
+   "pass": 20
+  },
+  {
+   "id": "IRC-R307.1",
+   "section": "R307.1, P2705.1",
+   "title": "Plumbing fixture clearances",
+   "complies": "Water closets and lavatories at least 15 in (381 mm) from their centre to a side wall or obstruction, and at least 30 in (762 mm) centre to centre from an adjacent fixture.",
+   "violates": "Fixtures set closer than 30 in apart, or less than 15 in from a side wall.",
+   "fix": "Respace the fixtures to 30 in centres, or replace the pair of lavatories with one.",
+   "fail": 9,
+   "pass": 71
+  }
+ ],
+ "findings": [
+  {
+   "id": "clinic-001",
+   "rule": "IRC-R311.7.5.2",
+   "status": "pass",
+   "target": {
+    "globalId": "3NhaIUfh12PAdrGa$S3z3M",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:221039",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "Stair (1AS1 STAIR)",
+   "measured": "280 mm (11.02 in)",
+   "required": "≥ 254 mm (10 in)",
+   "message": "Stair (1AS1 STAIR): treads 280 mm.",
+   "point": [
+    -17.405,
+    39.422,
+    1.03
+   ],
+   "related": [
+    {
+     "globalId": "09Eh99qNP7cx7E8HsVBkZD",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:221039:1",
+     "model": "clinic.ifc"
+    },
+    {
+     "globalId": "2WWhBASrbFDewMXv_ETBWF",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:221039:2",
+     "model": "clinic.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.49207,
+    "y": 0.3103
+   }
+  },
+  {
+   "id": "clinic-002",
+   "rule": "IRC-R311.7.5.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0mxk1RW8H5mvX1dNnpRqIz",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:250693",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "Stair (1CS3 STAIR)",
+   "measured": "280 mm (11.02 in)",
+   "required": "≥ 254 mm (10 in)",
+   "message": "Stair (1CS3 STAIR): treads 280 mm.",
+   "point": [
+    -36.34,
+    53.301,
+    1.03
+   ],
+   "related": [
+    {
+     "globalId": "33Cz6csc5FFxencoHrRTRc",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:250693:1",
+     "model": "clinic.ifc"
+    },
+    {
+     "globalId": "1Qj_TeRaL3sQOJS_Vp7NV9",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:250693:2",
+     "model": "clinic.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33282,
+    "y": 0.14527
+   }
+  },
+  {
+   "id": "clinic-003",
+   "rule": "IRC-R311.7.5.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0mxk1RW8H5mvX1dNnpRqBK",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:251180",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "Stair (1BS2 STAIR)",
+   "measured": "280 mm (11.02 in)",
+   "required": "≥ 254 mm (10 in)",
+   "message": "Stair (1BS2 STAIR): treads 280 mm.",
+   "point": [
+    -14.408,
+    12.081,
+    1.03
+   ],
+   "related": [
+    {
+     "globalId": "1KxPBY$LnB1RgPYBOJi93N",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:251180:1",
+     "model": "clinic.ifc"
+    },
+    {
+     "globalId": "2FCboZIL5Ayu2zKs7z$f2_",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:251180:2",
+     "model": "clinic.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.51728,
+    "y": 0.6354
+   }
+  },
+  {
+   "id": "clinic-004",
+   "rule": "IRC-R311.7.5.3",
+   "status": "pass",
+   "target": {
+    "globalId": "3NhaIUfh12PAdrGa$S3z3M",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:221039",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "Stair (1AS1 STAIR)",
+   "measured": "0 mm (0 in) nosing on 280 mm treads",
+   "required": "19–32 mm (3/4–1-1/4 in) when treads < 279 mm (11 in)",
+   "message": "Stair (1AS1 STAIR): nosing within range.",
+   "point": [
+    -17.405,
+    39.422,
+    1.03
+   ],
+   "related": [
+    {
+     "globalId": "09Eh99qNP7cx7E8HsVBkZD",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:221039:1",
+     "model": "clinic.ifc"
+    },
+    {
+     "globalId": "2WWhBASrbFDewMXv_ETBWF",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:221039:2",
+     "model": "clinic.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.49207,
+    "y": 0.3103
+   }
+  },
+  {
+   "id": "clinic-005",
+   "rule": "IRC-R311.7.5.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0mxk1RW8H5mvX1dNnpRqIz",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:250693",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "Stair (1CS3 STAIR)",
+   "measured": "0 mm (0 in) nosing on 280 mm treads",
+   "required": "19–32 mm (3/4–1-1/4 in) when treads < 279 mm (11 in)",
+   "message": "Stair (1CS3 STAIR): nosing within range.",
+   "point": [
+    -36.34,
+    53.301,
+    1.03
+   ],
+   "related": [
+    {
+     "globalId": "33Cz6csc5FFxencoHrRTRc",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:250693:1",
+     "model": "clinic.ifc"
+    },
+    {
+     "globalId": "1Qj_TeRaL3sQOJS_Vp7NV9",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:250693:2",
+     "model": "clinic.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33282,
+    "y": 0.14527
+   }
+  },
+  {
+   "id": "clinic-006",
+   "rule": "IRC-R311.7.5.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0mxk1RW8H5mvX1dNnpRqBK",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:251180",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "Stair (1BS2 STAIR)",
+   "measured": "0 mm (0 in) nosing on 280 mm treads",
+   "required": "19–32 mm (3/4–1-1/4 in) when treads < 279 mm (11 in)",
+   "message": "Stair (1BS2 STAIR): nosing within range.",
+   "point": [
+    -14.408,
+    12.081,
+    1.03
+   ],
+   "related": [
+    {
+     "globalId": "1KxPBY$LnB1RgPYBOJi93N",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:251180:1",
+     "model": "clinic.ifc"
+    },
+    {
+     "globalId": "2FCboZIL5Ayu2zKs7z$f2_",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Concrete Pan - 180mm Max Riser 280mm Tread:251180:2",
+     "model": "clinic.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.51728,
+    "y": 0.6354
+   }
+  },
+  {
+   "id": "clinic-007",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHXA",
+    "ifcClass": "IfcSpace",
+    "name": "2D18 TECH. OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2D18 TECH. OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 82.1 m² floor",
+   "required": "≥ 3.28 m² (35.3 sq ft), 4% of floor area",
+   "message": "2D18 TECH. OFFICE: ventilated.",
+   "point": [
+    -34.525,
+    16.402,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.34809,
+    "y": 0.58402
+   }
+  },
+  {
+   "id": "clinic-008",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0uLn6BSvvEB8kgChiujNHe",
+    "ifcClass": "IfcSpace",
+    "name": "2A11 DENTAL WAITING",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2A11 DENTAL WAITING",
+   "measured": "0.00 m² openable (0.0 sq ft) for 31.8 m² floor",
+   "required": "≥ 1.27 m² (13.7 sq ft), 4% of floor area",
+   "message": "2A11 DENTAL WAITING: ventilated.",
+   "point": [
+    -13.101,
+    40.399,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.52827,
+    "y": 0.29869
+   }
+  },
+  {
+   "id": "clinic-009",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHXa",
+    "ifcClass": "IfcSpace",
+    "name": "2D11 CMDR OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2D11 CMDR OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 14.5 m² floor",
+   "required": "≥ 0.58 m² (6.2 sq ft), 4% of floor area",
+   "message": "2D11 CMDR OFFICE: ventilated.",
+   "point": [
+    -45.112,
+    12.347,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.25905,
+    "y": 0.63224
+   }
+  },
+  {
+   "id": "clinic-010",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcYN",
+    "ifcClass": "IfcSpace",
+    "name": "1A07 TRICARE OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A07 TRICARE OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 8.0 m² floor",
+   "required": "≥ 0.32 m² (3.4 sq ft), 4% of floor area",
+   "message": "1A07 TRICARE OFFICE: ventilated.",
+   "point": [
+    -5.905,
+    48.558,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.58879,
+    "y": 0.20167
+   }
+  },
+  {
+   "id": "clinic-011",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRk",
+    "ifcClass": "IfcSpace",
+    "name": "2B01 OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B01 OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 8.6 m² floor",
+   "required": "≥ 0.34 m² (3.7 sq ft), 4% of floor area",
+   "message": "2B01 OFFICE: ventilated.",
+   "point": [
+    -1.627,
+    21.817,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.62477,
+    "y": 0.51964
+   }
+  },
+  {
+   "id": "clinic-012",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHsL",
+    "ifcClass": "IfcSpace",
+    "name": "2C14 GEN. DENT. DTR #10",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C14 GEN. DENT. DTR #10",
+   "measured": "0.00 m² openable (0.0 sq ft) for 11.0 m² floor",
+   "required": "≥ 0.44 m² (4.8 sq ft), 4% of floor area",
+   "message": "2C14 GEN. DENT. DTR #10: ventilated.",
+   "point": [
+    -42.07,
+    48.386,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.28463,
+    "y": 0.20371
+   }
+  },
+  {
+   "id": "clinic-013",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc6L",
+    "ifcClass": "IfcSpace",
+    "name": "1E29 HK. SUPV. OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E29 HK. SUPV. OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 9.9 m² floor",
+   "required": "≥ 0.40 m² (4.3 sq ft), 4% of floor area",
+   "message": "1E29 HK. SUPV. OFFICE: ventilated.",
+   "point": [
+    -21.167,
+    7.922,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.46043,
+    "y": 0.68486
+   }
+  },
+  {
+   "id": "clinic-014",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0uLn6BSvvEB8kgChiujNHp",
+    "ifcClass": "IfcSpace",
+    "name": "2A02 SUPER OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2A02 SUPER OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 10.0 m² floor",
+   "required": "≥ 0.40 m² (4.3 sq ft), 4% of floor area",
+   "message": "2A02 SUPER OFFICE: ventilated.",
+   "point": [
+    -2.017,
+    41.664,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.62149,
+    "y": 0.28364
+   }
+  },
+  {
+   "id": "clinic-015",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHst",
+    "ifcClass": "IfcSpace",
+    "name": "2C04 GEN. DENT. DTR #7",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C04 GEN. DENT. DTR #7",
+   "measured": "0.00 m² openable (0.0 sq ft) for 10.3 m² floor",
+   "required": "≥ 0.41 m² (4.4 sq ft), 4% of floor area",
+   "message": "2C04 GEN. DENT. DTR #7: ventilated.",
+   "point": [
+    -26.363,
+    48.386,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.41673,
+    "y": 0.20371
+   }
+  },
+  {
+   "id": "clinic-016",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHsn",
+    "ifcClass": "IfcSpace",
+    "name": "2C02 GEN. DENT. DTR #6",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C02 GEN. DENT. DTR #6",
+   "measured": "0.00 m² openable (0.0 sq ft) for 11.0 m² floor",
+   "required": "≥ 0.44 m² (4.7 sq ft), 4% of floor area",
+   "message": "2C02 GEN. DENT. DTR #6: ventilated.",
+   "point": [
+    -22.953,
+    48.4,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44541,
+    "y": 0.20355
+   }
+  },
+  {
+   "id": "clinic-017",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0uLn6BSvvEB8kgChiujNHk",
+    "ifcClass": "IfcSpace",
+    "name": "2A09 GEN. DENT. DTR #5",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2A09 GEN. DENT. DTR #5",
+   "measured": "0.00 m² openable (0.0 sq ft) for 10.5 m² floor",
+   "required": "≥ 0.42 m² (4.5 sq ft), 4% of floor area",
+   "message": "2A09 GEN. DENT. DTR #5: ventilated.",
+   "point": [
+    -19.56,
+    48.386,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.47395,
+    "y": 0.20371
+   }
+  },
+  {
+   "id": "clinic-018",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0uLn6BSvvEB8kgChiujNHX",
+    "ifcClass": "IfcSpace",
+    "name": "2A08 GEN. DENT. DTR #4",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2A08 GEN. DENT. DTR #4",
+   "measured": "0.00 m² openable (0.0 sq ft) for 10.8 m² floor",
+   "required": "≥ 0.43 m² (4.7 sq ft), 4% of floor area",
+   "message": "2A08 GEN. DENT. DTR #4: ventilated.",
+   "point": [
+    -16.167,
+    48.424,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.50249,
+    "y": 0.20326
+   }
+  },
+  {
+   "id": "clinic-019",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcZZ",
+    "ifcClass": "IfcSpace",
+    "name": "1A03 TRICARE OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A03 TRICARE OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 8.2 m² floor",
+   "required": "≥ 0.33 m² (3.5 sq ft), 4% of floor area",
+   "message": "1A03 TRICARE OFFICE: ventilated.",
+   "point": [
+    -5.905,
+    42.51,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.58879,
+    "y": 0.27358
+   }
+  },
+  {
+   "id": "clinic-020",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcZj",
+    "ifcClass": "IfcSpace",
+    "name": "1A05 TRICARE OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A05 TRICARE OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 8.3 m² floor",
+   "required": "≥ 0.33 m² (3.6 sq ft), 4% of floor area",
+   "message": "1A05 TRICARE OFFICE: ventilated.",
+   "point": [
+    -5.905,
+    46.08,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.58879,
+    "y": 0.23113
+   }
+  },
+  {
+   "id": "clinic-021",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcZe",
+    "ifcClass": "IfcSpace",
+    "name": "1A06 TRICARE OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A06 TRICARE OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 9.3 m² floor",
+   "required": "≥ 0.37 m² (4.0 sq ft), 4% of floor area",
+   "message": "1A06 TRICARE OFFICE: ventilated.",
+   "point": [
+    -1.402,
+    48.467,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.62667,
+    "y": 0.20275
+   }
+  },
+  {
+   "id": "clinic-022",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0uLn6BSvvEB8kgChiujNHm",
+    "ifcClass": "IfcSpace",
+    "name": "2A03 SEC. OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2A03 SEC. OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 14.8 m² floor",
+   "required": "≥ 0.59 m² (6.4 sq ft), 4% of floor area",
+   "message": "2A03 SEC. OFFICE: ventilated.",
+   "point": [
+    -2.017,
+    44.529,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.62149,
+    "y": 0.24958
+   }
+  },
+  {
+   "id": "clinic-023",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHXk",
+    "ifcClass": "IfcSpace",
+    "name": "2D09 ADMIN OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2D09 ADMIN OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 13.3 m² floor",
+   "required": "≥ 0.53 m² (5.7 sq ft), 4% of floor area",
+   "message": "2D09 ADMIN OFFICE: ventilated.",
+   "point": [
+    -45.112,
+    20.144,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.25905,
+    "y": 0.53953
+   }
+  },
+  {
+   "id": "clinic-024",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMQe",
+    "ifcClass": "IfcSpace",
+    "name": "2B19 OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B19 OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 8.1 m² floor",
+   "required": "≥ 0.33 m² (3.5 sq ft), 4% of floor area",
+   "message": "2B19 OFFICE: ventilated.",
+   "point": [
+    -6.51,
+    16.364,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.5837,
+    "y": 0.58448
+   }
+  },
+  {
+   "id": "clinic-025",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHsa",
+    "ifcClass": "IfcSpace",
+    "name": "2C09 GEN. DENT. DTR #9",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C09 GEN. DENT. DTR #9",
+   "measured": "0.00 m² openable (0.0 sq ft) for 10.5 m² floor",
+   "required": "≥ 0.42 m² (4.5 sq ft), 4% of floor area",
+   "message": "2C09 GEN. DENT. DTR #9: ventilated.",
+   "point": [
+    -33.183,
+    48.386,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.35937,
+    "y": 0.20371
+   }
+  },
+  {
+   "id": "clinic-026",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc0i",
+    "ifcClass": "IfcSpace",
+    "name": "1E05 CHIEF LOG OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E05 CHIEF LOG OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 9.2 m² floor",
+   "required": "≥ 0.37 m² (3.9 sq ft), 4% of floor area",
+   "message": "1E05 CHIEF LOG OFFICE: ventilated.",
+   "point": [
+    -24.343,
+    16.96,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.43372,
+    "y": 0.57739
+   }
+  },
+  {
+   "id": "clinic-027",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc6M",
+    "ifcClass": "IfcSpace",
+    "name": "1E28 FAC. MGR. OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E28 FAC. MGR. OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 8.6 m² floor",
+   "required": "≥ 0.35 m² (3.7 sq ft), 4% of floor area",
+   "message": "1E28 FAC. MGR. OFFICE: ventilated.",
+   "point": [
+    -21.459,
+    1.505,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.45798,
+    "y": 0.76116
+   }
+  },
+  {
+   "id": "clinic-028",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0uLn6BSvvEB8kgChiujNHh",
+    "ifcClass": "IfcSpace",
+    "name": "2A10 DENTAL WAITING",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2A10 DENTAL WAITING",
+   "measured": "0.00 m² openable (0.0 sq ft) for 7.3 m² floor",
+   "required": "≥ 0.29 m² (3.1 sq ft), 4% of floor area",
+   "message": "2A10 DENTAL WAITING: ventilated.",
+   "point": [
+    -16.663,
+    43.129,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.49831,
+    "y": 0.26622
+   }
+  },
+  {
+   "id": "clinic-029",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHX9",
+    "ifcClass": "IfcSpace",
+    "name": "2D17 CREDENTIALS MGR",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2D17 CREDENTIALS MGR",
+   "measured": "0.00 m² openable (0.0 sq ft) for 8.7 m² floor",
+   "required": "≥ 0.35 m² (3.7 sq ft), 4% of floor area",
+   "message": "2D17 CREDENTIALS MGR: ventilated.",
+   "point": [
+    -30.182,
+    11.656,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.38461,
+    "y": 0.64046
+   }
+  },
+  {
+   "id": "clinic-030",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHXF",
+    "ifcClass": "IfcSpace",
+    "name": "2D19 READINESS NCOIC OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2D19 READINESS NCOIC OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 10.0 m² floor",
+   "required": "≥ 0.40 m² (4.3 sq ft), 4% of floor area",
+   "message": "2D19 READINESS NCOIC OFFICE: ventilated.",
+   "point": [
+    -27.46,
+    11.944,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.40751,
+    "y": 0.63703
+   }
+  },
+  {
+   "id": "clinic-031",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMR9",
+    "ifcClass": "IfcSpace",
+    "name": "2B8 OFFICE / EXAM",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B8 OFFICE / EXAM",
+   "measured": "0.00 m² openable (0.0 sq ft) for 11.7 m² floor",
+   "required": "≥ 0.47 m² (5.1 sq ft), 4% of floor area",
+   "message": "2B8 OFFICE / EXAM: ventilated.",
+   "point": [
+    -10.513,
+    20.527,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.55004,
+    "y": 0.53498
+   }
+  },
+  {
+   "id": "clinic-032",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMQo",
+    "ifcClass": "IfcSpace",
+    "name": "2B17 CL. UTL. / KITCHENET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B17 CL. UTL. / KITCHENET",
+   "measured": "0.00 m² openable (0.0 sq ft) for 8.3 m² floor",
+   "required": "≥ 0.33 m² (3.6 sq ft), 4% of floor area",
+   "message": "2B17 CL. UTL. / KITCHENET: ventilated.",
+   "point": [
+    -9.023,
+    16.364,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.56257,
+    "y": 0.58448
+   }
+  },
+  {
+   "id": "clinic-033",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcZk",
+    "ifcClass": "IfcSpace",
+    "name": "1A04 TRICARE OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A04 TRICARE OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 8.6 m² floor",
+   "required": "≥ 0.34 m² (3.7 sq ft), 4% of floor area",
+   "message": "1A04 TRICARE OFFICE: ventilated.",
+   "point": [
+    -1.402,
+    45.532,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.62667,
+    "y": 0.23765
+   }
+  },
+  {
+   "id": "clinic-034",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcYI",
+    "ifcClass": "IfcSpace",
+    "name": "1A08 PHARM. OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A08 PHARM. OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 9.5 m² floor",
+   "required": "≥ 0.38 m² (4.1 sq ft), 4% of floor area",
+   "message": "1A08 PHARM. OFFICE: ventilated.",
+   "point": [
+    -12.527,
+    48.831,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.5331,
+    "y": 0.19842
+   }
+  },
+  {
+   "id": "clinic-035",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0uLn6BSvvEB8kgChiujNHz",
+    "ifcClass": "IfcSpace",
+    "name": "2A04 DENTAL SURGEON OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2A04 DENTAL SURGEON OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 14.9 m² floor",
+   "required": "≥ 0.60 m² (6.4 sq ft), 4% of floor area",
+   "message": "2A04 DENTAL SURGEON OFFICE: ventilated.",
+   "point": [
+    -2.017,
+    48.141,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.62149,
+    "y": 0.20663
+   }
+  },
+  {
+   "id": "clinic-036",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRK",
+    "ifcClass": "IfcSpace",
+    "name": "2B7 TECH OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B7 TECH OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 9.2 m² floor",
+   "required": "≥ 0.37 m² (4.0 sq ft), 4% of floor area",
+   "message": "2B7 TECH OFFICE: ventilated.",
+   "point": [
+    -8.122,
+    26.496,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.57015,
+    "y": 0.464
+   }
+  },
+  {
+   "id": "clinic-037",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHsj",
+    "ifcClass": "IfcSpace",
+    "name": "2C06 GEN. DENT. DTR #8",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C06 GEN. DENT. DTR #8",
+   "measured": "0.00 m² openable (0.0 sq ft) for 10.9 m² floor",
+   "required": "≥ 0.44 m² (4.7 sq ft), 4% of floor area",
+   "message": "2C06 GEN. DENT. DTR #8: ventilated.",
+   "point": [
+    -29.773,
+    48.541,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.38805,
+    "y": 0.20187
+   }
+  },
+  {
+   "id": "clinic-038",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc0V",
+    "ifcClass": "IfcSpace",
+    "name": "1C15 PES ADMIN. OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C15 PES ADMIN. OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 14.6 m² floor",
+   "required": "≥ 0.58 m² (6.3 sq ft), 4% of floor area",
+   "message": "1C15 PES ADMIN. OFFICE: ventilated.",
+   "point": [
+    -45.037,
+    46.967,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.25968,
+    "y": 0.22059
+   }
+  },
+  {
+   "id": "clinic-039",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcV1",
+    "ifcClass": "IfcSpace",
+    "name": "1B06 LAB OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B06 LAB OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 9.4 m² floor",
+   "required": "≥ 0.37 m² (4.0 sq ft), 4% of floor area",
+   "message": "1B06 LAB OFFICE: ventilated.",
+   "point": [
+    -1.138,
+    12.138,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.62889,
+    "y": 0.63473
+   }
+  },
+  {
+   "id": "clinic-040",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRA",
+    "ifcClass": "IfcSpace",
+    "name": "2B9 TECH OFFICE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B9 TECH OFFICE",
+   "measured": "0.00 m² openable (0.0 sq ft) for 9.2 m² floor",
+   "required": "≥ 0.37 m² (3.9 sq ft), 4% of floor area",
+   "message": "2B9 TECH OFFICE: ventilated.",
+   "point": [
+    -10.972,
+    26.496,
+    5.77
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.54618,
+    "y": 0.464
+   }
+  },
+  {
+   "id": "clinic-041",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHsk",
+    "ifcClass": "IfcSpace",
+    "name": "2C07 M. STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C07 M. STAFF TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "2C07 M. STAFF TOILET: ventilated.",
+   "point": [
+    -28.103,
+    41.105,
+    7.27
+   ],
+   "related": [
+    {
+     "globalId": "3PsgCtzZ18uBzRwpV9IJMY",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:726098",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "3P_IgBZvj44wQ797S6G0xx",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:710038",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.4021,
+    "y": 0.29029
+   }
+  },
+  {
+   "id": "clinic-042",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHsZ",
+    "ifcClass": "IfcSpace",
+    "name": "2C08 W. STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C08 W. STAFF TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "2C08 W. STAFF TOILET: ventilated.",
+   "point": [
+    -30.76,
+    41.083,
+    7.27
+   ],
+   "related": [
+    {
+     "globalId": "3PsgCtzZ18uBzRwpV9IJMt",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:726087",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "3P_IgBZvj44wQ797S6G0xC",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:710049",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.37975,
+    "y": 0.29055
+   }
+  },
+  {
+   "id": "clinic-043",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcAY",
+    "ifcClass": "IfcSpace",
+    "name": "1D18 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D18 TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1D18 TOILET: ventilated.",
+   "point": [
+    -41.862,
+    38.971,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "36aXfFK8D1vfkY$DKjowb4",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:722464",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.28638,
+    "y": 0.31566
+   }
+  },
+  {
+   "id": "clinic-044",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcVT",
+    "ifcClass": "IfcSpace",
+    "name": "1B02 SPECIMEN TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B02 SPECIMEN TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1B02 SPECIMEN TOILET: ventilated.",
+   "point": [
+    -0.861,
+    27.171,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "1GkzlmPcH0QOU$zSigxFNX",
+     "ifcClass": "IfcFlowMovingDevice",
+     "name": "M_Exhaust Unit with Cabinet - Round Connection - Ceiling Mounted:47-84 LPS:47-84 LPS:610955",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "3drU2IqjPEShx5e9vnjKLz",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:608316",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.63122,
+    "y": 0.45597
+   }
+  },
+  {
+   "id": "clinic-045",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcY6",
+    "ifcClass": "IfcSpace",
+    "name": "1A12 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A12 M. TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1A12 M. TOILET: ventilated.",
+   "point": [
+    -16.318,
+    46.318,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "31Wi8h84rAFhbjNsr8zAbo",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:585334",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "31Wi8h84rAFhbjNsr8zAhT",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:585177",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.50122,
+    "y": 0.2283
+   }
+  },
+  {
+   "id": "clinic-046",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcYH",
+    "ifcClass": "IfcSpace",
+    "name": "1A09 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A09 W. TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1A09 W. TOILET: ventilated.",
+   "point": [
+    -16.318,
+    48.243,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "31Wi8h84rAFhbjNsr8zAbg",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:585326",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "31Wi8h84rAFhbjNsr8zAhL",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:585169",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.50122,
+    "y": 0.20542
+   }
+  },
+  {
+   "id": "clinic-047",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHXT",
+    "ifcClass": "IfcSpace",
+    "name": "2D13 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2D13 TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "2D13 TOILET: ventilated.",
+   "point": [
+    -42.038,
+    12.271,
+    7.27
+   ],
+   "related": [
+    {
+     "globalId": "3Xz4QBoKnDyhOmF73ZDgjY",
+     "ifcClass": "IfcFlowMovingDevice",
+     "name": "M_Exhaust Unit with Cabinet - Round Connection - Ceiling Mounted:47-84 LPS:47-84 LPS:727271",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.2849,
+    "y": 0.63314
+   }
+  },
+  {
+   "id": "clinic-048",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHny",
+    "ifcClass": "IfcSpace",
+    "name": "2C23 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C23 M. TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "2C23 M. TOILET: ventilated.",
+   "point": [
+    -21.79,
+    36.161,
+    7.27
+   ],
+   "related": [
+    {
+     "globalId": "3PsgCtzZ18uBzRwpV9IJME",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:726142",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "1ddORp9pX9lQGia16eqEZM",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:709255",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.45519,
+    "y": 0.34908
+   }
+  },
+  {
+   "id": "clinic-049",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc1g",
+    "ifcClass": "IfcSpace",
+    "name": "1C12 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C12 TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1C12 TOILET: ventilated.",
+   "point": [
+    -41.569,
+    54.587,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "1Bt2bbQ3vCRRncVtkgKm$g",
+     "ifcClass": "IfcFlowMovingDevice",
+     "name": "M_Exhaust Unit with Cabinet - Round Connection - Ceiling Mounted:47-84 LPS:47-84 LPS:581570",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "3cBzjqVX552gQYvldt9dKG",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:591048",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.28884,
+    "y": 0.12998
+   }
+  },
+  {
+   "id": "clinic-050",
+   "rule": "IRC-R303.3",
+   "status": "fail",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcY5",
+    "ifcClass": "IfcSpace",
+    "name": "1A13 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A13 STAFF TOILET",
+   "measured": "0 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1A13 STAFF TOILET has no window and no exhaust fan.",
+   "point": [
+    -14.085,
+    41.27,
+    2.7
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.52,
+    "y": 0.28833
+   }
+  },
+  {
+   "id": "clinic-051",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcVm",
+    "ifcClass": "IfcSpace",
+    "name": "1B11 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B11 STAFF TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1B11 STAFF TOILET: ventilated.",
+   "point": [
+    -6.022,
+    16.9,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "15jSW43751mw34rLydrgFX",
+     "ifcClass": "IfcFlowMovingDevice",
+     "name": "M_Exhaust Unit with Cabinet - Round Connection - Ceiling Mounted:47-84 LPS:47-84 LPS:723688",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "3drU2IqjPEShx5e9vnjKNI",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:608403",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.58781,
+    "y": 0.5781
+   }
+  },
+  {
+   "id": "clinic-052",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHnn",
+    "ifcClass": "IfcSpace",
+    "name": "2C24 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C24 W. TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "2C24 W. TOILET: ventilated.",
+   "point": [
+    -21.79,
+    40.054,
+    7.27
+   ],
+   "related": [
+    {
+     "globalId": "1ddORp9pX9lQGia16eqEZ3",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:709266",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "3PsgCtzZ18uBzRwpV9IJM5",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:726133",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.45519,
+    "y": 0.30279
+   }
+  },
+  {
+   "id": "clinic-053",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMQZ",
+    "ifcClass": "IfcSpace",
+    "name": "2B22 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B22 M. TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "2B22 M. TOILET: ventilated.",
+   "point": [
+    -1.114,
+    13.735,
+    7.27
+   ],
+   "related": [
+    {
+     "globalId": "1pT7e75LjAgh6lOpeitwWk",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:634439",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.62909,
+    "y": 0.61574
+   }
+  },
+  {
+   "id": "clinic-054",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7V",
+    "ifcClass": "IfcSpace",
+    "name": "1E10 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E10 M. TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1E10 M. TOILET: ventilated.",
+   "point": [
+    -37.761,
+    13.435,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "1NAlaKy5fFXeFbPxNNJe2_",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:603768",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.32087,
+    "y": 0.6193
+   }
+  },
+  {
+   "id": "clinic-055",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7P",
+    "ifcClass": "IfcSpace",
+    "name": "1E12 ISOLATION TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E12 ISOLATION TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1E12 ISOLATION TOILET: ventilated.",
+   "point": [
+    -41.824,
+    13.02,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "1NAlaKy5fFXeFbPxNNJe2s",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:603760",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.2867,
+    "y": 0.62424
+   }
+  },
+  {
+   "id": "clinic-056",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRU",
+    "ifcClass": "IfcSpace",
+    "name": "2B5 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B5 W. TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "2B5 W. TOILET: ventilated.",
+   "point": [
+    -6.097,
+    21.514,
+    7.27
+   ],
+   "related": [
+    {
+     "globalId": "1pT7e75LjAgh6lOpeitwWo",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:634459",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.58718,
+    "y": 0.52324
+   }
+  },
+  {
+   "id": "clinic-057",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcA1",
+    "ifcClass": "IfcSpace",
+    "name": "1D14 SPECIMEN TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D14 SPECIMEN TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1D14 SPECIMEN TOILET: ventilated.",
+   "point": [
+    -37.257,
+    37.86,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "26A3asOO536v6t$peFDNpZ",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:591017",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.32511,
+    "y": 0.32888
+   }
+  },
+  {
+   "id": "clinic-058",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcV2",
+    "ifcClass": "IfcSpace",
+    "name": "1B05 PAT. / STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B05 PAT. / STAFF TOILET",
+   "measured": "0 window(s), 2 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1B05 PAT. / STAFF TOILET: ventilated.",
+   "point": [
+    -6.278,
+    22.465,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "15jSW43751mw34rLydrgCE",
+     "ifcClass": "IfcFlowMovingDevice",
+     "name": "M_Exhaust Unit with Cabinet - Round Connection - Ceiling Mounted:47-84 LPS:47-84 LPS:723463",
+     "model": "Clinic_HVAC.ifc"
+    },
+    {
+     "globalId": "3drU2IqjPEShx5e9vnjKNg",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:608427",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.58566,
+    "y": 0.51193
+   }
+  },
+  {
+   "id": "clinic-059",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7G",
+    "ifcClass": "IfcSpace",
+    "name": "1E09 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E09 W. TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1E09 W. TOILET: ventilated.",
+   "point": [
+    -35.71,
+    13.435,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "1NAlaKy5fFXeFbPxNNJe16",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:603776",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33812,
+    "y": 0.6193
+   }
+  },
+  {
+   "id": "clinic-060",
+   "rule": "IRC-R303.3",
+   "status": "fail",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc9Q",
+    "ifcClass": "IfcSpace",
+    "name": "1D26 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D26 TOILET",
+   "measured": "0 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1D26 TOILET has no window and no exhaust fan.",
+   "point": [
+    -41.87,
+    23.422,
+    2.7
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.28631,
+    "y": 0.50055
+   }
+  },
+  {
+   "id": "clinic-061",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRJ",
+    "ifcClass": "IfcSpace",
+    "name": "2B6 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B6 STAFF TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "2B6 STAFF TOILET: ventilated.",
+   "point": [
+    -8.188,
+    21.514,
+    7.27
+   ],
+   "related": [
+    {
+     "globalId": "1pT7e75LjAgh6lOpeitwWA",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Exhaust Grill:ER-600 x 600 Face 300 x 300 Connection:ER-600 x 600 Face 300 x 300 Connection:634467",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.56959,
+    "y": 0.52324
+   }
+  },
+  {
+   "id": "clinic-062",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcBl",
+    "ifcClass": "IfcSpace",
+    "name": "1D04 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D04 TOILET",
+   "measured": "0 window(s), 1 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "1D04 TOILET: ventilated.",
+   "point": [
+    -21.273,
+    39.495,
+    2.7
+   ],
+   "related": [
+    {
+     "globalId": "26A3asOO536v6t$peFDNmK",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Supply Diffuser:SD-600 x 600 Face 300 x 300 Connection:SD-600 x 600 Face 300 x 300 Connection:590942",
+     "model": "Clinic_HVAC.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.45954,
+    "y": 0.30943
+   }
+  },
+  {
+   "id": "clinic-063",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7V",
+    "ifcClass": "IfcSpace",
+    "name": "1E10 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E10 M. TOILET",
+   "measured": "924 mm (36.38 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1E10 M. TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 924 mm apart.",
+   "point": [
+    -37.175,
+    13.833,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrV4D",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:608513",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrV0J",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:608287",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3258,
+    "y": 0.61457
+   }
+  },
+  {
+   "id": "clinic-064",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7V",
+    "ifcClass": "IfcSpace",
+    "name": "1E10 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E10 M. TOILET",
+   "measured": "471 mm (18.54 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1E10 M. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 471 mm.",
+   "point": [
+    -37.175,
+    14.295,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrV4D",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:608513",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3258,
+    "y": 0.60908
+   }
+  },
+  {
+   "id": "clinic-065",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7V",
+    "ifcClass": "IfcSpace",
+    "name": "1E10 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E10 M. TOILET",
+   "measured": "1267 mm (49.88 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1E10 M. TOILET: Lavatory - Oval side clearance 1267 mm.",
+   "point": [
+    -37.175,
+    13.371,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrV0J",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:608287",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3258,
+    "y": 0.62006
+   }
+  },
+  {
+   "id": "clinic-066",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7G",
+    "ifcClass": "IfcSpace",
+    "name": "1E09 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E09 W. TOILET",
+   "measured": "948 mm (37.32 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1E09 W. TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 948 mm apart.",
+   "point": [
+    -36.295,
+    13.821,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrV45",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:608521",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrV_Z",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:608175",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3332,
+    "y": 0.61471
+   }
+  },
+  {
+   "id": "clinic-067",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7G",
+    "ifcClass": "IfcSpace",
+    "name": "1E09 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E09 W. TOILET",
+   "measured": "471 mm (18.54 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1E09 W. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 471 mm.",
+   "point": [
+    -36.295,
+    14.295,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrV45",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:608521",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3332,
+    "y": 0.60908
+   }
+  },
+  {
+   "id": "clinic-068",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7G",
+    "ifcClass": "IfcSpace",
+    "name": "1E09 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E09 W. TOILET",
+   "measured": "1243 mm (48.94 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1E09 W. TOILET: Lavatory - Oval side clearance 1243 mm.",
+   "point": [
+    -36.295,
+    13.347,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrV_Z",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:608175",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3332,
+    "y": 0.62035
+   }
+  },
+  {
+   "id": "clinic-069",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7P",
+    "ifcClass": "IfcSpace",
+    "name": "1E12 ISOLATION TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E12 ISOLATION TOILET",
+   "measured": "1100 mm (43.31 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1E12 ISOLATION TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 1100 mm apart.",
+   "point": [
+    -42.843,
+    12.99,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrVF5",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:609225",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrVGA",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:609286",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.27813,
+    "y": 0.62459
+   }
+  },
+  {
+   "id": "clinic-070",
+   "rule": "IRC-R307.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7P",
+    "ifcClass": "IfcSpace",
+    "name": "1E12 ISOLATION TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E12 ISOLATION TOILET",
+   "measured": "336 mm (13.23 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1E12 ISOLATION TOILET: Water Closet - Flush Valve - Wall Mounted is 336 mm from the side wall, 45 mm too close.",
+   "point": [
+    -42.843,
+    12.44,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrVF5",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:609225",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.27813,
+    "y": 0.63113
+   }
+  },
+  {
+   "id": "clinic-071",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7P",
+    "ifcClass": "IfcSpace",
+    "name": "1E12 ISOLATION TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E12 ISOLATION TOILET",
+   "measured": "396 mm (15.59 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1E12 ISOLATION TOILET: Lavatory - Oval side clearance 396 mm.",
+   "point": [
+    -42.843,
+    13.54,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrVGA",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:609286",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.27813,
+    "y": 0.61805
+   }
+  },
+  {
+   "id": "clinic-072",
+   "rule": "IRC-R307.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcVT",
+    "ifcClass": "IfcSpace",
+    "name": "1B02 SPECIMEN TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B02 SPECIMEN TOILET",
+   "measured": "720 mm (28.35 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1B02 SPECIMEN TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval are 720 mm apart on centres, 42 mm too close.",
+   "point": [
+    -1.04,
+    27.98,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrU42",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:612622",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrU_J",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:612255",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.62971,
+    "y": 0.44635
+   }
+  },
+  {
+   "id": "clinic-073",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcVT",
+    "ifcClass": "IfcSpace",
+    "name": "1B02 SPECIMEN TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B02 SPECIMEN TOILET",
+   "measured": "436 mm (17.16 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B02 SPECIMEN TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 436 mm.",
+   "point": [
+    -1.4,
+    27.98,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrU42",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:612622",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.62668,
+    "y": 0.44635
+   }
+  },
+  {
+   "id": "clinic-074",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcVT",
+    "ifcClass": "IfcSpace",
+    "name": "1B02 SPECIMEN TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B02 SPECIMEN TOILET",
+   "measured": "450 mm (17.72 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B02 SPECIMEN TOILET: Lavatory - Oval side clearance 450 mm.",
+   "point": [
+    -0.68,
+    27.98,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrU_J",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:612255",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.63274,
+    "y": 0.44635
+   }
+  },
+  {
+   "id": "clinic-075",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcV2",
+    "ifcClass": "IfcSpace",
+    "name": "1B05 PAT. / STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B05 PAT. / STAFF TOILET",
+   "measured": "930 mm (36.61 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1B05 PAT. / STAFF TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 930 mm apart.",
+   "point": [
+    -5.35,
+    22.474,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUGk",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:613410",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrU84",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:612872",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.59346,
+    "y": 0.51182
+   }
+  },
+  {
+   "id": "clinic-076",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcV2",
+    "ifcClass": "IfcSpace",
+    "name": "1B05 PAT. / STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B05 PAT. / STAFF TOILET",
+   "measured": "421 mm (16.57 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B05 PAT. / STAFF TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 421 mm.",
+   "point": [
+    -5.35,
+    22.939,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUGk",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:613410",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.59346,
+    "y": 0.5063
+   }
+  },
+  {
+   "id": "clinic-077",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcV2",
+    "ifcClass": "IfcSpace",
+    "name": "1B05 PAT. / STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B05 PAT. / STAFF TOILET",
+   "measured": "439 mm (17.28 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B05 PAT. / STAFF TOILET: Lavatory - Oval side clearance 439 mm.",
+   "point": [
+    -5.35,
+    22.009,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrU84",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:612872",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.59346,
+    "y": 0.51735
+   }
+  },
+  {
+   "id": "clinic-078",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc1g",
+    "ifcClass": "IfcSpace",
+    "name": "1C12 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C12 TOILET",
+   "measured": "1200 mm (47.24 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1C12 TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 1200 mm apart.",
+   "point": [
+    -41.56,
+    55.66,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUNY",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:613870",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUKX",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:613677",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.28892,
+    "y": 0.11722
+   }
+  },
+  {
+   "id": "clinic-079",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc1g",
+    "ifcClass": "IfcSpace",
+    "name": "1C12 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C12 TOILET",
+   "measured": "440 mm (17.32 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1C12 TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 440 mm.",
+   "point": [
+    -42.16,
+    55.66,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUNY",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:613870",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.28387,
+    "y": 0.11722
+   }
+  },
+  {
+   "id": "clinic-080",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc1g",
+    "ifcClass": "IfcSpace",
+    "name": "1C12 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C12 TOILET",
+   "measured": "423 mm (16.65 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1C12 TOILET: Lavatory - Oval side clearance 423 mm.",
+   "point": [
+    -40.96,
+    55.66,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUKX",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:613677",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.29397,
+    "y": 0.11722
+   }
+  },
+  {
+   "id": "clinic-081",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcBl",
+    "ifcClass": "IfcSpace",
+    "name": "1D04 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D04 TOILET",
+   "measured": "1100 mm (43.31 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1D04 TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 1100 mm apart.",
+   "point": [
+    -21.31,
+    38.58,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTJL",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:617689",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTCJ",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:617247",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.45923,
+    "y": 0.32031
+   }
+  },
+  {
+   "id": "clinic-082",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcBl",
+    "ifcClass": "IfcSpace",
+    "name": "1D04 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D04 TOILET",
+   "measured": "470 mm (18.50 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D04 TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 470 mm.",
+   "point": [
+    -20.76,
+    38.58,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTJL",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:617689",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.46386,
+    "y": 0.32031
+   }
+  },
+  {
+   "id": "clinic-083",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcBl",
+    "ifcClass": "IfcSpace",
+    "name": "1D04 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D04 TOILET",
+   "measured": "396 mm (15.59 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D04 TOILET: Lavatory - Oval side clearance 396 mm.",
+   "point": [
+    -21.86,
+    38.58,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTCJ",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:617247",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.4546,
+    "y": 0.32031
+   }
+  },
+  {
+   "id": "clinic-084",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcA1",
+    "ifcClass": "IfcSpace",
+    "name": "1D14 SPECIMEN TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D14 SPECIMEN TOILET",
+   "measured": "1100 mm (43.31 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1D14 SPECIMEN TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 1100 mm apart.",
+   "point": [
+    -38.09,
+    37.842,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTJY",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:617710",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTSq",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:618296",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3181,
+    "y": 0.32909
+   }
+  },
+  {
+   "id": "clinic-085",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcA1",
+    "ifcClass": "IfcSpace",
+    "name": "1D14 SPECIMEN TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D14 SPECIMEN TOILET",
+   "measured": "398 mm (15.67 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D14 SPECIMEN TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 398 mm.",
+   "point": [
+    -38.09,
+    37.292,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTJY",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:617710",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3181,
+    "y": 0.33563
+   }
+  },
+  {
+   "id": "clinic-086",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcA1",
+    "ifcClass": "IfcSpace",
+    "name": "1D14 SPECIMEN TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D14 SPECIMEN TOILET",
+   "measured": "434 mm (17.09 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D14 SPECIMEN TOILET: Lavatory - Oval side clearance 434 mm.",
+   "point": [
+    -38.09,
+    38.392,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTSq",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:618296",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3181,
+    "y": 0.32255
+   }
+  },
+  {
+   "id": "clinic-087",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcAY",
+    "ifcClass": "IfcSpace",
+    "name": "1D18 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D18 TOILET",
+   "measured": "426 mm (16.77 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D18 TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 426 mm.",
+   "point": [
+    -42.76,
+    37.51,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrSyS",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:620304",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.27883,
+    "y": 0.33304
+   }
+  },
+  {
+   "id": "clinic-088",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcAY",
+    "ifcClass": "IfcSpace",
+    "name": "1D18 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D18 TOILET",
+   "measured": "423 mm (16.65 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D18 TOILET: Lavatory - Oval side clearance 423 mm.",
+   "point": [
+    -40.96,
+    39.323,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrSkf",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:619429",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.29397,
+    "y": 0.31148
+   }
+  },
+  {
+   "id": "clinic-089",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcYH",
+    "ifcClass": "IfcSpace",
+    "name": "1A09 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A09 W. TOILET",
+   "measured": "1100 mm (43.31 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1A09 W. TOILET: Water Closet - Flush Valve - Wall Mounted and Water Closet - Flush Valve - Wall Mounted 1100 mm apart.",
+   "point": [
+    -14.89,
+    48.74,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrS0Y",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:620590",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrS1P",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:620629",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.51323,
+    "y": 0.19951
+   }
+  },
+  {
+   "id": "clinic-090",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcYH",
+    "ifcClass": "IfcSpace",
+    "name": "1A09 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A09 W. TOILET",
+   "measured": "986 mm (38.82 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1A09 W. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 986 mm.",
+   "point": [
+    -14.89,
+    48.19,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrS0Y",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:620590",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.51323,
+    "y": 0.20605
+   }
+  },
+  {
+   "id": "clinic-091",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcYH",
+    "ifcClass": "IfcSpace",
+    "name": "1A09 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A09 W. TOILET",
+   "measured": "570 mm (22.44 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1A09 W. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 570 mm.",
+   "point": [
+    -14.89,
+    49.29,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrS1P",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:620629",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.51323,
+    "y": 0.19297
+   }
+  },
+  {
+   "id": "clinic-092",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcYH",
+    "ifcClass": "IfcSpace",
+    "name": "1A09 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A09 W. TOILET",
+   "measured": "513 mm (20.20 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1A09 W. TOILET: Lavatory - Oval side clearance 513 mm.",
+   "point": [
+    -17.653,
+    49.69,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrSFC",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:621504",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.48999,
+    "y": 0.18821
+   }
+  },
+  {
+   "id": "clinic-093",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcY6",
+    "ifcClass": "IfcSpace",
+    "name": "1A12 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A12 M. TOILET",
+   "measured": "425 mm (16.73 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1A12 M. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 425 mm.",
+   "point": [
+    -14.89,
+    45.98,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrS2R",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:620695",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.51323,
+    "y": 0.23232
+   }
+  },
+  {
+   "id": "clinic-094",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcY6",
+    "ifcClass": "IfcSpace",
+    "name": "1A12 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A12 M. TOILET",
+   "measured": "466 mm (18.35 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1A12 M. TOILET: Lavatory - Oval side clearance 466 mm.",
+   "point": [
+    -17.746,
+    44.58,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrSEO",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:621460",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.48921,
+    "y": 0.24897
+   }
+  },
+  {
+   "id": "clinic-095",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcY5",
+    "ifcClass": "IfcSpace",
+    "name": "1A13 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A13 STAFF TOILET",
+   "measured": "883 mm (34.76 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1A13 STAFF TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 883 mm apart.",
+   "point": [
+    -13.224,
+    41.236,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrSPY",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:622190",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrSQK",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:622232",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.52724,
+    "y": 0.28873
+   }
+  },
+  {
+   "id": "clinic-096",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcY5",
+    "ifcClass": "IfcSpace",
+    "name": "1A13 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A13 STAFF TOILET",
+   "measured": "411 mm (16.18 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1A13 STAFF TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 411 mm.",
+   "point": [
+    -13.224,
+    40.795,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrSPY",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:622190",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.52724,
+    "y": 0.29398
+   }
+  },
+  {
+   "id": "clinic-097",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcY5",
+    "ifcClass": "IfcSpace",
+    "name": "1A13 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A13 STAFF TOILET",
+   "measured": "478 mm (18.82 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1A13 STAFF TOILET: Lavatory - Oval side clearance 478 mm.",
+   "point": [
+    -13.224,
+    41.678,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrSQK",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:622232",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.52724,
+    "y": 0.28348
+   }
+  },
+  {
+   "id": "clinic-098",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcVm",
+    "ifcClass": "IfcSpace",
+    "name": "1B11 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B11 STAFF TOILET",
+   "measured": "1048 mm (41.26 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1B11 STAFF TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 1048 mm apart.",
+   "point": [
+    -6.95,
+    16.9,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "1l9cg6txb7YQBuTkjGDMm7",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:681203",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUet",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:610875",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.58,
+    "y": 0.5781
+   }
+  },
+  {
+   "id": "clinic-099",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcVm",
+    "ifcClass": "IfcSpace",
+    "name": "1B11 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B11 STAFF TOILET",
+   "measured": "412 mm (16.22 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B11 STAFF TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 412 mm.",
+   "point": [
+    -6.95,
+    17.424,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "1l9cg6txb7YQBuTkjGDMm7",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:681203",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.58,
+    "y": 0.57187
+   }
+  },
+  {
+   "id": "clinic-100",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcVm",
+    "ifcClass": "IfcSpace",
+    "name": "1B11 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B11 STAFF TOILET",
+   "measured": "412 mm (16.22 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B11 STAFF TOILET: Lavatory - Oval side clearance 412 mm.",
+   "point": [
+    -6.95,
+    16.376,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUet",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:610875",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.58,
+    "y": 0.58433
+   }
+  },
+  {
+   "id": "clinic-101",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc9Q",
+    "ifcClass": "IfcSpace",
+    "name": "1D26 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D26 TOILET",
+   "measured": "1000 mm (39.37 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "1D26 TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 1000 mm apart.",
+   "point": [
+    -42.26,
+    24.01,
+    0.647
+   ],
+   "related": [
+    {
+     "globalId": "3Eb1Tc81fCY8Bpa$iWdbLb",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:683476",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "3Eb1Tc81fCY8Bpa$iWdbK_",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:683407",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.28303,
+    "y": 0.49356
+   }
+  },
+  {
+   "id": "clinic-102",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc9Q",
+    "ifcClass": "IfcSpace",
+    "name": "1D26 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D26 TOILET",
+   "measured": "426 mm (16.77 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D26 TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 426 mm.",
+   "point": [
+    -42.76,
+    24.01,
+    0.43
+   ],
+   "related": [
+    {
+     "globalId": "3Eb1Tc81fCY8Bpa$iWdbLb",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:683476",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.27883,
+    "y": 0.49356
+   }
+  },
+  {
+   "id": "clinic-103",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc9Q",
+    "ifcClass": "IfcSpace",
+    "name": "1D26 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D26 TOILET",
+   "measured": "1206 mm (47.48 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D26 TOILET: Lavatory - Oval side clearance 1206 mm.",
+   "point": [
+    -41.76,
+    24.01,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "3Eb1Tc81fCY8Bpa$iWdbK_",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:683407",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.28724,
+    "y": 0.49356
+   }
+  },
+  {
+   "id": "clinic-104",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc0$",
+    "ifcClass": "IfcSpace",
+    "name": "1E01 HK EQUIP. STORAGE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E01 HK EQUIP. STORAGE",
+   "measured": "466 mm (18.35 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1E01 HK EQUIP. STORAGE: Lavatory - Oval side clearance 466 mm.",
+   "point": [
+    -20.42,
+    12.354,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrOEo",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:605118",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.46672,
+    "y": 0.63216
+   }
+  },
+  {
+   "id": "clinic-105",
+   "rule": "IRC-R307.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc9M",
+    "ifcClass": "IfcSpace",
+    "name": "1D22 TEAM INTERACTION",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D22 TEAM INTERACTION",
+   "measured": "216 mm (8.50 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D22 TEAM INTERACTION: Lavatory - Oval is 216 mm from the side wall, 165 mm too close.",
+   "point": [
+    -48.335,
+    30.386,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrVnF",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:607299",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.23194,
+    "y": 0.41775
+   }
+  },
+  {
+   "id": "clinic-106",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7Q",
+    "ifcClass": "IfcSpace",
+    "name": "1E11 STAFF LOUNGE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E11 STAFF LOUNGE",
+   "measured": "1236 mm (48.66 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1E11 STAFF LOUNGE: Lavatory - Oval side clearance 1236 mm.",
+   "point": [
+    -36.11,
+    15.14,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrVz6",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:608074",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33476,
+    "y": 0.59903
+   }
+  },
+  {
+   "id": "clinic-107",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc7Y",
+    "ifcClass": "IfcSpace",
+    "name": "1E24 RECEIVING / STORAGE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1E24 RECEIVING / STORAGE",
+   "measured": "4105 mm (161.63 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1E24 RECEIVING / STORAGE: Lavatory - Oval side clearance 4105 mm.",
+   "point": [
+    -34.15,
+    9.56,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrV7b",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:608745",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.35124,
+    "y": 0.66538
+   }
+  },
+  {
+   "id": "clinic-108",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcV7",
+    "ifcClass": "IfcSpace",
+    "name": "1B04 LAB",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B04 LAB",
+   "measured": "5357 mm (210.91 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B04 LAB: Lavatory - Oval side clearance 5357 mm.",
+   "point": [
+    -0.48,
+    19.909,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUkC",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:611200",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.63442,
+    "y": 0.54232
+   }
+  },
+  {
+   "id": "clinic-109",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcV7",
+    "ifcClass": "IfcSpace",
+    "name": "1B04 LAB",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B04 LAB",
+   "measured": "752 mm (29.61 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B04 LAB: Lavatory - Oval side clearance 752 mm.",
+   "point": [
+    -0.48,
+    24.514,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUmn",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:611389",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.63442,
+    "y": 0.48757
+   }
+  },
+  {
+   "id": "clinic-110",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcVO",
+    "ifcClass": "IfcSpace",
+    "name": "1B03 BLOOD DRAW",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B03 BLOOD DRAW",
+   "measured": "1686 mm (66.38 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B03 BLOOD DRAW: Lavatory - Oval side clearance 1686 mm.",
+   "point": [
+    -5.48,
+    25.69,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrU6y",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:612784",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.59237,
+    "y": 0.47358
+   }
+  },
+  {
+   "id": "clinic-111",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc0Q",
+    "ifcClass": "IfcSpace",
+    "name": "1C16 ECG TEST",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C16 ECG TEST",
+   "measured": "813 mm (32.01 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1C16 ECG TEST: Lavatory - Oval side clearance 813 mm.",
+   "point": [
+    -48.12,
+    55.44,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUHY",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:613486",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.23375,
+    "y": 0.11984
+   }
+  },
+  {
+   "id": "clinic-112",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcBA",
+    "ifcClass": "IfcSpace",
+    "name": "1C09 FUNDUS CAMERA ROOM",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C09 FUNDUS CAMERA ROOM",
+   "measured": "906 mm (35.67 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1C09 FUNDUS CAMERA ROOM: Lavatory - Oval side clearance 906 mm.",
+   "point": [
+    -34.71,
+    52.894,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUPC",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:613952",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.34653,
+    "y": 0.15011
+   }
+  },
+  {
+   "id": "clinic-113",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcBR",
+    "ifcClass": "IfcSpace",
+    "name": "1C04 FITTING / DISP.",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C04 FITTING / DISP.",
+   "measured": "426 mm (16.77 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1C04 FITTING / DISP.: Lavatory - Oval side clearance 426 mm.",
+   "point": [
+    -29.34,
+    50.234,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrUPs",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:614010",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.39169,
+    "y": 0.18174
+   }
+  },
+  {
+   "id": "clinic-114",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcB9",
+    "ifcClass": "IfcSpace",
+    "name": "1C10 OPT. EXAM / OFF.",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C10 OPT. EXAM / OFF.",
+   "measured": "3350 mm (131.90 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1C10 OPT. EXAM / OFF.: Lavatory - Oval side clearance 3350 mm.",
+   "point": [
+    -26.903,
+    46.516,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTZk",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:614626",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41219,
+    "y": 0.22595
+   }
+  },
+  {
+   "id": "clinic-115",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcB0",
+    "ifcClass": "IfcSpace",
+    "name": "1C07 OPT. EXAM / OFF.",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1C07 OPT. EXAM / OFF.",
+   "measured": "3390 mm (133.46 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1C07 OPT. EXAM / OFF.: Lavatory - Oval side clearance 3390 mm.",
+   "point": [
+    -23.942,
+    46.425,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTgD",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:615041",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.43709,
+    "y": 0.22703
+   }
+  },
+  {
+   "id": "clinic-116",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcBg",
+    "ifcClass": "IfcSpace",
+    "name": "1D05 TRMT RM. DIRTY PROC.",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D05 TRMT RM. DIRTY PROC.",
+   "measured": "1234 mm (48.58 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D05 TRMT RM. DIRTY PROC.: Lavatory - Oval side clearance 1234 mm.",
+   "point": [
+    -20.54,
+    43.478,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTmG",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:615452",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.46571,
+    "y": 0.26207
+   }
+  },
+  {
+   "id": "clinic-117",
+   "rule": "IRC-R307.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcBf",
+    "ifcClass": "IfcSpace",
+    "name": "1D06 SCOPE WASH / DECON.",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D06 SCOPE WASH / DECON.",
+   "measured": "311 mm (12.24 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D06 SCOPE WASH / DECON.: Lavatory - Oval is 311 mm from the side wall, 70 mm too close.",
+   "point": [
+    -25.666,
+    41.095,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTmw",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:615478",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.42259,
+    "y": 0.29041
+   }
+  },
+  {
+   "id": "clinic-118",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcA7",
+    "ifcClass": "IfcSpace",
+    "name": "1D12 SPECIMEN COLL. LAB",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D12 SPECIMEN COLL. LAB",
+   "measured": "1936 mm (76.22 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D12 SPECIMEN COLL. LAB: Lavatory - Oval side clearance 1936 mm.",
+   "point": [
+    -35.8,
+    36.89,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrTTU",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:618322",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33736,
+    "y": 0.34041
+   }
+  },
+  {
+   "id": "clinic-119",
+   "rule": "IRC-R307.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcYS",
+    "ifcClass": "IfcSpace",
+    "name": "1A10 LOUNGE",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1A10 LOUNGE",
+   "measured": "370 mm (14.57 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1A10 LOUNGE: Lavatory - Oval is 370 mm from the side wall, 11 mm too close.",
+   "point": [
+    -11.044,
+    44.98,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrSGn",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:621629",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.54557,
+    "y": 0.24421
+   }
+  },
+  {
+   "id": "clinic-120",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqc8k",
+    "ifcClass": "IfcSpace",
+    "name": "1D40 IMMUNIZ'N ROOM",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1D40 IMMUNIZ'N ROOM",
+   "measured": "1378 mm (54.25 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1D40 IMMUNIZ'N ROOM: Lavatory - Oval side clearance 1378 mm.",
+   "point": [
+    -22.868,
+    26.016,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "32xCMlMsb8h8u4rXrjrJ$j",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:624609",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.44613,
+    "y": 0.46971
+   }
+  },
+  {
+   "id": "clinic-121",
+   "rule": "IRC-R307.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0ztdC3L1HAzhbhMHypqcTs",
+    "ifcClass": "IfcSpace",
+    "name": "1B19 RADIOGRAPHIC ROOM",
+    "model": "clinic.ifc"
+   },
+   "storey": "First Floor",
+   "room": "1B19 RADIOGRAPHIC ROOM",
+   "measured": "293 mm (11.54 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "1B19 RADIOGRAPHIC ROOM: Lavatory - Oval is 293 mm from the side wall, 88 mm too close.",
+   "point": [
+    -12.672,
+    19.236,
+    0.865
+   ],
+   "related": [
+    {
+     "globalId": "0Jzn6t_8v2DhC9kNhL9lSV",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:643128",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.53188,
+    "y": 0.55033
+   }
+  },
+  {
+   "id": "clinic-122",
+   "rule": "IRC-R307.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMQZ",
+    "ifcClass": "IfcSpace",
+    "name": "2B22 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B22 M. TOILET",
+   "measured": "760 mm (29.92 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "2B22 M. TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval are 760 mm apart on centres, 2 mm too close.",
+   "point": [
+    -0.7,
+    14.364,
+    5.217
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JQKT",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:649166",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JQh2",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:649233",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.63257,
+    "y": 0.60826
+   }
+  },
+  {
+   "id": "clinic-123",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMQZ",
+    "ifcClass": "IfcSpace",
+    "name": "2B22 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B22 M. TOILET",
+   "measured": "433 mm (17.05 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2B22 M. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 433 mm.",
+   "point": [
+    -0.32,
+    14.364,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JQKT",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:649166",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.63577,
+    "y": 0.60826
+   }
+  },
+  {
+   "id": "clinic-124",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMQZ",
+    "ifcClass": "IfcSpace",
+    "name": "2B22 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B22 M. TOILET",
+   "measured": "1193 mm (46.97 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2B22 M. TOILET: Lavatory - Oval side clearance 1193 mm.",
+   "point": [
+    -1.08,
+    14.364,
+    5.435
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JQh2",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:649233",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.62937,
+    "y": 0.60826
+   }
+  },
+  {
+   "id": "clinic-125",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHXT",
+    "ifcClass": "IfcSpace",
+    "name": "2D13 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2D13 TOILET",
+   "measured": "398 mm (15.67 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2D13 TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 398 mm.",
+   "point": [
+    -41.488,
+    13.074,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JQfM",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:649349",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.28952,
+    "y": 0.6236
+   }
+  },
+  {
+   "id": "clinic-126",
+   "rule": "IRC-R307.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHXT",
+    "ifcClass": "IfcSpace",
+    "name": "2D13 TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2D13 TOILET",
+   "measured": "317 mm (12.47 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2D13 TOILET: Lavatory - Oval is 317 mm from the side wall, 64 mm too close.",
+   "point": [
+    -42.56,
+    13.33,
+    5.435
+   ],
+   "related": [
+    {
+     "globalId": "056u0K$KrA9e3tG0hHe1MF",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:655837",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.28051,
+    "y": 0.62055
+   }
+  },
+  {
+   "id": "clinic-127",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHny",
+    "ifcClass": "IfcSpace",
+    "name": "2C23 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C23 M. TOILET",
+   "measured": "523 mm (20.60 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2C23 M. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 523 mm.",
+   "point": [
+    -23.04,
+    37.991,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JR7J",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:652032",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44468,
+    "y": 0.32732
+   }
+  },
+  {
+   "id": "clinic-128",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHny",
+    "ifcClass": "IfcSpace",
+    "name": "2C23 M. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C23 M. TOILET",
+   "measured": "470 mm (18.50 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2C23 M. TOILET: Lavatory - Oval side clearance 470 mm.",
+   "point": [
+    -20.76,
+    35.49,
+    5.435
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRDk",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:651709",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.46386,
+    "y": 0.35706
+   }
+  },
+  {
+   "id": "clinic-129",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHnn",
+    "ifcClass": "IfcSpace",
+    "name": "2C24 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C24 W. TOILET",
+   "measured": "1900 mm (74.80 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 762 mm (30 in)",
+   "message": "2C24 W. TOILET: Water Closet - Flush Valve - Wall Mounted and Water Closet - Flush Valve - Wall Mounted 1900 mm apart.",
+   "point": [
+    -23.04,
+    40.045,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JR7x",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:652072",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JR6S",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:652111",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44468,
+    "y": 0.30289
+   }
+  },
+  {
+   "id": "clinic-130",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHnn",
+    "ifcClass": "IfcSpace",
+    "name": "2C24 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C24 W. TOILET",
+   "measured": "457 mm (17.98 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2C24 W. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 457 mm.",
+   "point": [
+    -23.04,
+    39.095,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JR7x",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:652072",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44468,
+    "y": 0.31419
+   }
+  },
+  {
+   "id": "clinic-131",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHnn",
+    "ifcClass": "IfcSpace",
+    "name": "2C24 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C24 W. TOILET",
+   "measured": "475 mm (18.72 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2C24 W. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 475 mm.",
+   "point": [
+    -23.04,
+    40.995,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JR6S",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:652111",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44468,
+    "y": 0.2916
+   }
+  },
+  {
+   "id": "clinic-132",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHnn",
+    "ifcClass": "IfcSpace",
+    "name": "2C24 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C24 W. TOILET",
+   "measured": "470 mm (18.50 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2C24 W. TOILET: Lavatory - Oval side clearance 470 mm.",
+   "point": [
+    -20.76,
+    41.22,
+    5.435
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JR4O",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:652235",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.46386,
+    "y": 0.28892
+   }
+  },
+  {
+   "id": "clinic-133",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHsZ",
+    "ifcClass": "IfcSpace",
+    "name": "2C08 W. STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C08 W. STAFF TOILET",
+   "measured": "447 mm (17.58 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2C08 W. STAFF TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 447 mm.",
+   "point": [
+    -30.19,
+    37.791,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRVF",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:652572",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.38455,
+    "y": 0.3297
+   }
+  },
+  {
+   "id": "clinic-134",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHsk",
+    "ifcClass": "IfcSpace",
+    "name": "2C07 M. STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C07 M. STAFF TOILET",
+   "measured": "447 mm (17.58 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2C07 M. STAFF TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 447 mm.",
+   "point": [
+    -29.31,
+    37.791,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRVd",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:652596",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.39195,
+    "y": 0.3297
+   }
+  },
+  {
+   "id": "clinic-135",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRJ",
+    "ifcClass": "IfcSpace",
+    "name": "2B6 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B6 STAFF TOILET",
+   "measured": "900 mm (35.43 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "2B6 STAFF TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 900 mm apart.",
+   "point": [
+    -7.53,
+    21.059,
+    5.217
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRL7",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:653204",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRhf",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:653370",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.57513,
+    "y": 0.52865
+   }
+  },
+  {
+   "id": "clinic-136",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRJ",
+    "ifcClass": "IfcSpace",
+    "name": "2B6 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B6 STAFF TOILET",
+   "measured": "431 mm (16.95 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2B6 STAFF TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 431 mm.",
+   "point": [
+    -7.53,
+    20.609,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRL7",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:653204",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.57513,
+    "y": 0.534
+   }
+  },
+  {
+   "id": "clinic-137",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRJ",
+    "ifcClass": "IfcSpace",
+    "name": "2B6 STAFF TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B6 STAFF TOILET",
+   "measured": "1331 mm (52.38 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2B6 STAFF TOILET: Lavatory - Oval side clearance 1331 mm.",
+   "point": [
+    -7.53,
+    21.509,
+    5.435
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRhf",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:653370",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.57513,
+    "y": 0.5233
+   }
+  },
+  {
+   "id": "clinic-138",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRU",
+    "ifcClass": "IfcSpace",
+    "name": "2B5 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B5 W. TOILET",
+   "measured": "885 mm (34.84 in) centre to centre, Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval",
+   "required": "≥ 762 mm (30 in)",
+   "message": "2B5 W. TOILET: Water Closet - Flush Valve - Wall Mounted and Lavatory - Oval 885 mm apart.",
+   "point": [
+    -6.62,
+    21.951,
+    5.217
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRKN",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:653252",
+     "model": "Clinic_Plumbing.ifc"
+    },
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRg4",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:653399",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.58278,
+    "y": 0.51804
+   }
+  },
+  {
+   "id": "clinic-139",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRU",
+    "ifcClass": "IfcSpace",
+    "name": "2B5 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B5 W. TOILET",
+   "measured": "456 mm (17.97 in) centre to side wall, Water Closet - Flush Valve - Wall Mounted",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2B5 W. TOILET: Water Closet - Flush Valve - Wall Mounted side clearance 456 mm.",
+   "point": [
+    -6.62,
+    22.394,
+    5.0
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRKN",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Valve - Wall Mounted:Public - 6.1 Lpf:Public - 6.1 Lpf:653252",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.58278,
+    "y": 0.51278
+   }
+  },
+  {
+   "id": "clinic-140",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupMRU",
+    "ifcClass": "IfcSpace",
+    "name": "2B5 W. TOILET",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2B5 W. TOILET",
+   "measured": "1331 mm (52.38 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2B5 W. TOILET: Lavatory - Oval side clearance 1331 mm.",
+   "point": [
+    -6.62,
+    21.509,
+    5.435
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JRg4",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:653399",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.58278,
+    "y": 0.5233
+   }
+  },
+  {
+   "id": "clinic-141",
+   "rule": "IRC-R307.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHsB",
+    "ifcClass": "IfcSpace",
+    "name": "2C16 CERAMIC LAB",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C16 CERAMIC LAB",
+   "measured": "347 mm (13.68 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2C16 CERAMIC LAB: Lavatory - Oval is 347 mm from the side wall, 34 mm too close.",
+   "point": [
+    -44.104,
+    49.89,
+    5.435
+   ],
+   "related": [
+    {
+     "globalId": "0Rj85J29L55uI7dAt1JQdy",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:650031",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.26752,
+    "y": 0.18583
+   }
+  },
+  {
+   "id": "clinic-142",
+   "rule": "IRC-R307.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0ClPCUC7jCQRnj1dhupHs7",
+    "ifcClass": "IfcSpace",
+    "name": "2C22 LOUNGE",
+    "model": "clinic.ifc"
+   },
+   "storey": "Second Floor",
+   "room": "2C22 LOUNGE",
+   "measured": "436 mm (17.17 in) centre to side wall, Lavatory - Oval",
+   "required": "≥ 381 mm (15 in)",
+   "message": "2C22 LOUNGE: Lavatory - Oval side clearance 436 mm.",
+   "point": [
+    -27.4,
+    35.27,
+    5.435
+   ],
+   "related": [
+    {
+     "globalId": "12YtnfBhn16eH6_7erGtV6",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lavatory - Oval:535 mmx485 mm - Public:535 mmx485 mm - Public:698241",
+     "model": "Clinic_Plumbing.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.40801,
+    "y": 0.35967
+   }
+  }
+ ]
+}

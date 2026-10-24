@@ -1,0 +1,482 @@
+{
+ "version": 1,
+ "building": "office",
+ "title": "Office Building",
+ "code": "2021 International Residential Code (IRC)",
+ "model": "kit-office.ifc",
+ "generated": "2026-10-24",
+ "coordinates": "IFC model coordinates in metres, Z up; sheet x/y are 0-1 from the top left of the page",
+ "summary": {
+  "rules": 10,
+  "fail": 2,
+  "pass": 11
+ },
+ "rules": [
+  {
+   "id": "IRC-R310.1",
+   "section": "R310.1, R310.2",
+   "title": "Emergency escape and rescue opening in every sleeping room",
+   "complies": "Every bedroom has an operable window or exterior door with at least 5.7 sq ft net clear opening (5.0 sq ft at grade floor), at least 24 in clear height and 20 in clear width, sill no more than 44 in above the floor.",
+   "violates": "A bedroom whose only windows are fixed glazing, or whose operable window is too small or too high.",
+   "fix": "Change one window per bedroom to an egress casement (for example 30 × 54 in rough opening, sill ≤ 44 in).",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R311.7.5.2",
+   "section": "R311.7.5.2",
+   "title": "Stair tread depth",
+   "complies": "Tread depth at least 10 in (254 mm), measured horizontally nosing to nosing; the largest and smallest tread in a flight within 3/8 in.",
+   "violates": "Any tread shallower than 10 in.",
+   "fix": "Lengthen the run: 15 treads × 254 mm needs 3.81 m of run instead of 3.75 m, or redistribute with one more riser.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R311.7.5.3",
+   "section": "R311.7.5.3",
+   "title": "Stair nosing projection",
+   "complies": "Where treads are under 11 in deep, a nosing of 3/4 in to 1-1/4 in (19–32 mm) on every tread of a stair with solid risers, uniform within 3/8 in.",
+   "violates": "Treads under 11 in with no nosing or one under 3/4 in.",
+   "fix": "Specify a 25 mm (1 in) nosing on every tread, or deepen treads to 11 in where no nosing is wanted.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R308.4.3",
+   "section": "R308.4.3",
+   "title": "Safety glazing in hazardous window locations",
+   "complies": "Glazing that meets all four conditions (pane over 9 sq ft, bottom edge under 18 in above the floor, top edge over 36 in, walking surface within 36 in) is tempered or laminated safety glazing; any other window may be annealed.",
+   "violates": "A large, low pane like this that is specified as ordinary glass.",
+   "fix": "Specify tempered (or laminated) glass for these window types, or raise the sill to 18 in.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R302.3",
+   "section": "R302.3",
+   "title": "Two-family dwelling separation",
+   "complies": "The wall separating the two dwelling units is fire-resistance rated for 1 hour (1/2 hour where the building is sprinklered per NFPA 13D), continuous to the underside of the roof deck.",
+   "violates": "A separation wall with no fire-resistance rating in an unsprinklered two-family dwelling.",
+   "fix": "Assign a tested 1-hour assembly (for example UL U905 masonry) to the party wall type and carry it to the roof deck.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R314.3",
+   "section": "R314.3",
+   "title": "Smoke alarm locations",
+   "complies": "A smoke alarm in each sleeping room, outside each separate sleeping area in the immediate vicinity of the bedrooms, and on each story.",
+   "violates": "A sleeping area whose hallway has no smoke alarm (or a bedroom or story without one).",
+   "fix": "Add an interconnected smoke alarm on the hallway ceiling outside the bedrooms.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R315.2",
+   "section": "R315.2.1, R315.3",
+   "title": "Carbon monoxide alarms where there are fuel-burning appliances",
+   "complies": "A dwelling unit with a fuel-burning appliance has a CO alarm outside each separate sleeping area in the immediate vicinity of the bedrooms (and in any bedroom that contains such an appliance).",
+   "violates": "A unit with a gas-fired appliance and no CO alarm outside its bedrooms.",
+   "fix": "Add a CO alarm (or combination smoke/CO alarm) on the hallway ceiling outside the bedrooms.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R303.1",
+   "section": "R303.1",
+   "title": "Habitable room ventilation",
+   "complies": "Openable area to the outdoors (operable windows, exterior doors) of at least 4% of each habitable room’s floor area, or a whole-house mechanical ventilation system per M1505.4.",
+   "violates": "A habitable room with only fixed glazing and no whole-house mechanical ventilation.",
+   "fix": "Make part of the glazing operable, or add a whole-house ventilation system (ERV/HRV or exhaust-only per M1505.4).",
+   "fail": 2,
+   "pass": 3
+  },
+  {
+   "id": "IRC-R303.3",
+   "section": "R303.3, M1505",
+   "title": "Bathroom ventilation",
+   "complies": "Each bathroom has a window of at least 3 sq ft, half of it openable, or a mechanical exhaust to the outdoors (50 cfm intermittent or 20 cfm continuous).",
+   "violates": "A bathroom with no window and no exhaust fan or exhaust duct.",
+   "fix": "Add a ceiling exhaust fan ducted to the outdoors (50 cfm intermittent).",
+   "fail": 0,
+   "pass": 8
+  },
+  {
+   "id": "IRC-R307.1",
+   "section": "R307.1, P2705.1",
+   "title": "Plumbing fixture clearances",
+   "complies": "Water closets and lavatories at least 15 in (381 mm) from their centre to a side wall or obstruction, and at least 30 in (762 mm) centre to centre from an adjacent fixture.",
+   "violates": "Fixtures set closer than 30 in apart, or less than 15 in from a side wall.",
+   "fix": "Respace the fixtures to 30 in centres, or replace the pair of lavatories with one.",
+   "fail": 0,
+   "pass": 0
+  }
+ ],
+ "findings": [
+  {
+   "id": "office-001",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "1DxredyET5bf_85HZe8$FO",
+    "ifcClass": "IfcSpace",
+    "name": "105 Buero Studenten I",
+    "model": "kit-office.ifc"
+   },
+   "storey": "Erdgeschoss",
+   "room": "105 Buero Studenten I",
+   "measured": "9.00 m² openable (96.9 sq ft) for 39.2 m² floor; no whole-house ventilation in the MEP model",
+   "required": "≥ 1.57 m² (16.9 sq ft), 4% of floor area",
+   "message": "105 Buero Studenten I: ventilated.",
+   "point": [
+    28.45,
+    4.5,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.48751,
+    "y": 0.55471
+   }
+  },
+  {
+   "id": "office-002",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "3$FatfHY1Cg9apAMwbKPN8",
+    "ifcClass": "IfcSpace",
+    "name": "106 Buero Studenten II",
+    "model": "kit-office.ifc"
+   },
+   "storey": "Erdgeschoss",
+   "room": "106 Buero Studenten II",
+   "measured": "9.00 m² openable (96.9 sq ft) for 37.8 m² floor; no whole-house ventilation in the MEP model",
+   "required": "≥ 1.51 m² (16.3 sq ft), 4% of floor area",
+   "message": "106 Buero Studenten II: ventilated.",
+   "point": [
+    37.4,
+    4.5,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.59394,
+    "y": 0.55471
+   }
+  },
+  {
+   "id": "office-003",
+   "rule": "IRC-R303.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0jhU4VZ6XCxee3pjfx5VMh",
+    "ifcClass": "IfcSpace",
+    "name": "114 Buero Studenten III",
+    "model": "kit-office.ifc"
+   },
+   "storey": "Erdgeschoss",
+   "room": "114 Buero Studenten III",
+   "measured": "9.00 m² openable (96.9 sq ft) for 38.7 m² floor; no whole-house ventilation in the MEP model",
+   "required": "≥ 1.55 m² (16.7 sq ft), 4% of floor area",
+   "message": "114 Buero Studenten III: ventilated.",
+   "point": [
+    10.5,
+    11.5,
+    1.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.27408,
+    "y": 0.43687
+   }
+  },
+  {
+   "id": "office-004",
+   "rule": "IRC-R303.1",
+   "status": "fail",
+   "target": {
+    "globalId": "3txvJd9V1BPhyU$48F$mnF",
+    "ifcClass": "IfcSpace",
+    "name": "403 Dachboden-2",
+    "model": "kit-office.ifc"
+   },
+   "storey": "Dachgeschoss",
+   "room": "403 Dachboden-2",
+   "measured": "0.00 m² openable (0.0 sq ft) for 201.8 m² floor; no whole-house ventilation in the MEP model",
+   "required": "≥ 8.07 m² (86.9 sq ft), 4% of floor area",
+   "message": "403 Dachboden-2: openable area 0.00 m², needs 8.07 m².",
+   "point": [
+    9.15,
+    8.0,
+    10.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-105",
+    "page": 6,
+    "x": 0.25803,
+    "y": 0.49579
+   }
+  },
+  {
+   "id": "office-005",
+   "rule": "IRC-R303.1",
+   "status": "fail",
+   "target": {
+    "globalId": "0jbV$RErb7o9P7rp7ALEd$",
+    "ifcClass": "IfcSpace",
+    "name": "402 Dachboden-1",
+    "model": "kit-office.ifc"
+   },
+   "storey": "Dachgeschoss",
+   "room": "402 Dachboden-1",
+   "measured": "0.00 m² openable (0.0 sq ft) for 201.8 m² floor; no whole-house ventilation in the MEP model",
+   "required": "≥ 8.07 m² (86.9 sq ft), 4% of floor area",
+   "message": "402 Dachboden-1: openable area 0.00 m², needs 8.07 m².",
+   "point": [
+    32.85,
+    8.0,
+    10.2
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-105",
+    "page": 6,
+    "x": 0.53983,
+    "y": 0.49579
+   }
+  },
+  {
+   "id": "office-006",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "1pG7ErnqL79fYOSoJhY$mD",
+    "ifcClass": "IfcSpace",
+    "name": "008 WC Herren",
+    "model": "kit-office.ifc"
+   },
+   "storey": "Keller",
+   "room": "008 WC Herren",
+   "measured": "2 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "008 WC Herren: ventilated.",
+   "point": [
+    25.45,
+    11.5,
+    -0.4
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.45184,
+    "y": 0.43687
+   }
+  },
+  {
+   "id": "office-007",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "1nsRm1QQb1xwWpzzFR7Ax3",
+    "ifcClass": "IfcSpace",
+    "name": "009 WC Damen",
+    "model": "kit-office.ifc"
+   },
+   "storey": "Keller",
+   "room": "009 WC Damen",
+   "measured": "2 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "009 WC Damen: ventilated.",
+   "point": [
+    16.55,
+    11.5,
+    -0.4
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.34602,
+    "y": 0.43687
+   }
+  },
+  {
+   "id": "office-008",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "1oKaKV7Wz8IOJ10cA1PGWP",
+    "ifcClass": "IfcSpace",
+    "name": "113 WC Damen",
+    "model": "kit-office.ifc"
+   },
+   "storey": "Erdgeschoss",
+   "room": "113 WC Damen",
+   "measured": "2 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "113 WC Damen: ventilated.",
+   "point": [
+    16.55,
+    11.5,
+    2.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.34602,
+    "y": 0.43687
+   }
+  },
+  {
+   "id": "office-009",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "3j5r$vfHT3JfqUfpdRoXnP",
+    "ifcClass": "IfcSpace",
+    "name": "112 WC Herren",
+    "model": "kit-office.ifc"
+   },
+   "storey": "Erdgeschoss",
+   "room": "112 WC Herren",
+   "measured": "2 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "112 WC Herren: ventilated.",
+   "point": [
+    25.45,
+    11.5,
+    2.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.45184,
+    "y": 0.43687
+   }
+  },
+  {
+   "id": "office-010",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "37pP75EaP1axQNg3rWc_WT",
+    "ifcClass": "IfcSpace",
+    "name": "214 WC Damen",
+    "model": "kit-office.ifc"
+   },
+   "storey": "1. Obergeschoss",
+   "room": "214 WC Damen",
+   "measured": "2 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "214 WC Damen: ventilated.",
+   "point": [
+    16.55,
+    11.5,
+    5.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-103",
+    "page": 4,
+    "x": 0.34602,
+    "y": 0.43687
+   }
+  },
+  {
+   "id": "office-011",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0f6kjO4cnBngLgZgtaoBTE",
+    "ifcClass": "IfcSpace",
+    "name": "213 WC Herren",
+    "model": "kit-office.ifc"
+   },
+   "storey": "1. Obergeschoss",
+   "room": "213 WC Herren",
+   "measured": "2 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "213 WC Herren: ventilated.",
+   "point": [
+    25.45,
+    11.5,
+    5.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-103",
+    "page": 4,
+    "x": 0.45184,
+    "y": 0.43687
+   }
+  },
+  {
+   "id": "office-012",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "3M3dydUxH2hR7Uvg9QNhS$",
+    "ifcClass": "IfcSpace",
+    "name": "313 WC Herren",
+    "model": "kit-office.ifc"
+   },
+   "storey": "2. Obergeschoss",
+   "room": "313 WC Herren",
+   "measured": "2 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "313 WC Herren: ventilated.",
+   "point": [
+    25.45,
+    11.5,
+    8.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-104",
+    "page": 5,
+    "x": 0.45184,
+    "y": 0.43687
+   }
+  },
+  {
+   "id": "office-013",
+   "rule": "IRC-R303.3",
+   "status": "pass",
+   "target": {
+    "globalId": "0jh6L39QvEQu8mVKX3j43f",
+    "ifcClass": "IfcSpace",
+    "name": "314 WC Damen",
+    "model": "kit-office.ifc"
+   },
+   "storey": "2. Obergeschoss",
+   "room": "314 WC Damen",
+   "measured": "2 window(s), 0 exhaust device(s)",
+   "required": "3 sq ft window, half openable, or exhaust fan to outdoors",
+   "message": "314 WC Damen: ventilated.",
+   "point": [
+    16.55,
+    11.5,
+    8.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-104",
+    "page": 5,
+    "x": 0.34602,
+    "y": 0.43687
+   }
+  }
+ ]
+}
