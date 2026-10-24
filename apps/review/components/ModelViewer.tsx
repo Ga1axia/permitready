@@ -14,7 +14,7 @@ import { Box3, type Object3D, type PerspectiveCamera, Sphere } from 'three'
 import { applyFocusFade, clearFocusFade, setFocusFadeOpacity } from '@/lib/focus-fade'
 import { focusBounds, focusKeepIds } from '@/lib/focus-targets'
 import { levelOf } from '@/lib/node-info'
-import { useReview } from '@/lib/review-store'
+import { DEFAULT_FOCUS_SEE_THROUGH, useReview } from '@/lib/review-store'
 import { applyViolationHighlight, clearViolationHighlight } from '@/lib/violation-highlight'
 import { RoomHighlight } from './RoomHighlight'
 
@@ -67,6 +67,13 @@ const BUILDING_POLAR = 1.1 // about 27° above the horizon
 const ELEMENT_POLAR = 0.75 // about 47° above the horizon, looking down into the room
 // Metres of context kept around a focused element.
 const ELEMENT_CONTEXT = 1.5
+/**
+ * Smallest sphere radius (metres) the camera will frame to for an element.
+ * A thin window or door has near-zero depth, so its bounding sphere collapses
+ * and fitToSphere dollies the camera so close it clips through and shows
+ * nothing. This floor keeps a small element comfortably in view.
+ */
+const MIN_ELEMENT_RADIUS = 2.5
 /**
  * Frames one element, or the building when no element is given, whenever
  * `useReview.focusNode` is called.
@@ -135,6 +142,9 @@ function CameraFocus() {
         }
         const sphere = box.getBoundingSphere(new Sphere())
         sphere.radius *= FIT_PADDING
+        // An element's sphere can collapse (a thin window) — keep a floor so
+        // the camera frames the element in context, not a clipped void.
+        if (request.nodeId) sphere.radius = Math.max(sphere.radius, MIN_ELEMENT_RADIUS)
         controls.fitToSphere(sphere, true)
         return
       }
@@ -180,24 +190,34 @@ function SelectionEmphasis() {
   const selectedId = useViewer((s) => s.selection.selectedIds[0] as string | undefined)
   const zoneId = useViewer((s) => s.selection.zoneId as string | null)
   const seeThrough = useReview((s) => s.focusSeeThrough)
+  const violationIds = useReview((s) => s.violationIds)
 
   const focusId = selectedId ?? zoneId ?? null
-  const opacity = 1 - seeThrough / 100
-  const active = focusId != null && seeThrough > 0
+  // A code violation fades its surroundings for clarity even when the user
+  // hasn't turned the global Focus toggle on — selecting a window should still
+  // drain the rest of the building. The toggle, when on, wins its slider value.
+  const violationActive = violationIds.length > 0
+  const effectiveSeeThrough =
+    seeThrough > 0 ? seeThrough : violationActive ? DEFAULT_FOCUS_SEE_THROUGH : 0
+  const opacity = 1 - effectiveSeeThrough / 100
+  const active = focusId != null && effectiveSeeThrough > 0
 
   useEffect(() => {
     if (!active || !focusId) return
     let cancel: () => void = () => {}
     const raf = requestAnimationFrame(() => {
-      const see = useReview.getState().focusSeeThrough
-      const ids = focusKeepIds(useScene.getState().nodes as Record<string, AnyNode>, focusId)
-      cancel = applyFocusFade(scene, ids, 1 - see / 100).cancel
+      const nodes = useScene.getState().nodes as Record<string, AnyNode>
+      // Keep the selection solid; also keep every highlighted violation mesh
+      // so a multi-element finding stays fully visible while context fades.
+      const keep = new Set(focusKeepIds(nodes, focusId))
+      for (const id of useReview.getState().violationIds) keep.add(id)
+      cancel = applyFocusFade(scene, [...keep], opacity).cancel
     })
     return () => {
       cancelAnimationFrame(raf)
       cancel()
     }
-  }, [active, focusId, scene])
+  }, [active, focusId, scene, opacity])
 
   useEffect(() => {
     if (!active) return
