@@ -1,0 +1,152 @@
+name: MCP Registry
+
+on:
+  pull_request:
+    paths:
+      - server.json
+      - packages/mcp/package.json
+      - .github/workflows/mcp-registry.yml
+  push:
+    branches: [main]
+    paths:
+      - server.json
+      - packages/mcp/package.json
+      - .github/workflows/mcp-registry.yml
+  # Run before publishing: the hosted deployment must already serve this version.
+  workflow_dispatch:
+
+env:
+  MCP_PUBLISHER_VERSION: 1.8.1
+  MCP_PUBLISHER_LINUX_AMD64_SHA256: a06c9096dcb9727c13555b6be26c7effa707b01f06a4c561ba7a3635443cf2cc
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+
+      - name: Install MCP Registry publisher
+        run: |
+          curl --fail --location \
+            "https://github.com/modelcontextprotocol/registry/releases/download/v${MCP_PUBLISHER_VERSION}/mcp-publisher_linux_amd64.tar.gz" \
+            --output "$RUNNER_TEMP/mcp-publisher.tar.gz"
+          echo "${MCP_PUBLISHER_LINUX_AMD64_SHA256}  $RUNNER_TEMP/mcp-publisher.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/mcp-publisher.tar.gz" -C "$RUNNER_TEMP" mcp-publisher
+
+      - name: Validate MCP Registry manifest
+        run: "$RUNNER_TEMP/mcp-publisher validate"
+
+      # The registry verifies npm ownership through the published package's mcpName. A
+      # prerelease tree keeps the manifest on the last stable version.
+      - name: Manifest follows the @pascal-app/mcp package
+        run: |
+          jq --exit-status --slurpfile pkg packages/mcp/package.json '
+            (.version | test("^[0-9]+\\.[0-9]+\\.[0-9]+$"))
+            and (($pkg[0].version | contains("-")) or .version == $pkg[0].version)
+            and .name == $pkg[0].mcpName
+            and .packages == [{
+              "registryType": "npm",
+              "registryBaseUrl": "https://registry.npmjs.org",
+              "identifier": $pkg[0].name,
+              "version": .version,
+              "runtimeHint": "npx",
+              "transport": { "type": "stdio" }
+            }]
+          ' server.json
+
+      # OAuth is discovered from the 401 challenge, so the remote declares no headers.
+      - name: Verify hosted endpoint contract
+        run: |
+          jq --exit-status '
+            .remotes == [{
+              "type": "streamable-http",
+              "url": "https://editor.pascal.app/api/mcp"
+            }]
+          ' server.json
+          curl --fail --location --output /dev/null \
+            https://editor.pascal.app/docs/developers/mcp
+          status=$(curl --silent --show-error --output "$RUNNER_TEMP/mcp-response.json" \
+            --dump-header "$RUNNER_TEMP/mcp-response.headers" \
+            --write-out '%{http_code}' \
+            --request POST \
+            --header 'content-type: application/json' \
+            --data '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"registry-check","version":"1"}}}' \
+            https://editor.pascal.app/api/mcp)
+          test "$status" = "401"
+          grep --ignore-case --fixed-strings \
+            'resource_metadata="https://editor.pascal.app/.well-known/oauth-protected-resource"' \
+            "$RUNNER_TEMP/mcp-response.headers"
+
+  # The hosted API catalog and server card are served by the hosted deployment, not
+  # this repository, so they only match after that deployment picks up this version.
+  hosted-matches-manifest:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+
+      - name: Verify live API catalog matches manifest
+        run: |
+          endpoint=$(jq --raw-output '.remotes[0].url' server.json)
+          version=$(jq --raw-output '.version' server.json)
+          transport=$(jq --raw-output '.remotes[0].type' server.json)
+          registry_name=$(jq --raw-output '.name' server.json)
+
+          curl --fail \
+            --connect-timeout 10 \
+            --max-time 30 \
+            --retry 3 \
+            --retry-connrefused \
+            --retry-delay 2 \
+            --header 'accept: application/linkset+json' \
+            --dump-header "$RUNNER_TEMP/api-catalog.headers" \
+            --output "$RUNNER_TEMP/api-catalog.json" \
+            https://editor.pascal.app/.well-known/api-catalog
+          grep --ignore-case --extended-regexp \
+            '^content-type: application/linkset\+json([;[:space:]]|$)' \
+            "$RUNNER_TEMP/api-catalog.headers"
+          jq --exit-status \
+            --arg endpoint "$endpoint" \
+            --arg version "$version" \
+            --arg transport "$transport" \
+            --arg registry_name "$registry_name" '
+              [.linkset[] | .item[]? | select(.href == $endpoint)] as $matches
+              | ($matches | length) == 1
+                and $matches[0].version == [$version]
+                and $matches[0].transport == [$transport]
+                and $matches[0]["registry-name"] == [$registry_name]
+            ' "$RUNNER_TEMP/api-catalog.json"
+
+          curl --fail --head \
+            --connect-timeout 10 \
+            --max-time 30 \
+            --retry 3 \
+            --retry-connrefused \
+            --retry-delay 2 \
+            https://editor.pascal.app/.well-known/api-catalog \
+            | tr -d '\r' \
+            | grep --fixed-strings --ignore-case \
+              'link: <https://editor.pascal.app/.well-known/api-catalog>; rel="api-catalog"'
+
+      - name: Verify live server card matches manifest
+        run: |
+          curl --fail \
+            --connect-timeout 10 \
+            --max-time 30 \
+            --retry 3 \
+            --retry-connrefused \
+            --retry-delay 2 \
+            --output "$RUNNER_TEMP/server-card.json" \
+            https://editor.pascal.app/.well-known/mcp/server-card.json
+          jq --exit-status --slurpfile manifest server.json '
+            .serverInfo.version == $manifest[0].version
+            and .transport.endpoint == $manifest[0].remotes[0].url
+          ' "$RUNNER_TEMP/server-card.json"

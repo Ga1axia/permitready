@@ -1,0 +1,78 @@
+Mark,Level,From / to,Type,Type mark,Width (mm),Height (mm),Leaf (mm),Operation,External,Fire rating
+D001,Keller,014 Labor K5 / 015 Flur Keller West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D002,Keller,013 Labor K4 / 015 Flur Keller West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D003,Keller,012 Labor K3 / 015 Flur Keller West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D004,Keller,011 Labor K2 / 015 Flur Keller West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D005,Keller,010 Labor K1 / 015 Flur Keller West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D006,Keller,009 WC Damen / 015 Flur Keller West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing left,,—
+D007,Keller,008 WC Herren / 017 Flur Keller Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D008,Keller,007 Technikraum IV / 017 Flur Keller Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D009,Keller,015 Flur Keller West / 016 Flur Keller Treppe,IFC Doppeltür - Zwei Öffnungsrichtungen,,1800,2100,,double door double swing,,—
+D010,Keller,016 Flur Keller Treppe / 017 Flur Keller Ost,IFC Doppeltür - Zwei Öffnungsrichtungen,,1800,2100,,double door double swing,,—
+D011,Keller,006 Seminarraum / 017 Flur Keller Ost,IFC Doppeltür - Zwei Öffnungsrichtungen,,1800,2100,,double door double swing,,—
+D012,Keller,001 Besprechungsraum I / 015 Flur Keller West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D013,Keller,002 Besprechungsraum II / 015 Flur Keller West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D014,Keller,003 Technikraum I / 015 Flur Keller West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D015,Keller,004 Technikraum II / 016 Flur Keller Treppe,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D016,Keller,005 Technikraum III / 017 Flur Keller Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D017,Erdgeschoss,115 Buero Obermeier / 116 Flur EG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D018,Erdgeschoss,114 Buero Studenten III / 116 Flur EG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D019,Erdgeschoss,113 WC Damen / 116 Flur EG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing left,,—
+D020,Erdgeschoss,112 WC Herren / 118 Flur EG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D021,Erdgeschoss,111 Buero Maier / 118 Flur EG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D022,Erdgeschoss,110 Buero Meyer / 118 Flur EG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D023,Erdgeschoss,109 Buero Mayer / 118 Flur EG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D024,Erdgeschoss,108 Buero Meyr / 118 Flur EG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D025,Erdgeschoss,107 Buero Mayr / 118 Flur EG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D026,Erdgeschoss,116 Flur EG West / 117 Flur EG Eingang,IFC Doppeltür - Eine Öffnungsrichtung,,1800,2100,,double door single swing,,—
+D027,Erdgeschoss,117 Flur EG Eingang / 118 Flur EG Ost,IFC Doppeltür - Eine Öffnungsrichtung,,1800,2100,,double door single swing,,—
+D028,Erdgeschoss,101 Buero Meier / 116 Flur EG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D029,Erdgeschoss,102 Labor I / 116 Flur EG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D030,Erdgeschoss,103 Labor II / 116 Flur EG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D031,Erdgeschoss,104 Buero Hausmeister / 116 Flur EG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D032,Erdgeschoss,105 Buero Studenten I / 118 Flur EG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing left,,—
+D033,Erdgeschoss,106 Buero Studenten II / 118 Flur EG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D034,Erdgeschoss,117 Flur EG Eingang,IFC Tür - Drehtür,,2000,2100,,revolving,,—
+D035,1. Obergeschoss,219 Buero Mueller I / 220 Flur 1.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D036,1. Obergeschoss,218 Buero Mueller II / 220 Flur 1.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D037,1. Obergeschoss,217 Buero MuellerIII / 220 Flur 1.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D038,1. Obergeschoss,216 Buero Mueller IV / 220 Flur 1.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D039,1. Obergeschoss,215 Buero Mueller V / 220 Flur 1.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D040,1. Obergeschoss,214 WC Damen / 220 Flur 1.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing left,,—
+D041,1. Obergeschoss,213 WC Herren / 222 Flur 1.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D042,1. Obergeschoss,212 Buero Schmitt I / 222 Flur 1.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D043,1. Obergeschoss,211 Buero Schmidt / 222 Flur 1.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D044,1. Obergeschoss,210 Buero Schmid / 222 Flur 1.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D045,1. Obergeschoss,209 Buero Schmied I / 222 Flur 1.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D046,1. Obergeschoss,208 Buero Schmied II / 222 Flur 1.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D047,1. Obergeschoss,220 Flur 1.OG West / 221 Flur 1.OG Treppe,IFC Doppeltür - Eine Öffnungsrichtung,,1800,2100,,double door single swing,,—
+D048,1. Obergeschoss,221 Flur 1.OG Treppe / 222 Flur 1.OG Ost,IFC Doppeltür - Eine Öffnungsrichtung,,1800,2100,,double door single swing,,—
+D049,1. Obergeschoss,201 Buero Obermueller / 220 Flur 1.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D050,1. Obergeschoss,202 Buero Mueller VI + VII / 220 Flur 1.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D051,1. Obergeschoss,203 Buero Mueller VIII + IX / 220 Flur 1.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D052,1. Obergeschoss,204 Buero Oberschmitt / 221 Flur 1.OG Treppe,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D053,1. Obergeschoss,205 Buero Schmitt II / 222 Flur 1.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing left,,—
+D054,1. Obergeschoss,206 Buero IL Sekr. / 222 Flur 1.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D055,1. Obergeschoss,207 Buero IL / 222 Flur 1.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D056,1. Obergeschoss,206 Buero IL Sekr. / 207 Buero IL,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing left,,—
+D057,2. Obergeschoss,319 Buero / 320 Flur 2.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D058,2. Obergeschoss,318 Buero / 320 Flur 2.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D059,2. Obergeschoss,317 Buero / 320 Flur 2.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D060,2. Obergeschoss,316 Buero / 320 Flur 2.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D061,2. Obergeschoss,315 Buero / 320 Flur 2.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D062,2. Obergeschoss,314 WC Damen / 320 Flur 2.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing left,,—
+D063,2. Obergeschoss,313 WC Herren / 322 Flur 2.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D064,2. Obergeschoss,312 Buero / 322 Flur 2.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D065,2. Obergeschoss,311 Buero / 322 Flur 2.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D066,2. Obergeschoss,310 Buero / 322 Flur 2.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D067,2. Obergeschoss,309 Buero / 322 Flur 2.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D068,2. Obergeschoss,308 Buero / 322 Flur 2.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D069,2. Obergeschoss,320 Flur 2.OG West / 321 Flur 2.OG Treppe,IFC Doppeltür - Eine Öffnungsrichtung,,1800,2100,,double door single swing,,—
+D070,2. Obergeschoss,321 Flur 2.OG Treppe / 322 Flur 2.OG Ost,IFC Doppeltür - Eine Öffnungsrichtung,,1800,2100,,double door single swing,,—
+D071,2. Obergeschoss,301 Buero / 320 Flur 2.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D072,2. Obergeschoss,302 Buero / 320 Flur 2.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D073,2. Obergeschoss,303 Buero / 320 Flur 2.OG West,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D074,2. Obergeschoss,304 Buero / 321 Flur 2.OG Treppe,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D075,2. Obergeschoss,305 Buero / 322 Flur 2.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D076,2. Obergeschoss,306 Buero / 322 Flur 2.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—
+D077,2. Obergeschoss,307 Buero / 322 Flur 2.OG Ost,IFC Tür - Eine Öffnunsgrichtung,,1000,2100,,single swing right,,—

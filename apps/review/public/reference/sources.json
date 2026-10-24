@@ -1,0 +1,326 @@
+{
+  "repository": "buildingsmart-community/Community-Sample-Test-Files",
+  "license": "CC BY 4.0 (repository terms; manufacturer documents remain their publishers' material)",
+  "files": [
+    {
+      "path": "clinic/cobie/2013-10-09-Clinic-Design-v14-WORKING-01.xlsx",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Medical-Dental Clinic/2013-10-09-Clinic-Design-v14-WORKING-01.xlsx",
+      "bytes": 1418464
+    },
+    {
+      "path": "clinic/cobie/2013-10-09-Clinic-Handover-v14.xlsx",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Medical-Dental Clinic/2013-10-09-Clinic-Handover-v14.xlsx",
+      "bytes": 1547559
+    },
+    {
+      "path": "clinic/models/Clinic_Electrical.ifc",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Medical-Dental Clinic/Clinic_Electrical.ifc",
+      "bytes": 6800204
+    },
+    {
+      "path": "clinic/models/Clinic_HVAC.ifc",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Medical-Dental Clinic/Clinic_HVAC.ifc",
+      "bytes": 26914597
+    },
+    {
+      "path": "clinic/models/Clinic_Plumbing.ifc",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Medical-Dental Clinic/Clinic_Plumbing.ifc",
+      "bytes": 55834520
+    },
+    {
+      "path": "clinic/models/Clinic_Structural.ifc",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Medical-Dental Clinic/Clinic_Structural.ifc",
+      "bytes": 19058175
+    },
+    {
+      "path": "clinic/om/2013-10-09-ClinicOM.zip",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Medical-Dental Clinic/2013-10-09-ClinicOM.zip",
+      "bytes": 146599757
+    },
+    {
+      "path": "duplex/cobie/2012-03-23-Duplex-Design.xlsx",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/2012-03-23-Duplex-Design.xlsx",
+      "bytes": 197832
+    },
+    {
+      "path": "duplex/cobie/2012-03-23-Duplex-Handover.xlsx",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/2012-03-23-Duplex-Handover.xlsx",
+      "bytes": 233186
+    },
+    {
+      "path": "duplex/images/2020-11-11-DuplexArc.jpg",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/2020-11-11-DuplexArc.jpg",
+      "bytes": 127398
+    },
+    {
+      "path": "duplex/images/2020-11-11-DuplexEle.jpg",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/2020-11-11-DuplexEle.jpg",
+      "bytes": 32181
+    },
+    {
+      "path": "duplex/images/2020-11-11-DuplexMec.jpg",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/2020-11-11-DuplexMec.jpg",
+      "bytes": 73574
+    },
+    {
+      "path": "duplex/images/2020-11-11-DuplexPlu.jpg",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/2020-11-11-DuplexPlu.jpg",
+      "bytes": 56738
+    },
+    {
+      "path": "duplex/models/Duplex_Electrical_20121207.ifc",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/Duplex_Electrical_20121207.ifc",
+      "bytes": 1602758
+    },
+    {
+      "path": "duplex/models/Duplex_MEP_20110907.ifc",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/Duplex_MEP_20110907.ifc",
+      "bytes": 17871432
+    },
+    {
+      "path": "duplex/models/Duplex_M_20111024_ROOMS_AND_SPACES.ifc",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/Duplex_M_20111024_ROOMS_AND_SPACES.ifc",
+      "bytes": 8781887
+    },
+    {
+      "path": "duplex/models/Duplex_Plumbing_20121113.ifc",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/Duplex_Plumbing_20121113.ifc",
+      "bytes": 31556138
+    },
+    {
+      "path": "duplex/product-data/0762x2032Door_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/0762x2032Door_ProductData.pdf",
+      "bytes": 525372
+    },
+    {
+      "path": "duplex/product-data/0813x2420Door_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/0813x2420Door_ProductData.pdf",
+      "bytes": 1251295
+    },
+    {
+      "path": "duplex/product-data/0864x2032Door_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/0864x2032Door_ProductData.pdf",
+      "bytes": 54065
+    },
+    {
+      "path": "duplex/product-data/1250x2010Door_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/1250x2010Door_ProductData.pdf",
+      "bytes": 5276190
+    },
+    {
+      "path": "duplex/product-data/2800x2410Windows_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/2800x2410Windows_ProductData.pdf",
+      "bytes": 2205057
+    },
+    {
+      "path": "duplex/product-data/3SeaterSofa_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/3SeaterSofa_ProductInfo.pdf",
+      "bytes": 41608
+    },
+    {
+      "path": "duplex/product-data/4835x2420Windows_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/4835x2420Windows_ProductData.pdf",
+      "bytes": 2205057
+    },
+    {
+      "path": "duplex/product-data/750x2200Windows_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/750x2200Windows_ProductInfo.pdf",
+      "bytes": 1717843
+    },
+    {
+      "path": "duplex/product-data/800mmCupboards_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/800mmCupboards_ProductData.pdf",
+      "bytes": 3267461
+    },
+    {
+      "path": "duplex/product-data/BathTub_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/BathTub_ProductData.pdf",
+      "bytes": 164296
+    },
+    {
+      "path": "duplex/product-data/Beds-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Beds-ProductData.pdf",
+      "bytes": 693909
+    },
+    {
+      "path": "duplex/product-data/CentrifugalFan-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/CentrifugalFan-ProductData.pdf",
+      "bytes": 810655
+    },
+    {
+      "path": "duplex/product-data/Countertop-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Countertop-ProductData.pdf",
+      "bytes": 142723
+    },
+    {
+      "path": "duplex/product-data/DuplexReceptacles_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/DuplexReceptacles_ProductData.pdf",
+      "bytes": 352563
+    },
+    {
+      "path": "duplex/product-data/Fridge-O&M.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Fridge-O&M.pdf",
+      "bytes": 1758766
+    },
+    {
+      "path": "duplex/product-data/Fridge-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Fridge-ProductData.pdf",
+      "bytes": 364407
+    },
+    {
+      "path": "duplex/product-data/Fridge-Warranty.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Fridge-Warranty.pdf",
+      "bytes": 122481
+    },
+    {
+      "path": "duplex/product-data/HotWaterHeater_Installation.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/HotWaterHeater_Installation.pdf",
+      "bytes": 8702881
+    },
+    {
+      "path": "duplex/product-data/HotWaterHeater_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/HotWaterHeater_ProductInfo.pdf",
+      "bytes": 327941
+    },
+    {
+      "path": "duplex/product-data/KOHLER_ Warranty Information.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/KOHLER_ Warranty Information.pdf",
+      "bytes": 142535
+    },
+    {
+      "path": "duplex/product-data/KitchenBaseUpperCabinet-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/KitchenBaseUpperCabinet-ProductData.pdf",
+      "bytes": 3075194
+    },
+    {
+      "path": "duplex/product-data/LargeCoffeeTeble_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/LargeCoffeeTeble_ProductInfo.pdf",
+      "bytes": 41811
+    },
+    {
+      "path": "duplex/product-data/Lavatory535x485_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Lavatory535x485_ProductInfo.pdf",
+      "bytes": 59020
+    },
+    {
+      "path": "duplex/product-data/Microwave-O&M.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Microwave-O&M.pdf",
+      "bytes": 2507740
+    },
+    {
+      "path": "duplex/product-data/Microwave-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Microwave-ProductData.pdf",
+      "bytes": 57452
+    },
+    {
+      "path": "duplex/product-data/OvalLavatory455x455_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/OvalLavatory455x455_ProductData.pdf",
+      "bytes": 42919
+    },
+    {
+      "path": "duplex/product-data/PanelBoard.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/PanelBoard.pdf",
+      "bytes": 930208
+    },
+    {
+      "path": "duplex/product-data/PendantLight_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/PendantLight_ProductInfo.pdf",
+      "bytes": 241884
+    },
+    {
+      "path": "duplex/product-data/PhoneLineTerminalBlocks.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/PhoneLineTerminalBlocks.pdf",
+      "bytes": 209158
+    },
+    {
+      "path": "duplex/product-data/PhoneOutlet-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/PhoneOutlet-ProductData.pdf",
+      "bytes": 298301
+    },
+    {
+      "path": "duplex/product-data/Pump.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Pump.pdf",
+      "bytes": 206790
+    },
+    {
+      "path": "duplex/product-data/Radiator_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Radiator_ProductInfo.pdf",
+      "bytes": 475273
+    },
+    {
+      "path": "duplex/product-data/Range-O&M.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Range-O&M.pdf",
+      "bytes": 3234068
+    },
+    {
+      "path": "duplex/product-data/Range-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Range-ProductData.pdf",
+      "bytes": 58036
+    },
+    {
+      "path": "duplex/product-data/SconceLight_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/SconceLight_ProductInfo.pdf",
+      "bytes": 427972
+    },
+    {
+      "path": "duplex/product-data/Shower_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Shower_ProductInfo.pdf",
+      "bytes": 35182
+    },
+    {
+      "path": "duplex/product-data/SinglePoleSwitch_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/SinglePoleSwitch_ProductData.pdf",
+      "bytes": 31571
+    },
+    {
+      "path": "duplex/product-data/SiphonicRoofDrain-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/SiphonicRoofDrain-ProductData.pdf",
+      "bytes": 685046
+    },
+    {
+      "path": "duplex/product-data/Skylight_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Skylight_ProductInfo.pdf",
+      "bytes": 3098771
+    },
+    {
+      "path": "duplex/product-data/SmallCoffeeTable-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/SmallCoffeeTable-ProductData.pdf",
+      "bytes": 229316
+    },
+    {
+      "path": "duplex/product-data/SmokeDetector-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/SmokeDetector-ProductData.pdf",
+      "bytes": 246360
+    },
+    {
+      "path": "duplex/product-data/Thermostast-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Thermostast-ProductData.pdf",
+      "bytes": 29628
+    },
+    {
+      "path": "duplex/product-data/Toilet_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Toilet_ProductInfo.pdf",
+      "bytes": 88954
+    },
+    {
+      "path": "duplex/product-data/UTC FIRE  SECURITY GE 6001020 FTP 1000 FireAlramPanel.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/UTC FIRE  SECURITY GE 6001020 FTP 1000 FireAlramPanel.pdf",
+      "bytes": 214437
+    },
+    {
+      "path": "duplex/product-data/VanityCabinet-ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/VanityCabinet-ProductData.pdf",
+      "bytes": 62920
+    },
+    {
+      "path": "duplex/product-data/Washbasin650x485_ProductInfo.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Washbasin650x485_ProductInfo.pdf",
+      "bytes": 87925
+    },
+    {
+      "path": "duplex/product-data/Window819x759_ProductData.pdf",
+      "source": "IFC 2.3.0.1 (IFC 2x3)/Duplex Apartment/document/Window819x759_ProductData.pdf",
+      "bytes": 416440
+    }
+  ]
+}

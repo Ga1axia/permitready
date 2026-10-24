@@ -1,0 +1,255 @@
+Mark,Level,From / to,Type,Type mark,Width (mm),Height (mm),Leaf (mm),Operation,External,Fire rating
+1A03,First Floor,1A03 TRICARE OFFICE / 1AC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1A04,First Floor,1A04 TRICARE OFFICE / 1AC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1A05,First Floor,1A05 TRICARE OFFICE / 1AC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1A06,First Floor,1A06 TRICARE OFFICE / 1AC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1A07,First Floor,1A07 TRICARE OFFICE / 1AC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1A08,First Floor,1A08 PHARM. OFFICE / 1A16 PHARM. DISP.,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1A09,First Floor,1A09 W. TOILET / 1AC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1A09tp1,First Floor,,0865 x 1500mm,56,865,1500,25,single swing left,No,—
+1A09tp2,First Floor,,0865 x 1500mm,56,865,1500,25,single swing left,No,—
+1A10,First Floor,1A10 LOUNGE / 1A16 PHARM. DISP. / 1AC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1A11,First Floor,1A11 JAN. / 1A16 PHARM. DISP.,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1A12,First Floor,1A12 M. TOILET / 1AC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1A12tp1,First Floor,,0865 x 1500mm,56,865,1500,25,single swing right,No,—
+1A13,First Floor,1A13 STAFF TOILET / 1AC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1A15,First Floor,1A15 COUNSELING / 1AC2 CORRIDOR / 1AS1 STAIR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1A15a,First Floor,1A15 COUNSELING / 1A16 PHARM. DISP.,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1AC2,First Floor,1AC2 CORRIDOR / 1AC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1AC3,First Floor,1AC3 CORRIDOR,0915 x 2134mm Exterior,59,915,2134,51,single swing right,Yes,—
+1AC4,First Floor,1AC3 CORRIDOR / 1AC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1AC5,First Floor,1AC1 CENTRAL WAITING / 1AC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1AC5a,First Floor,1AC5 CORRIDOR,0915 x 2134mm Exterior,59,915,2134,51,single swing right,Yes,—
+1B01,First Floor,1B01 RECEPTION / 1BC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1B02,First Floor,1B02 SPECIMEN TOILET / 1BC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B03,First Floor,1B03 BLOOD DRAW / 1BC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B04,First Floor,1B04 LAB / 1BC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B04a,First Floor,1B04 LAB / 1BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1B05,First Floor,1B05 PAT. / STAFF TOILET / 1BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B06,First Floor,1B04 LAB / 1B06 LAB OFFICE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B07,First Floor,1B07 DRESS / 1BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B08,First Floor,1B04 LAB / 1B08 CENT. STO.,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B09,First Floor,1B09 DRESS / 1BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1B10,First Floor,1B04 LAB / 1B10 STAFF LOUNGE,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1B11,First Floor,1B04 LAB / 1B11 STAFF TOILET,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B12,First Floor,1B12 CLEAN SUP. & EQUIP. / 1BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B13,First Floor,1B13 RECEPTION / 1BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1B14,First Floor,1B14 SOIL. UTL. / 1BC2 CORRIDOR / 1BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1B15,First Floor,1B15 FILM VIEW / 1BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B16,First Floor,1B16 JAN. CL. / 1BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1B17,First Floor,1B17 TECH. WORK ROOM / 1BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1B19,First Floor,1B19 RADIOGRAPHIC ROOM / 1BC2 CORRIDOR,1.220 x 2134mm,60,1220,2134,51,single swing right,No,—
+1B21,First Floor,1B21 COMM. ROOM / 1BC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1B23,First Floor,1B23 ELEC. ROOM / 1BC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1BC1,First Floor,1AC1 CENTRAL WAITING / 1BC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1BC2,First Floor,1AC1 CENTRAL WAITING / 1BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1BC3,First Floor,1BC3 CORRIDOR / 1BC4 CORRIDOR,1000 x 2134mm,33,1000,2134,51,single swing right,No,—
+1BC4,First Floor,1AC1 CENTRAL WAITING / 1BC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1BS2,First Floor,1BC4 CORRIDOR / 1BS2 STAIR,0915 x 2134mm Rated,61,915,2134,51,single swing left,No,—
+1C02,First Floor,1C02 RECEPTION / 1CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C03,First Floor,1C03 JAN. CL. / 1CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C04,First Floor,1C04 FITTING / DISP. / 1CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1C05,First Floor,1C05 VISUAL FIELD / 1CC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1C06,First Floor,1C06 SOIL. UTL. / TRASH / 1CC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C07,First Floor,1C07 OPT. EXAM / OFF. / 1CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1C08,First Floor,1C08 SCREEN EYE TEST / 1CC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C09,First Floor,1C09 FUNDUS CAMERA ROOM / 1CC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C10,First Floor,1C10 OPT. EXAM / OFF. / 1CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C11,First Floor,1C11 ELEC. CL. / 1CC3 CORRIDOR,1730 x 2134mm,40,1730,2134,51,double door single swing,No,—
+1C12,First Floor,1C12 TOILET / 1CC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C13,First Floor,1C13 COMM. ROOM / 1CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1C14,First Floor,1C14 HIST. / INTV. / 1C18 PHYSICAL EXAM,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C15,First Floor,1C15 PES ADMIN. OFFICE / 1C18 PHYSICAL EXAM,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1C16,First Floor,1C16 ECG TEST / 1C18 PHYSICAL EXAM,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C17,First Floor,1C17 CHIEF AERO MED. / 1C18 PHYSICAL EXAM,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1C18,First Floor,1C18 PHYSICAL EXAM / 1CC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1C18A,First Floor,1C18 PHYSICAL EXAM / 1D16 PROVIDER CUBICLES,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1C19,First Floor,1C18 PHYSICAL EXAM / 1C19 AUDIO,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1CA1,First Floor,,M_Curtain Wall Dbl Glass,36,1800,2327,,double door single swing,Yes,—
+1CA1,First Floor,,M_Curtain Wall Dbl Glass,36,1800,2327,,double door single swing,Yes,—
+1CC1,First Floor,1AC3 CORRIDOR / 1CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1CC3,First Floor,1CC3 CORRIDOR,0915 x 2134mm Exterior,59,915,2134,51,single swing right,Yes,—
+1CS3,First Floor,1CC3 CORRIDOR / 1CS3 STAIR,0915 x 2134mm Rated,61,915,2134,51,single swing left,No,—
+1D01,First Floor,1D01 SL. LIN. / TRASH / 1DC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D02,First Floor,1D02 INTERACTION STATION / 1DC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D05,First Floor,1D05 TRMT RM. DIRTY PROC. / 1DC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D06,First Floor,1D06 SCOPE WASH / DECON. / 1DC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D06A,First Floor,1D05 TRMT RM. DIRTY PROC. / 1D06 SCOPE WASH / DECON.,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D07,First Floor,1D07 INTERACTION STATION / 1DC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D08,First Floor,1D08 INTERACTION STATION / 1DC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D09,First Floor,1D09 INTERACTION STATION / 1DC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D10,First Floor,1D10 INTERACTION STATION / 1DC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D11,First Floor,1D11 INTERACTION STATION / 1DC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D12,First Floor,1D12 SPECIMEN COLL. LAB / 1DC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D13,First Floor,1D13 INTERACTION STATION / 1DC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D14,First Floor,1D12 SPECIMEN COLL. LAB / 1D14 SPECIMEN TOILET,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D16,First Floor,1D16 PROVIDER CUBICLES / 1DC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D17,First Floor,1D17 JAN. CL. / 1DC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D18,First Floor,1D18 TOILET / 1DC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D19,First Floor,1D19 MDIS VIEW / 1DC1 WAITING / ACTIVITY AREA,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D20,First Floor,1D20 APPMTS / 1DC1 WAITING / ACTIVITY AREA,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D21,First Floor,1D21 GROUP IS / 1DC1 WAITING / ACTIVITY AREA,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D22,First Floor,1D22 TEAM INTERACTION / 1DC1 WAITING / ACTIVITY AREA,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D22A,First Floor,1D22 TEAM INTERACTION / 1DC1 WAITING / ACTIVITY AREA,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D23,First Floor,1D23 GROUP IS / 1DC1 WAITING / ACTIVITY AREA,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D24,First Floor,1D24 RECORDS / 1DC1 WAITING / ACTIVITY AREA,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D25,First Floor,1D25 PROVIDER CUBICLES / 1DC6 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D26,First Floor,1D26 TOILET / 1DC6 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D27,First Floor,1D27 ADMIN WORK STATN. / 1DC1 WAITING / ACTIVITY AREA,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D28,First Floor,1D28 INTERACTION STATION / 1DC7 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D30,First Floor,1D30 WTS & MEAS. ROOM / 1DC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D31,First Floor,1D31 PEDIATRIC WTS & MSRS / 1DC7 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D32,First Floor,1D32 INTERACTION STATION / 1DC7 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D33,First Floor,1D33 PEDIATRIC WAITING / 1DC1 WAITING / ACTIVITY AREA,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D33A,First Floor,1D33 PEDIATRIC WAITING / 1DC7 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D34,First Floor,1D34 INTERACTION STATION / 1DC7 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1D35,First Floor,1D35 INTERACTION STATION / 1DC7 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D36,First Floor,1D36 INTERACTION STATION / 1DC7 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D38,First Floor,1D38 TRMT ROOM / 1DC7 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D39,First Floor,1D39 JAN. CL. / 1DC8 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D40,First Floor,1D40 IMMUNIZ'N ROOM / 1DC8 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1D40A,First Floor,1AC1 CENTRAL WAITING / 1D40 IMMUNIZ'N ROOM,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1DC2,First Floor,1DC1 WAITING / ACTIVITY AREA / 1DC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1DC4,First Floor,1DC1 WAITING / ACTIVITY AREA / 1DC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1DC5,First Floor,1DC5 CORRIDOR / 1DC6 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1DC5a,First Floor,,M_Curtain Wall Sgl Glass,37,901,2325,,single swing left,No,—
+1DC5a,First Floor,,M_Curtain Wall Sgl Glass,37,901,2325,,single swing left,No,—
+1DC5b,First Floor,,M_Curtain Wall Sgl Glass,37,900,2325,,single swing right,No,—
+1DC5b,First Floor,,M_Curtain Wall Sgl Glass,37,900,2325,,single swing right,No,—
+1DC8,First Floor,1DC1 WAITING / ACTIVITY AREA / 1DC8 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E01,First Floor,1E01 HK EQUIP. STORAGE / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E02,First Floor,1BC4 CORRIDOR / 1E02 ELEV. EQUIP.,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E03,First Floor,1BC4 CORRIDOR / 1E03 JAN. CL.,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E04,First Floor,1E04 HK BREAK ROOM / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E05,First Floor,1E05 CHIEF LOG OFFICE / 1E06 TECH. WORK STATION,0915 x 2134mm Rated,61,915,2134,51,single swing right,No,—
+1E06,First Floor,1E06 TECH. WORK STATION / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E07,First Floor,1E07 CONF. LIBRARY / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E07A,First Floor,1E06 TECH. WORK STATION / 1E07 CONF. LIBRARY,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E08,First Floor,1E06 TECH. WORK STATION / 1E08 SUPER,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E09,First Floor,1E09 W. TOILET / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E10,First Floor,1E10 M. TOILET / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E11,First Floor,1E11 STAFF LOUNGE / 1EC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E12,First Floor,1E12 ISOLATION TOILET / 1E33 ISOLATION INTERACTION STATION,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E14,First Floor,1E14 DISASTER STOR. / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E15,First Floor,1E15 CENTRAL MECH. RM.,1830 x 2134mm Exterior,58,1830,2134,51,double door single swing,Yes,—
+1E15A,First Floor,1E15-A GAS STORAGE,1830 x 2134mm Exterior,58,1830,2134,51,double door single swing,Yes,—
+1E16,First Floor,1E16 BMET WORK STATION / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E17,First Floor,1E17 HAZ. STOR.,0915 x 2134mm Exterior,59,915,2134,51,single swing left,Yes,—
+1E18,First Floor,1E16 BMET WORK STATION / 1E18 BIOMED MAINT. ADMIN.,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E19,First Floor,1E19 ELEC. ROOM / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E20,First Floor,1E20 TRASH,0915 x 2134mm Exterior,59,915,2134,51,single swing left,Yes,—
+1E21,First Floor,1E21 FLAMABLE STORAGE,0915 x 2134mm Exterior,59,915,2134,51,single swing right,Yes,—
+1E22,First Floor,1E22 SEC. STORAGE / 1E24 RECEIVING / STORAGE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E23,First Floor,1E23 BEE EQUIP. STORAGE / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E24,First Floor,1E24 RECEIVING / STORAGE / 1F01 MECH. YARD,1830 x 2134mm Exterior,58,1830,2134,51,double door single swing,Yes,—
+1E25,First Floor,1E24 RECEIVING / STORAGE / 1E25 ADP EQUIP SPACE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E26,First Floor,1E26 WORK ROOM / 1EC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E27,First Floor,1E26 WORK ROOM / 1E27 BENCHSTOCK STORAGE,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E28,First Floor,1E26 WORK ROOM / 1E28 FAC. MGR. OFFICE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1E29,First Floor,1E29 HK. SUPV. OFFICE / 1EC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E30,First Floor,1E30 SOIL. LIN. / 1EC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1E33,First Floor,1DC6 CORRIDOR / 1E33 ISOLATION INTERACTION STATION,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1EC1,First Floor,1BC4 CORRIDOR / 1EC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1EC1A,First Floor,1EC1 CORRIDOR,0915 x 2134mm Exterior,59,915,2134,51,single swing right,Yes,—
+1EC3,First Floor,1DC6 CORRIDOR / 1EC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+1EC4,First Floor,1EC4 CORRIDOR,1.220 x 2134mm Exterior,34,1220,2134,51,single swing right,Yes,—
+1F01a,First Floor,,M_Curtain Wall Dbl Chain Link,35,2702,1964,,,Yes,—
+1F01b,First Floor,,M_Curtain Wall Dbl Chain Link,35,2702,1964,,,Yes,—
+2A01,Second Floor,2A01 LIBRARY / CONF. ROOM / 2AC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2A02,Second Floor,2A02 SUPER OFFICE / 2A03 SEC. OFFICE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2A03,Second Floor,2A03 SEC. OFFICE / 2AC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2A04,Second Floor,2A03 SEC. OFFICE / 2A04 DENTAL SURGEON OFFICE,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2A11,Second Floor,2A11 DENTAL WAITING / 2AC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2A11A,Second Floor,2A11 DENTAL WAITING / 2AC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2A12,Second Floor,2A12 X-RAY / 2A12-A X-RAY ALCOVE,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2A13,Second Floor,2A12 X-RAY / 2A13 DEVELOPING,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2A14,Second Floor,2A14 ADMIN / 2AC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2AC2,Second Floor,2AC2 CORRIDOR / 2AC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2AC2A,Second Floor,2AC1 CORRIDOR / 2AC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2AC5,Second Floor,2A11 DENTAL WAITING / 2AC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B01,Second Floor,2B01 OFFICE / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2B10,Second Floor,2B10 RECEPTION / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2B12,Second Floor,2B12 COMM. ROOM / 2BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B13,Second Floor,2B13 ELECTRICAL / 2BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B14,Second Floor,2B14 RECS / FORMS STORAGE / 2BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B15,Second Floor,2B15 WAIT / ERGOM / 2BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2B16,Second Floor,2B16 PH TECH / 2BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2B17,Second Floor,2B17 CL. UTL. / KITCHENET / 2BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2B18,Second Floor,2B18 PH TECH / 2BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B19,Second Floor,2B19 OFFICE / 2BC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B2,Second Floor,2B2 JAN. CL. / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B20,Second Floor,2B20 JAN. CL. / 2BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B21,Second Floor,2B21 PH SUPER / 2BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B22,Second Floor,2B22 M. TOILET / 2BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B23,Second Floor,2B23 BEE TECH / 2BC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B24,Second Floor,2B24 BEE TECH / 2BC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B25,Second Floor,2B25 SOIL. UTL. / TRASH / 2BC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B3,Second Floor,2B3 CONF. / GROUP THERAPY / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2B4,Second Floor,2B4 PSYCH TEST / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2B5,Second Floor,2B5 W. TOILET / 2BC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2B6,Second Floor,2B6 STAFF TOILET / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B7,Second Floor,2B7 TECH OFFICE / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2B8,Second Floor,2B8 OFFICE / EXAM / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2B9,Second Floor,2B9 TECH OFFICE / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2BC1,Second Floor,2BC1 CORRIDOR / 2BC6 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2BC2,Second Floor,2BC1 CORRIDOR / 2BC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2BC3,Second Floor,2BC2 CORRIDOR / 2BC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2BC4,Second Floor,2BC4 CORRIDOR / 2BC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2BC6,Second Floor,2BC5 CORRIDOR / 2BC6 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2BS2,Second Floor,2BC2 CORRIDOR / 2BS2 STAIR,0915 x 2134mm Rated,61,915,2134,51,single swing right,No,—
+2C01,Second Floor,2C01 DTR SUPPORT / 2CC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C03,Second Floor,2C03 CONSULT. / 2CC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C04,Second Floor,2C04 GEN. DENT. DTR #7 / 2CC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C05,Second Floor,2C05 JAN. CL. / 2CC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C06,Second Floor,2C06 GEN. DENT. DTR #8 / 2CC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C07,Second Floor,2C07 M. STAFF TOILET / 2CC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C07tp1,Second Floor,,0865 x 1500mm,56,865,1500,25,single swing left,No,—
+2C08,Second Floor,2C08 W. STAFF TOILET / 2CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C08tp1,Second Floor,,0865 x 1500mm,56,865,1500,25,single swing left,No,—
+2C09,Second Floor,2C09 GEN. DENT. DTR #9 / 2CC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C10,Second Floor,2C10 DIPC DECON / 2CC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C11,Second Floor,2C11 HK / 2CC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C12,Second Floor,2C12 DIPC CLEAN / 2CC3 CORRIDOR / 2CC4 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C13,Second Floor,2C13 TRASH / 2CC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C15,Second Floor,2C15 COMM. ROOM / 2CC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C16,Second Floor,2C16 CERAMIC LAB / 2C17 PROSTH. LAB,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C17,Second Floor,2C17 PROSTH. LAB / 2CC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C18,Second Floor,2C18 ELECTRICAL / 2D05 MAIN MECHANICAL ROOM,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C19,Second Floor,2C19 CENTRAL ISSUE / 2CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C22,Second Floor,2C22 LOUNGE / 2CC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C23,Second Floor,2AC2 CORRIDOR / 2C23 M. TOILET,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2C23tp1,Second Floor,,0865 x 1500mm,56,865,1500,25,single swing right,No,—
+2C24,Second Floor,2AC2 CORRIDOR / 2C24 W. TOILET,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2C24tp1,Second Floor,,0865 x 1500mm,56,865,1500,25,single swing left,No,—
+2C24tp2,Second Floor,,0865 x 1500mm,56,865,1500,25,single swing left,No,—
+2CC1,Second Floor,2CC1 CORRIDOR / 2DC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2CC3,Second Floor,2CC2 CORRIDOR / 2CC3 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2CC3A,Second Floor,2CC4 CORRIDOR / 2CC5 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2CS3,Second Floor,2CC4 CORRIDOR / 2CS3 STAIR,0915 x 2134mm Rated,61,915,2134,51,single swing left,No,—
+2D01,Second Floor,2D01 PARTS STORAGE / 2D04 SYS. ANALYST,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D02,Second Floor,2D02 DATA / ARCHIVE STORAGE / 2D04 SYS. ANALYST,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D03,Second Floor,2D03 DIR. INFO MGR / 2D04 SYS. ANALYST,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D04,Second Floor,2D04 SYS. ANALYST / 2DC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D04A,Second Floor,2D04 SYS. ANALYST / 2D04A COMPUTER ROOM,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D05,Second Floor,2D05 MAIN MECHANICAL ROOM / 2DC2 CORRIDOR,1830 x 2134mm,42,1830,2134,51,double door single swing,No,—
+2D05A,Second Floor,2D05 MAIN MECHANICAL ROOM / 2R02 ROOF,1830 x 2134mm Exterior,58,1830,2134,51,double door single swing,Yes,—
+2D06,Second Floor,2D06 COPY / FILE / 2D18 TECH. OFFICE,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D06A,Second Floor,2D06 COPY / FILE / 2DC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D07,Second Floor,2D07 SUPER / 2D18 TECH. OFFICE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D08,Second Floor,2D08 QA / HRD DIRECTOR / 2D18 TECH. OFFICE,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D09,Second Floor,2D09 ADMIN OFFICE / 2D10 SEC. WAIT,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D10,Second Floor,2D10 SEC. WAIT / 2D18 TECH. OFFICE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D11,Second Floor,2D10 SEC. WAIT / 2D11 CMDR OFFICE,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D13,Second Floor,2D12 VEST. / 2D13 TOILET,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D14,Second Floor,2D14 OPS SQUAD CMDR / 2D18 TECH. OFFICE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D15,Second Floor,2D15 1ST SGT / 2D18 TECH. OFFICE,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D16,Second Floor,2D16 RMO DIR. / 2D18 TECH. OFFICE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D17,Second Floor,2D17 CREDENTIALS MGR / 2D18 TECH. OFFICE,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D19,Second Floor,2D18 TECH. OFFICE / 2D19 READINESS NCOIC OFFICE,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D20,Second Floor,2BC2 CORRIDOR / 2D20 CONF. ROOM,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2D20A,Second Floor,2D18 TECH. OFFICE / 2D20 CONF. ROOM,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D21,Second Floor,2D21 LIBRARY / CLASSROOM / 2DC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+2D21A,Second Floor,2D21 LIBRARY / CLASSROOM / 2DC1 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing right,No,—
+2DC2,Second Floor,2D18 TECH. OFFICE / 2DC2 CORRIDOR,0915 x 2134mm,20,915,2134,51,single swing left,No,—
+1F01a,TOF Footing,,M_Curtain Wall Dbl Chain Link,35,2702,1964,,,Yes,—
+1F01b,TOF Footing,,M_Curtain Wall Dbl Chain Link,35,2702,1964,,,Yes,—

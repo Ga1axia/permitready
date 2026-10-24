@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Layout: a plan-review workstation — model tree left, 3D centre, inspector
+   right, one header with the model switcher. Light drafting-table neutrals
+   with a slight blue bias; one blue accent for selection; red/amber/green
+   are reserved for review findings (Phase 2). */
+@theme {
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --color-paper: #f6f7f9;
+  --color-panel: #ffffff;
+  --color-rule: #e1e5eb;
+  --color-rule-strong: #c9d0da;
+  --color-ink: #17202c;
+  --color-ink-soft: #4b5667;
+  --color-ink-faint: #7d8796;
+  --color-accent: #2357d6;
+  --color-accent-soft: #e8eefc;
+  --color-fail: #d6342b;
+  --color-review: #c27a0a;
+  --color-pass: #23855a;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

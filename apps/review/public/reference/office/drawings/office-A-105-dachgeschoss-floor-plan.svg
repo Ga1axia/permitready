@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="841mm" height="594mm" viewBox="0 0 841 594">
+<title>Office Building: Dachgeschoss floor plan (A-105)</title>
+<defs xmlns="http://www.w3.org/2000/svg">
+        <marker id="arrowend" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" />
+        </marker>
+        <marker id="arrowstart" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="10 0, 0 3.5, 10 7" />
+        </marker>
+    </defs>
+    <style xmlns="http://www.w3.org/2000/svg" type="text/css">
+    
+        .cut path {
+            stroke: #222222;
+            fill: #444444;
+            fill-rule: evenodd;
+        }
+        .projection path {
+            stroke: #222222;
+            fill: none;
+            stroke-opacity: 0.6;
+        }
+        .IfcDoor path,
+        .Symbol path {
+            fill: none;
+        }
+        .Symbol path {
+            stroke-width: 0.5px;
+        }
+        .IfcSpace path {
+            fill-opacity: .2;
+        }
+        .Dimension path {
+            marker-end: url(#arrowend);
+            marker-start: url(#arrowstart);
+        }
+        text {
+            font-size: 2;
+        }
+        path {
+            stroke-width: 0.3;
+        }
+    
+    </style>
+    <style type="text/css">
+  .plan .cut path { fill: #2b2f36; stroke: #2b2f36; stroke-width: 0.15; }
+  .plan .projection path { fill: none; stroke: #6b7280; stroke-width: 0.12; stroke-opacity: 1; }
+  .plan .IfcSpace path { fill: #e8edf3; fill-opacity: 1; stroke: #b9c2cd; stroke-width: 0.1; }
+  .plan .IfcDoor path, .plan .Symbol path { fill: none; stroke: #2b2f36; stroke-width: 0.15; }
+  .plan .cut.IfcWindow path { fill: #ffffff; stroke: #2b2f36; stroke-width: 0.12; }
+  .plan text { font-family: Helvetica, Arial, sans-serif; font-size: 2.0px; fill: #1f2937; }
+  .tag text { font-family: Helvetica, Arial, sans-serif; }
+</style>
+<rect x="0" y="0" width="841" height="594" fill="#ffffff"/>
+<g class="plan" transform="translate(32.0 32.0)"><g xmlns="http://www.w3.org/2000/svg" id="storey-d9f87de4-7297-4b07-8e05-6dce22390601" class="IfcBuildingStorey" data-name="Dachgeschoss" data-guid="3P_7taSfTB1uu5RSuYEGO1" data-plane="[[1.000000,0.000000,0.000000,0.000000],[0.000000,1.000000,0.000000,0.000000],[0.000000,0.000000,1.000000,10.200000],[0.000000,0.000000,0.000000,1.000000]]" data-matrix3="[[10.000000,0.000000,93.500000],[0.000000,10.000000,342.500000],[0.000000,0.000000,1.000000]]">
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-2b3a1580-198d-4a16-ae7e-8d8e009d9af0-body" class="IfcSlab" data-name="Dach-001" data-guid="0hEXM06OrA5gv_ZOu0dPhm">
+            <path d="M83.50000000005241,214.64429977147918 L273.50000000005241,214.64429977147918 L273.49999999615721,227.64361452445505 L83.499999996052409,227.64361452445499 L83.500000000052438,214.64429977147915" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-d4c44802-8f43-4450-853d-847b1c0fbaed-body" class="IfcSlab" data-name="Dach-001" data-guid="3Kn4W2ZqD4K8KzX7iS3xhj">
+            <path d="M273.50000000005241,310.35570023233936 L83.50000000005241,310.35570023233936 L83.500000004052396,297.3563854792942 L273.50000000394755,297.3563854792942 L273.50000000005241,310.35570023233942" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-094e1fef-6ed0-44e8-8556-eb72b2c23d22-body" class="IfcSlab" data-name="Dach-001" data-guid="09JX$lRj14w8LMwtAomZqY">
+            <path d="M263.49999999615238,182.31826293542645 L263.50000000005241,172.49999999821421 L343.50000000005241,172.50000000178579 L343.49999999615727,182.31826293542645 L263.49999999615238,182.3182629354263" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-154019f1-2b7c-44d1-a930-ecb66a920847-body" class="IfcSlab" data-name="Dach-001" data-guid="0LG1dnAtn4qQamxBPgaWX7">
+            <path d="M263.50000000005241,332.5000000053858 L263.50000000395244,322.68173706821574 L343.50000000394755,322.68173706821574 L343.50000000005241,332.5000000053858 L263.50000000005241,332.50000000178579" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-76841a13-3a7c-44df-b1a0-c583925482b6-body" class="IfcSlab" data-name="Dach-001" data-guid="1sX1eJEdn4tx6WnOEIL8As">
+            <path d="M333.50000000005241,214.64429977147918 L523.50000000005241,214.64429977147918 L523.49999999615716,227.64361452445505 L333.4999999960524,227.64361452445499 L333.50000000005241,214.64429977147915" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-0168585c-2b37-4128-859f-e8f5b5e821f6-body" class="IfcSlab" data-name="Dach-001" data-guid="01Q5XSApT1A8MVwFMrw27s">
+            <path d="M523.50000000005241,310.35570023233936 L333.50000000005241,310.35570023233936 L333.50000000405237,297.3563854792942 L523.50000000394766,297.3563854792942 L523.50000000005252,310.35570023233942" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-f7ef94e7-25f0-4b66-bf1e-fc420fff0c4f-body" class="IfcSpace" data-name="403" data-guid="3txvJd9V1BPhyU$48F$mnF">
+            <path d="M273.50000000005241,227.64361438295896 L273.50000000005241,297.35638548584512 L96.50000000005241,297.35638548584512 L96.500000000052452,227.64361438295896 L273.50000000005241,227.64361438295884" />
+            <text text-anchor="middle" x="185.00000000005241" y="262.49999993440201"><tspan x="185.00000000005241" dy="-0.65000000000000002em">Dachboden-2</tspan><tspan x="185.00000000005241" dy="1em">403</tspan><tspan x="185.00000000005241" dy="1em">123.39m²</tspan></text>        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-2d95ffdb-3b59-47c8-9647-d731ca54e9ff-body" class="IfcSpace" data-name="402" data-guid="0jbV$RErb7o9P7rp7ALEd$">
+            <path d="M510.50000000005241,297.35638548584512 L333.50000000005241,297.35638548584512 L333.50000000005247,227.64361451776168 L510.50000000005241,227.64361451776165 L510.50000000005241,297.35638548584512" />
+            <text text-anchor="middle" x="422.00000000005241" y="262.50000000180341"><tspan x="422.00000000005241" dy="-0.65000000000000002em">Dachboden-1</tspan><tspan x="422.00000000005241" dy="1em">402</tspan><tspan x="422.00000000005241" dy="1em">123.39m²</tspan></text>        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-bed50132-bece-4333-bc1c-df3419b28e33-body" class="IfcSpace" data-name="401" data-guid="2_rG4oliv3CxmStpGPieup">
+            <path d="M330.50000000005241,185.50000000178579 L330.50000000005241,319.50000000178579 L276.50000000005241,319.50000000178579 L276.50000000005241,185.50000000178579 L330.50000000005241,185.50000000178579" />
+            <text text-anchor="middle" x="303.50000000005241" y="252.50000000178579"><tspan x="303.50000000005241" dy="-0.65000000000000002em">Flur 3.OG Treppe</tspan><tspan x="303.50000000005241" dy="1em">401</tspan><tspan x="303.50000000005241" dy="1em">72.36m²</tspan></text>        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-fb532f45-be2d-42b8-b472-dee3c1a48b3d-body" class="IfcWallStandardCase" data-name="Wand-007" data-guid="3xKoz5lYr2kBHotkF1f8iz">
+            <path d="M510.50000000005241,227.64361451772578 L510.50000000005241,297.35638548566578 L513.50000000005241,297.35638548566578 L513.50000000005241,227.64361451772569 L510.50000000005241,227.64361451772564" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-987849b8-d6be-4d59-92b5-4360e616f980-body" class="IfcWallStandardCase" data-name="Wand-010" data-guid="2OU4curhvDMPArGs3c5lc0">
+            <path d="M333.50000000005241,319.50000000178579 L273.50000000005241,319.50000000178579 L273.50000000005241,322.50000000178579 L333.50000000005241,322.50000000178579 L333.50000000005241,319.50000000178579" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-42aa2dde-08f5-4073-974e-d6c45c79796a-body" class="IfcWallStandardCase" data-name="Wand-002" data-guid="12gYtU2FL0SvTEriHSUNbg">
+            <path d="M273.50000000005241,205.50000000178579 L276.50000000005241,205.50000000178579 L273.50000000005241,202.50000000178579 L273.50000000005241,205.50000000178582" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-ebf193fb-2397-46c3-9b06-c691d91f10b8-body" class="IfcWallStandardCase" data-name="Wand-005" data-guid="3hyPFx8vT6mvi6nf7P7n2u">
+            <path d="M333.50000000005241,319.50000000178579 L330.50000000005241,319.50000000178579 L330.50000000005241,205.50000000178579 L333.50000000005241,205.50000000178579 L333.50000000005241,319.50000000178579" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-05cf711f-65aa-431f-a05f-048f2111b96c-body" class="IfcWallStandardCase" data-name="Wand-003" data-guid="05pt4VPQf37w1V18yX4Rbi">
+            <path d="M276.50000000005241,205.50000000178579 L276.50000000005241,185.50000000178579 L273.50000000005241,182.50000000178582 L273.50000000005241,202.50000000178579 L276.50000000005241,205.50000000178579" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-0ca4d349-e400-4965-8a93-924b7e86aa5a-body" class="IfcWallStandardCase" data-name="Wand-005" data-guid="0CfDD9v019POgJaaj_XgfQ">
+            <path d="M330.50000000005241,185.50000000178579 L330.50000000005241,205.50000000178579 L333.50000000005241,202.50000000178579 L333.50000000005241,182.50000000178579 L330.50000000005241,185.50000000178579" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-26ef1b0c-01ef-4d03-ae12-f4006a1def3a-body" class="IfcWallStandardCase" data-name="Wand-001" data-guid="0cxniC0UzD0wuIz01g7Uyw">
+            <path d="M96.50000000005241,297.35638548584586 L96.50000000005241,227.6436145179058 L93.50000000005241,227.64361451790569 L93.50000000005241,297.35638548584586 L96.50000000005241,297.35638548584586" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-78127f70-04eb-467f-be20-8210ab7113bc-body" class="IfcWallStandardCase" data-name="Wand-006" data-guid="1u4dzm1Ej6VxuWWX2hSHEy">
+            <path d="M273.50000000005241,205.50000000178579 L276.50000000005241,205.50000000178579 L276.50000000005241,319.50000000178585 L273.50000000005241,319.50000000178579 L273.50000000005241,205.50000000178579" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-25a802b7-5380-4010-b702-c9f39359dedf-body" class="IfcWallStandardCase" data-name="Wand-004" data-guid="0bg0AtKu104BS2oVEJMTxV">
+            <path d="M276.50000000005241,185.50000000178579 L330.50000000005241,185.50000000178579 L333.50000000005241,182.50000000178579 L273.50000000005241,182.50000000178579 L276.50000000005241,185.50000000178579" />
+        </g>
+        <g id="storey-d9f87de4-7297-4b07-8e05-6dce22390601-product-ebc15e68-9ec8-47a9-b7d0-f702a7675ec3-body" class="IfcWallStandardCase" data-name="Wand-006" data-guid="3hmLvediX7gRVGzmAdPrx3">
+            <path d="M330.50000000005241,205.50000000178579 L333.50000000005241,205.50000000178579 L333.50000000005241,202.50000000178576 L330.50000000005241,205.50000000178579" />
+        </g>
+    </g>
+</g>
+<g class="sheet">
+<rect x="10.0" y="10.0" width="821.0" height="574.0" fill="none" stroke="#111827" stroke-width="0.7"/>
+<line x1="661.0" y1="10.0" x2="661.0" y2="584.0" stroke="#111827" stroke-width="0.5"/>
+<text x="667.00" y="20.20" style="font-size:2.2px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">CODE REVIEW 3D · SAMPLE MODEL</text>
+<text x="667.00" y="28.28" style="font-size:6.0px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="start">Office Building</text>
+<text x="667.00" y="34.08" style="font-size:3.0px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Commercial</text>
+<line x1="661.0" y1="38.3" x2="831.0" y2="38.3" stroke="#9ca3af" stroke-width="0.25"/>
+<text x="667.00" y="44.48" style="font-size:2.2px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">SHEET</text>
+<text x="667.00" y="51.16" style="font-size:4.6px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="start">Dachgeschoss floor plan</text>
+<line x1="661.0" y1="56.6" x2="831.0" y2="56.6" stroke="#9ca3af" stroke-width="0.25"/>
+<text x="667.00" y="62.80" style="font-size:2.2px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">SHEET NO.</text>
+<text x="746.00" y="62.80" style="font-size:2.2px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">SCALE</text>
+<text x="667.00" y="70.30" style="font-size:6.0px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="start">A-105</text>
+<text x="746.00" y="70.30" style="font-size:4.0px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="start">1:100 at A1</text>
+<text x="667.00" y="74.30" style="font-size:2.4px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">of 10 sheets</text>
+<rect x="667.00" y="78.30" width="20.00" height="2" fill="#111827" stroke="#111827" stroke-width="0.2"/>
+<rect x="687.00" y="78.30" width="30.00" height="2" fill="#ffffff" stroke="#111827" stroke-width="0.2"/>
+<rect x="717.00" y="78.30" width="50.00" height="2" fill="#111827" stroke="#111827" stroke-width="0.2"/>
+<text x="667.00" y="83.80" style="font-size:2.6px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="middle">0</text>
+<text x="687.00" y="83.80" style="font-size:2.6px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="middle">2</text>
+<text x="717.00" y="83.80" style="font-size:2.6px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="middle">5</text>
+<text x="767.00" y="83.80" style="font-size:2.6px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="middle">10</text>
+<text x="770.00" y="83.80" style="font-size:2.6px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="start">m</text>
+<g transform="translate(818.00 79.30) rotate(0.00)"><circle r="5.5" fill="none" stroke="#111827" stroke-width="0.3"/><path d="M0 -4.675 L2.09 3.0250000000000004 L0 1.375 Z" fill="#111827"/><path d="M0 -4.675 L-2.09 3.0250000000000004 L0 1.375 Z" fill="#ffffff" stroke="#111827" stroke-width="0.3"/></g><text x="818.00" y="71.80" style="font-size:3.2px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="middle">N</text>
+<line x1="661.0" y1="91.3" x2="831.0" y2="91.3" stroke="#9ca3af" stroke-width="0.25"/>
+<text x="667.00" y="97.50" style="font-size:2.2px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">LEVEL DATA</text>
+<text x="667.00" y="102.18" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Floor elevation</text>
+<text x="825.00" y="102.18" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end">9.00 m</text>
+<text x="667.00" y="106.38" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Floor to floor</text>
+<text x="825.00" y="106.38" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end"></text>
+<text x="667.00" y="110.58" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Plan cut height</text>
+<text x="825.00" y="110.58" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end">1.2 m above floor</text>
+<text x="667.00" y="114.78" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Rooms</text>
+<text x="825.00" y="114.78" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end">0</text>
+<text x="667.00" y="118.98" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Net room area</text>
+<text x="825.00" y="118.98" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end">0.0 m²</text>
+<text x="667.00" y="123.18" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Doors / windows</text>
+<text x="825.00" y="123.18" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end">0 / 0</text>
+<line x1="661.0" y1="127.8" x2="831.0" y2="127.8" stroke="#9ca3af" stroke-width="0.25"/>
+<text x="667.00" y="133.98" style="font-size:2.2px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">LEGEND</text>
+<text x="667.00" y="138.66" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Walls and columns cut at 1.2 m</text>
+<text x="825.00" y="138.66" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end">dark fill</text>
+<text x="667.00" y="142.86" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Room: name, number, area (m²)</text>
+<text x="825.00" y="142.86" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end">light fill</text>
+<text x="667.00" y="147.06" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Door tag, see door schedule</text>
+<text x="825.00" y="147.06" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end">mark in box</text>
+<text x="667.00" y="151.26" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Window tag, see window schedule</text>
+<text x="825.00" y="151.26" style="font-size:2.5px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#111827" text-anchor="end">mark in hexagon</text>
+<line x1="661.0" y1="155.9" x2="831.0" y2="155.9" stroke="#9ca3af" stroke-width="0.25"/>
+<text x="667.00" y="162.06" style="font-size:2.2px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">SOURCE</text>
+<text x="667.00" y="166.64" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Institute for Automation and Applied Informatics (IAI) / Karlsruhe Institute of Technology (KIT). License: Unrestricted use.</text>
+<text x="667.00" y="172.14" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Changes: drawings generated from the 3D model (kit-office.ifc); the model itself is unchanged.</text>
+<line x1="661.0" y1="176.1" x2="831.0" y2="176.1" stroke="#9ca3af" stroke-width="0.25"/>
+<text x="667.00" y="182.34" style="font-size:2.2px;font-weight:bold;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">NOTES</text>
+<text x="667.00" y="186.92" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">Generated automatically from the IFC model for review demos. Not a construction document. Check the scale bar before measuring</text>
+<text x="667.00" y="190.62" style="font-size:2.5px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#374151" text-anchor="start">from a print.</text>
+<line x1="661.0" y1="568.0" x2="831.0" y2="568.0" stroke="#9ca3af" stroke-width="0.25"/>
+<text x="667.00" y="575.00" style="font-size:2.3px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">Generated 2026-10-24 with IfcOpenShell</text>
+<text x="667.00" y="579.50" style="font-size:2.3px;font-weight:normal;font-family:Helvetica,Arial,sans-serif" fill="#6b7280" text-anchor="start">apps/review/scripts/make_drawings.py</text>
+</g>
+</svg>

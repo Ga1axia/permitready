@@ -1,0 +1,102 @@
+{
+ "version": 1,
+ "building": "clinic",
+ "title": "Medical-Dental Clinic",
+ "paper": "A0",
+ "scale": "1:100",
+ "set": {
+  "pdf": "clinic-drawing-set.pdf",
+  "links": "clinic-drawing-set.links.json",
+  "pages": 8
+ },
+ "sheets": [
+  {
+   "number": "G-001",
+   "title": "Cover sheet and sheet index",
+   "kind": "cover",
+   "storey": null,
+   "page": 1,
+   "pdf": "clinic-G-001-cover-sheet-and-sheet-index.pdf",
+   "svg": "clinic-G-001-cover-sheet-and-sheet-index.svg",
+   "links": null,
+   "hotspots": 0
+  },
+  {
+   "number": "A-101",
+   "title": "First Floor floor plan",
+   "kind": "plan",
+   "storey": "First Floor",
+   "page": 2,
+   "pdf": "clinic-A-101-first-floor-floor-plan.pdf",
+   "svg": "clinic-A-101-first-floor-floor-plan.svg",
+   "links": "clinic-A-101-first-floor-floor-plan.links.json",
+   "hotspots": 330
+  },
+  {
+   "number": "A-102",
+   "title": "Second Floor floor plan",
+   "kind": "plan",
+   "storey": "Second Floor",
+   "page": 3,
+   "pdf": "clinic-A-102-second-floor-floor-plan.pdf",
+   "svg": "clinic-A-102-second-floor-floor-plan.svg",
+   "links": "clinic-A-102-second-floor-floor-plan.links.json",
+   "hotspots": 242
+  },
+  {
+   "number": "A-601.1",
+   "title": "Room schedule (page 1 of 2)",
+   "kind": "schedule",
+   "storey": null,
+   "page": 4,
+   "pdf": "clinic-A-601.1-room-schedule-page-1-of-2.pdf",
+   "svg": "clinic-A-601.1-room-schedule-page-1-of-2.svg",
+   "links": "clinic-A-601.1-room-schedule-page-1-of-2.links.json",
+   "hotspots": 180
+  },
+  {
+   "number": "A-601.2",
+   "title": "Room schedule (page 2 of 2)",
+   "kind": "schedule",
+   "storey": null,
+   "page": 5,
+   "pdf": "clinic-A-601.2-room-schedule-page-2-of-2.pdf",
+   "svg": "clinic-A-601.2-room-schedule-page-2-of-2.svg",
+   "links": "clinic-A-601.2-room-schedule-page-2-of-2.links.json",
+   "hotspots": 89
+  },
+  {
+   "number": "A-611.1",
+   "title": "Door schedule (page 1 of 2)",
+   "kind": "schedule",
+   "storey": null,
+   "page": 6,
+   "pdf": "clinic-A-611.1-door-schedule-page-1-of-2.pdf",
+   "svg": "clinic-A-611.1-door-schedule-page-1-of-2.svg",
+   "links": "clinic-A-611.1-door-schedule-page-1-of-2.links.json",
+   "hotspots": 180
+  },
+  {
+   "number": "A-611.2",
+   "title": "Door schedule (page 2 of 2)",
+   "kind": "schedule",
+   "storey": null,
+   "page": 7,
+   "pdf": "clinic-A-611.2-door-schedule-page-2-of-2.pdf",
+   "svg": "clinic-A-611.2-door-schedule-page-2-of-2.svg",
+   "links": "clinic-A-611.2-door-schedule-page-2-of-2.links.json",
+   "hotspots": 74
+  },
+  {
+   "number": "A-621",
+   "title": "Window schedule",
+   "kind": "schedule",
+   "storey": null,
+   "page": 8,
+   "pdf": "clinic-A-621-window-schedule.pdf",
+   "svg": "clinic-A-621-window-schedule.svg",
+   "links": "clinic-A-621-window-schedule.links.json",
+   "hotspots": 58
+  }
+ ]
+}
