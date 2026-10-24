@@ -11,6 +11,7 @@
     "references": "node scripts/fetch-references.mjs",
     "drawings": "python3 scripts/make_drawings.py",
     "index-references": "python3 scripts/index_references.py",
+    "check": "python3 scripts/check_code.py",
     "dev": "next dev --port 3004",
     "build": "next build",
     "start": "next start --port 3004",

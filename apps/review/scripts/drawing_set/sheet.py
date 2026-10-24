@@ -48,6 +48,8 @@ class Sheet:
     # Listed in drawing order, so later entries sit on top of earlier ones.
     links: list[tuple[str, float, float, float, float, str]] = field(default_factory=list)
     storey: str | None = None  # the storey a plan sheet shows
+    # Plan sheets: model plan metres to sheet mm, sheet = (x0 + s·x, y0 − s·y).
+    transform: tuple[float, float, float] | None = None  # (s, x0, y0)
 
 
 def esc(text: object) -> str:

@@ -30,7 +30,14 @@
    "pdf": "duplex-A-101-level-1-floor-plan.pdf",
    "svg": "duplex-A-101-level-1-floor-plan.svg",
    "links": "duplex-A-101-level-1-floor-plan.links.json",
-   "hotspots": 20
+   "hotspots": 20,
+   "transform": {
+    "s": 20.0,
+    "x0": 134.0,
+    "y0": 32.0,
+    "width": 594,
+    "height": 420
+   }
   },
   {
    "number": "A-102",
@@ -41,7 +48,14 @@
    "pdf": "duplex-A-102-level-2-floor-plan.pdf",
    "svg": "duplex-A-102-level-2-floor-plan.svg",
    "links": "duplex-A-102-level-2-floor-plan.links.json",
-   "hotspots": 30
+   "hotspots": 30,
+   "transform": {
+    "s": 20.0,
+    "x0": 134.0,
+    "y0": 32.0,
+    "width": 594,
+    "height": 420
+   }
   },
   {
    "number": "A-601",

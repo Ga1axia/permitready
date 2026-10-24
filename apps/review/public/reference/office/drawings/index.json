@@ -30,7 +30,14 @@
    "pdf": "office-A-101-keller-floor-plan.pdf",
    "svg": "office-A-101-keller-floor-plan.svg",
    "links": "office-A-101-keller-floor-plan.links.json",
-   "hotspots": 77
+   "hotspots": 77,
+   "transform": {
+    "s": 10.0,
+    "x0": 125.5,
+    "y0": 374.5,
+    "width": 841,
+    "height": 594
+   }
   },
   {
    "number": "A-102",
@@ -41,7 +48,14 @@
    "pdf": "office-A-102-erdgeschoss-floor-plan.pdf",
    "svg": "office-A-102-erdgeschoss-floor-plan.svg",
    "links": "office-A-102-erdgeschoss-floor-plan.links.json",
-   "hotspots": 90
+   "hotspots": 90,
+   "transform": {
+    "s": 10.0,
+    "x0": 125.5,
+    "y0": 374.5,
+    "width": 841,
+    "height": 594
+   }
   },
   {
    "number": "A-103",
@@ -52,7 +66,14 @@
    "pdf": "office-A-103-1-obergeschoss-floor-plan.pdf",
    "svg": "office-A-103-1-obergeschoss-floor-plan.svg",
    "links": "office-A-103-1-obergeschoss-floor-plan.links.json",
-   "hotspots": 98
+   "hotspots": 98,
+   "transform": {
+    "s": 10.0,
+    "x0": 125.5,
+    "y0": 374.5,
+    "width": 841,
+    "height": 594
+   }
   },
   {
    "number": "A-104",
@@ -63,7 +84,14 @@
    "pdf": "office-A-104-2-obergeschoss-floor-plan.pdf",
    "svg": "office-A-104-2-obergeschoss-floor-plan.svg",
    "links": "office-A-104-2-obergeschoss-floor-plan.links.json",
-   "hotspots": 97
+   "hotspots": 97,
+   "transform": {
+    "s": 10.0,
+    "x0": 125.5,
+    "y0": 374.5,
+    "width": 841,
+    "height": 594
+   }
   },
   {
    "number": "A-105",
@@ -74,7 +102,14 @@
    "pdf": "office-A-105-dachgeschoss-floor-plan.pdf",
    "svg": "office-A-105-dachgeschoss-floor-plan.svg",
    "links": "office-A-105-dachgeschoss-floor-plan.links.json",
-   "hotspots": 3
+   "hotspots": 3,
+   "transform": {
+    "s": 10.0,
+    "x0": 125.5,
+    "y0": 374.5,
+    "width": 841,
+    "height": 594
+   }
   },
   {
    "number": "A-601",

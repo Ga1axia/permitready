@@ -30,7 +30,14 @@
    "pdf": "clinic-A-101-first-floor-floor-plan.pdf",
    "svg": "clinic-A-101-first-floor-floor-plan.svg",
    "links": "clinic-A-101-first-floor-floor-plan.links.json",
-   "hotspots": 330
+   "hotspots": 330,
+   "transform": {
+    "s": 10.0,
+    "x0": 759.125,
+    "y0": 655.1842,
+    "width": 1189,
+    "height": 841
+   }
   },
   {
    "number": "A-102",
@@ -41,7 +48,14 @@
    "pdf": "clinic-A-102-second-floor-floor-plan.pdf",
    "svg": "clinic-A-102-second-floor-floor-plan.svg",
    "links": "clinic-A-102-second-floor-floor-plan.links.json",
-   "hotspots": 242
+   "hotspots": 242,
+   "transform": {
+    "s": 10.0,
+    "x0": 759.125,
+    "y0": 655.1842,
+    "width": 1189,
+    "height": 841
+   }
   },
   {
    "number": "A-601.1",
