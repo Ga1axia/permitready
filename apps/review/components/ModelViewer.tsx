@@ -43,8 +43,24 @@ function buildingId(): string | undefined {
   return Object.values(nodes).find((n) => n.type === 'building')?.id
 }
 
-const POLL_MS = 150
+/**
+ * When the scene was last (re)built. CameraFocus polls for settling bounds
+ * only while within SETTLE_WINDOW_MS of this; after that the geometry is
+ * stable and framing is immediate — no per-interaction poll latency.
+ */
+let sceneBuiltAt = 0
+function markSceneBuilt() {
+  sceneBuiltAt = performance.now()
+}
+
+const POLL_MS = 32
 const MAX_POLLS = 80
+/**
+ * How long after a scene (re)build geometry may still be growing. Within this
+ * window CameraFocus polls until bounds settle; outside it, the scene is
+ * stable and framing happens on the first poll with no dead time.
+ */
+const SETTLE_WINDOW_MS = 1200
 // Camera angles, in radians. Polar is measured from straight overhead.
 const BUILDING_AZIMUTH = Math.PI / 4 // three-quarter view from a corner
 const BUILDING_POLAR = 1.1 // about 27° above the horizon
@@ -59,7 +75,10 @@ const ELEMENT_CONTEXT = 1.5
  *   walls and the floors above never stand between the camera and the
  *   element.
  * - Pascal builds wall, slab and roof geometry over several frames after a
- *   scene loads, so bounds are polled until they stop changing.
+ *   scene loads, so bounds are polled until they stop changing — but only
+ *   within SETTLE_WINDOW_MS of a scene build. Once the scene is stable,
+ *   framing happens on the first poll so selecting, highlighting and
+ *   changing views react without the poll's dead time.
  * - The site's ground is never framed: it is far larger than the building.
  */
 function CameraFocus() {
@@ -98,7 +117,12 @@ function CameraFocus() {
           box = fromNode
         }
       }
-      const settled = box && last && box.equals(last)
+      // Outside the post-build window the scene is stable, so the first
+      // non-empty bounds are final — frame immediately with no extra poll.
+      // Within the window geometry may still be growing, so wait until two
+      // consecutive polls agree before committing the camera.
+      const building = performance.now() - sceneBuiltAt < SETTLE_WINDOW_MS
+      const settled = box && (!building || (last && box.equals(last)))
       polls++
       if (box && (settled || polls >= MAX_POLLS || nodes[request.nodeId ?? '']?.type === 'zone')) {
         // fitToSphere keeps the angle set here; fitToBox would snap the
@@ -237,9 +261,18 @@ function ReviewCamera() {
 
   // First fit often lands while the stage is still full-width; when drawings
   // open beside it the aspect shrinks and the same distance reads as fisheye.
+  // Reframe after the split-pane layout has painted (two rAFs) rather than on
+  // a fixed delay, so it reacts as soon as the new aspect is live.
+  // biome-ignore lint/correctness/useExhaustiveDependencies: pdfOpen is the trigger — reframe when the split toggles, not when its value is read.
   useEffect(() => {
-    const timer = window.setTimeout(() => focusNode(null), 180)
-    return () => window.clearTimeout(timer)
+    let raf2 = 0
+    const raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => focusNode(null))
+    })
+    return () => {
+      cancelAnimationFrame(raf1)
+      cancelAnimationFrame(raf2)
+    }
   }, [pdfOpen, focusNode])
 
   useEffect(() => {
@@ -285,6 +318,9 @@ export default function ModelViewer({
     clearViolationHighlight()
     useReview.getState().setViolationIds([])
     setScene(graph.nodes as Record<AnyNodeId, AnyNode>, graph.rootNodeIds as AnyNodeId[])
+    // Open the settle window: CameraFocus polls for growing geometry only for
+    // a short time after this, then frames instantly on later interactions.
+    markSceneBuilt()
     // Pre-selecting the building and a level lets the first click on a wall
     // or door select that element instead of drilling into the building.
     const all = Object.values(graph.nodes) as AnyNode[]
