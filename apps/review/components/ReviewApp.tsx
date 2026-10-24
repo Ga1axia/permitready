@@ -185,17 +185,28 @@ export default function ReviewApp() {
       }}
       onDrop={onDrop}
     >
-      <header className="flex shrink-0 flex-wrap items-center gap-x-4 gap-y-2 border-rule border-b bg-panel py-2 pr-[max(16px,env(safe-area-inset-right))] pl-[max(16px,env(safe-area-inset-left))]">
-        <div className="flex items-baseline gap-2">
-          <h1 className="font-semibold text-[15px] text-ink tracking-tight">Code Review 3D</h1>
-          <span className="hidden font-mono text-[11px] text-ink-faint sm:inline">
-            Phase 1 · viewer
-          </span>
-        </div>
+      <header className="flex shrink-0 flex-wrap items-center gap-x-4 gap-y-2 border-rule border-b bg-panel/95 py-2.5 pr-[max(16px,env(safe-area-inset-right))] pl-[max(16px,env(safe-area-inset-left))] backdrop-blur-sm">
+        <a className="group flex shrink-0 items-center gap-2.5" href="/" title="PermitReady">
+          <img
+            alt=""
+            className="size-8 rounded-md object-cover shadow-[0_1px_2px_rgba(20,20,20,0.12)]"
+            height={32}
+            src="/brand/mark.png"
+            width={32}
+          />
+          <div className="leading-none">
+            <h1 className="font-semibold text-[15px] text-ink tracking-tight">
+              Permit<span className="text-accent">Ready</span>
+            </h1>
+            <p className="mt-0.5 hidden font-mono text-[10px] text-ink-faint tracking-wide sm:block">
+              drawings · model
+            </p>
+          </div>
+        </a>
 
         <nav
           aria-label="Sample models"
-          className="flex flex-wrap items-center gap-1 rounded-lg bg-paper p-1"
+          className="flex flex-wrap items-center gap-1 rounded-xl bg-paper-deep/80 p-1"
         >
           {samples.map((s) => {
             const active = s.id === activeSampleId
@@ -203,8 +214,8 @@ export default function ReviewApp() {
               <button
                 aria-pressed={active}
                 className={[
-                  'flex flex-col items-start rounded-md px-3 py-1 text-left transition-colors',
-                  active ? 'bg-panel shadow-[0_1px_2px_rgba(23,32,44,0.1)]' : 'hover:bg-panel/60',
+                  'flex flex-col items-start rounded-lg px-3 py-1.5 text-left transition-colors',
+                  active ? 'bg-panel shadow-[0_1px_3px_rgba(20,20,20,0.1)]' : 'hover:bg-panel/70',
                 ].join(' ')}
                 key={s.id}
                 onClick={() => openSample(s)}
@@ -221,7 +232,7 @@ export default function ReviewApp() {
 
         <div className="ml-auto flex items-center gap-1.5">
           <button
-            className="flex h-8 items-center gap-1.5 rounded-md border border-rule px-3 font-medium text-ink text-xs hover:border-rule-strong hover:bg-paper"
+            className="flex h-8 items-center gap-1.5 rounded-lg border border-rule px-3 font-medium text-ink text-xs hover:border-rule-strong hover:bg-paper"
             onClick={() => fileInput.current?.click()}
             type="button"
           >
@@ -243,9 +254,9 @@ export default function ReviewApp() {
           <button
             aria-pressed={pdfOpen}
             className={[
-              'flex h-8 items-center gap-1.5 rounded-md border px-3 font-medium text-xs',
+              'flex h-8 items-center gap-1.5 rounded-lg border px-3 font-medium text-xs',
               pdfOpen
-                ? 'border-accent bg-accent-soft text-accent'
+                ? 'border-accent bg-accent text-white shadow-[0_1px_2px_rgba(31,95,255,0.35)]'
                 : 'border-rule text-ink hover:border-rule-strong hover:bg-paper',
             ].join(' ')}
             onClick={async () => {
@@ -260,14 +271,12 @@ export default function ReviewApp() {
               else pdfInput.current?.click()
             }}
             title={
-              pdfUrl
-                ? 'Show or hide the PDF drawing pane'
-                : 'Open the drawing set (or a drawing PDF) beside the model'
+              pdfUrl ? 'Show or hide drawings beside the model' : 'Open drawings beside the model'
             }
             type="button"
           >
             <FileText className="size-3.5" />
-            {pdfUrl ? 'PDF' : 'Open PDF'}
+            {pdfOpen ? 'Side by side' : pdfUrl ? 'Show drawings' : 'Open drawings'}
           </button>
           <input
             accept="application/pdf,.pdf"
@@ -325,7 +334,7 @@ export default function ReviewApp() {
             </div>
           }
           right={
-            <main className="relative h-full min-h-0 min-w-0 bg-paper">
+            <main className="relative h-full min-h-0 min-w-0 bg-stage">
               {graph && <ModelViewer graph={graph} paused={viewerPaused} />}
               {ready && <SelectionPdfBridge />}
 
@@ -459,8 +468,8 @@ export default function ReviewApp() {
 
 function Overlay({ children }: { children: React.ReactNode }) {
   return (
-    <div className="absolute inset-0 flex items-center justify-center bg-paper/85 px-4 backdrop-blur-[2px]">
-      <div className="flex flex-col items-center rounded-xl border border-rule bg-panel px-6 py-5 text-center shadow-sm">
+    <div className="absolute inset-0 flex items-center justify-center bg-paper/80 px-4 backdrop-blur-[3px]">
+      <div className="flex flex-col items-center rounded-2xl border border-rule bg-panel px-7 py-6 text-center shadow-[0_8px_32px_rgba(20,20,20,0.1)]">
         {children}
       </div>
     </div>
