@@ -5,8 +5,6 @@ import { fileURLToPath } from 'node:url'
 // Agent integrations quote published npm versions. The package.json files are the
 // source of truth; this rewrites every quote so a release cannot leave one behind.
 export const cliPinFiles = [
-  '.cursor-plugin/mcp.json',
-  'skills/.cursor-plugin/mcp.json',
   'skills/README.md',
   'skills/pascal-3d/references/setup.md',
   'skills/furniture-fit/references/setup.md',

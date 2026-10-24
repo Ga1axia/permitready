@@ -4,7 +4,6 @@ import { fileURLToPath } from 'node:url'
 import { XMLParser, XMLValidator } from 'fast-xml-parser'
 import { validateClaudeMcpPolicy } from './claude-mcp-config-policy'
 import { validateClawHubIgnorePolicy } from './clawhub-ignore-policy'
-import { validateCursorPluginPackage } from './cursor-plugin-policy'
 import { validateOpenAiToolAnnotationPacket } from './openai-tool-annotation-policy'
 import { isPathInside } from './path-containment'
 import {
@@ -17,7 +16,6 @@ const skillNames = ['pascal-3d', 'furniture-fit'] as const
 const skillVersions = new Map<string, string>()
 const portablePluginSchema = 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json'
 const portableMcpSchema = 'https://agent-plugins.org/schemas/1.0.0/mcp.schema.json'
-const cursorMcpConfigPath = './.cursor-plugin/mcp.json'
 const semverPattern =
   /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?(?:\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?$/
 const openAiListingLimits = {
@@ -834,17 +832,10 @@ const portablePlugin = parseJson(join(root, 'plugin.json'))
 const codexPlugin = parseJson(join(root, '.codex-plugin', 'plugin.json'))
 const codexMarketplace = parseJson(join(root, '.agents', 'plugins', 'marketplace.json'))
 const geminiExtension = parseJson(join(root, 'gemini-extension.json'))
-const cursorPlugin = parseJson(join(root, '.cursor-plugin', 'plugin.json'))
 
 function firstMarketplaceEntry(marketplace: Record<string, unknown>): Record<string, unknown> {
   const entry = Array.isArray(marketplace.plugins) ? marketplace.plugins[0] : undefined
   return typeof entry === 'object' && entry !== null ? (entry as Record<string, unknown>) : {}
-}
-
-function cursorAuthorSubset(value: unknown): string {
-  if (typeof value !== 'object' || value === null) return 'missing'
-  const { name, email } = value as Record<string, unknown>
-  return normalizedAuthor({ name, email })
 }
 
 function normalizedAuthor(value: unknown): string {
@@ -865,7 +856,6 @@ const pluginDescriptors = [
   ['Claude marketplace entry', claudeMarketplaceEntry],
   ['Codex plugin manifest', codexPlugin],
   ['Codex marketplace entry', codexMarketplaceEntry],
-  ['Cursor plugin manifest', cursorPlugin],
 ] as const
 
 for (const [label, descriptor] of pluginDescriptors) {
@@ -876,43 +866,9 @@ for (const [label, descriptor] of pluginDescriptors) {
   if (descriptor.description !== portablePlugin.description) {
     fail(`${label}: description must match the root plugin.json description`)
   }
-  // Cursor's plugin schema allows only `name` and `email` under `author`
-  // (additionalProperties: false), so its manifest is compared on those two.
-  const expectedAuthor =
-    label === 'Cursor plugin manifest'
-      ? cursorAuthorSubset(portablePlugin.author)
-      : normalizedAuthor(portablePlugin.author)
-  if (normalizedAuthor(descriptor.author) !== expectedAuthor) {
+  if (normalizedAuthor(descriptor.author) !== normalizedAuthor(portablePlugin.author)) {
     fail(`${label}: author must match the root plugin.json author`)
   }
-}
-
-if (cursorPlugin.displayName !== claudePlugin.displayName) {
-  fail('Cursor plugin displayName must match the Claude plugin displayName')
-}
-if (
-  typeof cursorPlugin.category !== 'string' ||
-  !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(cursorPlugin.category)
-) {
-  fail('Cursor plugin category must be a kebab-case marketplace category such as developer-tools')
-}
-for (const field of ['logo', 'skills', 'mcpServers']) {
-  const value = cursorPlugin[field]
-  if (typeof value !== 'string' || value.startsWith('/') || value.includes('..')) {
-    fail(`Cursor plugin ${field} must be a plugin-relative path`)
-    continue
-  }
-  const target = join(root, value)
-  if (!existsSync(target)) fail(`Cursor plugin ${field} must reference an existing path: ${value}`)
-  if (field === 'skills' && !lstatSync(target).isDirectory()) {
-    fail('Cursor plugin skills must point at the public skills directory')
-  }
-  if (field !== 'skills' && existsSync(target) && !lstatSync(target).isFile()) {
-    fail(`Cursor plugin ${field} must reference a file: ${value}`)
-  }
-}
-if (typeof cursorPlugin.logo === 'string' && existsSync(join(root, cursorPlugin.logo))) {
-  validateOpenAiSvg(join(root, cursorPlugin.logo), 'Cursor plugin logo')
 }
 
 if (portablePlugin.$schema !== portablePluginSchema) {
@@ -938,18 +894,6 @@ if (Object.keys(claudeMcpServers).sort().join(',') !== 'pascal,pascal-hosted') {
   fail('skills/.mcp.json must add only the Claude-specific pascal-hosted server')
 }
 
-if (cursorPlugin.mcpServers !== cursorMcpConfigPath) {
-  fail(`Cursor plugin mcpServers must point at ${cursorMcpConfigPath}`)
-}
-const cursorMcpConfig = parseJson(join(root, '.cursor-plugin', 'mcp.json'))
-if (Object.keys(cursorMcpConfig).sort().join(',') !== 'mcpServers') {
-  fail('Cursor mcp.json must contain only the mcpServers object')
-}
-const cursorMcpServers = (cursorMcpConfig.mcpServers ?? {}) as Record<string, unknown>
-if (Object.keys(cursorMcpServers).sort().join(',') !== 'pascal,pascal-hosted') {
-  fail('Cursor mcp.json must declare exactly the pascal and pascal-hosted servers')
-}
-for (const failure of validateCursorPluginPackage(root)) fail(failure)
 const claudeUserConfig = (claudePlugin.userConfig ?? {}) as Record<string, unknown>
 const claudeHostedKeyOption = claudeUserConfig.pascal_api_key as Record<string, unknown> | undefined
 if (claudeHostedKeyOption?.sensitive !== true) {
@@ -1196,5 +1140,5 @@ if (failures.length > 0) {
 }
 
 console.log(
-  `Validated ${skillNames.length} skills (${skillNames.map((name) => `${name}@${skillVersions.get(name)}`).join(', ')}) and portable, Codex, Claude, Cursor, and Gemini CLI plugin manifests at ${pluginVersion}.`,
+  `Validated ${skillNames.length} skills (${skillNames.map((name) => `${name}@${skillVersions.get(name)}`).join(', ')}) and portable, Codex, Claude, and Gemini CLI plugin manifests at ${pluginVersion}.`,
 )

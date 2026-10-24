@@ -6,15 +6,13 @@ These public skills teach MCP-capable agents to use Pascal for editable building
 
 Status on 2026-09-14. Installable and publicly listed are separate results.
 
-The hosted OAuth service is enabled in production, and native Cursor browser sign-in is verified.
-The corrected 0.1.10 Cursor bundle still requires marketplace review and refresh; an existing
-marketplace install may continue to use the older bundle until Cursor publishes the update.
+The hosted OAuth service is enabled in production.
 
 | Channel | Status |
 | --- | --- |
 | [skills.sh](https://skills.sh/pascalorg/editor) | Indexed automatically from this repository; installable, with install counts on that listing. |
 | Claude Code plugin | Installable from this Git marketplace; not submitted to the Anthropic plugin directory. |
-| Codex and Cursor Agent Plugin | Installable from this repository, including the root [`mcp.json`](../mcp.json) server; a Cursor-native [`.cursor-plugin/plugin.json`](../.cursor-plugin/plugin.json) carries the marketplace logo and category and uses browser sign-in for hosted access; [listed in the Cursor marketplace](https://cursor.com/marketplace/pascal). The corrected Cursor bundle below still needs marketplace refresh; OpenAI submission remains separate. |
+| Codex Agent Plugin | Installable from this repository, including the root [`mcp.json`](../mcp.json) server; OpenAI submission remains separate. |
 | Gemini CLI extension | Root [`gemini-extension.json`](../gemini-extension.json) is present; installable from a release tag that carries it, and gallery listing waits on the `gemini-cli-extension` repository topic. |
 | Official MCP Registry | `io.github.pascalorg/editor` 0.6.1 is published. [`server.json`](../server.json) now names `app.pascal/editor` with the npm package and hosted remote; not published yet. |
 | ClawHub and OpenClaw | Not published; waiting on an authorized publisher accepting the MIT-0 terms. |
@@ -80,19 +78,11 @@ Claude Code 2.1.258 loads both the user-scoped `pascal` server created by `pasca
 
 Plugin installation alone never creates an account, uploads a project, or authorizes paid work.
 
-The root [`plugin.json`](../plugin.json) is the portable Agent Plugins manifest used for OpenAI submission, and the root [`mcp.json`](../mcp.json) is the MCP configuration path Codex reads; Claude Code reads the same local server from [`.mcp.json`](.mcp.json) in its `skills/` plugin root, next to [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json), and Cursor uses its pinned npm launcher from [`.cursor-plugin/mcp.json`](.cursor-plugin/mcp.json) inside the installed `skills/` directory. Each host keeps its own hosted configuration: Claude Code uses `${user_config.pascal_api_key}`, and Cursor uses a managed public OAuth client — while the portable `mcp.json` stays local-only: Agent Plugins 1.0.0 forbids secrets and placeholder expansion in `headers`, and Codex strips a plugin-supplied `Authorization`, so Codex users register the hosted endpoint with `codex mcp add --bearer-token-env-var PASCAL_API_KEY`. The repository keeps `.codex-plugin/plugin.json` as a compatibility fallback and validates that both expose the same OpenAI listing metadata. Public-directory submission, review, and publication are separate external steps; a Git marketplace install does not make the plugin publicly listed in ChatGPT or Codex.
+The root [`plugin.json`](../plugin.json) is the portable Agent Plugins manifest used for OpenAI submission, and the root [`mcp.json`](../mcp.json) is the MCP configuration path Codex reads; Claude Code reads the same local server from [`.mcp.json`](.mcp.json) in its `skills/` plugin root, next to [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json). Each host keeps its own hosted configuration: Claude Code uses `${user_config.pascal_api_key}` — while the portable `mcp.json` stays local-only: Agent Plugins 1.0.0 forbids secrets and placeholder expansion in `headers`, and Codex strips a plugin-supplied `Authorization`, so Codex users register the hosted endpoint with `codex mcp add --bearer-token-env-var PASCAL_API_KEY`. The repository keeps `.codex-plugin/plugin.json` as a compatibility fallback and validates that both expose the same OpenAI listing metadata. Public-directory submission, review, and publication are separate external steps; a Git marketplace install does not make the plugin publicly listed in ChatGPT or Codex.
 
 `@pascal-app/cli` 1.0.0 on the npm `latest` tag carries the read-only `check_collisions.candidate` capability used by the current furniture workflow.
 
 Use one active agent client per local CLI service. Its standalone HTTP runtime shares active scene state; the hosted endpoint uses a separate session-isolated bridge.
-
-## Install in Cursor
-
-The Cursor marketplace installs this repository's `skills/` directory. Its `.cursor-plugin/plugin.json` explicitly selects the Cursor MCP configuration, so the Claude-only `${user_config.pascal_api_key}` header is never used by Cursor. The local server runs `npx --yes --package=@pascal-app/cli@1.0.6 pascal mcp connect`; Node.js 22.13 or newer and npm must be available to Cursor. No global `pascal` installation or web-editor runtime is required. The first connection downloads the pinned CLI from npm, and later connections reuse npm's cache. This starts only the local MCP service and keeps existing local project storage. If Cursor reports `spawn npx ENOENT`, install Node.js/npm and fully restart Cursor so it picks up the executable path. For an older installed bundle that still runs `pascal`, update the plugin; `npm install --global @pascal-app/cli@1.0.6` followed by **Customize → MCPs → pascal → Reload** repairs that legacy local command.
-
-The hosted `pascal-hosted` server uses browser sign-in. In **Customize → MCPs**, choose **Authenticate** (or **Connect**) beside `pascal-hosted`. Pascal opens in your browser: sign in or create an account with Google or email, choose the intended workspace, review access, then return to Cursor. No API key or plugin variable is required. Let the user approve the account and workspace shown in consent. Ordinary access covers reading and editing projects; it does not authorize publishing, credit spending, external AI processing, community posting, or account management. Disconnect at `https://editor.pascal.app/settings/connected-apps`.
-
-For local-only work, use `pascal` and leave `pascal-hosted` disconnected. Local project storage stays on this machine. If browser sign-in is unavailable, verify that the installed plugin and hosted service support this flow; do not create another account or fall back to a different workspace implicitly.
 
 ## Install as a Gemini CLI extension
 

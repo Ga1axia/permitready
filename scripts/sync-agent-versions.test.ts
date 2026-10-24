@@ -35,8 +35,7 @@ describe('agent integration versions follow the package versions', () => {
     const drift = agentVersionDrift(fixture('9.8.7'))
     expect([...drift.keys()].sort()).toEqual([...cliPinFiles, 'server.json'].sort())
 
-    const cursor = JSON.parse(drift.get('.cursor-plugin/mcp.json') ?? '{}')
-    expect(cursor.mcpServers.pascal.args).toContain('--package=@pascal-app/cli@9.8.7')
+    expect(drift.get('skills/README.md') ?? '').toContain('@pascal-app/cli@9.8.7')
 
     const server = JSON.parse(drift.get('server.json') ?? '{}')
     expect(server.version).toBe('9.8.7')
