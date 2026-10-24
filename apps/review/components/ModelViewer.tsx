@@ -171,14 +171,14 @@ function SelectionEmphasis() {
   return null
 }
 
-// Review models are large (the clinic is ~3k nodes). Skip SSGI/denoise so a
-// normal laptop stays interactive; keep outline for selection, and cap FPS.
+// Soft studio look without full SSGI/denoise (those tank large IFCs).
+// AO + shadows close most of the polish gap vs Pascal's editor.
 const REVIEW_PRESENTATION = {
-  postprocessing: { ambientOcclusion: false, colorGrading: false },
-  shadows: false,
+  postprocessing: { ambientOcclusion: true, colorGrading: false },
+  shadows: true,
 } as const
 
-const REVIEW_MAX_FPS = 30
+const REVIEW_MAX_FPS = 45
 
 export default function ModelViewer({
   graph,

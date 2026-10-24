@@ -15,7 +15,7 @@ const WALL_MODES = [
 ] as const
 
 const chrome =
-  'rounded-lg border border-rule bg-panel/95 shadow-[0_1px_2px_rgba(23,32,44,0.06),0_4px_16px_rgba(23,32,44,0.08)] backdrop-blur'
+  'rounded-xl border border-rule/80 bg-panel/90 shadow-[0_1px_2px_rgba(20,20,20,0.04),0_8px_28px_rgba(20,20,20,0.1)] backdrop-blur-md'
 
 function Segment({
   active,

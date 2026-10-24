@@ -1,10 +1,11 @@
-# Code Review 3D: Phased Rollout
+# PermitReady: Phased Rollout
 
 ## What we are building
 
-A browser-based 3D viewer that loads a building model, checks it against code,
-and shows every failure on the building itself: the measured value, the
-required value, the code section, and a suggested fix.
+PermitReady puts drawings and a 3D model side by side for permit review. It
+loads a building model, checks it against code, and shows every failure on the
+building itself: the measured value, the required value, the code section, and
+a suggested fix.
 
 - **Who uses it:** plan reviewers at building departments, and designers who
   want to check a model before they submit it.

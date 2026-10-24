@@ -49,33 +49,45 @@ export function SplitStage({
   }, [dragging, setSplit])
 
   if (!enabled) {
-    return <div className="relative min-h-0 min-w-0 flex-1">{right}</div>
+    return <div className="relative min-h-0 min-w-0 flex-1 bg-stage">{right}</div>
   }
 
   const leftPct = `${(split * 100).toFixed(2)}%`
 
   return (
-    <div className="relative flex min-h-0 min-w-0 flex-1" ref={shell}>
-      <div className="relative min-h-0 min-w-0 overflow-hidden" style={{ width: leftPct }}>
+    <div className="relative flex min-h-0 min-w-0 flex-1 bg-stage" ref={shell}>
+      <section
+        aria-label="Drawings"
+        className="relative flex min-h-0 min-w-0 flex-col overflow-hidden border-rule border-r"
+        style={{ width: leftPct }}
+      >
+        <div className="pointer-events-none absolute bottom-2 left-2 z-[2] rounded-md bg-ink/70 px-1.5 py-0.5 font-mono text-[10px] text-panel uppercase tracking-[0.14em] backdrop-blur-sm">
+          Drawings
+        </div>
         {left}
-      </div>
+      </section>
       <div
         aria-orientation="vertical"
         aria-valuemax={80}
         aria-valuemin={20}
         aria-valuenow={Math.round(split * 100)}
         className={[
-          'group relative z-10 w-1.5 shrink-0 cursor-col-resize bg-rule transition-colors',
-          'hover:bg-accent/40',
-          dragging ? 'bg-accent/50' : '',
+          'group relative z-10 w-1.5 shrink-0 cursor-col-resize bg-rule-strong/70 transition-colors',
+          'hover:bg-accent/50',
+          dragging ? 'bg-accent' : '',
         ].join(' ')}
         onPointerDown={onPointerDown}
         role="separator"
-        title="Drag to resize PDF and 3D"
+        title="Drag to resize drawings and 3D"
       >
-        <span className="pointer-events-none absolute top-1/2 left-1/2 h-8 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-rule-strong group-hover:bg-accent" />
+        <span className="pointer-events-none absolute top-1/2 left-1/2 h-10 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink/25 group-hover:bg-accent" />
       </div>
-      <div className="relative min-h-0 min-w-0 flex-1 overflow-hidden">{right}</div>
+      <section aria-label="Model" className="relative min-h-0 min-w-0 flex-1 overflow-hidden">
+        <div className="pointer-events-none absolute right-2 bottom-2 z-[2] rounded-md bg-ink/70 px-1.5 py-0.5 font-mono text-[10px] text-panel uppercase tracking-[0.14em] backdrop-blur-sm">
+          Model
+        </div>
+        {right}
+      </section>
       {dragging && <div className="fixed inset-0 z-20 cursor-col-resize" />}
     </div>
   )

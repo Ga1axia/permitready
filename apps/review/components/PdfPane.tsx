@@ -234,19 +234,19 @@ export function PdfPane() {
   if (!pdfUrl) {
     return (
       <div className="flex h-full flex-col items-center justify-center gap-3 bg-panel px-4 text-center">
-        <FileText className="size-8 text-ink-faint" />
-        <p className="font-medium text-ink text-sm">Open a drawing PDF</p>
+        <FileText className="size-8 text-accent" />
+        <p className="font-semibold text-ink text-sm">Drawings beside the model</p>
         <p className="max-w-xs text-ink-soft text-xs leading-relaxed">
-          Place it beside the 3D model. Select an element, then link a region on the sheet so both
+          Open a plan PDF next to the 3D view. Select an element, then link a region so both panes
           stay highlighted together.
         </p>
         <button
-          className="mt-1 flex h-8 items-center gap-1.5 rounded-md bg-accent px-3 font-medium text-white text-xs hover:bg-accent/90"
+          className="mt-1 flex h-8 items-center gap-1.5 rounded-lg bg-accent px-3 font-medium text-white text-xs shadow-[0_1px_2px_rgba(31,95,255,0.35)] hover:bg-accent/90"
           onClick={() => fileRef.current?.click()}
           type="button"
         >
           <Upload className="size-3.5" />
-          Open PDF
+          Open drawings
         </button>
         <input
           accept="application/pdf,.pdf"
