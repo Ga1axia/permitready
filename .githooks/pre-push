@@ -19,7 +19,10 @@ if [ -z "$base_ref" ]; then
   echo "pre-push: no origin/main or upstream/main to diff against; skipping scoped checks." >&2
   exit 0
 fi
-base=$(git merge-base HEAD "$base_ref")
+if ! base=$(git merge-base HEAD "$base_ref" 2>/dev/null); then
+  echo "pre-push: no shared history with $base_ref; skipping scoped checks." >&2
+  exit 0
+fi
 changed=$(git diff --name-only "$base" HEAD)
 
 if echo "$changed" | grep -qE '(^|/)package\.json$|^bun\.lock$'; then
