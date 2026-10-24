@@ -5,9 +5,9 @@ export interface Sample {
   label: string
   category: 'Commercial' | 'Residential' | 'Public facility'
   description: string
-  /** Served from `public/models/`. Fetched by `bun run samples`, never committed. */
+  /** Served from `public/models/` and committed so deploys ship ready to open. */
   file: string
-  /** Where `scripts/fetch-samples.mjs` downloads the file from. */
+  /** Upstream download used by `bun run samples` to refresh the local copy. */
   sourceUrl: string
   /** Page that describes the model and its license. */
   infoUrl: string

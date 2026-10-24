@@ -8,12 +8,11 @@ bun install
 bunx turbo run build --filter='review^...'
 
 cd apps/review
-bun run samples      # IFCs → public/models/
-bun run references   # optional source docs (~370 MB)
-bun run drawings     # regenerate drawing sets from IFC
 bun run dev          # http://localhost:3004
 ```
 
-Open `?model=duplex` for the linked duplex set. **Open PDF** loads a building’s drawing set when one exists, or any PDF you pick. Drag the divider; select in 3D or on the sheet to highlight both.
+Sample IFCs (`public/models/`) and drawing sets (`public/reference/*/drawings/`) are committed and open automatically — side by side on load. Optional: `bun run samples` refreshes IFCs from upstream; `bun run references` pulls extra source docs (~370 MB, not shipped); `bun run drawings` regenerates plans from IFC.
+
+Open `?model=duplex` (default), `office`, or `clinic`. Drag the divider; select in 3D or on the sheet to highlight both.
 
 More detail on samples and drawings: `public/reference/README.md`. Roadmap: [ROADMAP.md](ROADMAP.md).

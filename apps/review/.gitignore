@@ -1,10 +1,9 @@
-public/models/*.ifc
+# Sample IFCs live in public/models/ and ship with the deploy (~26 MB).
+# Optional discipline docs from `bun run references` stay local-only.
 public/web-ifc*.wasm
 public/pdf.worker.min.mjs
 .next
 next-env.d.ts
-# Documents published with the sample models (bun run references); the
-# drawing set, schedules and indexes generated from them are committed.
 public/reference/*/*
 !public/reference/*/drawings
 !public/reference/*/schedules
