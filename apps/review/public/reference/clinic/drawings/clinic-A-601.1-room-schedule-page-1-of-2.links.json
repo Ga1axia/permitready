@@ -1,0 +1,2165 @@
+{
+ "version": 1,
+ "links": [
+  {
+   "id": "a-601-1-1",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZz",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.04554,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A01"
+  },
+  {
+   "id": "a-601-1-2",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZa",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.05065,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A02"
+  },
+  {
+   "id": "a-601-1-3",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZZ",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.05577,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A03"
+  },
+  {
+   "id": "a-601-1-4",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZk",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.06088,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A04"
+  },
+  {
+   "id": "a-601-1-5",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZj",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.06599,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A05"
+  },
+  {
+   "id": "a-601-1-6",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZe",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.07111,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A06"
+  },
+  {
+   "id": "a-601-1-7",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYN",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.07622,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A07"
+  },
+  {
+   "id": "a-601-1-8",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYI",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.08133,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A08"
+  },
+  {
+   "id": "a-601-1-9",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYH",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.08644,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A09"
+  },
+  {
+   "id": "a-601-1-10",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYS",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.09156,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A10"
+  },
+  {
+   "id": "a-601-1-11",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYR",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.09667,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A11"
+  },
+  {
+   "id": "a-601-1-12",
+   "globalId": "0ztdC3L1HAzhbhMHypqcY6",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.10178,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A12"
+  },
+  {
+   "id": "a-601-1-13",
+   "globalId": "0ztdC3L1HAzhbhMHypqcY5",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.1069,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A13"
+  },
+  {
+   "id": "a-601-1-14",
+   "globalId": "0ztdC3L1HAzhbhMHypqcY0",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.11201,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A14"
+  },
+  {
+   "id": "a-601-1-15",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYF",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.11712,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A15"
+  },
+  {
+   "id": "a-601-1-16",
+   "globalId": "0ztdC3L1HAzhbhMHypqdhw",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.12224,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1A16"
+  },
+  {
+   "id": "a-601-1-17",
+   "globalId": "0ztdC3L1HAzhbhMHypqbH5",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.12735,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1AC1"
+  },
+  {
+   "id": "a-601-1-18",
+   "globalId": "0ztdC3L1HAzhbhMHypqcha",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.13246,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1AC2"
+  },
+  {
+   "id": "a-601-1-19",
+   "globalId": "0ztdC3L1HAzhbhMHypqchZ",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.13757,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1AC3"
+  },
+  {
+   "id": "a-601-1-20",
+   "globalId": "0ztdC3L1HAzhbhMHypqchk",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.14269,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1AC4"
+  },
+  {
+   "id": "a-601-1-21",
+   "globalId": "0ztdC3L1HAzhbhMHypqchj",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.1478,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1AC5"
+  },
+  {
+   "id": "a-601-1-22",
+   "globalId": "0ztdC3L1HAzhbhMHypqdeT",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.15291,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1AS1"
+  },
+  {
+   "id": "a-601-1-23",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVI",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.15803,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B01"
+  },
+  {
+   "id": "a-601-1-24",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVT",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.16314,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B02"
+  },
+  {
+   "id": "a-601-1-25",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVO",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.16825,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B03"
+  },
+  {
+   "id": "a-601-1-26",
+   "globalId": "0ztdC3L1HAzhbhMHypqcV7",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.17337,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B04"
+  },
+  {
+   "id": "a-601-1-27",
+   "globalId": "0ztdC3L1HAzhbhMHypqcV2",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.17848,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B05"
+  },
+  {
+   "id": "a-601-1-28",
+   "globalId": "0ztdC3L1HAzhbhMHypqcV1",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.18359,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B06"
+  },
+  {
+   "id": "a-601-1-29",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVC",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.1887,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B07"
+  },
+  {
+   "id": "a-601-1-30",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVB",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.19382,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B08"
+  },
+  {
+   "id": "a-601-1-31",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVs",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.19893,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B09"
+  },
+  {
+   "id": "a-601-1-32",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVr",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.20404,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B10"
+  },
+  {
+   "id": "a-601-1-33",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVm",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.20916,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B11"
+  },
+  {
+   "id": "a-601-1-34",
+   "globalId": "0ztdC3L1HAzhbhMHypqcV$",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.21427,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B12"
+  },
+  {
+   "id": "a-601-1-35",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVw",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.21938,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B13"
+  },
+  {
+   "id": "a-601-1-36",
+   "globalId": "0ztdC3L1HAzhbhMHypqcT2",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.22449,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B14"
+  },
+  {
+   "id": "a-601-1-37",
+   "globalId": "0ztdC3L1HAzhbhMHypqcT1",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.22961,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B15"
+  },
+  {
+   "id": "a-601-1-38",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTC",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.23472,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B16"
+  },
+  {
+   "id": "a-601-1-39",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTB",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.23983,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B17"
+  },
+  {
+   "id": "a-601-1-40",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTs",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.24495,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B19"
+  },
+  {
+   "id": "a-601-1-41",
+   "globalId": "0ztdC3L1HAzhbhMHypqcT_",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.25006,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B21"
+  },
+  {
+   "id": "a-601-1-42",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTv",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.25517,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1B23"
+  },
+  {
+   "id": "a-601-1-43",
+   "globalId": "0ztdC3L1HAzhbhMHypqcOd",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.26029,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1BC1"
+  },
+  {
+   "id": "a-601-1-44",
+   "globalId": "0ztdC3L1HAzhbhMHypqcOk",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.2654,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1BC2"
+  },
+  {
+   "id": "a-601-1-45",
+   "globalId": "0ztdC3L1HAzhbhMHypqcOj",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.27051,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1BC3"
+  },
+  {
+   "id": "a-601-1-46",
+   "globalId": "0ztdC3L1HAzhbhMHypqcOe",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.27562,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1BC4"
+  },
+  {
+   "id": "a-601-1-47",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTW",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.28074,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1BS2"
+  },
+  {
+   "id": "a-601-1-48",
+   "globalId": "0ztdC3L1HAzhbhMHypqcqj",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.28585,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C01"
+  },
+  {
+   "id": "a-601-1-49",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBK",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.29096,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C02"
+  },
+  {
+   "id": "a-601-1-50",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBJ",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.29608,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C03"
+  },
+  {
+   "id": "a-601-1-51",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBR",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.30119,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C04"
+  },
+  {
+   "id": "a-601-1-52",
+   "globalId": "0ztdC3L1HAzhbhMHypqcB6",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.3063,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C05"
+  },
+  {
+   "id": "a-601-1-53",
+   "globalId": "0ztdC3L1HAzhbhMHypqcB5",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.31141,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C06"
+  },
+  {
+   "id": "a-601-1-54",
+   "globalId": "0ztdC3L1HAzhbhMHypqcB0",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.31653,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C07"
+  },
+  {
+   "id": "a-601-1-55",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBF",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.32164,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C08"
+  },
+  {
+   "id": "a-601-1-56",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBA",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.32675,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C09"
+  },
+  {
+   "id": "a-601-1-57",
+   "globalId": "0ztdC3L1HAzhbhMHypqcB9",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.33187,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C10"
+  },
+  {
+   "id": "a-601-1-58",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0D",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.33698,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C11"
+  },
+  {
+   "id": "a-601-1-59",
+   "globalId": "0ztdC3L1HAzhbhMHypqc1g",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.34209,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C12"
+  },
+  {
+   "id": "a-601-1-60",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0L",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.34721,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C13"
+  },
+  {
+   "id": "a-601-1-61",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0G",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.35232,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C14"
+  },
+  {
+   "id": "a-601-1-62",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0V",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.35743,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C15"
+  },
+  {
+   "id": "a-601-1-63",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0Q",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.36254,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C16"
+  },
+  {
+   "id": "a-601-1-64",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0P",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.36766,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C17"
+  },
+  {
+   "id": "a-601-1-65",
+   "globalId": "0ztdC3L1HAzhbhMHypqc04",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.37277,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C18"
+  },
+  {
+   "id": "a-601-1-66",
+   "globalId": "0ztdC3L1HAzhbhMHypqc03",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.37788,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1C19"
+  },
+  {
+   "id": "a-601-1-67",
+   "globalId": "0ztdC3L1HAzhbhMHypqcqu",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.383,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1CC1"
+  },
+  {
+   "id": "a-601-1-68",
+   "globalId": "0ztdC3L1HAzhbhMHypqcqZ",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.38811,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1CC2"
+  },
+  {
+   "id": "a-601-1-69",
+   "globalId": "0ztdC3L1HAzhbhMHypqcqk",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.39322,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1CC3"
+  },
+  {
+   "id": "a-601-1-70",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0q",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.39834,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1CS3"
+  },
+  {
+   "id": "a-601-1-71",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBw",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.40345,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D01"
+  },
+  {
+   "id": "a-601-1-72",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBb",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.40856,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D02"
+  },
+  {
+   "id": "a-601-1-73",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBW",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.41367,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D03"
+  },
+  {
+   "id": "a-601-1-74",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBl",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.41879,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D04"
+  },
+  {
+   "id": "a-601-1-75",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBg",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.4239,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D05"
+  },
+  {
+   "id": "a-601-1-76",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBf",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.42901,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D06"
+  },
+  {
+   "id": "a-601-1-77",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAK",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.43413,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D07"
+  },
+  {
+   "id": "a-601-1-78",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAJ",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.43924,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D08"
+  },
+  {
+   "id": "a-601-1-79",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAU",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.44435,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D09"
+  },
+  {
+   "id": "a-601-1-80",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAT",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.44946,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D10"
+  },
+  {
+   "id": "a-601-1-81",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAO",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.45458,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D11"
+  },
+  {
+   "id": "a-601-1-82",
+   "globalId": "0ztdC3L1HAzhbhMHypqcA7",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.45969,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D12"
+  },
+  {
+   "id": "a-601-1-83",
+   "globalId": "0ztdC3L1HAzhbhMHypqcA2",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.4648,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D13"
+  },
+  {
+   "id": "a-601-1-84",
+   "globalId": "0ztdC3L1HAzhbhMHypqcA1",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.46992,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D14"
+  },
+  {
+   "id": "a-601-1-85",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAC",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.47503,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D15"
+  },
+  {
+   "id": "a-601-1-86",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAu",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.48014,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D16"
+  },
+  {
+   "id": "a-601-1-87",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAd",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.48526,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D17"
+  },
+  {
+   "id": "a-601-1-88",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAY",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.49037,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D18"
+  },
+  {
+   "id": "a-601-1-89",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAX",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.49548,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D19"
+  },
+  {
+   "id": "a-601-1-90",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAi",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.50059,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D20"
+  },
+  {
+   "id": "a-601-1-91",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAh",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.50571,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D21"
+  },
+  {
+   "id": "a-601-1-92",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9M",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.51082,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D22"
+  },
+  {
+   "id": "a-601-1-93",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9L",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.51593,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D23"
+  },
+  {
+   "id": "a-601-1-94",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9G",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.52105,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D24"
+  },
+  {
+   "id": "a-601-1-95",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9V",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.52616,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D25"
+  },
+  {
+   "id": "a-601-1-96",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9Q",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.53127,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D26"
+  },
+  {
+   "id": "a-601-1-97",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9P",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.53639,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D27"
+  },
+  {
+   "id": "a-601-1-98",
+   "globalId": "0ztdC3L1HAzhbhMHypqc94",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.5415,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D28"
+  },
+  {
+   "id": "a-601-1-99",
+   "globalId": "0ztdC3L1HAzhbhMHypqc93",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.54661,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D30"
+  },
+  {
+   "id": "a-601-1-100",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9B",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.55172,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D31"
+  },
+  {
+   "id": "a-601-1-101",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9s",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.55684,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D32"
+  },
+  {
+   "id": "a-601-1-102",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9r",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.56195,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D33"
+  },
+  {
+   "id": "a-601-1-103",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9m",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.56706,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D34"
+  },
+  {
+   "id": "a-601-1-104",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9$",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.57218,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D35"
+  },
+  {
+   "id": "a-601-1-105",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9w",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.57729,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D36"
+  },
+  {
+   "id": "a-601-1-106",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9v",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.5824,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D37"
+  },
+  {
+   "id": "a-601-1-107",
+   "globalId": "0ztdC3L1HAzhbhMHypqc8a",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.58751,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D38"
+  },
+  {
+   "id": "a-601-1-108",
+   "globalId": "0ztdC3L1HAzhbhMHypqc8Z",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.59263,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D39"
+  },
+  {
+   "id": "a-601-1-109",
+   "globalId": "0ztdC3L1HAzhbhMHypqc8k",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.59774,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1D40"
+  },
+  {
+   "id": "a-601-1-110",
+   "globalId": "0ztdC3L1HAzhbhMHypqcY9",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.60285,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1DC1"
+  },
+  {
+   "id": "a-601-1-111",
+   "globalId": "0ztdC3L1HAzhbhMHypqcaa",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.60797,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1DC2"
+  },
+  {
+   "id": "a-601-1-112",
+   "globalId": "0ztdC3L1HAzhbhMHypqcaZ",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.61308,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1DC3"
+  },
+  {
+   "id": "a-601-1-113",
+   "globalId": "0ztdC3L1HAzhbhMHypqcak",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.61819,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1DC4"
+  },
+  {
+   "id": "a-601-1-114",
+   "globalId": "0ztdC3L1HAzhbhMHypqc8e",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.62331,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1DC5"
+  },
+  {
+   "id": "a-601-1-115",
+   "globalId": "0ztdC3L1HAzhbhMHypqc1c",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.62842,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1DC6"
+  },
+  {
+   "id": "a-601-1-116",
+   "globalId": "0ztdC3L1HAzhbhMHypqc1b",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.63353,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1DC7"
+  },
+  {
+   "id": "a-601-1-117",
+   "globalId": "0ztdC3L1HAzhbhMHypqc1W",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.63864,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1DC8"
+  },
+  {
+   "id": "a-601-1-118",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0$",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.64376,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E01"
+  },
+  {
+   "id": "a-601-1-119",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0d",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.64887,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E02"
+  },
+  {
+   "id": "a-601-1-120",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0Y",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.65398,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E03"
+  },
+  {
+   "id": "a-601-1-121",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0X",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.6591,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E04"
+  },
+  {
+   "id": "a-601-1-122",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0i",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.66421,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E05"
+  },
+  {
+   "id": "a-601-1-123",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0h",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.66932,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E06"
+  },
+  {
+   "id": "a-601-1-124",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7M",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.67444,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E07"
+  },
+  {
+   "id": "a-601-1-125",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7L",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.67955,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E08"
+  },
+  {
+   "id": "a-601-1-126",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7G",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.68466,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E09"
+  },
+  {
+   "id": "a-601-1-127",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7V",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.68977,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E10"
+  },
+  {
+   "id": "a-601-1-128",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7Q",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.69489,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E11"
+  },
+  {
+   "id": "a-601-1-129",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7P",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.7,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E12"
+  },
+  {
+   "id": "a-601-1-130",
+   "globalId": "0ztdC3L1HAzhbhMHypqc74",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.70511,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E14"
+  },
+  {
+   "id": "a-601-1-131",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7F",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.71023,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E15"
+  },
+  {
+   "id": "a-601-1-132",
+   "globalId": "0ztdC3L1HAzhbhMHypqdl$",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.71534,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E15-A"
+  },
+  {
+   "id": "a-601-1-133",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7A",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.72045,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E16"
+  },
+  {
+   "id": "a-601-1-134",
+   "globalId": "0ztdC3L1HAzhbhMHypqc79",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.72556,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E17"
+  },
+  {
+   "id": "a-601-1-135",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7q",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.73068,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E18"
+  },
+  {
+   "id": "a-601-1-136",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7p",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.73579,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E19"
+  },
+  {
+   "id": "a-601-1-137",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7_",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.7409,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E20"
+  },
+  {
+   "id": "a-601-1-138",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7z",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.74602,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E21"
+  },
+  {
+   "id": "a-601-1-139",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7u",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.75113,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E22"
+  },
+  {
+   "id": "a-601-1-140",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7d",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.75624,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E23"
+  },
+  {
+   "id": "a-601-1-141",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7Y",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.76136,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E24"
+  },
+  {
+   "id": "a-601-1-142",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7X",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.76647,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E25"
+  },
+  {
+   "id": "a-601-1-143",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7i",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.77158,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E26"
+  },
+  {
+   "id": "a-601-1-144",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7h",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.77669,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E27"
+  },
+  {
+   "id": "a-601-1-145",
+   "globalId": "0ztdC3L1HAzhbhMHypqc6M",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.78181,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E28"
+  },
+  {
+   "id": "a-601-1-146",
+   "globalId": "0ztdC3L1HAzhbhMHypqc6L",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.78692,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E29"
+  },
+  {
+   "id": "a-601-1-147",
+   "globalId": "0ztdC3L1HAzhbhMHypqc6G",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.79203,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E30"
+  },
+  {
+   "id": "a-601-1-148",
+   "globalId": "0ztdC3L1HAzhbhMHypqc6V",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.79715,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1E33"
+  },
+  {
+   "id": "a-601-1-149",
+   "globalId": "0ztdC3L1HAzhbhMHypqcQh",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.80226,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1EC1"
+  },
+  {
+   "id": "a-601-1-150",
+   "globalId": "0ztdC3L1HAzhbhMHypqcPI",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.80737,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1EC2"
+  },
+  {
+   "id": "a-601-1-151",
+   "globalId": "0ztdC3L1HAzhbhMHypqcPH",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.81249,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1EC3"
+  },
+  {
+   "id": "a-601-1-152",
+   "globalId": "0ztdC3L1HAzhbhMHypqcPS",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.8176,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1EC4"
+  },
+  {
+   "id": "a-601-1-153",
+   "globalId": "1NvbzFDrT8ePCfWUZHOCVS",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.82271,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 1F01"
+  },
+  {
+   "id": "a-601-1-154",
+   "globalId": "0ztdC3L1HAzhbhMHypqdiM",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.82782,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room E1"
+  },
+  {
+   "id": "a-601-1-155",
+   "globalId": "0ClPCUC7jCQRnj1dhupMDM",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.83294,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 3AC1"
+  },
+  {
+   "id": "a-601-1-156",
+   "globalId": "0ClPCUC7jCQRnj1dhupMDV",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.83805,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 3D01"
+  },
+  {
+   "id": "a-601-1-157",
+   "globalId": "0_IXpwL5b29BZ7C0XgKBd3",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.84316,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 3R01"
+  },
+  {
+   "id": "a-601-1-158",
+   "globalId": "0_IXpwL5b29BZ7C0XgKBd4",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.84828,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 3R02"
+  },
+  {
+   "id": "a-601-1-159",
+   "globalId": "0_IXpwL5b29BZ7C0XgKBf4",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.85339,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 3R03"
+  },
+  {
+   "id": "a-601-1-160",
+   "globalId": "0_IXpwL5b29BZ7C0XgKBdO",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.8585,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 3R04"
+  },
+  {
+   "id": "a-601-1-161",
+   "globalId": "0uLn6BSvvEB8kgChiujNGA",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.86361,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A01"
+  },
+  {
+   "id": "a-601-1-162",
+   "globalId": "0uLn6BSvvEB8kgChiujNHp",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.86873,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A02"
+  },
+  {
+   "id": "a-601-1-163",
+   "globalId": "0uLn6BSvvEB8kgChiujNHm",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.87384,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A03"
+  },
+  {
+   "id": "a-601-1-164",
+   "globalId": "0uLn6BSvvEB8kgChiujNHz",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.87895,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A04"
+  },
+  {
+   "id": "a-601-1-165",
+   "globalId": "0uLn6BSvvEB8kgChiujNHw",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.88407,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A05"
+  },
+  {
+   "id": "a-601-1-166",
+   "globalId": "0uLn6BSvvEB8kgChiujNHd",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.88918,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A06"
+  },
+  {
+   "id": "a-601-1-167",
+   "globalId": "0uLn6BSvvEB8kgChiujNHa",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.89429,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A07"
+  },
+  {
+   "id": "a-601-1-168",
+   "globalId": "0uLn6BSvvEB8kgChiujNHX",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.89941,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A08"
+  },
+  {
+   "id": "a-601-1-169",
+   "globalId": "0uLn6BSvvEB8kgChiujNHk",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.90452,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A09"
+  },
+  {
+   "id": "a-601-1-170",
+   "globalId": "0uLn6BSvvEB8kgChiujNHh",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.90963,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A10"
+  },
+  {
+   "id": "a-601-1-171",
+   "globalId": "0uLn6BSvvEB8kgChiujNHe",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.91474,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A11"
+  },
+  {
+   "id": "a-601-1-172",
+   "globalId": "0uLn6BSvvEB8kgChiujNHL",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.91986,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A12"
+  },
+  {
+   "id": "a-601-1-173",
+   "globalId": "0uLn6BSvvEB8kgChiujNHV",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.92497,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A12-A"
+  },
+  {
+   "id": "a-601-1-174",
+   "globalId": "0uLn6BSvvEB8kgChiujNHI",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.93008,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A13"
+  },
+  {
+   "id": "a-601-1-175",
+   "globalId": "0uLn6BSvvEB8kgChiujNI6",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.9352,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2A14"
+  },
+  {
+   "id": "a-601-1-176",
+   "globalId": "1KgZQG_2r6VuMR28$3QMLM",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.94031,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2AC1"
+  },
+  {
+   "id": "a-601-1-177",
+   "globalId": "0ClPCUC7jCQRnj1dhupMQD",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.94542,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2AC1-A"
+  },
+  {
+   "id": "a-601-1-178",
+   "globalId": "0ClPCUC7jCQRnj1dhupMQE",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.95054,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2AC1-B"
+  },
+  {
+   "id": "a-601-1-179",
+   "globalId": "0uLn6BSvvEB8kgChiujNr3",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.95565,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2AC2"
+  },
+  {
+   "id": "a-601-1-180",
+   "globalId": "0uLn6BSvvEB8kgChiujNr0",
+   "page": 1,
+   "rect": {
+    "x": 0.01682,
+    "y": 0.96076,
+    "w": 0.80656,
+    "h": 0.00511
+   },
+   "label": "Room 2AC3"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+Mark,Level,From / to,Type,Type mark,Width (mm),Height (mm),Leaf (mm),Operation,External,Fire rating
+A101,Level 1,A101 Foyer,1250mm x 2010mm,33,1250,2010,51,single swing right,Yes,—
+A102,Level 1,A102 Living Room,0813 x 2420mm,56,813,2420,51,single swing left,Yes,—
+A104,Level 1,A101 Foyer / A104 Bathroom 1,0762 x 2032mm,28,762,2032,51,single swing left,No,—
+B101,Level 1,B101 Foyer,1250mm x 2010mm,33,1250,2010,51,single swing right,Yes,—
+B102,Level 1,B102 Living Room,0813 x 2420mm,56,813,2420,51,single swing left,Yes,—
+B104,Level 1,B101 Foyer / B104 Bathroom 1,0762 x 2032mm,28,762,2032,51,single swing left,No,—
+A202,Level 2,A201 Hallway / A202 Bedroom 1,0864 x 2032mm,32,864,2032,51,single swing left,No,—
+A203,Level 2,A201 Hallway / A203 Bedroom 2,0864 x 2032mm,32,864,2032,51,single swing right,No,—
+A204,Level 2,A201 Hallway / A204 Bathroom 2,0864 x 2032mm,32,864,2032,51,single swing right,No,—
+A205,Level 2,A201 Hallway / A204 Bathroom 2 / A205 Utility,0762 x 2032mm,28,762,2032,51,single swing right,No,—
+B202,Level 2,B201 Hallway / B202 Bedroom 1,0864 x 2032mm,32,864,2032,51,single swing left,No,—
+B203,Level 2,B201 Hallway / B203 Bedroom 2,0864 x 2032mm,32,864,2032,51,single swing right,No,—
+B204,Level 2,B201 Hallway / B204 Bathroom 2,0864 x 2032mm,32,864,2032,51,single swing right,No,—
+B205,Level 2,B204 Bathroom 2 / B205 Utility,0762 x 2032mm,28,762,2032,51,single swing right,No,—

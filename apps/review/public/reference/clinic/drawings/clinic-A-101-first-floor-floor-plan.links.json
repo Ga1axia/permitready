@@ -1,0 +1,3965 @@
+{
+ "version": 1,
+ "links": [
+  {
+   "id": "a-101-1",
+   "globalId": "0ztdC3L1HAzhbhMHypqcY9",
+   "page": 1,
+   "rect": {
+    "x": 0.23054,
+    "y": 0.3465,
+    "w": 0.23943,
+    "h": 0.09921
+   },
+   "label": "1DC1 WAITING / ACTIVITY AREA"
+  },
+  {
+   "id": "a-101-2",
+   "globalId": "0ztdC3L1HAzhbhMHypqbH5",
+   "page": 1,
+   "rect": {
+    "x": 0.46885,
+    "y": 0.36276,
+    "w": 0.17168,
+    "h": 0.10942
+   },
+   "label": "1AC1 CENTRAL WAITING"
+  },
+  {
+   "id": "a-101-3",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7Y",
+   "page": 1,
+   "rect": {
+    "x": 0.31406,
+    "y": 0.65821,
+    "w": 0.10426,
+    "h": 0.12219
+   },
+   "label": "1E24 RECEIVING / STORAGE"
+  },
+  {
+   "id": "a-101-4",
+   "globalId": "0ztdC3L1HAzhbhMHypqcqu",
+   "page": 1,
+   "rect": {
+    "x": 0.29857,
+    "y": 0.18211,
+    "w": 0.16176,
+    "h": 0.06389
+   },
+   "label": "1CC1 CORRIDOR"
+  },
+  {
+   "id": "a-101-5",
+   "globalId": "0ztdC3L1HAzhbhMHypqc04",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.14719,
+    "w": 0.09652,
+    "h": 0.09841
+   },
+   "label": "1C18 PHYSICAL EXAM"
+  },
+  {
+   "id": "a-101-6",
+   "globalId": "0ztdC3L1HAzhbhMHypqcOe",
+   "page": 1,
+   "rect": {
+    "x": 0.46327,
+    "y": 0.47366,
+    "w": 0.04516,
+    "h": 0.18735
+   },
+   "label": "1BC4 CORRIDOR"
+  },
+  {
+   "id": "a-101-7",
+   "globalId": "0ztdC3L1HAzhbhMHypqdhw",
+   "page": 1,
+   "rect": {
+    "x": 0.53038,
+    "y": 0.18211,
+    "w": 0.04491,
+    "h": 0.18191
+   },
+   "label": "1A16 PHARM. DISP."
+  },
+  {
+   "id": "a-101-8",
+   "globalId": "1NvbzFDrT8ePCfWUZHOCVS",
+   "page": 1,
+   "rect": {
+    "x": 0.31498,
+    "y": 0.78357,
+    "w": 0.07235,
+    "h": 0.10909
+   },
+   "label": "1F01 MECH. YARD"
+  },
+  {
+   "id": "a-101-9",
+   "globalId": "0ztdC3L1HAzhbhMHypqcV7",
+   "page": 1,
+   "rect": {
+    "x": 0.58416,
+    "y": 0.47863,
+    "w": 0.05525,
+    "h": 0.13241
+   },
+   "label": "1B04 LAB"
+  },
+  {
+   "id": "a-101-10",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAu",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.24707,
+    "w": 0.09652,
+    "h": 0.07503
+   },
+   "label": "1D16 PROVIDER CUBICLES"
+  },
+  {
+   "id": "a-101-11",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9V",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.48226,
+    "w": 0.09638,
+    "h": 0.07503
+   },
+   "label": "1D25 PROVIDER CUBICLES"
+  },
+  {
+   "id": "a-101-12",
+   "globalId": "0ztdC3L1HAzhbhMHypqcQh",
+   "page": 1,
+   "rect": {
+    "x": 0.20911,
+    "y": 0.6366,
+    "w": 0.25311,
+    "h": 0.02013
+   },
+   "label": "1EC1 CORRIDOR"
+  },
+  {
+   "id": "a-101-13",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7A",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.65821,
+    "w": 0.04031,
+    "h": 0.12219
+   },
+   "label": "1E16 BMET WORK STATION"
+  },
+  {
+   "id": "a-101-14",
+   "globalId": "0ztdC3L1HAzhbhMHypqcaZ",
+   "page": 1,
+   "rect": {
+    "x": 0.3128,
+    "y": 0.29291,
+    "w": 0.13743,
+    "h": 0.03342
+   },
+   "label": "1DC3 CORRIDOR"
+  },
+  {
+   "id": "a-101-15",
+   "globalId": "0ztdC3L1HAzhbhMHypqc1b",
+   "page": 1,
+   "rect": {
+    "x": 0.3128,
+    "y": 0.47679,
+    "w": 0.13743,
+    "h": 0.03199
+   },
+   "label": "1DC7 CORRIDOR"
+  },
+  {
+   "id": "a-101-16",
+   "globalId": "0ztdC3L1HAzhbhMHypqcOk",
+   "page": 1,
+   "rect": {
+    "x": 0.56032,
+    "y": 0.45182,
+    "w": 0.02279,
+    "h": 0.17527
+   },
+   "label": "1BC2 CORRIDOR"
+  },
+  {
+   "id": "a-101-17",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0h",
+   "page": 1,
+   "rect": {
+    "x": 0.37378,
+    "y": 0.55836,
+    "w": 0.04685,
+    "h": 0.07677
+   },
+   "label": "1E06 TECH. WORK STATION"
+  },
+  {
+   "id": "a-101-18",
+   "globalId": "0ztdC3L1HAzhbhMHypqcha",
+   "page": 1,
+   "rect": {
+    "x": 0.46885,
+    "y": 0.27779,
+    "w": 0.04076,
+    "h": 0.08497
+   },
+   "label": "1AC2 CORRIDOR"
+  },
+  {
+   "id": "a-101-19",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7F",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.5605,
+    "w": 0.04023,
+    "h": 0.07293
+   },
+   "label": "1E15 CENTRAL MECH. RM."
+  },
+  {
+   "id": "a-101-20",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVw",
+   "page": 1,
+   "rect": {
+    "x": 0.50947,
+    "y": 0.4416,
+    "w": 0.04981,
+    "h": 0.05803
+   },
+   "label": "1B13 RECEPTION"
+  },
+  {
+   "id": "a-101-21",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTs",
+   "page": 1,
+   "rect": {
+    "x": 0.50947,
+    "y": 0.54735,
+    "w": 0.04981,
+    "h": 0.05793
+   },
+   "label": "1B19 RADIOGRAPHIC ROOM"
+  },
+  {
+   "id": "a-101-22",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZa",
+   "page": 1,
+   "rect": {
+    "x": 0.61289,
+    "y": 0.25599,
+    "w": 0.02652,
+    "h": 0.10804
+   },
+   "label": "1A02 RMO ANALYST"
+  },
+  {
+   "id": "a-101-23",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9M",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.3655,
+    "w": 0.03304,
+    "h": 0.07337
+   },
+   "label": "1D22 TEAM INTERACTION"
+  },
+  {
+   "id": "a-101-24",
+   "globalId": "0ztdC3L1HAzhbhMHypqcB0",
+   "page": 1,
+   "rect": {
+    "x": 0.40898,
+    "y": 0.208,
+    "w": 0.06166,
+    "h": 0.03799
+   },
+   "label": "1C07 OPT. EXAM / OFF."
+  },
+  {
+   "id": "a-101-25",
+   "globalId": "0ztdC3L1HAzhbhMHypqcB9",
+   "page": 1,
+   "rect": {
+    "x": 0.37836,
+    "y": 0.208,
+    "w": 0.06161,
+    "h": 0.038
+   },
+   "label": "1C10 OPT. EXAM / OFF."
+  },
+  {
+   "id": "a-101-26",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTB",
+   "page": 1,
+   "rect": {
+    "x": 0.50947,
+    "y": 0.49962,
+    "w": 0.04981,
+    "h": 0.04625
+   },
+   "label": "1B17 TECH. WORK ROOM"
+  },
+  {
+   "id": "a-101-27",
+   "globalId": "0ztdC3L1HAzhbhMHypqchZ",
+   "page": 1,
+   "rect": {
+    "x": 0.46137,
+    "y": 0.18639,
+    "w": 0.02469,
+    "h": 0.08993
+   },
+   "label": "1AC3 CORRIDOR"
+  },
+  {
+   "id": "a-101-28",
+   "globalId": "0ztdC3L1HAzhbhMHypqc8a",
+   "page": 1,
+   "rect": {
+    "x": 0.42021,
+    "y": 0.51025,
+    "w": 0.0476,
+    "h": 0.04663
+   },
+   "label": "1D38 TRMT ROOM"
+  },
+  {
+   "id": "a-101-29",
+   "globalId": "0ztdC3L1HAzhbhMHypqc8k",
+   "page": 1,
+   "rect": {
+    "x": 0.43454,
+    "y": 0.44433,
+    "w": 0.03327,
+    "h": 0.06445
+   },
+   "label": "1D40 IMMUNIZ'N ROOM"
+  },
+  {
+   "id": "a-101-30",
+   "globalId": "0ztdC3L1HAzhbhMHypqc74",
+   "page": 1,
+   "rect": {
+    "x": 0.2451,
+    "y": 0.55877,
+    "w": 0.02769,
+    "h": 0.07636
+   },
+   "label": "1E14 DISASTER STOR."
+  },
+  {
+   "id": "a-101-31",
+   "globalId": "0ztdC3L1HAzhbhMHypqchj",
+   "page": 1,
+   "rect": {
+    "x": 0.60177,
+    "y": 0.18639,
+    "w": 0.01112,
+    "h": 0.17763
+   },
+   "label": "1AC5 CORRIDOR"
+  },
+  {
+   "id": "a-101-32",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZz",
+   "page": 1,
+   "rect": {
+    "x": 0.57634,
+    "y": 0.2888,
+    "w": 0.02543,
+    "h": 0.07522
+   },
+   "label": "1A01 PATIENT ADMIN. RECEPT."
+  },
+  {
+   "id": "a-101-33",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7i",
+   "page": 1,
+   "rect": {
+    "x": 0.41937,
+    "y": 0.70878,
+    "w": 0.05133,
+    "h": 0.03574
+   },
+   "label": "1E26 WORK ROOM"
+  },
+  {
+   "id": "a-101-34",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAh",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.32357,
+    "w": 0.04507,
+    "h": 0.04045
+   },
+   "label": "1D21 GROUP IS"
+  },
+  {
+   "id": "a-101-35",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9L",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.44034,
+    "w": 0.04507,
+    "h": 0.04045
+   },
+   "label": "1D23 GROUP IS"
+  },
+  {
+   "id": "a-101-36",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTW",
+   "page": 1,
+   "rect": {
+    "x": 0.48954,
+    "y": 0.62857,
+    "w": 0.05073,
+    "h": 0.03245
+   },
+   "label": "1BS2 STAIR"
+  },
+  {
+   "id": "a-101-37",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0V",
+   "page": 1,
+   "rect": {
+    "x": 0.2451,
+    "y": 0.19558,
+    "w": 0.02915,
+    "h": 0.05001
+   },
+   "label": "1C15 PES ADMIN. OFFICE"
+  },
+  {
+   "id": "a-101-38",
+   "globalId": "0ztdC3L1HAzhbhMHypqcqk",
+   "page": 1,
+   "rect": {
+    "x": 0.29857,
+    "y": 0.12165,
+    "w": 0.02235,
+    "h": 0.06454
+   },
+   "label": "1CC3 CORRIDOR"
+  },
+  {
+   "id": "a-101-39",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7q",
+   "page": 1,
+   "rect": {
+    "x": 0.24042,
+    "y": 0.69361,
+    "w": 0.02727,
+    "h": 0.05287
+   },
+   "label": "1E18 BIOMED MAINT. ADMIN."
+  },
+  {
+   "id": "a-101-40",
+   "globalId": "0ztdC3L1HAzhbhMHypqcak",
+   "page": 1,
+   "rect": {
+    "x": 0.29857,
+    "y": 0.246,
+    "w": 0.01424,
+    "h": 0.09903
+   },
+   "label": "1DC4 CORRIDOR"
+  },
+  {
+   "id": "a-101-41",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBA",
+   "page": 1,
+   "rect": {
+    "x": 0.33891,
+    "y": 0.11017,
+    "w": 0.03273,
+    "h": 0.04291
+   },
+   "label": "1C09 FUNDUS CAMERA ROOM"
+  },
+  {
+   "id": "a-101-42",
+   "globalId": "0ztdC3L1HAzhbhMHypqc1c",
+   "page": 1,
+   "rect": {
+    "x": 0.29842,
+    "y": 0.48257,
+    "w": 0.01438,
+    "h": 0.09656
+   },
+   "label": "1DC6 CORRIDOR"
+  },
+  {
+   "id": "a-101-43",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0q",
+   "page": 1,
+   "rect": {
+    "x": 0.31751,
+    "y": 0.11324,
+    "w": 0.02035,
+    "h": 0.06748
+   },
+   "label": "1CS3 STAIR"
+  },
+  {
+   "id": "a-101-44",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7Q",
+   "page": 1,
+   "rect": {
+    "x": 0.31385,
+    "y": 0.55836,
+    "w": 0.0313,
+    "h": 0.04364
+   },
+   "label": "1E11 STAFF LOUNGE"
+  },
+  {
+   "id": "a-101-45",
+   "globalId": "0ztdC3L1HAzhbhMHypqdeT",
+   "page": 1,
+   "rect": {
+    "x": 0.48661,
+    "y": 0.27779,
+    "w": 0.023,
+    "h": 0.05902
+   },
+   "label": "1AS1 STAIR"
+  },
+  {
+   "id": "a-101-46",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBg",
+   "page": 1,
+   "rect": {
+    "x": 0.43921,
+    "y": 0.24707,
+    "w": 0.0286,
+    "h": 0.04704
+   },
+   "label": "1D05 TRMT RM. DIRTY PROC."
+  },
+  {
+   "id": "a-101-47",
+   "globalId": "0ztdC3L1HAzhbhMHypqc6V",
+   "page": 1,
+   "rect": {
+    "x": 0.27383,
+    "y": 0.55877,
+    "w": 0.02355,
+    "h": 0.0531
+   },
+   "label": "1E33 ISOLATION INTERACTION STATION"
+  },
+  {
+   "id": "a-101-48",
+   "globalId": "0ztdC3L1HAzhbhMHypqcOj",
+   "page": 1,
+   "rect": {
+    "x": 0.49921,
+    "y": 0.60676,
+    "w": 0.06111,
+    "h": 0.02033
+   },
+   "label": "1BC3 CORRIDOR"
+  },
+  {
+   "id": "a-101-49",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYS",
+   "page": 1,
+   "rect": {
+    "x": 0.51608,
+    "y": 0.21621,
+    "w": 0.03159,
+    "h": 0.0383
+   },
+   "label": "1A10 LOUNGE"
+  },
+  {
+   "id": "a-101-50",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAT",
+   "page": 1,
+   "rect": {
+    "x": 0.35662,
+    "y": 0.31739,
+    "w": 0.02562,
+    "h": 0.04664
+   },
+   "label": "1D10 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-51",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAJ",
+   "page": 1,
+   "rect": {
+    "x": 0.38328,
+    "y": 0.31739,
+    "w": 0.02562,
+    "h": 0.04664
+   },
+   "label": "1D08 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-52",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9$",
+   "page": 1,
+   "rect": {
+    "x": 0.38328,
+    "y": 0.44034,
+    "w": 0.02562,
+    "h": 0.04663
+   },
+   "label": "1D35 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-53",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAO",
+   "page": 1,
+   "rect": {
+    "x": 0.34051,
+    "y": 0.24747,
+    "w": 0.02562,
+    "h": 0.04663
+   },
+   "label": "1D11 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-54",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9r",
+   "page": 1,
+   "rect": {
+    "x": 0.35662,
+    "y": 0.44034,
+    "w": 0.02562,
+    "h": 0.04663
+   },
+   "label": "1D33 PEDIATRIC WAITING"
+  },
+  {
+   "id": "a-101-55",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9s",
+   "page": 1,
+   "rect": {
+    "x": 0.34022,
+    "y": 0.51025,
+    "w": 0.02562,
+    "h": 0.04663
+   },
+   "label": "1D32 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-56",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9w",
+   "page": 1,
+   "rect": {
+    "x": 0.39354,
+    "y": 0.51025,
+    "w": 0.02562,
+    "h": 0.04663
+   },
+   "label": "1D36 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-57",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9m",
+   "page": 1,
+   "rect": {
+    "x": 0.36688,
+    "y": 0.51025,
+    "w": 0.02562,
+    "h": 0.04663
+   },
+   "label": "1D34 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-58",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAK",
+   "page": 1,
+   "rect": {
+    "x": 0.39383,
+    "y": 0.24747,
+    "w": 0.02562,
+    "h": 0.04663
+   },
+   "label": "1D07 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-59",
+   "globalId": "0ztdC3L1HAzhbhMHypqcA2",
+   "page": 1,
+   "rect": {
+    "x": 0.31385,
+    "y": 0.24747,
+    "w": 0.02562,
+    "h": 0.04663
+   },
+   "label": "1D13 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-60",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAU",
+   "page": 1,
+   "rect": {
+    "x": 0.36717,
+    "y": 0.24747,
+    "w": 0.02562,
+    "h": 0.04663
+   },
+   "label": "1D09 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-61",
+   "globalId": "0ztdC3L1HAzhbhMHypqcB6",
+   "page": 1,
+   "rect": {
+    "x": 0.38811,
+    "y": 0.11017,
+    "w": 0.02892,
+    "h": 0.04089
+   },
+   "label": "1C05 VISUAL FIELD"
+  },
+  {
+   "id": "a-101-62",
+   "globalId": "0ztdC3L1HAzhbhMHypqc94",
+   "page": 1,
+   "rect": {
+    "x": 0.31385,
+    "y": 0.51025,
+    "w": 0.02533,
+    "h": 0.04663
+   },
+   "label": "1D28 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-63",
+   "globalId": "0ztdC3L1HAzhbhMHypqcqj",
+   "page": 1,
+   "rect": {
+    "x": 0.3128,
+    "y": 0.20652,
+    "w": 0.02948,
+    "h": 0.03948
+   },
+   "label": "1C01 WAITING"
+  },
+  {
+   "id": "a-101-64",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0L",
+   "page": 1,
+   "rect": {
+    "x": 0.27529,
+    "y": 0.19558,
+    "w": 0.02223,
+    "h": 0.05001
+   },
+   "label": "1C13 COMM. ROOM"
+  },
+  {
+   "id": "a-101-65",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAi",
+   "page": 1,
+   "rect": {
+    "x": 0.24712,
+    "y": 0.32357,
+    "w": 0.02708,
+    "h": 0.04045
+   },
+   "label": "1D20 APPMTS"
+  },
+  {
+   "id": "a-101-66",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9G",
+   "page": 1,
+   "rect": {
+    "x": 0.24712,
+    "y": 0.44034,
+    "w": 0.02708,
+    "h": 0.04045
+   },
+   "label": "1D24 RECORDS"
+  },
+  {
+   "id": "a-101-67",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7X",
+   "page": 1,
+   "rect": {
+    "x": 0.41166,
+    "y": 0.65821,
+    "w": 0.02206,
+    "h": 0.0491
+   },
+   "label": "1E25 ADP EQUIP SPACE"
+  },
+  {
+   "id": "a-101-68",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7M",
+   "page": 1,
+   "rect": {
+    "x": 0.34619,
+    "y": 0.59444,
+    "w": 0.02654,
+    "h": 0.04069
+   },
+   "label": "1E07 CONF. LIBRARY"
+  },
+  {
+   "id": "a-101-69",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBb",
+   "page": 1,
+   "rect": {
+    "x": 0.43454,
+    "y": 0.32781,
+    "w": 0.03327,
+    "h": 0.03222
+   },
+   "label": "1D02 INTERACTION STATION"
+  },
+  {
+   "id": "a-101-70",
+   "globalId": "0ztdC3L1HAzhbhMHypqc03",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.11017,
+    "w": 0.0296,
+    "h": 0.03554
+   },
+   "label": "1C19 AUDIO"
+  },
+  {
+   "id": "a-101-71",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9B",
+   "page": 1,
+   "rect": {
+    "x": 0.33311,
+    "y": 0.44034,
+    "w": 0.02247,
+    "h": 0.04663
+   },
+   "label": "1D31 PEDIATRIC WTS & MSRS"
+  },
+  {
+   "id": "a-101-72",
+   "globalId": "0ztdC3L1HAzhbhMHypqc6L",
+   "page": 1,
+   "rect": {
+    "x": 0.45018,
+    "y": 0.65821,
+    "w": 0.02051,
+    "h": 0.0491
+   },
+   "label": "1E29 HK. SUPV. OFFICE"
+  },
+  {
+   "id": "a-101-73",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9P",
+   "page": 1,
+   "rect": {
+    "x": 0.27524,
+    "y": 0.44034,
+    "w": 0.02214,
+    "h": 0.04549
+   },
+   "label": "1D27 ADMIN WORK STATN."
+  },
+  {
+   "id": "a-101-74",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYH",
+   "page": 1,
+   "rect": {
+    "x": 0.4871,
+    "y": 0.18211,
+    "w": 0.02823,
+    "h": 0.03566
+   },
+   "label": "1A09 W. TOILET"
+  },
+  {
+   "id": "a-101-75",
+   "globalId": "0ztdC3L1HAzhbhMHypqcY6",
+   "page": 1,
+   "rect": {
+    "x": 0.4871,
+    "y": 0.21924,
+    "w": 0.02823,
+    "h": 0.03527
+   },
+   "label": "1A12 M. TOILET"
+  },
+  {
+   "id": "a-101-76",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVr",
+   "page": 1,
+   "rect": {
+    "x": 0.57575,
+    "y": 0.61251,
+    "w": 0.0204,
+    "h": 0.0485
+   },
+   "label": "1B10 STAFF LOUNGE"
+  },
+  {
+   "id": "a-101-77",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBF",
+   "page": 1,
+   "rect": {
+    "x": 0.33891,
+    "y": 0.15456,
+    "w": 0.03273,
+    "h": 0.03015
+   },
+   "label": "1C08 SCREEN EYE TEST"
+  },
+  {
+   "id": "a-101-78",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYI",
+   "page": 1,
+   "rect": {
+    "x": 0.51852,
+    "y": 0.18211,
+    "w": 0.02915,
+    "h": 0.03263
+   },
+   "label": "1A08 PHARM. OFFICE"
+  },
+  {
+   "id": "a-101-79",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZe",
+   "page": 1,
+   "rect": {
+    "x": 0.61393,
+    "y": 0.18211,
+    "w": 0.02548,
+    "h": 0.03721
+   },
+   "label": "1A06 TRICARE OFFICE"
+  },
+  {
+   "id": "a-101-80",
+   "globalId": "0ztdC3L1HAzhbhMHypqcA7",
+   "page": 1,
+   "rect": {
+    "x": 0.33526,
+    "y": 0.31739,
+    "w": 0.02032,
+    "h": 0.04664
+   },
+   "label": "1D12 SPECIMEN COLL. LAB"
+  },
+  {
+   "id": "a-101-81",
+   "globalId": "0ztdC3L1HAzhbhMHypqcPS",
+   "page": 1,
+   "rect": {
+    "x": 0.26684,
+    "y": 0.65674,
+    "w": 0.01804,
+    "h": 0.05193
+   },
+   "label": "1EC4 CORRIDOR"
+  },
+  {
+   "id": "a-101-82",
+   "globalId": "0ztdC3L1HAzhbhMHypqcV1",
+   "page": 1,
+   "rect": {
+    "x": 0.61836,
+    "y": 0.61251,
+    "w": 0.02105,
+    "h": 0.04442
+   },
+   "label": "1B06 LAB OFFICE"
+  },
+  {
+   "id": "a-101-83",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAY",
+   "page": 1,
+   "rect": {
+    "x": 0.27524,
+    "y": 0.29721,
+    "w": 0.02228,
+    "h": 0.04185
+   },
+   "label": "1D18 TOILET"
+  },
+  {
+   "id": "a-101-84",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBR",
+   "page": 1,
+   "rect": {
+    "x": 0.38811,
+    "y": 0.15254,
+    "w": 0.02892,
+    "h": 0.03218
+   },
+   "label": "1C04 FITTING / DISP."
+  },
+  {
+   "id": "a-101-85",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7p",
+   "page": 1,
+   "rect": {
+    "x": 0.24042,
+    "y": 0.65821,
+    "w": 0.02727,
+    "h": 0.03392
+   },
+   "label": "1E19 ELEC. ROOM"
+  },
+  {
+   "id": "a-101-86",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0Q",
+   "page": 1,
+   "rect": {
+    "x": 0.23164,
+    "y": 0.11017,
+    "w": 0.02587,
+    "h": 0.03554
+   },
+   "label": "1C16 ECG TEST"
+  },
+  {
+   "id": "a-101-87",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7L",
+   "page": 1,
+   "rect": {
+    "x": 0.34619,
+    "y": 0.55836,
+    "w": 0.02654,
+    "h": 0.0346
+   },
+   "label": "1E08 SUPER"
+  },
+  {
+   "id": "a-101-88",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0i",
+   "page": 1,
+   "rect": {
+    "x": 0.42167,
+    "y": 0.55836,
+    "w": 0.0241,
+    "h": 0.03805
+   },
+   "label": "1E05 CHIEF LOG OFFICE"
+  },
+  {
+   "id": "a-101-89",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBK",
+   "page": 1,
+   "rect": {
+    "x": 0.34228,
+    "y": 0.208,
+    "w": 0.0241,
+    "h": 0.038
+   },
+   "label": "1C02 RECEPTION"
+  },
+  {
+   "id": "a-101-90",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVI",
+   "page": 1,
+   "rect": {
+    "x": 0.57575,
+    "y": 0.4396,
+    "w": 0.0308,
+    "h": 0.02954
+   },
+   "label": "1B01 RECEPTION"
+  },
+  {
+   "id": "a-101-91",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTv",
+   "page": 1,
+   "rect": {
+    "x": 0.48954,
+    "y": 0.55717,
+    "w": 0.01889,
+    "h": 0.04811
+   },
+   "label": "1B23 ELEC. ROOM"
+  },
+  {
+   "id": "a-101-92",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0P",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.2118,
+    "w": 0.02678,
+    "h": 0.03379
+   },
+   "label": "1C17 CHIEF AERO MED."
+  },
+  {
+   "id": "a-101-93",
+   "globalId": "0ztdC3L1HAzhbhMHypqcT_",
+   "page": 1,
+   "rect": {
+    "x": 0.48954,
+    "y": 0.508,
+    "w": 0.01889,
+    "h": 0.04771
+   },
+   "label": "1B21 COMM. ROOM"
+  },
+  {
+   "id": "a-101-94",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVO",
+   "page": 1,
+   "rect": {
+    "x": 0.57575,
+    "y": 0.47061,
+    "w": 0.0308,
+    "h": 0.0292
+   },
+   "label": "1B03 BLOOD DRAW"
+  },
+  {
+   "id": "a-101-95",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0X",
+   "page": 1,
+   "rect": {
+    "x": 0.42167,
+    "y": 0.59789,
+    "w": 0.0241,
+    "h": 0.03724
+   },
+   "label": "1E04 HK BREAK ROOM"
+  },
+  {
+   "id": "a-101-96",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0$",
+   "page": 1,
+   "rect": {
+    "x": 0.44682,
+    "y": 0.59748,
+    "w": 0.02382,
+    "h": 0.03765
+   },
+   "label": "1E01 HK EQUIP. STORAGE"
+  },
+  {
+   "id": "a-101-97",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVB",
+   "page": 1,
+   "rect": {
+    "x": 0.5972,
+    "y": 0.61251,
+    "w": 0.02012,
+    "h": 0.04442
+   },
+   "label": "1B08 CENT. STO."
+  },
+  {
+   "id": "a-101-98",
+   "globalId": "0ztdC3L1HAzhbhMHypqc79",
+   "page": 1,
+   "rect": {
+    "x": 0.24042,
+    "y": 0.74795,
+    "w": 0.02727,
+    "h": 0.03245
+   },
+   "label": "1E17 HAZ. STOR."
+  },
+  {
+   "id": "a-101-99",
+   "globalId": "0ztdC3L1HAzhbhMHypqchk",
+   "page": 1,
+   "rect": {
+    "x": 0.4871,
+    "y": 0.25599,
+    "w": 0.04328,
+    "h": 0.02033
+   },
+   "label": "1AC4 CORRIDOR"
+  },
+  {
+   "id": "a-101-100",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7_",
+   "page": 1,
+   "rect": {
+    "x": 0.28713,
+    "y": 0.74968,
+    "w": 0.02854,
+    "h": 0.03071
+   },
+   "label": "1E20 TRASH"
+  },
+  {
+   "id": "a-101-101",
+   "globalId": "0ztdC3L1HAzhbhMHypqc6M",
+   "page": 1,
+   "rect": {
+    "x": 0.44527,
+    "y": 0.746,
+    "w": 0.02542,
+    "h": 0.0344
+   },
+   "label": "1E28 FAC. MGR. OFFICE"
+  },
+  {
+   "id": "a-101-102",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYN",
+   "page": 1,
+   "rect": {
+    "x": 0.57634,
+    "y": 0.18211,
+    "w": 0.02491,
+    "h": 0.03483
+   },
+   "label": "1A07 TRICARE OFFICE"
+  },
+  {
+   "id": "a-101-103",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZk",
+   "page": 1,
+   "rect": {
+    "x": 0.61393,
+    "y": 0.22079,
+    "w": 0.02548,
+    "h": 0.03372
+   },
+   "label": "1A04 TRICARE OFFICE"
+  },
+  {
+   "id": "a-101-104",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7h",
+   "page": 1,
+   "rect": {
+    "x": 0.41937,
+    "y": 0.746,
+    "w": 0.02486,
+    "h": 0.0344
+   },
+   "label": "1E27 BENCHSTOCK STORAGE"
+  },
+  {
+   "id": "a-101-105",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZj",
+   "page": 1,
+   "rect": {
+    "x": 0.57634,
+    "y": 0.21841,
+    "w": 0.02491,
+    "h": 0.03432
+   },
+   "label": "1A05 TRICARE OFFICE"
+  },
+  {
+   "id": "a-101-106",
+   "globalId": "0ztdC3L1HAzhbhMHypqc93",
+   "page": 1,
+   "rect": {
+    "x": 0.31385,
+    "y": 0.44034,
+    "w": 0.01822,
+    "h": 0.04663
+   },
+   "label": "1D30 WTS & MEAS. ROOM"
+  },
+  {
+   "id": "a-101-107",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7d",
+   "page": 1,
+   "rect": {
+    "x": 0.28593,
+    "y": 0.65821,
+    "w": 0.02974,
+    "h": 0.02811
+   },
+   "label": "1E23 BEE EQUIP. STORAGE"
+  },
+  {
+   "id": "a-101-108",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBf",
+   "page": 1,
+   "rect": {
+    "x": 0.42049,
+    "y": 0.24707,
+    "w": 0.01768,
+    "h": 0.04704
+   },
+   "label": "1D06 SCOPE WASH / DECON."
+  },
+  {
+   "id": "a-101-109",
+   "globalId": "0ztdC3L1HAzhbhMHypqcZZ",
+   "page": 1,
+   "rect": {
+    "x": 0.57634,
+    "y": 0.2542,
+    "w": 0.02491,
+    "h": 0.03313
+   },
+   "label": "1A03 TRICARE OFFICE"
+  },
+  {
+   "id": "a-101-110",
+   "globalId": "0ztdC3L1HAzhbhMHypqcPH",
+   "page": 1,
+   "rect": {
+    "x": 0.29842,
+    "y": 0.5806,
+    "w": 0.01438,
+    "h": 0.056
+   },
+   "label": "1EC3 CORRIDOR"
+  },
+  {
+   "id": "a-101-111",
+   "globalId": "0ztdC3L1HAzhbhMHypqcqZ",
+   "page": 1,
+   "rect": {
+    "x": 0.37269,
+    "y": 0.13355,
+    "w": 0.01438,
+    "h": 0.05263
+   },
+   "label": "1CC2 CORRIDOR"
+  },
+  {
+   "id": "a-101-112",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0G",
+   "page": 1,
+   "rect": {
+    "x": 0.25856,
+    "y": 0.11017,
+    "w": 0.02057,
+    "h": 0.03554
+   },
+   "label": "1C14 HIST. / INTV."
+  },
+  {
+   "id": "a-101-113",
+   "globalId": "0ztdC3L1HAzhbhMHypqcPI",
+   "page": 1,
+   "rect": {
+    "x": 0.43476,
+    "y": 0.65674,
+    "w": 0.01438,
+    "h": 0.05057
+   },
+   "label": "1EC2 CORRIDOR"
+  },
+  {
+   "id": "a-101-114",
+   "globalId": "0ztdC3L1HAzhbhMHypqcY0",
+   "page": 1,
+   "rect": {
+    "x": 0.51065,
+    "y": 0.30034,
+    "w": 0.02217,
+    "h": 0.03044
+   },
+   "label": "1A14 SUPER / NCOIC"
+  },
+  {
+   "id": "a-101-115",
+   "globalId": "0ztdC3L1HAzhbhMHypqc6G",
+   "page": 1,
+   "rect": {
+    "x": 0.28593,
+    "y": 0.68779,
+    "w": 0.02974,
+    "h": 0.02087
+   },
+   "label": "1E30 SOIL. LIN."
+  },
+  {
+   "id": "a-101-116",
+   "globalId": "0ztdC3L1HAzhbhMHypqc8e",
+   "page": 1,
+   "rect": {
+    "x": 0.29842,
+    "y": 0.43886,
+    "w": 0.01438,
+    "h": 0.04223
+   },
+   "label": "1DC5 CORRIDOR"
+  },
+  {
+   "id": "a-101-117",
+   "globalId": "0ztdC3L1HAzhbhMHypqcaa",
+   "page": 1,
+   "rect": {
+    "x": 0.41911,
+    "y": 0.31591,
+    "w": 0.01438,
+    "h": 0.04126
+   },
+   "label": "1DC2 CORRIDOR"
+  },
+  {
+   "id": "a-101-118",
+   "globalId": "0ztdC3L1HAzhbhMHypqc1W",
+   "page": 1,
+   "rect": {
+    "x": 0.41911,
+    "y": 0.44719,
+    "w": 0.01438,
+    "h": 0.04123
+   },
+   "label": "1DC8 CORRIDOR"
+  },
+  {
+   "id": "a-101-119",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYF",
+   "page": 1,
+   "rect": {
+    "x": 0.51065,
+    "y": 0.33225,
+    "w": 0.02113,
+    "h": 0.02778
+   },
+   "label": "1A15 COUNSELING"
+  },
+  {
+   "id": "a-101-120",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7u",
+   "page": 1,
+   "rect": {
+    "x": 0.30085,
+    "y": 0.71014,
+    "w": 0.01482,
+    "h": 0.03807
+   },
+   "label": "1E22 SEC. STORAGE"
+  },
+  {
+   "id": "a-101-121",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVT",
+   "page": 1,
+   "rect": {
+    "x": 0.62302,
+    "y": 0.44338,
+    "w": 0.01639,
+    "h": 0.03377
+   },
+   "label": "1B02 SPECIMEN TOILET"
+  },
+  {
+   "id": "a-101-122",
+   "globalId": "0ztdC3L1HAzhbhMHypqc1g",
+   "page": 1,
+   "rect": {
+    "x": 0.28017,
+    "y": 0.11425,
+    "w": 0.01735,
+    "h": 0.03146
+   },
+   "label": "1C12 TOILET"
+  },
+  {
+   "id": "a-101-123",
+   "globalId": "0ztdC3L1HAzhbhMHypqcT1",
+   "page": 1,
+   "rect": {
+    "x": 0.54,
+    "y": 0.4709,
+    "w": 0.01928,
+    "h": 0.02725
+   },
+   "label": "1B15 FILM VIEW"
+  },
+  {
+   "id": "a-101-124",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAX",
+   "page": 1,
+   "rect": {
+    "x": 0.27524,
+    "y": 0.34053,
+    "w": 0.02228,
+    "h": 0.0235
+   },
+   "label": "1D19 MDIS VIEW"
+  },
+  {
+   "id": "a-101-125",
+   "globalId": "0ztdC3L1HAzhbhMHypqcOd",
+   "page": 1,
+   "rect": {
+    "x": 0.60759,
+    "y": 0.45182,
+    "w": 0.01438,
+    "h": 0.03543
+   },
+   "label": "1BC1 CORRIDOR"
+  },
+  {
+   "id": "a-101-126",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0d",
+   "page": 1,
+   "rect": {
+    "x": 0.44682,
+    "y": 0.57465,
+    "w": 0.02382,
+    "h": 0.02136
+   },
+   "label": "1E02 ELEV. EQUIP."
+  },
+  {
+   "id": "a-101-127",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7z",
+   "page": 1,
+   "rect": {
+    "x": 0.28713,
+    "y": 0.71014,
+    "w": 0.01268,
+    "h": 0.03807
+   },
+   "label": "1E21 FLAMABLE STORAGE"
+  },
+  {
+   "id": "a-101-128",
+   "globalId": "0ztdC3L1HAzhbhMHypqcB5",
+   "page": 1,
+   "rect": {
+    "x": 0.37269,
+    "y": 0.11017,
+    "w": 0.02124,
+    "h": 0.02191
+   },
+   "label": "1C06 SOIL. UTL. / TRASH"
+  },
+  {
+   "id": "a-101-129",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7P",
+   "page": 1,
+   "rect": {
+    "x": 0.27603,
+    "y": 0.61335,
+    "w": 0.02135,
+    "h": 0.02178
+   },
+   "label": "1E12 ISOLATION TOILET"
+  },
+  {
+   "id": "a-101-130",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAC",
+   "page": 1,
+   "rect": {
+    "x": 0.31333,
+    "y": 0.34184,
+    "w": 0.02089,
+    "h": 0.02219
+   },
+   "label": "1D15 WTS & MEAS. ROOM"
+  },
+  {
+   "id": "a-101-131",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBl",
+   "page": 1,
+   "rect": {
+    "x": 0.45127,
+    "y": 0.29558,
+    "w": 0.01653,
+    "h": 0.02771
+   },
+   "label": "1D04 TOILET"
+  },
+  {
+   "id": "a-101-132",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7V",
+   "page": 1,
+   "rect": {
+    "x": 0.31385,
+    "y": 0.60348,
+    "w": 0.01405,
+    "h": 0.03165
+   },
+   "label": "1E10 M. TOILET"
+  },
+  {
+   "id": "a-101-133",
+   "globalId": "0ztdC3L1HAzhbhMHypqc7G",
+   "page": 1,
+   "rect": {
+    "x": 0.3311,
+    "y": 0.60348,
+    "w": 0.01405,
+    "h": 0.03165
+   },
+   "label": "1E09 W. TOILET"
+  },
+  {
+   "id": "a-101-134",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9Q",
+   "page": 1,
+   "rect": {
+    "x": 0.27524,
+    "y": 0.49059,
+    "w": 0.02214,
+    "h": 0.01993
+   },
+   "label": "1D26 TOILET"
+  },
+  {
+   "id": "a-101-135",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVm",
+   "page": 1,
+   "rect": {
+    "x": 0.5779,
+    "y": 0.56697,
+    "w": 0.01981,
+    "h": 0.02226
+   },
+   "label": "1B11 STAFF TOILET"
+  },
+  {
+   "id": "a-101-136",
+   "globalId": "0ztdC3L1HAzhbhMHypqcV2",
+   "page": 1,
+   "rect": {
+    "x": 0.57575,
+    "y": 0.50129,
+    "w": 0.01981,
+    "h": 0.02128
+   },
+   "label": "1B05 PAT. / STAFF TOILET"
+  },
+  {
+   "id": "a-101-137",
+   "globalId": "0ztdC3L1HAzhbhMHypqcA1",
+   "page": 1,
+   "rect": {
+    "x": 0.316,
+    "y": 0.31739,
+    "w": 0.01822,
+    "h": 0.02297
+   },
+   "label": "1D14 SPECIMEN TOILET"
+  },
+  {
+   "id": "a-101-138",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVs",
+   "page": 1,
+   "rect": {
+    "x": 0.57916,
+    "y": 0.54326,
+    "w": 0.01855,
+    "h": 0.02224
+   },
+   "label": "1B09 DRESS"
+  },
+  {
+   "id": "a-101-139",
+   "globalId": "0ztdC3L1HAzhbhMHypqdiM",
+   "page": 1,
+   "rect": {
+    "x": 0.48955,
+    "y": 0.45106,
+    "w": 0.01888,
+    "h": 0.02112
+   },
+   "label": "E1 ELEVATOR"
+  },
+  {
+   "id": "a-101-140",
+   "globalId": "0ztdC3L1HAzhbhMHypqcY5",
+   "page": 1,
+   "rect": {
+    "x": 0.51065,
+    "y": 0.27779,
+    "w": 0.01869,
+    "h": 0.02107
+   },
+   "label": "1A13 STAFF TOILET"
+  },
+  {
+   "id": "a-101-141",
+   "globalId": "0ztdC3L1HAzhbhMHypqcVC",
+   "page": 1,
+   "rect": {
+    "x": 0.57575,
+    "y": 0.52405,
+    "w": 0.02197,
+    "h": 0.01774
+   },
+   "label": "1B07 DRESS"
+  },
+  {
+   "id": "a-101-142",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBJ",
+   "page": 1,
+   "rect": {
+    "x": 0.36743,
+    "y": 0.208,
+    "w": 0.00989,
+    "h": 0.03586
+   },
+   "label": "1C03 JAN. CL."
+  },
+  {
+   "id": "a-101-143",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0Y",
+   "page": 1,
+   "rect": {
+    "x": 0.44682,
+    "y": 0.55836,
+    "w": 0.02382,
+    "h": 0.01482
+   },
+   "label": "1E03 JAN. CL."
+  },
+  {
+   "id": "a-101-144",
+   "globalId": "0ztdC3L1HAzhbhMHypqcT2",
+   "page": 1,
+   "rect": {
+    "x": 0.55292,
+    "y": 0.62857,
+    "w": 0.01056,
+    "h": 0.03245
+   },
+   "label": "1B14 SOIL. UTL."
+  },
+  {
+   "id": "a-101-145",
+   "globalId": "0ztdC3L1HAzhbhMHypqcTC",
+   "page": 1,
+   "rect": {
+    "x": 0.54132,
+    "y": 0.62857,
+    "w": 0.01056,
+    "h": 0.03245
+   },
+   "label": "1B16 JAN. CL."
+  },
+  {
+   "id": "a-101-146",
+   "globalId": "0ztdC3L1HAzhbhMHypqcV$",
+   "page": 1,
+   "rect": {
+    "x": 0.56453,
+    "y": 0.62857,
+    "w": 0.01018,
+    "h": 0.03245
+   },
+   "label": "1B12 CLEAN SUP. & EQUIP."
+  },
+  {
+   "id": "a-101-147",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBW",
+   "page": 1,
+   "rect": {
+    "x": 0.40995,
+    "y": 0.31739,
+    "w": 0.00917,
+    "h": 0.02278
+   },
+   "label": "1D03 CLEAN U."
+  },
+  {
+   "id": "a-101-148",
+   "globalId": "0ztdC3L1HAzhbhMHypqc9v",
+   "page": 1,
+   "rect": {
+    "x": 0.40995,
+    "y": 0.46419,
+    "w": 0.00917,
+    "h": 0.02278
+   },
+   "label": "1D37 CLEAN U."
+  },
+  {
+   "id": "a-101-149",
+   "globalId": "0ztdC3L1HAzhbhMHypqcBw",
+   "page": 1,
+   "rect": {
+    "x": 0.40995,
+    "y": 0.34165,
+    "w": 0.00812,
+    "h": 0.02238
+   },
+   "label": "1D01 SL. LIN. / TRASH"
+  },
+  {
+   "id": "a-101-150",
+   "globalId": "0ztdC3L1HAzhbhMHypqc8Z",
+   "page": 1,
+   "rect": {
+    "x": 0.40995,
+    "y": 0.44034,
+    "w": 0.00812,
+    "h": 0.02238
+   },
+   "label": "1D39 JAN. CL."
+  },
+  {
+   "id": "a-101-151",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYR",
+   "page": 1,
+   "rect": {
+    "x": 0.54009,
+    "y": 0.21621,
+    "w": 0.00759,
+    "h": 0.02213
+   },
+   "label": "1A11 JAN."
+  },
+  {
+   "id": "a-101-152",
+   "globalId": "0ztdC3L1HAzhbhMHypqcAd",
+   "page": 1,
+   "rect": {
+    "x": 0.28412,
+    "y": 0.29385,
+    "w": 0.0134,
+    "h": 0.01247
+   },
+   "label": "1D17 JAN. CL."
+  },
+  {
+   "id": "a-101-153",
+   "globalId": "0ztdC3L1HAzhbhMHypqdl$",
+   "page": 1,
+   "rect": {
+    "x": 0.20101,
+    "y": 0.5923,
+    "w": 0.00512,
+    "h": 0.03236
+   },
+   "label": "1E15-A GAS STORAGE"
+  },
+  {
+   "id": "a-101-154",
+   "globalId": "0ztdC3L1HAzhbhMHypqc0D",
+   "page": 1,
+   "rect": {
+    "x": 0.31385,
+    "y": 0.13323,
+    "w": 0.00262,
+    "h": 0.02057
+   },
+   "label": "1C11 ELEC. CL."
+  },
+  {
+   "id": "a-101-155",
+   "globalId": "3qpE7fVkr8dRZ2wfCc6tWA",
+   "page": 1,
+   "rect": {
+    "x": 0.50157,
+    "y": 0.18239,
+    "w": 0.00903,
+    "h": 0.01171
+   },
+   "label": "Door 1A09tp1"
+  },
+  {
+   "id": "a-101-156",
+   "globalId": "3qpE7fVkr8dRZ2wfCc6tjC",
+   "page": 1,
+   "rect": {
+    "x": 0.49504,
+    "y": 0.20629,
+    "w": 0.00903,
+    "h": 0.01171
+   },
+   "label": "Door 1A09tp2"
+  },
+  {
+   "id": "a-101-157",
+   "globalId": "0otfaO0qPDAhynjJ6DnLXx",
+   "page": 1,
+   "rect": {
+    "x": 0.64029,
+    "y": 0.39077,
+    "w": 0.00656,
+    "h": 0.02283
+   },
+   "label": "Door 1CA1"
+  },
+  {
+   "id": "a-101-158",
+   "globalId": "3o5ntlA212uQCF0q6eQsZI",
+   "page": 1,
+   "rect": {
+    "x": 0.64029,
+    "y": 0.39077,
+    "w": 0.00656,
+    "h": 0.02283
+   },
+   "label": "Door 1CA1"
+  },
+  {
+   "id": "a-101-159",
+   "globalId": "3qpE7fVkr8dRZ2wfCc6tpH",
+   "page": 1,
+   "rect": {
+    "x": 0.49504,
+    "y": 0.21901,
+    "w": 0.00903,
+    "h": 0.01171
+   },
+   "label": "Door 1A12tp1"
+  },
+  {
+   "id": "a-101-160",
+   "globalId": "1byTDaqS91rBnWJlv$nn_r",
+   "page": 1,
+   "rect": {
+    "x": 0.22126,
+    "y": 0.13305,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C19"
+  },
+  {
+   "id": "a-101-161",
+   "globalId": "1byTDaqS91rBnWJlv$nndY",
+   "page": 1,
+   "rect": {
+    "x": 0.28857,
+    "y": 0.14605,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1C18"
+  },
+  {
+   "id": "a-101-162",
+   "globalId": "1byTDaqS91rBnWJlv$nnfS",
+   "page": 1,
+   "rect": {
+    "x": 0.38635,
+    "y": 0.13785,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1C05"
+  },
+  {
+   "id": "a-101-163",
+   "globalId": "1byTDaqS91rBnWJlv$nnhB",
+   "page": 1,
+   "rect": {
+    "x": 0.40447,
+    "y": 0.17205,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C04"
+  },
+  {
+   "id": "a-101-164",
+   "globalId": "1byTDaqS91rBnWJlv$nnMl",
+   "page": 1,
+   "rect": {
+    "x": 0.44072,
+    "y": 0.20551,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C07"
+  },
+  {
+   "id": "a-101-165",
+   "globalId": "1byTDaqS91rBnWJlv$nnMB",
+   "page": 1,
+   "rect": {
+    "x": 0.45961,
+    "y": 0.19283,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1CC1"
+  },
+  {
+   "id": "a-101-166",
+   "globalId": "1byTDaqS91rBnWJlv$nnJP",
+   "page": 1,
+   "rect": {
+    "x": 0.48534,
+    "y": 0.22833,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A12"
+  },
+  {
+   "id": "a-101-167",
+   "globalId": "1byTDaqS91rBnWJlv$nnIo",
+   "page": 1,
+   "rect": {
+    "x": 0.52532,
+    "y": 0.2535,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1A10"
+  },
+  {
+   "id": "a-101-168",
+   "globalId": "1byTDaqS91rBnWJlv$nnSA",
+   "page": 1,
+   "rect": {
+    "x": 0.54696,
+    "y": 0.22228,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A11"
+  },
+  {
+   "id": "a-101-169",
+   "globalId": "1byTDaqS91rBnWJlv$nnPu",
+   "page": 1,
+   "rect": {
+    "x": 0.61217,
+    "y": 0.2061,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A06"
+  },
+  {
+   "id": "a-101-170",
+   "globalId": "1byTDaqS91rBnWJlv$nnOd",
+   "page": 1,
+   "rect": {
+    "x": 0.61217,
+    "y": 0.2413,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A04"
+  },
+  {
+   "id": "a-101-171",
+   "globalId": "1byTDaqS91rBnWJlv$nn54",
+   "page": 1,
+   "rect": {
+    "x": 0.60241,
+    "y": 0.35136,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1AC5"
+  },
+  {
+   "id": "a-101-172",
+   "globalId": "1byTDaqS91rBnWJlv$nn4z",
+   "page": 1,
+   "rect": {
+    "x": 0.52282,
+    "y": 0.33135,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A15a"
+  },
+  {
+   "id": "a-101-173",
+   "globalId": "1byTDaqS91rBnWJlv$nn6$",
+   "page": 1,
+   "rect": {
+    "x": 0.51001,
+    "y": 0.27531,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1A13"
+  },
+  {
+   "id": "a-101-174",
+   "globalId": "1byTDaqS91rBnWJlv$nn9n",
+   "page": 1,
+   "rect": {
+    "x": 0.42883,
+    "y": 0.28144,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D06"
+  },
+  {
+   "id": "a-101-175",
+   "globalId": "1byTDaqS91rBnWJlv$nmsg",
+   "page": 1,
+   "rect": {
+    "x": 0.38311,
+    "y": 0.28144,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D09"
+  },
+  {
+   "id": "a-101-176",
+   "globalId": "1byTDaqS91rBnWJlv$nms7",
+   "page": 1,
+   "rect": {
+    "x": 0.32979,
+    "y": 0.28144,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D13"
+  },
+  {
+   "id": "a-101-177",
+   "globalId": "1byTDaqS91rBnWJlv$nmpw",
+   "page": 1,
+   "rect": {
+    "x": 0.32526,
+    "y": 0.31649,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D14"
+  },
+  {
+   "id": "a-101-178",
+   "globalId": "1byTDaqS91rBnWJlv$nmyn",
+   "page": 1,
+   "rect": {
+    "x": 0.38298,
+    "y": 0.3149,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D08"
+  },
+  {
+   "id": "a-101-179",
+   "globalId": "1byTDaqS91rBnWJlv$nm$e",
+   "page": 1,
+   "rect": {
+    "x": 0.30312,
+    "y": 0.33237,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1DC4"
+  },
+  {
+   "id": "a-101-180",
+   "globalId": "1byTDaqS91rBnWJlv$nmxs",
+   "page": 1,
+   "rect": {
+    "x": 0.26452,
+    "y": 0.35136,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D20"
+  },
+  {
+   "id": "a-101-181",
+   "globalId": "1byTDaqS91rBnWJlv$nmaW",
+   "page": 1,
+   "rect": {
+    "x": 0.23155,
+    "y": 0.35136,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D21"
+  },
+  {
+   "id": "a-101-182",
+   "globalId": "1byTDaqS91rBnWJlv$nmdJ",
+   "page": 1,
+   "rect": {
+    "x": 0.23155,
+    "y": 0.23293,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C18A"
+  },
+  {
+   "id": "a-101-183",
+   "globalId": "1byTDaqS91rBnWJlv$nmWh",
+   "page": 1,
+   "rect": {
+    "x": 0.2448,
+    "y": 0.1931,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C15"
+  },
+  {
+   "id": "a-101-184",
+   "globalId": "1byTDaqS91rBnWJlv$nmW0",
+   "page": 1,
+   "rect": {
+    "x": 0.28857,
+    "y": 0.19515,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1C13"
+  },
+  {
+   "id": "a-101-185",
+   "globalId": "1byTDaqS91rBnWJlv$nmZR",
+   "page": 1,
+   "rect": {
+    "x": 0.22054,
+    "y": 0.36698,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D22"
+  },
+  {
+   "id": "a-101-186",
+   "globalId": "1byTDaqS91rBnWJlv$nmfx",
+   "page": 1,
+   "rect": {
+    "x": 0.2746,
+    "y": 0.43785,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D27"
+  },
+  {
+   "id": "a-101-187",
+   "globalId": "1byTDaqS91rBnWJlv$nmeg",
+   "page": 1,
+   "rect": {
+    "x": 0.31209,
+    "y": 0.4566,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D30"
+  },
+  {
+   "id": "a-101-188",
+   "globalId": "1byTDaqS91rBnWJlv$nmeL",
+   "page": 1,
+   "rect": {
+    "x": 0.35792,
+    "y": 0.43785,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D33"
+  },
+  {
+   "id": "a-101-189",
+   "globalId": "1byTDaqS91rBnWJlv$nmhs",
+   "page": 1,
+   "rect": {
+    "x": 0.34624,
+    "y": 0.47431,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D31"
+  },
+  {
+   "id": "a-101-190",
+   "globalId": "1byTDaqS91rBnWJlv$nmKL",
+   "page": 1,
+   "rect": {
+    "x": 0.28842,
+    "y": 0.51156,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D25"
+  },
+  {
+   "id": "a-101-191",
+   "globalId": "1byTDaqS91rBnWJlv$nmHr",
+   "page": 1,
+   "rect": {
+    "x": 0.33992,
+    "y": 0.50777,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D32"
+  },
+  {
+   "id": "a-101-192",
+   "globalId": "1byTDaqS91rBnWJlv$nmGk",
+   "page": 1,
+   "rect": {
+    "x": 0.39956,
+    "y": 0.47431,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D35"
+  },
+  {
+   "id": "a-101-193",
+   "globalId": "1byTDaqS91rBnWJlv$nmIS",
+   "page": 1,
+   "rect": {
+    "x": 0.39324,
+    "y": 0.50777,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D36"
+  },
+  {
+   "id": "a-101-194",
+   "globalId": "1byTDaqS91rBnWJlv$nmTD",
+   "page": 1,
+   "rect": {
+    "x": 0.4199,
+    "y": 0.50777,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D38"
+  },
+  {
+   "id": "a-101-195",
+   "globalId": "1byTDaqS91rBnWJlv$nmSy",
+   "page": 1,
+   "rect": {
+    "x": 0.43278,
+    "y": 0.45899,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D40"
+  },
+  {
+   "id": "a-101-196",
+   "globalId": "1byTDaqS91rBnWJlv$nm5e",
+   "page": 1,
+   "rect": {
+    "x": 0.55032,
+    "y": 0.46999,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B15"
+  },
+  {
+   "id": "a-101-197",
+   "globalId": "1byTDaqS91rBnWJlv$nm7E",
+   "page": 1,
+   "rect": {
+    "x": 0.56503,
+    "y": 0.43769,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1BC2"
+  },
+  {
+   "id": "a-101-198",
+   "globalId": "1byTDaqS91rBnWJlv$nm10",
+   "page": 1,
+   "rect": {
+    "x": 0.59759,
+    "y": 0.47018,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B03"
+  },
+  {
+   "id": "a-101-199",
+   "globalId": "1byTDaqS91rBnWJlv$nmDB",
+   "page": 1,
+   "rect": {
+    "x": 0.61229,
+    "y": 0.43769,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1BC1"
+  },
+  {
+   "id": "a-101-200",
+   "globalId": "1byTDaqS91rBnWJlv$nmCW",
+   "page": 1,
+   "rect": {
+    "x": 0.62126,
+    "y": 0.46347,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B02"
+  },
+  {
+   "id": "a-101-201",
+   "globalId": "1byTDaqS91rBnWJlv$nmCV",
+   "page": 1,
+   "rect": {
+    "x": 0.60729,
+    "y": 0.48625,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1B04"
+  },
+  {
+   "id": "a-101-202",
+   "globalId": "1byTDaqS91rBnWJlv$nm9g",
+   "page": 1,
+   "rect": {
+    "x": 0.57399,
+    "y": 0.50889,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B05"
+  },
+  {
+   "id": "a-101-203",
+   "globalId": "1byTDaqS91rBnWJlv$nm9F",
+   "page": 1,
+   "rect": {
+    "x": 0.57399,
+    "y": 0.52858,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B07"
+  },
+  {
+   "id": "a-101-204",
+   "globalId": "1byTDaqS91rBnWJlv$nmA0",
+   "page": 1,
+   "rect": {
+    "x": 0.58837,
+    "y": 0.57657,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1B11"
+  },
+  {
+   "id": "a-101-205",
+   "globalId": "1byTDaqS91rBnWJlv$n$rP",
+   "page": 1,
+   "rect": {
+    "x": 0.61805,
+    "y": 0.61003,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1B06"
+  },
+  {
+   "id": "a-101-206",
+   "globalId": "1byTDaqS91rBnWJlv$n$qC",
+   "page": 1,
+   "rect": {
+    "x": 0.59656,
+    "y": 0.61003,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1B08"
+  },
+  {
+   "id": "a-101-207",
+   "globalId": "1byTDaqS91rBnWJlv$n$nD",
+   "page": 1,
+   "rect": {
+    "x": 0.56503,
+    "y": 0.61443,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1B12"
+  },
+  {
+   "id": "a-101-208",
+   "globalId": "1byTDaqS91rBnWJlv$n$cb",
+   "page": 1,
+   "rect": {
+    "x": 0.48778,
+    "y": 0.59231,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B23"
+  },
+  {
+   "id": "a-101-209",
+   "globalId": "1byTDaqS91rBnWJlv$n$Wu",
+   "page": 1,
+   "rect": {
+    "x": 0.48778,
+    "y": 0.54249,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B21"
+  },
+  {
+   "id": "a-101-210",
+   "globalId": "1byTDaqS91rBnWJlv$n$WN",
+   "page": 1,
+   "rect": {
+    "x": 0.47138,
+    "y": 0.47118,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1BC4"
+  },
+  {
+   "id": "a-101-211",
+   "globalId": "1byTDaqS91rBnWJlv$n$iu",
+   "page": 1,
+   "rect": {
+    "x": 0.43609,
+    "y": 0.62247,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E04"
+  },
+  {
+   "id": "a-101-212",
+   "globalId": "1byTDaqS91rBnWJlv$n$fc",
+   "page": 1,
+   "rect": {
+    "x": 0.46151,
+    "y": 0.64325,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1EC1"
+  },
+  {
+   "id": "a-101-213",
+   "globalId": "1byTDaqS91rBnWJlv$n$e0",
+   "page": 1,
+   "rect": {
+    "x": 0.4099,
+    "y": 0.68839,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E25"
+  },
+  {
+   "id": "a-101-214",
+   "globalId": "1byTDaqS91rBnWJlv$n$Ls",
+   "page": 1,
+   "rect": {
+    "x": 0.44497,
+    "y": 0.74351,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E28"
+  },
+  {
+   "id": "a-101-215",
+   "globalId": "1byTDaqS91rBnWJlv$n$M9",
+   "page": 1,
+   "rect": {
+    "x": 0.30671,
+    "y": 0.70923,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E22"
+  },
+  {
+   "id": "a-101-216",
+   "globalId": "1byTDaqS91rBnWJlv$n$GX",
+   "page": 1,
+   "rect": {
+    "x": 0.29803,
+    "y": 0.65572,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E23"
+  },
+  {
+   "id": "a-101-217",
+   "globalId": "1byTDaqS91rBnWJlv$n$Vz",
+   "page": 1,
+   "rect": {
+    "x": 0.33581,
+    "y": 0.62247,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E09"
+  },
+  {
+   "id": "a-101-218",
+   "globalId": "1byTDaqS91rBnWJlv$n$P5",
+   "page": 1,
+   "rect": {
+    "x": 0.31209,
+    "y": 0.58855,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E11"
+  },
+  {
+   "id": "a-101-219",
+   "globalId": "1byTDaqS91rBnWJlv$n$OE",
+   "page": 1,
+   "rect": {
+    "x": 0.28842,
+    "y": 0.56008,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E33"
+  },
+  {
+   "id": "a-101-220",
+   "globalId": "1byTDaqS91rBnWJlv$n$Qk",
+   "page": 1,
+   "rect": {
+    "x": 0.36378,
+    "y": 0.59354,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E07A"
+  },
+  {
+   "id": "a-101-221",
+   "globalId": "1byTDaqS91rBnWJlv$n$5v",
+   "page": 1,
+   "rect": {
+    "x": 0.36339,
+    "y": 0.62247,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E07"
+  },
+  {
+   "id": "a-101-222",
+   "globalId": "1byTDaqS91rBnWJlv$n$0$",
+   "page": 1,
+   "rect": {
+    "x": 0.29812,
+    "y": 0.57811,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1EC3"
+  },
+  {
+   "id": "a-101-223",
+   "globalId": "1byTDaqS91rBnWJlv$n$Ex",
+   "page": 1,
+   "rect": {
+    "x": 0.2448,
+    "y": 0.65572,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E19"
+  },
+  {
+   "id": "a-101-224",
+   "globalId": "1byTDaqS91rBnWJlv$n_yt",
+   "page": 1,
+   "rect": {
+    "x": 0.41735,
+    "y": 0.44676,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D39"
+  },
+  {
+   "id": "a-101-225",
+   "globalId": "1byTDaqS91rBnWJlv$n__m",
+   "page": 1,
+   "rect": {
+    "x": 0.42398,
+    "y": 0.43305,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1DC8"
+  },
+  {
+   "id": "a-101-226",
+   "globalId": "1uDBQ9y7vCyxXlpVEuen9f",
+   "page": 1,
+   "rect": {
+    "x": 0.29681,
+    "y": 0.2931,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D17"
+  },
+  {
+   "id": "a-101-227",
+   "globalId": "0ztdC3L1HAzhbhMHypqcDa",
+   "page": 1,
+   "rect": {
+    "x": 0.29812,
+    "y": 0.48008,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1DC5"
+  },
+  {
+   "id": "a-101-228",
+   "globalId": "1byTDaqS91rBnWJlv$nnv2",
+   "page": 1,
+   "rect": {
+    "x": 0.23134,
+    "y": 0.13305,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C16"
+  },
+  {
+   "id": "a-101-229",
+   "globalId": "1byTDaqS91rBnWJlv$nnu8",
+   "page": 1,
+   "rect": {
+    "x": 0.25825,
+    "y": 0.13305,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C14"
+  },
+  {
+   "id": "a-101-230",
+   "globalId": "1byTDaqS91rBnWJlv$nnxF",
+   "page": 1,
+   "rect": {
+    "x": 0.28857,
+    "y": 0.1325,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1C12"
+  },
+  {
+   "id": "a-101-231",
+   "globalId": "1byTDaqS91rBnWJlv$nnj_",
+   "page": 1,
+   "rect": {
+    "x": 0.36269,
+    "y": 0.13987,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1C09"
+  },
+  {
+   "id": "a-101-232",
+   "globalId": "1byTDaqS91rBnWJlv$nnkx",
+   "page": 1,
+   "rect": {
+    "x": 0.36269,
+    "y": 0.1715,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1C08"
+  },
+  {
+   "id": "a-101-233",
+   "globalId": "1byTDaqS91rBnWJlv$nng6",
+   "page": 1,
+   "rect": {
+    "x": 0.37238,
+    "y": 0.11941,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C06"
+  },
+  {
+   "id": "a-101-234",
+   "globalId": "1byTDaqS91rBnWJlv$nnKl",
+   "page": 1,
+   "rect": {
+    "x": 0.35688,
+    "y": 0.20551,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C02"
+  },
+  {
+   "id": "a-101-235",
+   "globalId": "1byTDaqS91rBnWJlv$nnNu",
+   "page": 1,
+   "rect": {
+    "x": 0.39993,
+    "y": 0.20551,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C10"
+  },
+  {
+   "id": "a-101-236",
+   "globalId": "1byTDaqS91rBnWJlv$nnHw",
+   "page": 1,
+   "rect": {
+    "x": 0.48534,
+    "y": 0.1931,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A09"
+  },
+  {
+   "id": "a-101-237",
+   "globalId": "1byTDaqS91rBnWJlv$nnTt",
+   "page": 1,
+   "rect": {
+    "x": 0.53872,
+    "y": 0.19867,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A08"
+  },
+  {
+   "id": "a-101-238",
+   "globalId": "1byTDaqS91rBnWJlv$nnU$",
+   "page": 1,
+   "rect": {
+    "x": 0.59229,
+    "y": 0.20373,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A07"
+  },
+  {
+   "id": "a-101-239",
+   "globalId": "1byTDaqS91rBnWJlv$nnRu",
+   "page": 1,
+   "rect": {
+    "x": 0.59229,
+    "y": 0.23952,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A05"
+  },
+  {
+   "id": "a-101-240",
+   "globalId": "1byTDaqS91rBnWJlv$nnQb",
+   "page": 1,
+   "rect": {
+    "x": 0.59229,
+    "y": 0.27412,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A03"
+  },
+  {
+   "id": "a-101-241",
+   "globalId": "1byTDaqS91rBnWJlv$nn72",
+   "page": 1,
+   "rect": {
+    "x": 0.50889,
+    "y": 0.33135,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1A15"
+  },
+  {
+   "id": "a-101-242",
+   "globalId": "1byTDaqS91rBnWJlv$nn1R",
+   "page": 1,
+   "rect": {
+    "x": 0.48534,
+    "y": 0.25556,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1AC4"
+  },
+  {
+   "id": "a-101-243",
+   "globalId": "1byTDaqS91rBnWJlv$nn0o",
+   "page": 1,
+   "rect": {
+    "x": 0.47121,
+    "y": 0.26366,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1AC2"
+  },
+  {
+   "id": "a-101-244",
+   "globalId": "1byTDaqS91rBnWJlv$nn3d",
+   "page": 1,
+   "rect": {
+    "x": 0.43278,
+    "y": 0.32738,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D02"
+  },
+  {
+   "id": "a-101-245",
+   "globalId": "1byTDaqS91rBnWJlv$nnC3",
+   "page": 1,
+   "rect": {
+    "x": 0.42398,
+    "y": 0.35616,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1DC2"
+  },
+  {
+   "id": "a-101-246",
+   "globalId": "1byTDaqS91rBnWJlv$nnE_",
+   "page": 1,
+   "rect": {
+    "x": 0.43891,
+    "y": 0.28144,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D05"
+  },
+  {
+   "id": "a-101-247",
+   "globalId": "1byTDaqS91rBnWJlv$nn82",
+   "page": 1,
+   "rect": {
+    "x": 0.42921,
+    "y": 0.26924,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D06A"
+  },
+  {
+   "id": "a-101-248",
+   "globalId": "1byTDaqS91rBnWJlv$nmrp",
+   "page": 1,
+   "rect": {
+    "x": 0.39319,
+    "y": 0.28144,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D07"
+  },
+  {
+   "id": "a-101-249",
+   "globalId": "1byTDaqS91rBnWJlv$nmnC",
+   "page": 1,
+   "rect": {
+    "x": 0.33987,
+    "y": 0.28144,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D11"
+  },
+  {
+   "id": "a-101-250",
+   "globalId": "1byTDaqS91rBnWJlv$nmmF",
+   "page": 1,
+   "rect": {
+    "x": 0.28857,
+    "y": 0.27869,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D16"
+  },
+  {
+   "id": "a-101-251",
+   "globalId": "1byTDaqS91rBnWJlv$nmoB",
+   "page": 1,
+   "rect": {
+    "x": 0.34624,
+    "y": 0.3149,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D12"
+  },
+  {
+   "id": "a-101-252",
+   "globalId": "1byTDaqS91rBnWJlv$nmzE",
+   "page": 1,
+   "rect": {
+    "x": 0.3729,
+    "y": 0.3149,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D10"
+  },
+  {
+   "id": "a-101-253",
+   "globalId": "1byTDaqS91rBnWJlv$nmuz",
+   "page": 1,
+   "rect": {
+    "x": 0.2746,
+    "y": 0.35136,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D19"
+  },
+  {
+   "id": "a-101-254",
+   "globalId": "1byTDaqS91rBnWJlv$nmwJ",
+   "page": 1,
+   "rect": {
+    "x": 0.28857,
+    "y": 0.32584,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D18"
+  },
+  {
+   "id": "a-101-255",
+   "globalId": "1byTDaqS91rBnWJlv$nmXk",
+   "page": 1,
+   "rect": {
+    "x": 0.21883,
+    "y": 0.23238,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1C17"
+  },
+  {
+   "id": "a-101-256",
+   "globalId": "1byTDaqS91rBnWJlv$nmj8",
+   "page": 1,
+   "rect": {
+    "x": 0.22054,
+    "y": 0.42327,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D22A"
+  },
+  {
+   "id": "a-101-257",
+   "globalId": "1byTDaqS91rBnWJlv$nmlz",
+   "page": 1,
+   "rect": {
+    "x": 0.23155,
+    "y": 0.43785,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D23"
+  },
+  {
+   "id": "a-101-258",
+   "globalId": "1byTDaqS91rBnWJlv$nmku",
+   "page": 1,
+   "rect": {
+    "x": 0.26469,
+    "y": 0.43785,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D24"
+  },
+  {
+   "id": "a-101-259",
+   "globalId": "1byTDaqS91rBnWJlv$nmg3",
+   "page": 1,
+   "rect": {
+    "x": 0.35632,
+    "y": 0.47431,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D33A"
+  },
+  {
+   "id": "a-101-260",
+   "globalId": "1byTDaqS91rBnWJlv$nmLC",
+   "page": 1,
+   "rect": {
+    "x": 0.28842,
+    "y": 0.49731,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D26"
+  },
+  {
+   "id": "a-101-261",
+   "globalId": "1byTDaqS91rBnWJlv$nmMw",
+   "page": 1,
+   "rect": {
+    "x": 0.32984,
+    "y": 0.50777,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D28"
+  },
+  {
+   "id": "a-101-262",
+   "globalId": "1byTDaqS91rBnWJlv$nmJJ",
+   "page": 1,
+   "rect": {
+    "x": 0.38316,
+    "y": 0.50777,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1D34"
+  },
+  {
+   "id": "a-101-263",
+   "globalId": "1byTDaqS91rBnWJlv$nmQZ",
+   "page": 1,
+   "rect": {
+    "x": 0.55032,
+    "y": 0.45574,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B13"
+  },
+  {
+   "id": "a-101-264",
+   "globalId": "1byTDaqS91rBnWJlv$nm6r",
+   "page": 1,
+   "rect": {
+    "x": 0.59759,
+    "y": 0.45593,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B01"
+  },
+  {
+   "id": "a-101-265",
+   "globalId": "1byTDaqS91rBnWJlv$nmAj",
+   "page": 1,
+   "rect": {
+    "x": 0.57741,
+    "y": 0.54209,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B09"
+  },
+  {
+   "id": "a-101-266",
+   "globalId": "1byTDaqS91rBnWJlv$n$t9",
+   "page": 1,
+   "rect": {
+    "x": 0.58647,
+    "y": 0.61003,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1B10"
+  },
+  {
+   "id": "a-101-267",
+   "globalId": "1byTDaqS91rBnWJlv$n$sW",
+   "page": 1,
+   "rect": {
+    "x": 0.57416,
+    "y": 0.59735,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B04a"
+  },
+  {
+   "id": "a-101-268",
+   "globalId": "1byTDaqS91rBnWJlv$n$m2",
+   "page": 1,
+   "rect": {
+    "x": 0.55414,
+    "y": 0.62608,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1B14"
+  },
+  {
+   "id": "a-101-269",
+   "globalId": "1byTDaqS91rBnWJlv$n$pH",
+   "page": 1,
+   "rect": {
+    "x": 0.5422,
+    "y": 0.61443,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1B16"
+  },
+  {
+   "id": "a-101-270",
+   "globalId": "1byTDaqS91rBnWJlv$n$ds",
+   "page": 1,
+   "rect": {
+    "x": 0.55032,
+    "y": 0.51109,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1B17"
+  },
+  {
+   "id": "a-101-271",
+   "globalId": "1byTDaqS91rBnWJlv$n$Zq",
+   "page": 1,
+   "rect": {
+    "x": 0.46168,
+    "y": 0.5828,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E02"
+  },
+  {
+   "id": "a-101-272",
+   "globalId": "1byTDaqS91rBnWJlv$n$jF",
+   "page": 1,
+   "rect": {
+    "x": 0.44651,
+    "y": 0.62247,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E01"
+  },
+  {
+   "id": "a-101-273",
+   "globalId": "1byTDaqS91rBnWJlv$n$lh",
+   "page": 1,
+   "rect": {
+    "x": 0.44842,
+    "y": 0.65798,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E29"
+  },
+  {
+   "id": "a-101-274",
+   "globalId": "1byTDaqS91rBnWJlv$n$f7",
+   "page": 1,
+   "rect": {
+    "x": 0.43445,
+    "y": 0.69464,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E26"
+  },
+  {
+   "id": "a-101-275",
+   "globalId": "1byTDaqS91rBnWJlv$n$gx",
+   "page": 1,
+   "rect": {
+    "x": 0.43488,
+    "y": 0.74351,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E27"
+  },
+  {
+   "id": "a-101-276",
+   "globalId": "1byTDaqS91rBnWJlv$n$H4",
+   "page": 1,
+   "rect": {
+    "x": 0.28417,
+    "y": 0.68737,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E30"
+  },
+  {
+   "id": "a-101-277",
+   "globalId": "1byTDaqS91rBnWJlv$n$TS",
+   "page": 1,
+   "rect": {
+    "x": 0.31321,
+    "y": 0.62247,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E10"
+  },
+  {
+   "id": "a-101-278",
+   "globalId": "1byTDaqS91rBnWJlv$n$Um",
+   "page": 1,
+   "rect": {
+    "x": 0.28787,
+    "y": 0.61086,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E12"
+  },
+  {
+   "id": "a-101-279",
+   "globalId": "1byTDaqS91rBnWJlv$n$Rv",
+   "page": 1,
+   "rect": {
+    "x": 0.36378,
+    "y": 0.57928,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E08"
+  },
+  {
+   "id": "a-101-280",
+   "globalId": "1byTDaqS91rBnWJlv$n$7g",
+   "page": 1,
+   "rect": {
+    "x": 0.37348,
+    "y": 0.62247,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E06"
+  },
+  {
+   "id": "a-101-281",
+   "globalId": "1byTDaqS91rBnWJlv$n$0M",
+   "page": 1,
+   "rect": {
+    "x": 0.2453,
+    "y": 0.62247,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E14"
+  },
+  {
+   "id": "a-101-282",
+   "globalId": "1byTDaqS91rBnWJlv$n$CQ",
+   "page": 1,
+   "rect": {
+    "x": 0.22869,
+    "y": 0.65572,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1E16"
+  },
+  {
+   "id": "a-101-283",
+   "globalId": "1byTDaqS91rBnWJlv$n$9Q",
+   "page": 1,
+   "rect": {
+    "x": 0.23867,
+    "y": 0.69556,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E18"
+  },
+  {
+   "id": "a-101-284",
+   "globalId": "0tIhQ6hmz02e5gznEed7$9",
+   "page": 1,
+   "rect": {
+    "x": 0.46168,
+    "y": 0.55997,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E03"
+  },
+  {
+   "id": "a-101-285",
+   "globalId": "0tIhQ6hmz02e5gznEed4FD",
+   "page": 1,
+   "rect": {
+    "x": 0.45885,
+    "y": 0.45653,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D40A"
+  },
+  {
+   "id": "a-101-286",
+   "globalId": "3pms57Ad5AVAb74jf4yKZb",
+   "page": 1,
+   "rect": {
+    "x": 0.36781,
+    "y": 0.20551,
+    "w": 0.00998,
+    "h": 0.01515
+   },
+   "label": "Door 1C03"
+  },
+  {
+   "id": "a-101-287",
+   "globalId": "0ztdC3L1HAzhbhMHypqcYf",
+   "page": 1,
+   "rect": {
+    "x": 0.41735,
+    "y": 0.34349,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1D01"
+  },
+  {
+   "id": "a-101-288",
+   "globalId": "1byTDaqS91rBnWJlv$nncb",
+   "page": 1,
+   "rect": {
+    "x": 0.30228,
+    "y": 0.10666,
+    "w": 0.00998,
+    "h": 0.016
+   },
+   "label": "Door 1CC3"
+  },
+  {
+   "id": "a-101-289",
+   "globalId": "1byTDaqS91rBnWJlv$n$Mi",
+   "page": 1,
+   "rect": {
+    "x": 0.28417,
+    "y": 0.73452,
+    "w": 0.01132,
+    "h": 0.01411
+   },
+   "label": "Door 1E21"
+  },
+  {
+   "id": "a-101-290",
+   "globalId": "1byTDaqS91rBnWJlv$n$Db",
+   "page": 1,
+   "rect": {
+    "x": 0.19851,
+    "y": 0.63546,
+    "w": 0.01132,
+    "h": 0.01411
+   },
+   "label": "Door 1EC1A"
+  },
+  {
+   "id": "a-101-291",
+   "globalId": "0mxk1RW8H5mvX1dNnpRqtX",
+   "page": 1,
+   "rect": {
+    "x": 0.4763,
+    "y": 0.1714,
+    "w": 0.00998,
+    "h": 0.016
+   },
+   "label": "Door 1AC3"
+  },
+  {
+   "id": "a-101-292",
+   "globalId": "0mxk1RW8H5mvX1dNnpRqso",
+   "page": 1,
+   "rect": {
+    "x": 0.60371,
+    "y": 0.1714,
+    "w": 0.00998,
+    "h": 0.016
+   },
+   "label": "Door 1AC5a"
+  },
+  {
+   "id": "a-101-293",
+   "globalId": "1byTDaqS91rBnWJlv$nnW1",
+   "page": 1,
+   "rect": {
+    "x": 0.31196,
+    "y": 0.16751,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1CS3"
+  },
+  {
+   "id": "a-101-294",
+   "globalId": "1byTDaqS91rBnWJlv$n$uh",
+   "page": 1,
+   "rect": {
+    "x": 0.48778,
+    "y": 0.6279,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1BS2"
+  },
+  {
+   "id": "a-101-295",
+   "globalId": "1byTDaqS91rBnWJlv$n$_5",
+   "page": 1,
+   "rect": {
+    "x": 0.4885,
+    "y": 0.60633,
+    "w": 0.01143,
+    "h": 0.01513
+   },
+   "label": "Door 1BC3"
+  },
+  {
+   "id": "a-101-296",
+   "globalId": "1byTDaqS91rBnWJlv$n$wG",
+   "page": 1,
+   "rect": {
+    "x": 0.54776,
+    "y": 0.54651,
+    "w": 0.01328,
+    "h": 0.01774
+   },
+   "label": "Door 1B19"
+  },
+  {
+   "id": "a-101-297",
+   "globalId": "1byTDaqS91rBnWJlv$n$Kj",
+   "page": 1,
+   "rect": {
+    "x": 0.28417,
+    "y": 0.75044,
+    "w": 0.01132,
+    "h": 0.01411
+   },
+   "label": "Door 1E20"
+  },
+  {
+   "id": "a-101-298",
+   "globalId": "1byTDaqS91rBnWJlv$n_s5",
+   "page": 1,
+   "rect": {
+    "x": 0.25934,
+    "y": 0.76576,
+    "w": 0.01132,
+    "h": 0.01411
+   },
+   "label": "Door 1E17"
+  },
+  {
+   "id": "a-101-299",
+   "globalId": "1byTDaqS91rBnWJlv$n_q6",
+   "page": 1,
+   "rect": {
+    "x": 0.27024,
+    "y": 0.70765,
+    "w": 0.01255,
+    "h": 0.01963
+   },
+   "label": "Door 1EC4"
+  },
+  {
+   "id": "a-101-300",
+   "globalId": "0bpfxAz3XBrAx$RjFuHvgA",
+   "page": 1,
+   "rect": {
+    "x": 0.31957,
+    "y": 0.42684,
+    "w": 0.00864,
+    "h": 0.01214
+   },
+   "label": "Door 1DC5a"
+  },
+  {
+   "id": "a-101-301",
+   "globalId": "1oCmeD_UH0NAQ13DTKAKXn",
+   "page": 1,
+   "rect": {
+    "x": 0.31957,
+    "y": 0.42684,
+    "w": 0.00864,
+    "h": 0.01214
+   },
+   "label": "Door 1DC5a"
+  },
+  {
+   "id": "a-101-302",
+   "globalId": "0bpfxAz3XBrAx$RjFuHv4q",
+   "page": 1,
+   "rect": {
+    "x": 0.31205,
+    "y": 0.36538,
+    "w": 0.00863,
+    "h": 0.01212
+   },
+   "label": "Door 1DC5b"
+  },
+  {
+   "id": "a-101-303",
+   "globalId": "3LjuaIy0TB9BYwqsSadrQS",
+   "page": 1,
+   "rect": {
+    "x": 0.31205,
+    "y": 0.36538,
+    "w": 0.00863,
+    "h": 0.01212
+   },
+   "label": "Door 1DC5b"
+  },
+  {
+   "id": "a-101-304",
+   "globalId": "1eHJakbVPEdf9cGdMXVBAY",
+   "page": 1,
+   "rect": {
+    "x": 0.41991,
+    "y": 0.58154,
+    "w": 0.01072,
+    "h": 0.01411
+   },
+   "label": "Door 1E05"
+  },
+  {
+   "id": "a-101-305",
+   "globalId": "0mxk1RW8H5mvX1dNnpRqy_",
+   "page": 1,
+   "rect": {
+    "x": 0.19346,
+    "y": 0.60027,
+    "w": 0.00826,
+    "h": 0.02499
+   },
+   "label": "Door 1E15A"
+  },
+  {
+   "id": "a-101-306",
+   "globalId": "0mxk1RW8H5mvX1dNnpRqwu",
+   "page": 1,
+   "rect": {
+    "x": 0.1939,
+    "y": 0.56674,
+    "w": 0.00782,
+    "h": 0.02499
+   },
+   "label": "Door 1E15"
+  },
+  {
+   "id": "a-101-307",
+   "globalId": "0mxk1RW8H5mvX1dNnpRqn4",
+   "page": 1,
+   "rect": {
+    "x": 0.31855,
+    "y": 0.77939,
+    "w": 0.01768,
+    "h": 0.00944
+   },
+   "label": "Door 1E24"
+  },
+  {
+   "id": "a-101-308",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxGCP",
+   "page": 1,
+   "rect": {
+    "x": 0.26175,
+    "y": 0.10628,
+    "w": 0.00942,
+    "h": 0.00914
+   },
+   "label": "Window 8"
+  },
+  {
+   "id": "a-101-309",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxG8P",
+   "page": 1,
+   "rect": {
+    "x": 0.42197,
+    "y": 0.17822,
+    "w": 0.00942,
+    "h": 0.00914
+   },
+   "label": "Window 9"
+  },
+  {
+   "id": "a-101-310",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxG7q",
+   "page": 1,
+   "rect": {
+    "x": 0.52273,
+    "y": 0.17822,
+    "w": 0.00942,
+    "h": 0.00914
+   },
+   "label": "Window 10"
+  },
+  {
+   "id": "a-101-311",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxG25",
+   "page": 1,
+   "rect": {
+    "x": 0.58174,
+    "y": 0.17822,
+    "w": 0.00942,
+    "h": 0.00914
+   },
+   "label": "Window 11"
+  },
+  {
+   "id": "a-101-312",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxG1w",
+   "page": 1,
+   "rect": {
+    "x": 0.63532,
+    "y": 0.19405,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 12"
+  },
+  {
+   "id": "a-101-313",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJ$f",
+   "page": 1,
+   "rect": {
+    "x": 0.63532,
+    "y": 0.22388,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 13"
+  },
+  {
+   "id": "a-101-314",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJyK",
+   "page": 1,
+   "rect": {
+    "x": 0.63532,
+    "y": 0.27739,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 14"
+  },
+  {
+   "id": "a-101-315",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJz3",
+   "page": 1,
+   "rect": {
+    "x": 0.63532,
+    "y": 0.34279,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 15"
+  },
+  {
+   "id": "a-101-316",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJw0",
+   "page": 1,
+   "rect": {
+    "x": 0.63532,
+    "y": 0.44708,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 16"
+  },
+  {
+   "id": "a-101-317",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJxR",
+   "page": 1,
+   "rect": {
+    "x": 0.63532,
+    "y": 0.51366,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 17"
+  },
+  {
+   "id": "a-101-318",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJu4",
+   "page": 1,
+   "rect": {
+    "x": 0.63532,
+    "y": 0.56716,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 18"
+  },
+  {
+   "id": "a-101-319",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJvL",
+   "page": 1,
+   "rect": {
+    "x": 0.63532,
+    "y": 0.59689,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 19"
+  },
+  {
+   "id": "a-101-320",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJs2",
+   "page": 1,
+   "rect": {
+    "x": 0.63532,
+    "y": 0.62662,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 20"
+  },
+  {
+   "id": "a-101-321",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJsp",
+   "page": 1,
+   "rect": {
+    "x": 0.58258,
+    "y": 0.65577,
+    "w": 0.00942,
+    "h": 0.00914
+   },
+   "label": "Window 21"
+  },
+  {
+   "id": "a-101-322",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJtw",
+   "page": 1,
+   "rect": {
+    "x": 0.4666,
+    "y": 0.68138,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 22"
+  },
+  {
+   "id": "a-101-323",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJqZ",
+   "page": 1,
+   "rect": {
+    "x": 0.4666,
+    "y": 0.72907,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 23"
+  },
+  {
+   "id": "a-101-324",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJrM",
+   "page": 1,
+   "rect": {
+    "x": 0.4666,
+    "y": 0.75266,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 24"
+  },
+  {
+   "id": "a-101-325",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJoj",
+   "page": 1,
+   "rect": {
+    "x": 0.19825,
+    "y": 0.44819,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 25"
+  },
+  {
+   "id": "a-101-326",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJps",
+   "page": 1,
+   "rect": {
+    "x": 0.19825,
+    "y": 0.34267,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 26"
+  },
+  {
+   "id": "a-101-327",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJnH",
+   "page": 1,
+   "rect": {
+    "x": 0.19825,
+    "y": 0.22388,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 27"
+  },
+  {
+   "id": "a-101-328",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJk0",
+   "page": 1,
+   "rect": {
+    "x": 0.19825,
+    "y": 0.19415,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 28"
+  },
+  {
+   "id": "a-101-329",
+   "globalId": "2g$QZpOGbBUxSNx_ZgxJl5",
+   "page": 1,
+   "rect": {
+    "x": 0.19825,
+    "y": 0.16455,
+    "w": 0.00684,
+    "h": 0.01332
+   },
+   "label": "Window 29"
+  },
+  {
+   "id": "a-101-330",
+   "globalId": "1qc5HjZvrCsga38tqxQ3VC",
+   "page": 1,
+   "rect": {
+    "x": 0.30735,
+    "y": 0.13162,
+    "w": 0.00721,
+    "h": 0.0238
+   },
+   "label": "Door 1C11"
+  }
+ ]
+}

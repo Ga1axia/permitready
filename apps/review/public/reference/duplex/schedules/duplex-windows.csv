@@ -1,0 +1,25 @@
+Mark,Level,Room,Type,Type mark,Width (mm),Height (mm),Sill (mm),Head (mm),External
+10,Level 1,A102 Living Room,4835mm x 2420mm,05,4835,2420,100,2520,Yes
+12,Level 1,B102 Living Room / B103 Kitchen,750mm x 2200mm,04,750,2200,100,2300,Yes
+13,Level 1,A102 Living Room / A103 Kitchen,750mm x 2200mm,04,750,2200,100,2300,Yes
+9,Level 1,B102 Living Room,4835mm x 2420mm,05,4835,2420,100,2520,Yes
+14,Level 2,B203 Bedroom 2,2800mm x 2410mm,01,2800,2410,100,2510,Yes
+15,Level 2,B203 Bedroom 2,819mm x 759mm,02,819,759,100,859,Yes
+16,Level 2,,819mm x 759mm,03,819,759,925,1684,Yes
+17,Level 2,,819mm x 759mm,02,819,759,1751,2510,Yes
+18,Level 2,A203 Bedroom 2,2800mm x 2410mm,01,2800,2410,100,2510,Yes
+19,Level 2,A203 Bedroom 2,819mm x 759mm,02,819,759,100,859,Yes
+20,Level 2,,819mm x 759mm,03,819,759,926,1684,Yes
+21,Level 2,,819mm x 759mm,02,819,759,1751,2510,Yes
+22,Level 2,B202 Bedroom 1,2800mm x 2410mm,01,2800,2410,100,2510,Yes
+23,Level 2,,819mm x 759mm,02,819,759,1751,2510,Yes
+24,Level 2,B202 Bedroom 1,819mm x 759mm,02,819,759,100,859,Yes
+25,Level 2,,819mm x 759mm,03,819,759,926,1684,Yes
+26,Level 2,A202 Bedroom 1,2800mm x 2410mm,01,2800,2410,100,2510,Yes
+27,Level 2,,819mm x 759mm,02,819,759,1751,2510,Yes
+28,Level 2,,819mm x 759mm,03,819,759,926,1684,Yes
+29,Level 2,A202 Bedroom 1,819mm x 759mm,02,819,759,100,859,Yes
+31,Level 2,A203 Bedroom 2,750mm x 2200mm,04,750,2200,100,2300,Yes
+32,Level 2,B203 Bedroom 2,750mm x 2200mm,04,750,2200,100,2300,Yes
+33,Roof,,1180 x 1170mm,36,1173,635,,635,No
+34,Roof,,1180 x 1170mm,36,1173,635,,635,No

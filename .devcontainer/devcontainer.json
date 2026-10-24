@@ -1,0 +1,11 @@
+{
+  "name": "Pascal Editor",
+  "image": "oven/bun:1.4.4",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "postCreateCommand": "bun install --frozen-lockfile",
+  "forwardPorts": [3002]
+}

@@ -1,0 +1,22 @@
+Number,Name,Level,Area (m²),Perimeter (m),Height (m),Volume (m³),Category,Occupancy zone
+A101,Foyer,Level 1,17.94,24.22,2.60,40.2,General Residential Space,Unit A OccupancyZoneName
+A102,Living Room,Level 1,30.14,22.03,2.60,71.4,Living Spaces,Unit A OccupancyZoneName
+A103,Kitchen,Level 1,13.90,16.42,2.60,33.5,Kitchen,Unit A OccupancyZoneName
+A104,Bathroom 1,Level 1,4.00,8.20,2.60,8.2,Bathroom,Unit A OccupancyZoneName
+A105,Stair,Level 1,4.92,10.50,5.70,20.8,Stairway,Unit A OccupancyZoneName
+B101,Foyer,Level 1,17.94,24.22,2.60,40.2,General Residential Space,Unit B OccupancyZoneName
+B102,Living Room,Level 1,30.14,22.03,2.60,71.4,Living Spaces,Unit B OccupancyZoneName
+B103,Kitchen,Level 1,13.90,16.42,2.60,33.5,Kitchen,Unit B OccupancyZoneName
+B104,Bathroom 1,Level 1,4.00,8.20,2.60,8.2,Bathroom,Unit B OccupancyZoneName
+B105,Room,Level 1,4.92,10.50,5.70,20.8,Stairway,Unit B OccupancyZoneName
+A201,Hallway,Level 2,7.80,15.32,2.90,18.1,General Residential Space,Unit A OccupancyZoneName
+A202,Bedroom 1,Level 2,26.12,21.42,2.60,56.9,Bedroom,Unit A OccupancyZoneName
+A203,Bedroom 2,Level 2,26.18,21.48,2.60,56.9,Bedroom,Unit A OccupancyZoneName
+A204,Bathroom 2,Level 2,5.42,9.84,2.60,12.2,Bathroom,Unit A OccupancyZoneName
+A205,Utility,Level 2,1.75,5.43,2.60,3.7,Service Distribution Spaces,Unit A OccupancyZoneName
+B201,Hallway,Level 2,7.80,15.32,2.90,18.1,General Residential Space,Unit B OccupancyZoneName
+B202,Bedroom 1,Level 2,26.12,21.42,2.60,56.9,Bedroom,Unit B OccupancyZoneName
+B203,Bedroom 2,Level 2,26.18,21.91,2.60,56.9,Bedroom,Unit B OccupancyZoneName
+B204,Bathroom 2,Level 2,5.44,9.87,2.60,12.3,Bathroom,Unit B OccupancyZoneName
+B205,Utility,Level 2,1.73,5.40,2.60,3.6,Service Distribution Spaces,Unit B OccupancyZoneName
+R301,Roof,Roof,145.72,51.53,3.00,405.5,Other General Facility Service Spaces,Roof OccupancyZoneName

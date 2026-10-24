@@ -1,0 +1,41 @@
+{
+ "version": 1,
+ "links": [
+  {
+   "id": "a-105-1",
+   "globalId": "3txvJd9V1BPhyU$48F$mnF",
+   "page": 1,
+   "rect": {
+    "x": 0.15279,
+    "y": 0.43711,
+    "w": 0.21046,
+    "h": 0.11736
+   },
+   "label": ""
+  },
+  {
+   "id": "a-105-2",
+   "globalId": "0jbV$RErb7o9P7rp7ALEd$",
+   "page": 1,
+   "rect": {
+    "x": 0.4346,
+    "y": 0.43711,
+    "w": 0.21046,
+    "h": 0.11736
+   },
+   "label": ""
+  },
+  {
+   "id": "a-105-3",
+   "globalId": "2_rG4oliv3CxmStpGPieup",
+   "page": 1,
+   "rect": {
+    "x": 0.36683,
+    "y": 0.36616,
+    "w": 0.06421,
+    "h": 0.22559
+   },
+   "label": ""
+  }
+ ]
+}

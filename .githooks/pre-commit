@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Biome on staged files, the same check `bun run check` runs in CI.
+# Check only: auto-fixing and re-adding the file would also stage hunks you
+# left unstaged. Run `bun run check:fix` and re-stage to fix.
+# Installed by `bun install` (core.hooksPath). Skip once with --no-verify.
+set -euo pipefail
+
+# GUI clients (Cursor, GitHub Desktop) often omit Homebrew from PATH.
+export PATH="/opt/homebrew/bin:/usr/local/bin:${HOME}/.bun/bin:${PATH}"
+if ! command -v bun >/dev/null 2>&1; then
+  echo "pre-commit: bun not found on PATH. Install bun or open a terminal where \`which bun\` works." >&2
+  exit 1
+fi
+
+files=()
+while IFS= read -r file; do files+=("$file"); done < <(
+  git diff --cached --name-only --diff-filter=ACMR |
+    grep -E '\.(ts|tsx|js|jsx|mjs|cjs|json|jsonc|css|md|mdx)$' || true
+)
+[ ${#files[@]} -eq 0 ] && exit 0
+bun run --silent check --no-errors-on-unmatched --diagnostic-level=error --staged "${files[@]}" ||
+  { echo "pre-commit: run 'bun run check:fix', re-stage, and commit again." >&2; exit 1; }

@@ -1,0 +1,13 @@
+public/models/*.ifc
+public/web-ifc*.wasm
+public/pdf.worker.min.mjs
+.next
+next-env.d.ts
+# Documents published with the sample models (bun run references); the
+# drawing set, schedules and indexes generated from them are committed.
+public/reference/*/*
+!public/reference/*/drawings
+!public/reference/*/schedules
+!public/reference/*/index
+!public/reference/*/INDEX.md
+__pycache__/

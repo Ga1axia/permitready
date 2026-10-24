@@ -1,0 +1,270 @@
+Number,Name,Level,Area (m²),Perimeter (m),Height (m),Volume (m³),Category,Occupancy zone
+1A01,PATIENT ADMIN. RECEPT.,First Floor,19.77,19.07,2.80,53.2,Reception Space,Occupancy Zone 1A
+1A02,RMO ANALYST,First Floor,27.69,26.50,2.80,74.6,Office,Occupancy Zone 1A
+1A03,TRICARE OFFICE,First Floor,8.87,11.96,2.80,22.8,Office,Occupancy Zone 1A
+1A04,TRICARE OFFICE,First Floor,9.54,12.37,2.80,24.1,Office,Occupancy Zone 1A
+1A05,TRICARE OFFICE,First Floor,9.00,12.19,2.80,23.2,Office,Occupancy Zone 1A
+1A06,TRICARE OFFICE,First Floor,10.49,13.03,2.80,26.1,Office,Occupancy Zone 1A
+1A07,TRICARE OFFICE,First Floor,8.73,12.53,2.80,22.3,Office,Occupancy Zone 1A
+1A08,PHARM. OFFICE,First Floor,10.45,12.99,2.80,26.6,Office,Occupancy Zone 1A
+1A09,W. TOILET,First Floor,10.85,13.37,2.80,27.5,Restroom,Occupancy Zone 1A
+1A10,LOUNGE,First Floor,10.27,14.38,2.80,26.7,Break Room,Occupancy Zone 1A
+1A11,JAN.,First Floor,2.04,6.02,2.80,4.7,Storage Room,Occupancy Zone 1A
+1A12,M. TOILET,First Floor,9.91,13.18,2.80,25.6,Restroom,Occupancy Zone 1A
+1A13,STAFF TOILET,First Floor,4.47,8.51,2.80,11.0,Restroom,Occupancy Zone 1A
+1A14,SUPER / NCOIC,First Floor,7.23,10.15,2.80,18.9,Office,Occupancy Zone 1A
+1A15,COUNSELING,First Floor,6.40,10.16,2.80,16.4,Other Healing Spaces,Occupancy Zone 1A
+1A16,PHARM. DISP.,First Floor,67.55,42.60,2.80,182.6,Storage Room,Occupancy Zone 1A
+1AC1,CENTRAL WAITING,First Floor,139.75,75.32,4.57,625.2,Waiting Room,Occupancy Zone 1A
+1AC2,CORRIDOR,First Floor,19.60,24.07,2.80,53.5,Corridor,Occupancy Zone 1A
+1AC3,CORRIDOR,First Floor,16.29,21.50,2.80,42.0,Corridor,Occupancy Zone 1A
+1AC4,CORRIDOR,First Floor,9.55,13.79,2.80,24.6,Corridor,Occupancy Zone 1A
+1AC5,CORRIDOR,First Floor,20.38,32.98,2.80,53.8,Corridor,Occupancy Zone 1A
+1AS1,STAIR,First Floor,14.06,15.65,2.80,38.0,Stairway,Occupancy Zone 1A
+1B01,RECEPTION,First Floor,9.48,12.66,2.80,24.7,Reception Space,Occupancy Zone 1B
+1B02,SPECIMEN TOILET,First Floor,5.55,10.28,2.80,13.7,Restroom,Occupancy Zone 1B
+1B03,BLOOD DRAW,First Floor,9.68,12.73,2.80,24.9,Other Healing Spaces,Occupancy Zone 1B
+1B04,LAB,First Floor,53.59,36.95,2.80,143.3,Laboratory,Occupancy Zone 1B
+1B05,PAT. / STAFF TOILET,First Floor,4.79,8.83,2.80,11.8,Restroom,Occupancy Zone 1B
+1B06,LAB OFFICE,First Floor,10.48,13.16,2.80,26.2,Office,Occupancy Zone 1B
+1B07,DRESS,First Floor,4.42,8.70,2.80,10.9,Dressing Room,Occupancy Zone 1B
+1B08,CENT. STO.,First Floor,9.77,12.80,2.80,25.0,Storage Room,Occupancy Zone 1B
+1B09,DRESS,First Floor,4.65,8.65,2.80,11.6,Dressing Room,Occupancy Zone 1B
+1B10,STAFF LOUNGE,First Floor,10.28,13.65,2.80,26.3,Break Room,Occupancy Zone 1B
+1B11,STAFF TOILET,First Floor,4.99,9.00,2.80,12.3,Restroom,Occupancy Zone 1B
+1B12,CLEAN SUP. & EQUIP.,First Floor,3.90,8.52,2.80,9.2,Storage Room,Occupancy Zone 1B
+1B13,RECEPTION,First Floor,22.59,21.56,2.80,60.1,Reception Space,Occupancy Zone 1B
+1B14,SOIL. UTL.,First Floor,4.04,8.61,2.80,9.6,Soiled Storage Room Space,Occupancy Zone 1B
+1B15,FILM VIEW,First Floor,5.84,9.66,2.80,14.7,Scanning/Imaging Room,Occupancy Zone 1B
+1B16,JAN. CL.,First Floor,4.04,8.61,2.80,9.6,Storage Room,Occupancy Zone 1B
+1B17,TECH. WORK ROOM,First Floor,24.04,20.06,2.80,64.5,Office,Occupancy Zone 1B
+1B19,RADIOGRAPHIC ROOM,First Floor,29.91,28.55,2.80,79.1,Other Healing Spaces,Occupancy Zone 1B
+1B21,COMM. ROOM,First Floor,9.80,13.01,2.80,25.2,Office,Occupancy Zone 1B
+1B23,ELEC. ROOM,First Floor,9.88,13.08,2.80,25.4,Electrical Room,Occupancy Zone 1B
+1BC1,CORRIDOR,First Floor,5.69,9.88,2.80,14.3,Corridor,Occupancy Zone 1B
+1BC2,CORRIDOR,First Floor,29.44,36.16,2.80,76.5,Corridor,Occupancy Zone 1B
+1BC3,CORRIDOR,First Floor,13.44,18.03,2.80,34.8,Corridor,Occupancy Zone 1B
+1BC4,CORRIDOR,First Floor,44.36,44.89,2.80,116.8,Corridor,Occupancy Zone 1B
+1BS2,STAIR,First Floor,16.03,18.16,2.80,41.5,Stairway,Occupancy Zone 1E
+1C01,WAITING,First Floor,11.86,13.51,2.80,32.6,Waiting Room,Occupancy Zone 1C
+1C02,RECEPTION,First Floor,9.32,12.21,2.80,24.7,Reception Space,Occupancy Zone 1C
+1C03,JAN. CL.,First Floor,4.11,8.92,2.80,9.9,Storage Room,Occupancy Zone 1C
+1C04,FITTING / DISP.,First Floor,10.12,12.62,2.80,25.7,Other Healing Spaces,Occupancy Zone 1C
+1C05,VISUAL FIELD,First Floor,11.34,14.54,2.80,28.3,Physical Examination Room,Occupancy Zone 1C
+1C06,SOIL. UTL. / TRASH,First Floor,5.40,9.38,2.80,13.0,Soiled Storage Room Space,Occupancy Zone 1C
+1C07,OPT. EXAM / OFF.,First Floor,17.57,20.70,2.80,45.6,Office,Occupancy Zone 1C
+1C08,SCREEN EYE TEST,First Floor,9.82,13.35,2.80,25.5,Physical Examination Room,Occupancy Zone 1C
+1C09,FUNDUS CAMERA ROOM,First Floor,14.93,16.23,2.80,38.6,Scanning/Imaging Room,Occupancy Zone 1C
+1C10,OPT. EXAM / OFF.,First Floor,18.25,20.87,2.80,47.5,Office,Occupancy Zone 1C
+1C11,ELEC. CL.,First Floor,0.78,4.44,2.80,1.5,Electrical Room,Occupancy Zone 1C
+1C12,TOILET,First Floor,6.15,10.03,2.80,15.3,Restroom,Occupancy Zone 1C
+1C13,COMM. ROOM,First Floor,11.90,14.16,2.80,31.0,Office,Occupancy Zone 1C
+1C14,HIST. / INTV.,First Floor,8.18,11.51,2.80,20.5,Other Healing Spaces,Occupancy Zone 1C
+1C15,PES ADMIN. OFFICE,First Floor,15.39,15.77,2.80,40.8,Office,Occupancy Zone 1C
+1C16,ECG TEST,First Floor,10.01,13.67,2.80,25.3,Scanning/Imaging Room,Occupancy Zone 1C
+1C17,CHIEF AERO MED.,First Floor,9.94,12.69,2.80,25.2,Office,Occupancy Zone 1C
+1C18,PHYSICAL EXAM,First Floor,58.03,41.08,2.80,155.1,Physical Examination Room,Occupancy Zone 1C
+1C19,AUDIO,First Floor,11.63,13.80,2.80,29.1,Equipment Room,Occupancy Zone 1C
+1CC1,CORRIDOR,First Floor,42.65,49.39,2.80,112.7,Corridor,Occupancy Zone 1C
+1CC2,CORRIDOR,First Floor,8.23,12.06,2.80,21.2,Corridor,Occupancy Zone 1C
+1CC3,CORRIDOR,First Floor,11.50,15.78,2.80,29.7,Corridor,Occupancy Zone 1C
+1CS3,STAIR,First Floor,13.91,19.00,2.80,35.7,Stairway,Occupancy Zone 1C
+1D01,SL. LIN. / TRASH,First Floor,2.00,6.19,2.80,4.7,Soiled Storage Room Space,Occupancy Zone 1D
+1D02,INTERACTION STATION,First Floor,11.53,13.80,2.80,30.0,Other Healing Spaces,Occupancy Zone 1D
+1D03,CLEAN U.,First Floor,2.35,6.09,2.80,5.8,Clean Room,Occupancy Zone 1D
+1D04,TOILET,First Floor,5.10,9.08,2.80,12.8,Restroom,Occupancy Zone 1D
+1D05,TRMT RM. DIRTY PROC.,First Floor,14.13,15.07,2.80,37.6,Treatment Room,Occupancy Zone 1D
+1D06,SCOPE WASH / DECON.,First Floor,9.00,12.51,2.80,23.3,Other Grooming Spaces,Occupancy Zone 1D
+1D07,INTERACTION STATION,First Floor,12.57,14.40,2.80,32.9,Other Healing Spaces,Occupancy Zone 1D
+1D08,INTERACTION STATION,First Floor,12.83,14.43,2.80,33.5,Other Healing Spaces,Occupancy Zone 1D
+1D09,INTERACTION STATION,First Floor,12.78,14.30,2.80,33.4,Other Healing Spaces,Occupancy Zone 1D
+1D10,INTERACTION STATION,First Floor,12.74,14.43,2.80,33.3,Other Healing Spaces,Occupancy Zone 1D
+1D11,INTERACTION STATION,First Floor,12.70,14.78,2.80,33.2,Other Healing Spaces,Occupancy Zone 1D
+1D12,SPECIMEN COLL. LAB,First Floor,10.21,13.17,2.80,26.4,Laboratory,Occupancy Zone 1D
+1D13,INTERACTION STATION,First Floor,12.83,14.43,2.80,33.4,Other Healing Spaces,Occupancy Zone 1D
+1D14,SPECIMEN TOILET,First Floor,4.75,8.74,2.80,11.7,Restroom,Occupancy Zone 1D
+1D15,WTS & MEAS. ROOM,First Floor,5.07,9.07,2.80,12.8,Physical Examination Room,Occupancy Zone 1D
+1D16,PROVIDER CUBICLES,First Floor,67.83,36.73,2.80,182.7,Office,Occupancy Zone 1D
+1D17,JAN. CL.,First Floor,2.06,5.81,2.80,4.7,Storage Room,Occupancy Zone 1D
+1D18,TOILET,First Floor,8.26,12.88,2.80,20.7,Restroom,Occupancy Zone 1D
+1D19,MDIS VIEW,First Floor,5.64,9.71,2.80,14.3,Office,Occupancy Zone 1D
+1D20,APPMTS,First Floor,11.79,13.74,2.80,30.7,Office,Occupancy Zone 1D
+1D21,GROUP IS,First Floor,19.19,18.16,2.80,50.2,Other Healing Spaces,Occupancy Zone 1D
+1D22,TEAM INTERACTION,First Floor,24.24,20.77,2.80,63.1,Office,Occupancy Zone 1D
+1D23,GROUP IS,First Floor,19.19,18.16,2.80,50.2,Other Healing Spaces,Occupancy Zone 1D
+1D24,RECORDS,First Floor,11.78,13.70,2.80,30.7,Storage Room,Occupancy Zone 1D
+1D25,PROVIDER CUBICLES,First Floor,67.82,36.63,2.80,182.6,Office,Occupancy Zone 1D
+1D26,TOILET,First Floor,5.04,9.17,2.80,12.4,Restroom,Occupancy Zone 1D
+1D27,ADMIN WORK STATN.,First Floor,10.75,13.41,2.80,27.9,Office,Occupancy Zone 1D
+1D28,INTERACTION STATION,First Floor,12.69,14.36,2.80,33.1,Other Healing Spaces,Occupancy Zone 1D
+1D30,WTS & MEAS. ROOM,First Floor,9.27,12.67,2.80,23.8,Physical Examination Room,Occupancy Zone 1D
+1D31,PEDIATRIC WTS & MSRS,First Floor,11.02,13.72,2.80,28.6,Physical Examination Room,Occupancy Zone 1D
+1D32,INTERACTION STATION,First Floor,12.75,14.81,2.80,33.2,Other Healing Spaces,Occupancy Zone 1D
+1D33,PEDIATRIC WAITING,First Floor,12.74,14.43,2.80,33.3,Waiting Room,Occupancy Zone 1D
+1D34,INTERACTION STATION,First Floor,12.83,14.43,2.80,33.4,Other Healing Spaces,Occupancy Zone 1D
+1D35,INTERACTION STATION,First Floor,12.83,14.43,2.80,33.4,Other Healing Spaces,Occupancy Zone 1D
+1D36,INTERACTION STATION,First Floor,12.71,14.43,2.80,33.2,Other Healing Spaces,Occupancy Zone 1D
+1D37,CLEAN U.,First Floor,2.35,6.09,2.80,5.8,Clean Room,Occupancy Zone 1D
+1D38,TRMT ROOM,First Floor,23.26,19.59,2.80,62.2,Treatment Room,Occupancy Zone 1D
+1D39,JAN. CL.,First Floor,2.00,6.19,2.80,4.7,Storage Room,Occupancy Zone 1D
+1D40,IMMUNIZ'N ROOM,First Floor,16.55,19.22,2.80,43.1,Other Healing Spaces,Occupancy Zone 1D
+1DC1,WAITING / ACTIVITY AREA,First Floor,182.28,80.66,4.57,814.5,Waiting Room,Occupancy Zone 1D
+1DC2,CORRIDOR,First Floor,6.35,10.67,2.80,16.6,Corridor,Occupancy Zone 1D
+1DC3,CORRIDOR,First Floor,31.81,38.12,2.80,83.0,Corridor,Occupancy Zone 1D
+1DC4,CORRIDOR,First Floor,15.06,20.12,2.80,39.5,Corridor,Occupancy Zone 1D
+1DC5,CORRIDOR,First Floor,6.61,10.28,2.80,17.0,Corridor,Occupancy Zone 1D
+1DC6,CORRIDOR,First Floor,15.01,20.16,2.80,38.9,Corridor,Occupancy Zone 1D
+1DC7,CORRIDOR,First Floor,31.91,37.84,2.80,83.5,Corridor,Occupancy Zone 1D
+1DC8,CORRIDOR,First Floor,6.29,10.61,2.80,16.5,Corridor,Occupancy Zone 1D
+1E01,HK EQUIP. STORAGE,First Floor,9.73,12.49,2.80,25.1,Storage Room,Occupancy Zone 1E
+1E02,ELEV. EQUIP.,First Floor,5.68,9.75,2.80,14.2,Equipment Room,Occupancy Zone 1E
+1E03,JAN. CL.,First Floor,3.97,8.65,2.80,9.7,Storage Room,Occupancy Zone 1E
+1E04,HK BREAK ROOM,First Floor,9.74,12.49,2.80,25.1,Break Room,Occupancy Zone 1E
+1E05,CHIEF LOG OFFICE,First Floor,9.94,12.63,2.80,25.7,Office,Occupancy Zone 1E
+1E06,TECH. WORK STATION,First Floor,37.38,24.98,2.80,100.5,Office,Occupancy Zone 1E
+1E07,CONF. LIBRARY,First Floor,11.63,13.65,2.80,30.2,Conference Room,Occupancy Zone 1E
+1E08,SUPER,First Floor,9.86,13.06,2.80,25.5,Office,Occupancy Zone 1E
+1E09,W. TOILET,First Floor,5.06,9.21,2.80,12.5,Restroom,Occupancy Zone 1E
+1E10,M. TOILET,First Floor,5.06,9.21,2.80,12.5,Restroom,Occupancy Zone 1E
+1E11,STAFF LOUNGE,First Floor,14.59,15.28,2.80,38.2,Break Room,Occupancy Zone 1E
+1E12,ISOLATION TOILET,First Floor,5.25,9.28,2.80,13.0,Restroom,Occupancy Zone 1E
+1E14,DISASTER STOR.,First Floor,22.36,19.89,2.80,59.2,Storage Room,Occupancy Zone 1E
+1E15,CENTRAL MECH. RM.,First Floor,28.91,24.12,2.80,76.0,Mechanical Room,Occupancy Zone 1E
+1E15-A,GAS STORAGE,First Floor,2.29,7.30,2.80,4.6,Hazardous Material Storage Space,Occupancy Zone 1E
+1E16,BMET WORK STATION,First Floor,49.60,30.99,2.80,130.8,Office,Occupancy Zone 1E
+1E17,HAZ. STOR.,First Floor,9.79,12.72,2.80,24.2,Hazardous Material Storage Space,Occupancy Zone 1E
+1E18,BIOMED MAINT. ADMIN.,First Floor,15.55,15.94,2.80,40.2,Office,Occupancy Zone 1E
+1E19,ELEC. ROOM,First Floor,9.63,12.69,2.80,24.9,Electrical Room,Occupancy Zone 1E
+1E20,TRASH,First Floor,8.95,12.60,2.80,22.1,Soiled Storage Room Space,Occupancy Zone 1E
+1E21,FLAMABLE STORAGE,First Floor,5.66,9.75,2.80,13.5,Hazardous Material Storage Space,Occupancy Zone 1E
+1E22,SEC. STORAGE,First Floor,6.27,10.42,2.80,15.8,Storage Room,Occupancy Zone 1E
+1E23,BEE EQUIP. STORAGE,First Floor,8.78,12.98,2.80,22.6,Equipment Room,Occupancy Zone 1E
+1E24,RECEIVING / STORAGE,First Floor,118.30,48.01,2.80,322.3,Storage Room,Occupancy Zone 1E
+1E25,ADP EQUIP SPACE,First Floor,11.37,14.00,2.80,29.6,Storage Room,Occupancy Zone 1E
+1E26,WORK ROOM,First Floor,19.71,18.86,2.80,51.4,Office,Occupancy Zone 1E
+1E27,BENCHSTOCK STORAGE,First Floor,9.51,12.34,2.80,23.9,Storage Room,Occupancy Zone 1E
+1E28,FAC. MGR. OFFICE,First Floor,9.74,12.61,2.80,24.2,Office,Occupancy Zone 1E
+1E29,HK. SUPV. OFFICE,First Floor,11.03,13.47,2.80,27.9,Office,Occupancy Zone 1E
+1E30,SOIL. LIN.,First Floor,6.88,10.77,2.80,17.4,Soiled Storage Room Space,Occupancy Zone 1E
+1E33,ISOLATION INTERACTION STATION,First Floor,13.35,15.03,2.80,34.9,Other Healing Spaces,Occupancy Zone 1E
+1EC1,CORRIDOR,First Floor,54.68,63.91,2.80,142.7,Corridor,Occupancy Zone 1E
+1EC2,CORRIDOR,First Floor,7.91,11.72,2.80,20.4,Corridor,Occupancy Zone 1E
+1EC3,CORRIDOR,First Floor,8.75,12.63,2.80,22.6,Corridor,Occupancy Zone 1E
+1EC4,CORRIDOR,First Floor,9.31,12.65,2.80,23.7,Corridor,Occupancy Zone 1E
+1F01,MECH. YARD,First Floor,80.07,35.82,5.57,439.6,Equipment Room,Occupancy Zone 1F
+E1,ELEVATOR,First Floor,4.36,8.42,9.25,36.1,Elevator Shaft,Occupancy Zone 1B
+3AC1,OPEN TO BELOW,Roof - Main,99.16,40.48,3.40,324.6,Other Transitional Circulation Spaces,Occupancy Zone 2D
+3D01,MECH. PENTHOUSE,Roof - Main,64.83,35.34,3.40,206.6,Mechanical Room,Occupancy Zone 2D
+3R01,ROOF,Roof - Main,1568.12,277.05,4.00,6257.3,Other General Facility Service Spaces,Occupancy Zone 3R
+3R02,ROOF,Roof - Main,15.17,32.15,5.20,77.1,Other General Facility Service Spaces,Occupancy Zone 3R
+3R03,ROOF,Roof - Main,58.09,30.38,6.49,376.3,Other General Facility Service Spaces,Occupancy Zone 3R
+3R04,ROOF,Roof - Main,15.16,32.15,5.20,77.0,Other General Facility Service Spaces,Occupancy Zone 3R
+2A01,LIBRARY / CONF. ROOM,Second Floor,26.33,21.72,2.80,69.8,Conference Room,Occupancy Zone 2A
+2A02,SUPER OFFICE,Second Floor,10.87,14.10,2.80,28.1,Office,Occupancy Zone 2A
+2A03,SEC. OFFICE,Second Floor,16.01,16.10,2.80,41.4,Office,Occupancy Zone 2A
+2A04,DENTAL SURGEON OFFICE,Second Floor,16.01,16.10,2.80,41.8,Office,Occupancy Zone 2A
+2A05,OH DTR #1,Second Floor,11.33,13.86,2.80,29.4,Other Healing Spaces,Occupancy Zone 2A
+2A06,OH DTR #2,Second Floor,12.09,13.91,2.80,31.0,Other Healing Spaces,Occupancy Zone 2A
+2A07,OH DTR #3,Second Floor,12.00,13.57,2.80,30.8,Other Healing Spaces,Occupancy Zone 2A
+2A08,GEN. DENT. DTR #4,Second Floor,11.75,13.57,2.80,30.3,Other Healing Spaces,Occupancy Zone 2A
+2A09,GEN. DENT. DTR #5,Second Floor,11.31,13.50,2.80,29.3,Other Healing Spaces,Occupancy Zone 2A
+2A10,DENTAL WAITING,Second Floor,7.86,10.87,2.80,20.5,Waiting Room,Occupancy Zone 2A
+2A11,DENTAL WAITING,Second Floor,33.48,29.05,2.80,88.9,Waiting Room,Occupancy Zone 2A
+2A12,X-RAY,Second Floor,11.22,14.36,2.80,29.0,Scanning/Imaging Room,Occupancy Zone 2A
+2A12-A,X-RAY ALCOVE,Second Floor,2.29,5.63,2.80,5.6,Scanning/Imaging Room,Occupancy Zone 2A
+2A13,DEVELOPING,Second Floor,7.56,11.78,2.80,19.3,Scanning/Imaging Room,Occupancy Zone 2A
+2A14,ADMIN,Second Floor,32.84,24.79,2.80,88.2,Office,Occupancy Zone 2A
+2AC1,CORRIDOR,Second Floor,39.56,31.38,4.68,181.9,Corridor,Occupancy Zone 2A
+2AC1-A,OPEN TO BELOW,Second Floor,67.41,37.77,2.80,183.4,Other Transitional Circulation Spaces,Occupancy Zone 2A
+2AC1-B,OPEN TO BELOW,Second Floor,75.81,35.41,4.68,348.0,Other Transitional Circulation Spaces,Occupancy Zone 2A
+2AC2,CORRIDOR,Second Floor,15.02,21.17,2.80,39.0,Corridor,Occupancy Zone 2A
+2AC3,CORRIDOR,Second Floor,27.09,33.54,2.80,72.0,Corridor,Occupancy Zone 2A
+2AC4,CORRIDOR,Second Floor,14.32,19.47,2.80,37.6,Corridor,Occupancy Zone 2A
+2AC5,CORRIDOR,Second Floor,9.10,13.01,2.80,23.5,Corridor,Occupancy Zone 2A
+2AS1,STAIR,Second Floor,14.45,15.32,2.80,38.2,Stairway,Occupancy Zone 2A
+2B01,OFFICE,Second Floor,9.36,12.86,2.80,24.1,Office,Occupancy Zone 2B
+2B10,RECEPTION,Second Floor,15.17,16.63,2.80,39.7,Reception Space,Occupancy Zone 2B
+2B11,WAITING,Second Floor,10.11,12.91,2.80,26.7,Waiting Room,Occupancy Zone 2B
+2B12,COMM. ROOM,Second Floor,9.92,13.08,2.80,25.6,Office,Occupancy Zone 2B
+2B13,ELECTRICAL,Second Floor,9.69,12.98,2.80,24.9,Electrical Room,Occupancy Zone 2B
+2B14,RECS / FORMS STORAGE,Second Floor,10.55,13.60,2.80,27.3,Storage Room,Occupancy Zone 2B
+2B15,WAIT / ERGOM,Second Floor,9.12,12.24,2.80,23.4,Waiting Room,Occupancy Zone 2B
+2B16,PH TECH,Second Floor,9.52,12.36,2.80,23.9,Office,Occupancy Zone 2B
+2B17,CL. UTL. / KITCHENET,Second Floor,9.00,12.17,2.80,23.1,Kitchen,Occupancy Zone 2B
+2B18,PH TECH,Second Floor,9.52,13.86,2.80,24.2,Office,Occupancy Zone 2B
+2B19,OFFICE,Second Floor,8.88,12.10,2.80,22.8,Office,Occupancy Zone 2B
+2B2,JAN. CL.,Second Floor,2.20,5.94,2.80,5.3,Storage Room,Occupancy Zone 2B
+2B20,JAN. CL.,Second Floor,3.24,7.53,2.80,7.9,Storage Room,Occupancy Zone 2B
+2B21,PH SUPER,Second Floor,9.25,12.54,2.80,23.6,Office,Occupancy Zone 2B
+2B22,M. TOILET,Second Floor,5.17,9.12,2.80,12.4,Restroom,Occupancy Zone 2B
+2B23,BEE TECH,Second Floor,10.80,13.23,2.80,27.8,Office,Occupancy Zone 2B
+2B24,BEE TECH,Second Floor,9.78,12.67,2.80,24.7,Office,Occupancy Zone 2B
+2B25,SOIL. UTL. / TRASH,Second Floor,7.46,13.21,2.80,18.8,Soiled Storage Room Space,Occupancy Zone 2B
+2B3,CONF. / GROUP THERAPY,Second Floor,24.55,28.95,2.80,63.2,Conference Room,Occupancy Zone 2B
+2B4,PSYCH TEST,Second Floor,9.84,12.61,2.80,25.7,Office,Occupancy Zone 2B
+2B5,W. TOILET,Second Floor,4.73,8.98,2.80,11.6,Restroom,Occupancy Zone 2B
+2B6,STAFF TOILET,Second Floor,5.65,9.64,2.80,14.0,Restroom,Occupancy Zone 2B
+2B7,TECH OFFICE,Second Floor,9.93,12.68,2.80,25.9,Office,Occupancy Zone 2B
+2B8,OFFICE / EXAM,Second Floor,12.64,14.84,2.80,32.9,Office,Occupancy Zone 2B
+2B9,TECH OFFICE,Second Floor,9.94,12.68,2.80,25.7,Office,Occupancy Zone 2B
+2BC1,CORRIDOR,Second Floor,12.82,15.45,2.80,34.0,Corridor,Occupancy Zone 2B
+2BC2,CORRIDOR,Second Floor,29.51,32.11,2.80,77.3,Corridor,Occupancy Zone 2B
+2BC3,CORRIDOR,Second Floor,26.80,32.88,2.80,69.8,Corridor,Occupancy Zone 2B
+2BC4,CORRIDOR,Second Floor,12.48,16.68,2.80,32.3,Corridor,Occupancy Zone 2B
+2BC5,CORRIDOR,Second Floor,22.74,29.21,2.80,58.6,Corridor,Occupancy Zone 2B
+2BC6,CORRIDOR,Second Floor,8.58,12.72,2.80,22.3,Corridor,Occupancy Zone 2B
+2BS2,STAIR,Second Floor,15.45,17.33,2.80,40.3,Stairway,Occupancy Zone 2B
+2C01,DTR SUPPORT,Second Floor,8.73,11.96,2.80,22.7,Office,Occupancy Zone 2C
+2C02,GEN. DENT. DTR #6,Second Floor,12.00,13.86,2.80,30.7,Other Healing Spaces,Occupancy Zone 2C
+2C03,CONSULT.,Second Floor,33.49,28.44,2.80,89.4,Other Healing Spaces,Occupancy Zone 2C
+2C04,GEN. DENT. DTR #7,Second Floor,11.18,13.86,2.80,28.9,Other Healing Spaces,Occupancy Zone 2C
+2C05,JAN. CL.,Second Floor,3.69,8.26,2.80,9.1,Storage Room,Occupancy Zone 2C
+2C06,GEN. DENT. DTR #8,Second Floor,12.00,13.86,2.80,30.6,Other Healing Spaces,Occupancy Zone 2C
+2C07,M. STAFF TOILET,Second Floor,18.24,27.32,2.80,46.1,Restroom,Occupancy Zone 2C
+2C08,W. STAFF TOILET,Second Floor,15.73,21.98,2.80,40.0,Restroom,Occupancy Zone 2C
+2C09,GEN. DENT. DTR #9,Second Floor,11.36,13.86,2.80,29.3,Other Healing Spaces,Occupancy Zone 2C
+2C10,DIPC DECON,Second Floor,11.03,13.49,2.80,28.7,Other Healing Spaces,Occupancy Zone 2C
+2C11,HK,Second Floor,5.09,9.49,2.80,12.8,Other Healing Spaces,Occupancy Zone 2C
+2C12,DIPC CLEAN,Second Floor,14.37,18.17,2.80,37.1,Other Healing Spaces,Occupancy Zone 2C
+2C13,TRASH,Second Floor,5.54,10.18,2.80,14.0,Soiled Storage Room Space,Occupancy Zone 2C
+2C14,GEN. DENT. DTR #10,Second Floor,12.01,14.00,2.80,30.9,Other Healing Spaces,Occupancy Zone 2C
+2C15,COMM. ROOM,Second Floor,9.58,12.53,2.80,24.7,Office,Occupancy Zone 2C
+2C16,CERAMIC LAB,Second Floor,11.16,14.02,2.80,28.4,Laboratory,Occupancy Zone 2C
+2C17,PROSTH. LAB,Second Floor,30.56,25.50,2.80,80.0,Laboratory,Occupancy Zone 2C
+2C18,ELECTRICAL,Second Floor,9.84,12.56,2.80,25.4,Electrical Room,Occupancy Zone 2C
+2C19,CENTRAL ISSUE,Second Floor,21.04,19.89,2.80,55.4,Storage Room,Occupancy Zone 2C
+2C22,LOUNGE,Second Floor,11.16,13.80,2.80,28.9,Break Room,Occupancy Zone 2C
+2C23,M. TOILET,Second Floor,8.66,13.23,2.80,21.5,Restroom,Occupancy Zone 2C
+2C24,W. TOILET,Second Floor,9.22,12.15,2.80,23.8,Restroom,Occupancy Zone 2C
+2CC1,CORRIDOR,Second Floor,18.81,23.58,2.80,48.8,Corridor,Occupancy Zone 2C
+2CC2,CORRIDOR,Second Floor,13.37,18.19,2.80,34.8,Corridor,Occupancy Zone 2C
+2CC3,CORRIDOR,Second Floor,17.25,22.31,2.80,45.0,Corridor,Occupancy Zone 2C
+2CC4,CORRIDOR,Second Floor,10.85,14.57,2.80,28.1,Corridor,Occupancy Zone 2C
+2CC5,CORRIDOR,Second Floor,8.13,12.63,4.00,29.7,Corridor,Occupancy Zone 2C
+2CS3,STAIR,Second Floor,15.27,17.37,2.80,39.8,Stairway,Occupancy Zone 2C
+2D01,PARTS STORAGE,Second Floor,8.92,12.35,2.80,23.1,Storage Room,Occupancy Zone 2D
+2D02,DATA / ARCHIVE STORAGE,Second Floor,9.92,12.87,2.80,25.8,Storage Room,Occupancy Zone 2D
+2D03,DIR. INFO MGR,Second Floor,9.41,12.52,2.80,24.4,Office,Occupancy Zone 2D
+2D04,SYS. ANALYST,Second Floor,20.70,19.95,2.80,54.4,Office,Occupancy Zone 2D
+2D04A,COMPUTER ROOM,Second Floor,33.55,23.61,2.80,89.8,Office,Occupancy Zone 2D
+2D05,MAIN MECHANICAL ROOM,Second Floor,231.11,65.48,2.80,632.9,Mechanical Room,Occupancy Zone 2D
+2D06,COPY / FILE,Second Floor,11.98,14.02,2.80,31.2,Copy Room,Occupancy Zone 2D
+2D07,SUPER,Second Floor,9.22,12.13,2.80,23.8,Office,Occupancy Zone 2D
+2D08,QA / HRD DIRECTOR,Second Floor,8.98,12.28,2.80,23.2,Office,Occupancy Zone 2D
+2D09,ADMIN OFFICE,Second Floor,14.39,15.45,2.80,37.3,Office,Occupancy Zone 2D
+2D10,SEC. WAIT,Second Floor,16.63,17.02,2.80,43.9,Waiting Room,Occupancy Zone 2D
+2D11,CMDR OFFICE,Second Floor,15.86,16.02,2.80,40.6,Office,Occupancy Zone 2D
+2D12,VEST.,Second Floor,2.80,6.50,2.80,6.5,Entry Vestibule,Occupancy Zone 2D
+2D13,TOILET,Second Floor,4.74,9.01,2.80,11.7,Restroom,Occupancy Zone 2D
+2D14,OPS SQUAD CMDR,Second Floor,13.60,15.44,2.80,35.6,Office,Occupancy Zone 2D
+2D15,1ST SGT,Second Floor,10.83,13.59,2.80,27.8,Office,Occupancy Zone 2D
+2D16,RMO DIR.,Second Floor,9.75,13.19,2.80,25.1,Office,Occupancy Zone 2D
+2D17,CREDENTIALS MGR,Second Floor,9.65,12.76,2.80,24.4,Office,Occupancy Zone 2D
+2D18,TECH. OFFICE,Second Floor,84.80,45.57,2.80,229.8,Office,Occupancy Zone 2D
+2D19,READINESS NCOIC OFFICE,Second Floor,10.91,13.53,2.80,27.9,Office,Occupancy Zone 2D
+2D20,CONF. ROOM,Second Floor,30.71,22.30,2.80,82.2,Conference Room,Occupancy Zone 2D
+2D21,LIBRARY / CLASSROOM,Second Floor,27.30,21.28,4.00,105.8,Classroom,Occupancy Zone 2D
+2DC1,CORRIDOR,Second Floor,21.55,26.29,2.80,56.4,Corridor,Occupancy Zone 2D
+2DC2,CORRIDOR,Second Floor,30.11,36.40,2.80,79.5,Corridor,Occupancy Zone 2D
+2R01,ROOF,Second Floor,52.87,29.71,4.00,203.6,Other General Facility Service Spaces,Occupancy Zone 2R
+2R02,ROOF,Second Floor,589.76,194.08,4.00,2315.0,Other General Facility Service Spaces,Occupancy Zone 2R

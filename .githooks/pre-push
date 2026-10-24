@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Fast local mirror of the CI quality job for what this branch changes.
+# Full parity: `bun run ci`. Skip once with `git push --no-verify`.
+set -euo pipefail
+
+# GUI clients often omit Homebrew from PATH (same as pre-commit).
+export PATH="/opt/homebrew/bin:/usr/local/bin:${HOME}/.bun/bin:${PATH}"
+
+# Prefer the push remote's main; fall back to upstream (pascalorg) when this
+# clone's origin is a personal repo that does not yet have main.
+base_ref=
+for candidate in origin/main upstream/main; do
+  if git rev-parse --verify "$candidate" >/dev/null 2>&1; then
+    base_ref=$candidate
+    break
+  fi
+done
+if [ -z "$base_ref" ]; then
+  echo "pre-push: no origin/main or upstream/main to diff against; skipping scoped checks." >&2
+  exit 0
+fi
+base=$(git merge-base HEAD "$base_ref")
+changed=$(git diff --name-only "$base" HEAD)
+
+if echo "$changed" | grep -qE '(^|/)package\.json$|^bun\.lock$'; then
+  echo "pre-push: checking bun.lock is in sync"
+  if ! bun install --frozen-lockfile --dry-run >/dev/null 2>&1; then
+    echo "pre-push: bun.lock is out of date. Run \`bun install\` and commit bun.lock." >&2
+    exit 1
+  fi
+fi
+
+echo "pre-push: lint"
+bun run --silent check
+
+# Directly changed packages only: `...[$base]` also pulled in every dependent,
+# so a core edit typechecked and tested the whole graph before each push. CI
+# owns that parity; this hook is fast feedback.
+echo "pre-push: typecheck changed packages"
+bunx turbo run check-types --filter="[$base]" --output-logs=errors-only

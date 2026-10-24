@@ -1,0 +1,80 @@
+{
+ "version": 1,
+ "building": "duplex",
+ "title": "Duplex Apartment",
+ "paper": "A2",
+ "scale": "1:50",
+ "set": {
+  "pdf": "duplex-drawing-set.pdf",
+  "links": "duplex-drawing-set.links.json",
+  "pages": 6
+ },
+ "sheets": [
+  {
+   "number": "G-001",
+   "title": "Cover sheet and sheet index",
+   "kind": "cover",
+   "storey": null,
+   "page": 1,
+   "pdf": "duplex-G-001-cover-sheet-and-sheet-index.pdf",
+   "svg": "duplex-G-001-cover-sheet-and-sheet-index.svg",
+   "links": null,
+   "hotspots": 0
+  },
+  {
+   "number": "A-101",
+   "title": "Level 1 floor plan",
+   "kind": "plan",
+   "storey": "Level 1",
+   "page": 2,
+   "pdf": "duplex-A-101-level-1-floor-plan.pdf",
+   "svg": "duplex-A-101-level-1-floor-plan.svg",
+   "links": "duplex-A-101-level-1-floor-plan.links.json",
+   "hotspots": 20
+  },
+  {
+   "number": "A-102",
+   "title": "Level 2 floor plan",
+   "kind": "plan",
+   "storey": "Level 2",
+   "page": 3,
+   "pdf": "duplex-A-102-level-2-floor-plan.pdf",
+   "svg": "duplex-A-102-level-2-floor-plan.svg",
+   "links": "duplex-A-102-level-2-floor-plan.links.json",
+   "hotspots": 30
+  },
+  {
+   "number": "A-601",
+   "title": "Room schedule",
+   "kind": "schedule",
+   "storey": null,
+   "page": 4,
+   "pdf": "duplex-A-601-room-schedule.pdf",
+   "svg": "duplex-A-601-room-schedule.svg",
+   "links": "duplex-A-601-room-schedule.links.json",
+   "hotspots": 21
+  },
+  {
+   "number": "A-611",
+   "title": "Door schedule",
+   "kind": "schedule",
+   "storey": null,
+   "page": 5,
+   "pdf": "duplex-A-611-door-schedule.pdf",
+   "svg": "duplex-A-611-door-schedule.svg",
+   "links": "duplex-A-611-door-schedule.links.json",
+   "hotspots": 14
+  },
+  {
+   "number": "A-621",
+   "title": "Window schedule",
+   "kind": "schedule",
+   "storey": null,
+   "page": 6,
+   "pdf": "duplex-A-621-window-schedule.pdf",
+   "svg": "duplex-A-621-window-schedule.svg",
+   "links": "duplex-A-621-window-schedule.links.json",
+   "hotspots": 24
+  }
+ ]
+}
