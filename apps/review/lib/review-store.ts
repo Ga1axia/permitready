@@ -2,6 +2,22 @@ import { create } from 'zustand'
 import type { Unit } from './node-info'
 import type { PdfLink } from './pdf-links'
 
+/** A violation finding's position on a PDF page. */
+export type ViolationMarker = {
+  /** Finding id, e.g. "duplex-001". */
+  findingId: string
+  /** IFC GlobalId of the primary element. */
+  globalId: string
+  /** 1-based PDF page. */
+  page: number
+  /** Normalized x position (0–1, from left). */
+  x: number
+  /** Normalized y position (0–1, from top). */
+  y: number
+  /** Whether this is the single active/focused finding. */
+  active: boolean
+}
+
 /** Default: others are 70% see-through while an element is selected. */
 export const DEFAULT_FOCUS_SEE_THROUGH = 70
 
@@ -12,14 +28,17 @@ type ReviewState = {
   /** Bumped to ask the camera inside the Canvas to frame a node (or the whole model). */
   focusRequest: { nodeId: string | null; seq: number }
   focusNode: (nodeId: string | null) => void
+  /** Dolly the orbit camera. factor < 1 zooms in, > 1 zooms out. */
+  zoomRequest: { factor: number; seq: number }
+  zoomBy: (factor: number) => void
   /** null = all floors stacked; otherwise floors above this level are hidden. */
   isolatedLevelId: string | null
   setIsolatedLevelId: (id: string | null) => void
   unit: Unit
   setUnit: (unit: Unit) => void
   /**
-   * How see-through the rest of the building is when something is selected
-   * (0 = no dimming, 100 = fully invisible). Default 70.
+   * How see-through the grayed-out context is when something is selected
+   * (0 = gray but opaque, 100 = fully invisible). Default 70.
    */
   focusSeeThrough: number
   setFocusSeeThrough: (percent: number) => void
@@ -48,11 +67,28 @@ type ReviewState = {
   /** Highlight pulse token — PDF pane scrolls/flashes when 3D selects a linked element. */
   pdfFocusSeq: number
   bumpPdfFocus: () => void
+
+  /**
+   * Scene node ids whose meshes should receive a red violation emissive overlay.
+   * Set by CodeCheckPanel when a rule or finding is activated; cleared when the
+   * panel is dismissed or the active rule changes.
+   */
+  violationIds: ReadonlyArray<string>
+  setViolationIds: (ids: ReadonlyArray<string>) => void
+
+  /**
+   * Violation point markers for the PDF pane — one per failing finding that
+   * has sheet coordinates. Rendered as red crosshairs on the relevant page.
+   */
+  violationMarkers: ReadonlyArray<ViolationMarker>
+  setViolationMarkers: (markers: ReadonlyArray<ViolationMarker>) => void
 }
 
 export const useReview = create<ReviewState>((set, get) => ({
   focusRequest: { nodeId: null, seq: 0 },
   focusNode: (nodeId) => set((s) => ({ focusRequest: { nodeId, seq: s.focusRequest.seq + 1 } })),
+  zoomRequest: { factor: 1, seq: 0 },
+  zoomBy: (factor) => set((s) => ({ zoomRequest: { factor, seq: s.zoomRequest.seq + 1 } })),
   isolatedLevelId: null,
   setIsolatedLevelId: (isolatedLevelId) => set({ isolatedLevelId }),
   unit: 'imperial',
@@ -85,4 +121,10 @@ export const useReview = create<ReviewState>((set, get) => ({
   setPdfPage: (pdfPage) => set({ pdfPage: Math.max(1, pdfPage) }),
   pdfFocusSeq: 0,
   bumpPdfFocus: () => set((s) => ({ pdfFocusSeq: s.pdfFocusSeq + 1 })),
+
+  violationIds: [],
+  setViolationIds: (violationIds) => set({ violationIds }),
+
+  violationMarkers: [],
+  setViolationMarkers: (violationMarkers) => set({ violationMarkers }),
 }))

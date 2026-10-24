@@ -1,17 +1,24 @@
 import { collectIsolationSubtree } from '@pascal-app/viewer'
-import type { Material, Mesh, Object3D } from 'three'
-import { float } from 'three/tsl'
+import type { Color, Material, Mesh, Object3D } from 'three'
+import { color, float } from 'three/tsl'
 
 /**
- * Soft-focus fade for the review viewer.
+ * Soft-focus for the review viewer.
  *
- * - Ghost materials are shared per original (clone once per mat, not per mesh).
- * - Switching selection keeps already-faded meshes; only the new focus is
- *   restored and any new meshes are faded in chunks across frames.
- * - The opacity slider updates shared ghosts in place (no recloning).
+ * - Context meshes are cloned once into shared "ghost" materials: gray (no
+ *   hue) and see-through. The selection keeps its original coloured materials.
+ * - Switching selection diffs in place; the opacity slider only retints ghosts.
  */
 
-type NodeMaterial = Material & { opacityNode?: unknown; isNodeMaterial?: boolean }
+type NodeMaterial = Material & {
+  opacityNode?: unknown
+  colorNode?: unknown
+  isNodeMaterial?: boolean
+  color?: Color
+  emissive?: Color
+  map?: unknown
+  emissiveMap?: unknown
+}
 
 type Worn = {
   original: Material | Material[]
@@ -27,6 +34,8 @@ const ghostRefs = new Map<Material, number>()
 let currentOpacity = 0.3
 let applyToken = 0
 
+/** Neutral gray for drained context — no residual brand/material hue. */
+const GHOST_HEX = 0x9a9a9a
 const FAINT = 0.5
 const CHUNK = 250
 
@@ -35,6 +44,19 @@ const eachOf = (material: Material | Material[]) =>
 
 function isMesh(object: Object3D): object is Mesh {
   return (object as Mesh).isMesh === true && Boolean((object as Mesh).material)
+}
+
+/** Strip hue so context reads as tone only; opacity set separately. */
+function drainColor(material: Material) {
+  const m = material as NodeMaterial
+  if (m.color?.isColor) m.color.setHex(GHOST_HEX)
+  if (m.emissive?.isColor) m.emissive.setRGB(0, 0, 0)
+  m.map = null
+  m.emissiveMap = null
+  if (m.isNodeMaterial || m.colorNode != null) {
+    m.colorNode = color(GHOST_HEX)
+  }
+  m.needsUpdate = true
 }
 
 function writeOpacity(material: Material, opacity: number) {
@@ -48,11 +70,16 @@ function writeOpacity(material: Material, opacity: number) {
   material.needsUpdate = true
 }
 
+function styleGhost(material: Material, opacity: number) {
+  drainColor(material)
+  writeOpacity(material, opacity)
+}
+
 function retainGhost(original: Material): Material {
   let ghost = ghostOf.get(original)
   if (!ghost) {
     ghost = original.clone()
-    writeOpacity(ghost, currentOpacity)
+    styleGhost(ghost, currentOpacity)
     ghostOf.set(original, ghost)
     originalOf.set(ghost, original)
     ghostRefs.set(ghost, 0)
@@ -126,8 +153,8 @@ function pushOpacityToGhosts(opacity: number) {
 }
 
 /**
- * Focus `ids`: those subtrees stay solid, everything else under `root` fades.
- * Returns a cancel handle for the chunked apply.
+ * Focus `ids`: those subtrees stay coloured and solid; everything else under
+ * `root` goes gray and see-through.
  */
 export function applyFocusFade(
   root: Object3D,
@@ -145,6 +172,10 @@ export function applyFocusFade(
   const toFade: Mesh[] = []
   root.traverse((object) => {
     if (!isMesh(object)) return
+    if (object.userData?.reviewFocusKeep) {
+      restoreMesh(object)
+      return
+    }
     if (keep.has(object)) {
       restoreMesh(object)
       return
@@ -157,7 +188,6 @@ export function applyFocusFade(
     if (!toFadeSet.has(mesh)) restoreMesh(mesh)
   }
 
-  // Fast path: everything we need is already faded — only opacity was updated.
   let pending = 0
   for (const mesh of toFade) {
     const entry = worn.get(mesh)
@@ -185,7 +215,7 @@ export function applyFocusFade(
   }
 }
 
-/** Slider path — update opacity on shared ghosts only. */
+/** Slider path — opacity only; ghosts stay drained of colour. */
 export function setFocusFadeOpacity(opacity: number) {
   pushOpacityToGhosts(opacity)
 }
@@ -194,4 +224,15 @@ export function setFocusFadeOpacity(opacity: number) {
 export function clearFocusFade() {
   applyToken++
   for (const mesh of [...faded]) restoreMesh(mesh)
+}
+
+/**
+ * Restore only the faded meshes that have `userData.reviewFocusKeep` set.
+ * Called synchronously after violation meshes are tagged so they pop out of
+ * the ghost state without re-running the full O(scene) applyFocusFade traversal.
+ */
+export function restoreTaggedMeshes(): void {
+  for (const mesh of [...faded]) {
+    if (mesh.userData.reviewFocusKeep) restoreMesh(mesh)
+  }
 }
