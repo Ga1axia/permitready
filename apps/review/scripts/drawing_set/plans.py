@@ -291,6 +291,7 @@ def plan_sheets(project: Project, data: BuildingData, exe: str, ifc: Path, first
                 show_scale_bar=True,
                 links=links,
                 storey=name,
+                transform=(s, px + ox, py + oy),
             )
         )
     return sheets

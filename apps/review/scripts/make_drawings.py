@@ -109,6 +109,13 @@ def build(project: Project, exe: str) -> None:
 
     W, H = PAPER[project.paper]
 
+    def transform_json(t: tuple[float, float, float]) -> dict:
+        # Where a model plan point lands on the page, in sheet mm:
+        # (x0 + s·x, y0 − s·y) with x, y in model metres; divide by width and
+        # height for the links' 0-1 page units.
+        s, x0, y0 = t
+        return {'s': round(s, 6), 'x0': round(x0, 4), 'y0': round(y0, 4), 'width': W, 'height': H}
+
     def link_json(sheet, page: int, prefix: str) -> list[dict]:
         # The app's PDF pane format: normalized page units, origin top-left.
         return [
@@ -149,6 +156,7 @@ def build(project: Project, exe: str) -> None:
             'svg': f'{base}.svg',
             'links': f'{base}.links.json' if sheet.links else None,
             'hotspots': len(sheet.links),
+            **({'transform': transform_json(sheet.transform)} if sheet.transform else {}),
         })
         print(f'[drawings] {sheet.number:<8} {sheet.title} ({len(sheet.links)} hotspots)')
     set_pdf = drawings_dir / f'{project.id}-drawing-set.pdf'
