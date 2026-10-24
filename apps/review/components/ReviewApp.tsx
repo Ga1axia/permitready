@@ -64,22 +64,22 @@ export default function ReviewApp() {
       const seq = ++loadSeq.current
       setNotice(null)
       setSource({ kind: 'sample', sample })
-      setStatus({ kind: 'loading', message: 'Downloading model', percent: 0 })
+      setStatus({ kind: 'loading', message: 'Loading model', percent: 0 })
       const params = new URLSearchParams(window.location.search)
       params.set('model', sample.id)
       window.history.replaceState(null, '', `${window.location.pathname}?${params}`)
+      // Drawings load in parallel with the IFC so side-by-side is ready on open.
+      const drawingsPromise = fetchDrawingSet(sample.id)
       try {
         const result = await loadModelFromUrl(sample.file, progress(seq))
         if (seq !== loadSeq.current) return
         setGraph(result)
         setStatus({ kind: 'ready' })
-        // Duplex ships with a per-floor drawing set linked by GlobalId — open it
-        // beside the model so 3D selection highlights the plan immediately.
-        if (sample.id === 'duplex') {
-          const drawings = await fetchDrawingSet('duplex')
-          if (seq === loadSeq.current && drawings) void openDrawingSet(drawings)
+        const drawings = await drawingsPromise
+        if (seq !== loadSeq.current) return
+        if (drawings) {
+          void openDrawingSet(drawings)
         } else if (useReview.getState().pdfUrl?.includes('/reference/')) {
-          // Leaving a sample drawing set behind when switching models.
           const { useDrawingSet } = await import('@/lib/drawing-sets')
           useDrawingSet.getState().setOpen(null)
           useReview.getState().setPdf(null, null)
@@ -385,7 +385,7 @@ export default function ReviewApp() {
                     />
                   </div>
                   <p className="mt-2 text-ink-faint text-xs">
-                    Converting IFC in your browser. Large models take a few seconds.
+                    Converting IFC in your browser — drawings open beside it when ready.
                   </p>
                 </Overlay>
               )}
@@ -393,25 +393,22 @@ export default function ReviewApp() {
               {status.kind === 'missing' && (
                 <Overlay>
                   <p className="font-medium text-ink text-sm">
-                    {status.sample.label} isn’t downloaded yet
+                    {status.sample.label} isn’t available
                   </p>
                   <p className="mt-2 max-w-sm text-ink-soft text-xs leading-relaxed">
-                    Run <code className="rounded bg-paper px-1 font-mono">bun run samples</code> in{' '}
-                    <code className="rounded bg-paper px-1 font-mono">apps/review</code>, or
-                    download the file and save it as{' '}
-                    <code className="rounded bg-paper px-1 font-mono">
-                      public{status.sample.file}
-                    </code>
-                    .
+                    Sample models ship with the app. If this file is missing locally, run{' '}
+                    <code className="rounded bg-paper px-1 font-mono">bun run samples</code> in{' '}
+                    <code className="rounded bg-paper px-1 font-mono">apps/review</code>, or open
+                    your own IFC.
                   </p>
-                  <a
-                    className="mt-3 text-accent text-xs hover:underline"
-                    href={status.sample.sourceUrl}
-                    rel="noopener noreferrer"
-                    target="_blank"
+                  <button
+                    className="mt-4 flex items-center gap-1.5 rounded-lg bg-accent px-3 py-1.5 font-medium text-white text-xs hover:bg-accent/90"
+                    onClick={() => fileInput.current?.click()}
+                    type="button"
                   >
-                    Download {status.sample.label.toLowerCase()} (IFC)
-                  </a>
+                    <FolderOpen className="size-3.5" />
+                    Open IFC
+                  </button>
                 </Overlay>
               )}
 

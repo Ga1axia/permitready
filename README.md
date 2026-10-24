@@ -21,11 +21,13 @@ bun install
 bunx turbo run build --filter='review^...'
 
 cd apps/review
-bun run samples    # sample IFCs → public/models/
 bun run dev        # http://localhost:3004
 ```
 
-`?model=duplex`, `?model=office`, or `?model=clinic` opens a sample. Drop an `.ifc` on the page, or use **Open IFC**.
+Sample IFCs and drawing sets ship in `apps/review/public/` — no download step.  
+`?model=duplex`, `?model=office`, or `?model=clinic` opens a sample with drawings beside the model. Drop an `.ifc` on the page, or use **Open IFC**, for your own file.
+
+To refresh sample models from upstream: `bun run samples` in `apps/review`.
 
 ## Stack
 

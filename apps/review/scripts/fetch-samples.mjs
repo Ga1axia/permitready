@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-// Downloads the three sample models into public/models/. They are tens of
-// MB and carry their own licenses, so they stay out of git; the sources and
-// credits are listed in lib/samples.ts and public/models/ATTRIBUTION.md.
+// Downloads / refreshes the three sample models into public/models/.
+// Those IFCs are committed and ship with the deploy; this script is for
+// restoring a clean checkout or updating from upstream. Sources and credits:
+// lib/samples.ts and public/models/ATTRIBUTION.md.
 //
 //   bun run samples            download any that are missing
 //   bun run samples --force    download all of them again
