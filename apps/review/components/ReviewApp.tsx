@@ -44,7 +44,7 @@ export default function ReviewApp() {
   const [status, setStatus] = useState<Status>({ kind: 'loading', message: 'Starting', percent: 0 })
   const [notice, setNotice] = useState<string | null>(null)
   const [dragging, setDragging] = useState(false)
-  const [showTree, setShowTree] = useState(true)
+  const [showTree, setShowTree] = useState(false)
   const [showInspector, setShowInspector] = useState(true)
   const [inspectorTab, setInspectorTab] = useState<'inspector' | 'checks'>('inspector')
   const fileInput = useRef<HTMLInputElement>(null)

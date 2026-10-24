@@ -212,8 +212,8 @@ export function FloorPicker() {
   const levels = useMemo(() => sortedLevels(nodes), [nodes])
 
   const [open, setOpen] = useState(() => {
-    if (typeof window === 'undefined') return true
-    return window.localStorage.getItem(FLOOR_OPEN_KEY) !== '0'
+    if (typeof window === 'undefined') return false
+    return window.localStorage.getItem(FLOOR_OPEN_KEY) === '1'
   })
   const [pos, setPos] = useState(() => {
     if (typeof window === 'undefined') return { x: 12, y: 64 }

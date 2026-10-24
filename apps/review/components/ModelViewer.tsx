@@ -14,7 +14,7 @@ import { Box3, type Object3D, type PerspectiveCamera, Sphere } from 'three'
 import { applyFocusFade, clearFocusFade, setFocusFadeOpacity } from '@/lib/focus-fade'
 import { focusBounds, focusKeepIds } from '@/lib/focus-targets'
 import { levelOf } from '@/lib/node-info'
-import { useReview } from '@/lib/review-store'
+import { DEFAULT_FOCUS_SEE_THROUGH, useReview } from '@/lib/review-store'
 import { applyViolationHighlight, clearViolationHighlight } from '@/lib/violation-highlight'
 import { RoomHighlight } from './RoomHighlight'
 
@@ -43,14 +43,37 @@ function buildingId(): string | undefined {
   return Object.values(nodes).find((n) => n.type === 'building')?.id
 }
 
-const POLL_MS = 150
+/**
+ * When the scene was last (re)built. CameraFocus polls for settling bounds
+ * only while within SETTLE_WINDOW_MS of this; after that the geometry is
+ * stable and framing is immediate — no per-interaction poll latency.
+ */
+let sceneBuiltAt = 0
+function markSceneBuilt() {
+  sceneBuiltAt = performance.now()
+}
+
+const POLL_MS = 32
 const MAX_POLLS = 80
+/**
+ * How long after a scene (re)build geometry may still be growing. Within this
+ * window CameraFocus polls until bounds settle; outside it, the scene is
+ * stable and framing happens on the first poll with no dead time.
+ */
+const SETTLE_WINDOW_MS = 1200
 // Camera angles, in radians. Polar is measured from straight overhead.
 const BUILDING_AZIMUTH = Math.PI / 4 // three-quarter view from a corner
 const BUILDING_POLAR = 1.1 // about 27° above the horizon
 const ELEMENT_POLAR = 0.75 // about 47° above the horizon, looking down into the room
 // Metres of context kept around a focused element.
 const ELEMENT_CONTEXT = 1.5
+/**
+ * Smallest sphere radius (metres) the camera will frame to for an element.
+ * A thin window or door has near-zero depth, so its bounding sphere collapses
+ * and fitToSphere dollies the camera so close it clips through and shows
+ * nothing. This floor keeps a small element comfortably in view.
+ */
+const MIN_ELEMENT_RADIUS = 2.5
 /**
  * Frames one element, or the building when no element is given, whenever
  * `useReview.focusNode` is called.
@@ -59,7 +82,10 @@ const ELEMENT_CONTEXT = 1.5
  *   walls and the floors above never stand between the camera and the
  *   element.
  * - Pascal builds wall, slab and roof geometry over several frames after a
- *   scene loads, so bounds are polled until they stop changing.
+ *   scene loads, so bounds are polled until they stop changing — but only
+ *   within SETTLE_WINDOW_MS of a scene build. Once the scene is stable,
+ *   framing happens on the first poll so selecting, highlighting and
+ *   changing views react without the poll's dead time.
  * - The site's ground is never framed: it is far larger than the building.
  */
 function CameraFocus() {
@@ -98,7 +124,12 @@ function CameraFocus() {
           box = fromNode
         }
       }
-      const settled = box && last && box.equals(last)
+      // Outside the post-build window the scene is stable, so the first
+      // non-empty bounds are final — frame immediately with no extra poll.
+      // Within the window geometry may still be growing, so wait until two
+      // consecutive polls agree before committing the camera.
+      const building = performance.now() - sceneBuiltAt < SETTLE_WINDOW_MS
+      const settled = box && (!building || (last && box.equals(last)))
       polls++
       if (box && (settled || polls >= MAX_POLLS || nodes[request.nodeId ?? '']?.type === 'zone')) {
         // fitToSphere keeps the angle set here; fitToBox would snap the
@@ -111,6 +142,9 @@ function CameraFocus() {
         }
         const sphere = box.getBoundingSphere(new Sphere())
         sphere.radius *= FIT_PADDING
+        // An element's sphere can collapse (a thin window) — keep a floor so
+        // the camera frames the element in context, not a clipped void.
+        if (request.nodeId) sphere.radius = Math.max(sphere.radius, MIN_ELEMENT_RADIUS)
         controls.fitToSphere(sphere, true)
         return
       }
@@ -156,24 +190,34 @@ function SelectionEmphasis() {
   const selectedId = useViewer((s) => s.selection.selectedIds[0] as string | undefined)
   const zoneId = useViewer((s) => s.selection.zoneId as string | null)
   const seeThrough = useReview((s) => s.focusSeeThrough)
+  const violationIds = useReview((s) => s.violationIds)
 
   const focusId = selectedId ?? zoneId ?? null
-  const opacity = 1 - seeThrough / 100
-  const active = focusId != null && seeThrough > 0
+  // A code violation fades its surroundings for clarity even when the user
+  // hasn't turned the global Focus toggle on — selecting a window should still
+  // drain the rest of the building. The toggle, when on, wins its slider value.
+  const violationActive = violationIds.length > 0
+  const effectiveSeeThrough =
+    seeThrough > 0 ? seeThrough : violationActive ? DEFAULT_FOCUS_SEE_THROUGH : 0
+  const opacity = 1 - effectiveSeeThrough / 100
+  const active = focusId != null && effectiveSeeThrough > 0
 
   useEffect(() => {
     if (!active || !focusId) return
     let cancel: () => void = () => {}
     const raf = requestAnimationFrame(() => {
-      const see = useReview.getState().focusSeeThrough
-      const ids = focusKeepIds(useScene.getState().nodes as Record<string, AnyNode>, focusId)
-      cancel = applyFocusFade(scene, ids, 1 - see / 100).cancel
+      const nodes = useScene.getState().nodes as Record<string, AnyNode>
+      // Keep the selection solid; also keep every highlighted violation mesh
+      // so a multi-element finding stays fully visible while context fades.
+      const keep = new Set(focusKeepIds(nodes, focusId))
+      for (const id of useReview.getState().violationIds) keep.add(id)
+      cancel = applyFocusFade(scene, [...keep], opacity).cancel
     })
     return () => {
       cancelAnimationFrame(raf)
       cancel()
     }
-  }, [active, focusId, scene])
+  }, [active, focusId, scene, opacity])
 
   useEffect(() => {
     if (!active) return
@@ -237,9 +281,18 @@ function ReviewCamera() {
 
   // First fit often lands while the stage is still full-width; when drawings
   // open beside it the aspect shrinks and the same distance reads as fisheye.
+  // Reframe after the split-pane layout has painted (two rAFs) rather than on
+  // a fixed delay, so it reacts as soon as the new aspect is live.
+  // biome-ignore lint/correctness/useExhaustiveDependencies: pdfOpen is the trigger — reframe when the split toggles, not when its value is read.
   useEffect(() => {
-    const timer = window.setTimeout(() => focusNode(null), 180)
-    return () => window.clearTimeout(timer)
+    let raf2 = 0
+    const raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => focusNode(null))
+    })
+    return () => {
+      cancelAnimationFrame(raf1)
+      cancelAnimationFrame(raf2)
+    }
   }, [pdfOpen, focusNode])
 
   useEffect(() => {
@@ -285,6 +338,9 @@ export default function ModelViewer({
     clearViolationHighlight()
     useReview.getState().setViolationIds([])
     setScene(graph.nodes as Record<AnyNodeId, AnyNode>, graph.rootNodeIds as AnyNodeId[])
+    // Open the settle window: CameraFocus polls for growing geometry only for
+    // a short time after this, then frames instantly on later interactions.
+    markSceneBuilt()
     // Pre-selecting the building and a level lets the first click on a wall
     // or door select that element instead of drilling into the building.
     const all = Object.values(graph.nodes) as AnyNode[]
