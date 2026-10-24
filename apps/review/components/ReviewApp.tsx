@@ -454,17 +454,17 @@ export default function ReviewApp() {
         {showInspector && ready && (
           <aside
             aria-label="Inspector"
-            className="drafted-ink-in hidden w-72 shrink-0 border-rule border-l bg-panel lg:block"
+            className="drafted-ink-in hidden w-80 shrink-0 border-rule border-l bg-panel lg:block"
           >
             {/* Tab bar */}
             <div className="flex shrink-0 border-rule border-b">
               <button
                 aria-pressed={inspectorTab === 'inspector'}
                 className={[
-                  'flex-1 py-2 font-medium text-xs transition-colors',
+                  'flex-1 px-2 py-2.5 font-medium text-xs transition-colors',
                   inspectorTab === 'inspector'
-                    ? 'border-b-2 border-accent text-accent'
-                    : 'text-ink-soft hover:text-ink',
+                    ? 'border-accent border-b-2 text-accent'
+                    : 'border-b-2 border-transparent text-ink-soft hover:text-ink',
                 ].join(' ')}
                 onClick={() => setInspectorTab('inspector')}
                 type="button"
@@ -474,10 +474,10 @@ export default function ReviewApp() {
               <button
                 aria-pressed={inspectorTab === 'checks'}
                 className={[
-                  'flex-1 py-2 font-medium text-xs transition-colors',
+                  'flex-1 px-2 py-2.5 font-medium text-xs transition-colors',
                   inspectorTab === 'checks'
-                    ? 'border-b-2 border-accent text-accent'
-                    : 'text-ink-soft hover:text-ink',
+                    ? 'border-accent border-b-2 text-accent'
+                    : 'border-b-2 border-transparent text-ink-soft hover:text-ink',
                 ].join(' ')}
                 onClick={() => setInspectorTab('checks')}
                 type="button"
@@ -486,7 +486,7 @@ export default function ReviewApp() {
               </button>
             </div>
 
-            <div className="h-[calc(100%-36px)] overflow-y-auto">
+            <div className="h-[calc(100%-42px)] overflow-y-auto">
               {inspectorTab === 'inspector' ? (
                 <Inspector
                   fileName={fileName}

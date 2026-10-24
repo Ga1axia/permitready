@@ -35,3 +35,12 @@ Persistent rules for any Kiro session working in this repo. The app lives in
 ## Git
 - Do not commit unless asked. Stage specific files, not `git add .`.
 - Flag any file that may hold secrets before committing.
+
+## Spec-driven development
+- Non-trivial features follow Kiro's spec workflow in `.kiro/specs/<feature>/`:
+  `requirements.md` → `design.md` → `tasks.md`, in that order. Requirements use
+  EARS-style statements; tasks are checkboxes that trace back to a requirement.
+- Before building a sizeable feature, write (or update) its spec and confirm the
+  requirements, then the design, then drive implementation from the task list —
+  checking tasks off as they land and keeping the three files in sync with the
+  code. Existing spec: `.kiro/specs/code-check-engine/`.

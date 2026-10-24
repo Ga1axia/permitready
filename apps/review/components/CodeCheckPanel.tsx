@@ -7,7 +7,6 @@ import {
   CheckCircle,
   ChevronDown,
   ChevronRight,
-  ClipboardList,
   Loader2,
   RefreshCw,
   ShieldCheck,
@@ -33,14 +32,14 @@ type Status = 'idle' | 'loading' | 'done' | 'error'
 function statusBadge(fail: number) {
   if (fail === 0)
     return (
-      <span className="flex items-center gap-1 rounded-full bg-pass/15 px-2 py-0.5 font-medium text-[10px] text-pass">
-        <CheckCircle className="size-3" />
+      <span className="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-pass/15 px-2 py-0.5 font-medium text-[11px] text-pass leading-none">
+        <CheckCircle className="size-3 shrink-0" />
         Compliant
       </span>
     )
   return (
-    <span className="flex items-center gap-1 rounded-full bg-fail/15 px-2 py-0.5 font-medium text-[10px] text-fail">
-      <XCircle className="size-3" />
+    <span className="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-fail/15 px-2 py-0.5 font-medium text-[11px] text-fail leading-none">
+      <XCircle className="size-3 shrink-0" />
       {fail} violation{fail !== 1 ? 's' : ''}
     </span>
   )
@@ -298,18 +297,32 @@ export function CodeCheckPanel({ buildingId }: Props) {
 
     // Walk the rules one at a time so the check reads as deliberate work —
     // each code section lights up as it's "evaluated" before results appear.
-    // Total stays a few seconds regardless of how many rules there are.
+    // The pace is deliberately uneven: a rule that examined more elements
+    // takes longer, every step is jittered, and now and then the checker
+    // pauses a beat longer, so it reads like real work rather than a metronome.
     const rules = result.rules
     setCheckingRules(rules)
-    const total = 2400
-    const perRule = rules.length > 0 ? Math.min(650, Math.max(220, total / rules.length)) : 0
+
+    // How "heavy" each rule looks, from how much it examined (fail + pass).
+    const work = rules.map((r) => r.fail + r.pass)
+    const maxWork = Math.max(1, ...work)
+
     for (let i = 0; i < rules.length; i++) {
-      await new Promise((r) => setTimeout(r, perRule))
+      // Base time proportional to the rule's workload (heavier rules dwell
+      // longer), plus jitter, plus an occasional longer "thinking" pause, so
+      // the cadence is uneven rather than a metronome. Tuned so even the
+      // 30-rule buildings finish in a few seconds.
+      const load = (work[i] ?? 0) / maxWork // 0..1
+      const base = 55 + load * 150
+      const jitter = 0.6 + Math.random() * 0.8 // 0.6..1.4
+      const pause = Math.random() < 0.14 ? 160 + Math.random() * 220 : 0
+      const delay = Math.min(520, base * jitter + pause)
+      await new Promise((r) => setTimeout(r, delay))
       if (run !== checkRun.current) return
       setCheckingIndex(i + 1)
     }
     // A final beat so the last row reads as "done" before the report shows.
-    await new Promise((r) => setTimeout(r, 260))
+    await new Promise((r) => setTimeout(r, 260 + Math.random() * 180))
     if (run !== checkRun.current) return
 
     setReport(result)
@@ -419,14 +432,27 @@ export function CodeCheckPanel({ buildingId }: Props) {
 
   return (
     <div className="flex flex-col">
-      {/* ── header / run button ── */}
-      <div className="sticky top-0 z-10 flex items-center gap-2 border-rule border-b bg-panel px-3 py-2.5">
-        <ClipboardList className="size-4 shrink-0 text-ink-soft" />
-        <span className="flex-1 font-medium text-ink text-xs">Code Check</span>
-        {status === 'done' && report && statusBadge(report.summary.fail)}
+      {/* Tab already says “Code Check” — header is status + action only. */}
+      <div className="sticky top-0 z-10 flex items-center justify-between gap-2 border-rule border-b bg-panel px-3 py-2.5">
+        <div className="min-w-0 flex flex-1 flex-wrap items-center gap-1.5">
+          {status === 'done' && report ? (
+            <>
+              {statusBadge(report.summary.fail)}
+              <span className="font-mono text-[10px] text-ink-faint tabular-nums">
+                {report.summary.pass} passed
+              </span>
+            </>
+          ) : status === 'loading' ? (
+            <span className="text-ink-soft text-xs">Running checks…</span>
+          ) : status === 'error' ? (
+            <span className="text-fail text-xs">Check failed</span>
+          ) : (
+            <span className="text-ink-soft text-xs">Ready to run</span>
+          )}
+        </div>
         <button
           className={[
-            'flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 font-medium text-xs transition-colors',
+            'inline-flex h-7 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg px-2.5 font-medium text-xs transition-colors',
             status === 'loading'
               ? 'cursor-wait bg-accent/70 text-white'
               : 'bg-accent text-white hover:bg-accent/90',
@@ -436,11 +462,11 @@ export function CodeCheckPanel({ buildingId }: Props) {
           type="button"
         >
           {status === 'loading' ? (
-            <Loader2 className="size-3.5 animate-spin" />
+            <Loader2 className="size-3.5 shrink-0 animate-spin" />
           ) : status === 'done' ? (
-            <RefreshCw className="size-3.5" />
+            <RefreshCw className="size-3.5 shrink-0" />
           ) : (
-            <ShieldCheck className="size-3.5" />
+            <ShieldCheck className="size-3.5 shrink-0" />
           )}
           {status === 'loading' ? 'Checking…' : status === 'done' ? 'Re-run' : 'Run checks'}
         </button>

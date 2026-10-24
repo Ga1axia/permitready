@@ -39,6 +39,33 @@ const GHOST_HEX = 0x9a9a9a
 const FAINT = 0.5
 const CHUNK = 250
 
+/**
+ * The scene's meshes, cached so switching focus from one element to another
+ * doesn't re-walk the whole object tree every time (a large model's traversal
+ * is the latency spike on a check-to-check transition). The tree is stable
+ * between selections; it only changes on a model load / geometry rebuild, so
+ * callers invalidate the cache then via `invalidateMeshCache()`.
+ */
+let meshCacheRoot: Object3D | null = null
+let meshCache: Mesh[] = []
+
+/** Drop the cached mesh list — call when the scene is (re)built. */
+export function invalidateMeshCache(): void {
+  meshCacheRoot = null
+  meshCache = []
+}
+
+function sceneMeshes(root: Object3D): Mesh[] {
+  if (root === meshCacheRoot && meshCache.length > 0) return meshCache
+  const meshes: Mesh[] = []
+  root.traverse((o) => {
+    if (isMesh(o)) meshes.push(o)
+  })
+  meshCacheRoot = root
+  meshCache = meshes
+  return meshes
+}
+
 const eachOf = (material: Material | Material[]) =>
   Array.isArray(material) ? material : [material]
 
@@ -170,18 +197,17 @@ export function applyFocusFade(
 
   const keep = collectIsolationSubtree(ids)
   const toFade: Mesh[] = []
-  root.traverse((object) => {
-    if (!isMesh(object)) return
+  for (const object of sceneMeshes(root)) {
     if (object.userData?.reviewFocusKeep) {
       restoreMesh(object)
-      return
+      continue
     }
     if (keep.has(object)) {
       restoreMesh(object)
-      return
+      continue
     }
     toFade.push(object)
-  })
+  }
 
   const toFadeSet = new Set(toFade)
   for (const mesh of [...faded]) {

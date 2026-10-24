@@ -11,7 +11,12 @@ import { CameraControls } from '@react-three/drei'
 import { useThree } from '@react-three/fiber'
 import { useEffect } from 'react'
 import { Box3, type Object3D, type PerspectiveCamera, Sphere } from 'three'
-import { applyFocusFade, clearFocusFade, setFocusFadeOpacity } from '@/lib/focus-fade'
+import {
+  applyFocusFade,
+  clearFocusFade,
+  invalidateMeshCache,
+  setFocusFadeOpacity,
+} from '@/lib/focus-fade'
 import { focusBounds, focusKeepIds } from '@/lib/focus-targets'
 import { levelOf } from '@/lib/node-info'
 import { DEFAULT_FOCUS_SEE_THROUGH, useReview } from '@/lib/review-store'
@@ -335,6 +340,7 @@ export default function ModelViewer({
     // Keep zone <Html> portals off across model swaps (see lib/bootstrap.ts).
     useViewer.getState().setShowZones(false)
     clearFocusFade()
+    invalidateMeshCache()
     clearViolationHighlight()
     useReview.getState().setViolationIds([])
     setScene(graph.nodes as Record<AnyNodeId, AnyNode>, graph.rootNodeIds as AnyNodeId[])
@@ -359,6 +365,10 @@ export default function ModelViewer({
     })
     useReview.getState().setIsolatedLevelId(null)
     useReview.getState().focusNode(null)
+    // Geometry builds over several frames after setScene; refresh the mesh
+    // cache once it has settled so the first fade captures the whole model.
+    const settleTimer = window.setTimeout(invalidateMeshCache, SETTLE_WINDOW_MS)
+    return () => window.clearTimeout(settleTimer)
   }, [graph, setScene])
 
   return (

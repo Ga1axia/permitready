@@ -6,6 +6,7 @@
   "allowedTools": ["read", "grep", "glob", "code"],
   "resources": [
     "file://.kiro/steering/**/*.md",
+    "file://.kiro/specs/**/*.md",
     "file://apps/review/README.md",
     "file://README.md",
     "skill://.agents/skills/**/SKILL.md"
