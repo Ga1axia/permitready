@@ -93,7 +93,8 @@ export const useReview = create<ReviewState>((set, get) => ({
   setIsolatedLevelId: (isolatedLevelId) => set({ isolatedLevelId }),
   unit: 'imperial',
   setUnit: (unit) => set({ unit }),
-  focusSeeThrough: DEFAULT_FOCUS_SEE_THROUGH,
+  // Focus starts off; toggling it on restores DEFAULT_FOCUS_SEE_THROUGH.
+  focusSeeThrough: 0,
   setFocusSeeThrough: (percent) =>
     set({ focusSeeThrough: Math.min(95, Math.max(0, Math.round(percent))) }),
 
