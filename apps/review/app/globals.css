@@ -1,4 +1,7 @@
 @import 'tailwindcss';
+/* PermitReady "pizazz" — drafted-sheet motion + frame layer.
+   See .agents/skills/permitready-pizazz/SKILL.md. */
+@import './drafted.css';
 
 /* PermitReady — cream paper, ink, electric blue (brand checkmark).
    Dual-pane review: drawings left, model right. */

@@ -1,0 +1,141 @@
+/* PermitReady "pizazz" — the drafted-sheet motion + frame layer.
+   Ink-on-paper motion that draws itself on, like a plotter inking a sheet.
+   Built on the @theme tokens in globals.css. See
+   .agents/skills/permitready-pizazz/SKILL.md. */
+
+:root {
+  --drafted-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --drafted-fast: 180ms;
+  --drafted-base: 280ms;
+  --drafted-slow: 420ms;
+  --drafted-stagger: 40ms;
+}
+
+/* ── Sheet frame: an outer medium stroke + an inset hairline, like a drawing
+   sheet's double border (scripts/drawing_set/sheet.py). ── */
+.drafted-frame {
+  position: relative;
+  border: 1px solid var(--color-rule-strong);
+  border-radius: 3px;
+}
+.drafted-frame::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border: 1px solid var(--color-rule);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* ── Ink-in: fade + a 2px settle, like ink meeting paper. ── */
+@keyframes drafted-ink-in {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.drafted-ink-in {
+  animation: drafted-ink-in var(--drafted-base) var(--drafted-ease) both;
+}
+
+/* ── Sheet-settle: a sheet landing on the desk. ── */
+@keyframes drafted-settle {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.drafted-settle {
+  animation: drafted-settle var(--drafted-base) var(--drafted-ease) both;
+  transform-origin: top center;
+}
+
+/* ── Rule-sweep: a hairline rule wipes left → right. Apply to a 1px element. ── */
+@keyframes drafted-rule-sweep {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.drafted-rule-sweep {
+  transform-origin: left center;
+  animation: drafted-rule-sweep var(--drafted-base) var(--drafted-ease) both;
+}
+
+/* ── Trace-border: the sheet frame draws corner-to-corner. Pair with
+   .drafted-frame; this inks the outer stroke on via a conic mask-free trick:
+   animate a box-shadow-like inset clip. Kept simple as a fade-scale of the
+   inset hairline so it reads as "the frame arriving". ── */
+@keyframes drafted-trace {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+.drafted-trace::after {
+  animation: drafted-trace var(--drafted-slow) var(--drafted-ease) both;
+}
+
+/* ── Draw-on: SVG stroke inks itself via stroke-dashoffset. The DrawOn
+   component sets --draft-len to the path length on mount. ── */
+@keyframes drafted-draw {
+  from {
+    stroke-dashoffset: var(--draft-len, 1000);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.drafted-draw path,
+.drafted-draw line,
+.drafted-draw polyline,
+.drafted-draw circle,
+.drafted-draw rect {
+  stroke-dasharray: var(--draft-len, 1000);
+  stroke-dashoffset: var(--draft-len, 1000);
+  animation: drafted-draw var(--drafted-slow) var(--drafted-ease) both;
+}
+
+/* ── Accessibility: collapse every drafted motion to its finished state. The
+   end state is always the fully-drawn, fully-visible drawing. ── */
+@media (prefers-reduced-motion: reduce) {
+  .drafted-ink-in,
+  .drafted-settle,
+  .drafted-rule-sweep,
+  .drafted-trace::after,
+  .drafted-draw path,
+  .drafted-draw line,
+  .drafted-draw polyline,
+  .drafted-draw circle,
+  .drafted-draw rect {
+    animation: none !important;
+  }
+  .drafted-rule-sweep {
+    transform: none;
+  }
+  .drafted-draw path,
+  .drafted-draw line,
+  .drafted-draw polyline,
+  .drafted-draw circle,
+  .drafted-draw rect {
+    stroke-dashoffset: 0;
+  }
+  .drafted-trace::after {
+    opacity: 1;
+    clip-path: none;
+  }
+}

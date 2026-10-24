@@ -1,0 +1,23 @@
+{
+  "name": "permitready",
+  "description": "PermitReady review-app developer: drafted-sheet frontend, IFC/3D viewer, and Boston 780 CMR code checks.",
+  "prompt": "You develop the PermitReady review app in apps/review. Follow the project steering and the permitready-pizazz design skill. Verify frontend changes with tsc + biome and code-check changes by regenerating the public/checks reports.",
+  "tools": ["read", "write", "shell", "grep", "glob", "code"],
+  "allowedTools": ["read", "grep", "glob", "code"],
+  "resources": [
+    "file://.kiro/steering/**/*.md",
+    "file://apps/review/README.md",
+    "file://README.md",
+    "skill://.agents/skills/**/SKILL.md"
+  ],
+  "toolsSettings": {
+    "write": {
+      "allowedPaths": ["apps/review/**", ".kiro/**", ".agents/skills/**"],
+      "deniedPaths": ["packages/**", "**/.env*"]
+    },
+    "shell": {
+      "allowedCommands": ["bun run dev", "bun run check", "bunx tsc *", "bunx biome *"],
+      "autoAllowReadonly": true
+    }
+  }
+}

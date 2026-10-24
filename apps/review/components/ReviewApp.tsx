@@ -200,6 +200,10 @@ export default function ReviewApp() {
             <h1 className="font-semibold text-[15px] text-ink tracking-tight">
               Permit<span className="text-accent">Ready</span>
             </h1>
+            <span
+              aria-hidden
+              className="drafted-rule-sweep mt-1 block h-px w-full bg-rule-strong"
+            />
             <p className="mt-0.5 hidden font-mono text-[10px] text-ink-faint tracking-wide sm:block">
               drawings · model
             </p>
@@ -319,7 +323,7 @@ export default function ReviewApp() {
         {showTree && ready && (
           <aside
             aria-label="Elements"
-            className="hidden w-64 shrink-0 border-rule border-r bg-panel md:block"
+            className="drafted-ink-in hidden w-64 shrink-0 border-rule border-r bg-panel md:block"
           >
             <ModelTree modelKey={sourceKey(source)} />
           </aside>
@@ -450,7 +454,7 @@ export default function ReviewApp() {
         {showInspector && ready && (
           <aside
             aria-label="Inspector"
-            className="hidden w-72 shrink-0 border-rule border-l bg-panel lg:block"
+            className="drafted-ink-in hidden w-72 shrink-0 border-rule border-l bg-panel lg:block"
           >
             {/* Tab bar */}
             <div className="flex shrink-0 border-rule border-b">
@@ -502,7 +506,7 @@ export default function ReviewApp() {
 function Overlay({ children }: { children: React.ReactNode }) {
   return (
     <div className="absolute inset-0 flex items-center justify-center bg-paper/80 px-4 backdrop-blur-[3px]">
-      <div className="flex flex-col items-center rounded-2xl border border-rule bg-panel px-7 py-6 text-center shadow-[0_8px_32px_rgba(20,20,20,0.1)]">
+      <div className="drafted-frame drafted-settle flex flex-col items-center bg-panel px-7 py-6 text-center shadow-[0_8px_32px_rgba(20,20,20,0.1)]">
         {children}
       </div>
     </div>

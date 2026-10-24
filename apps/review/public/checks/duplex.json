@@ -2,19 +2,19 @@
  "version": 1,
  "building": "duplex",
  "title": "Duplex Apartment",
- "code": "2021 International Residential Code (IRC)",
+ "code": "780 CMR — Massachusetts State Building Code, 10th Ed. (Residential Volume, 780 CMR 51.00, adopting the 2021 IRC with Massachusetts amendments), as enforced in Boston",
  "model": "duplex.ifc",
  "generated": "2026-10-24",
  "coordinates": "IFC model coordinates in metres, Z up; sheet x/y are 0-1 from the top left of the page",
  "summary": {
-  "rules": 10,
-  "fail": 44,
-  "pass": 16
+  "rules": 30,
+  "fail": 55,
+  "pass": 101
  },
  "rules": [
   {
    "id": "IRC-R310.1",
-   "section": "R310.1, R310.2",
+   "section": "780 CMR 51 · R310.1, R310.2",
    "title": "Emergency escape and rescue opening in every sleeping room",
    "complies": "Every bedroom has an operable window or exterior door with at least 5.7 sq ft net clear opening (5.0 sq ft at grade floor), at least 24 in clear height and 20 in clear width, sill no more than 44 in above the floor.",
    "violates": "A bedroom whose only windows are fixed glazing, or whose operable window is too small or too high.",
@@ -24,7 +24,7 @@
   },
   {
    "id": "IRC-R311.7.5.2",
-   "section": "R311.7.5.2",
+   "section": "780 CMR 51 · R311.7.5.2",
    "title": "Stair tread depth",
    "complies": "Tread depth at least 10 in (254 mm), measured horizontally nosing to nosing; the largest and smallest tread in a flight within 3/8 in.",
    "violates": "Any tread shallower than 10 in.",
@@ -34,7 +34,7 @@
   },
   {
    "id": "IRC-R311.7.5.3",
-   "section": "R311.7.5.3",
+   "section": "780 CMR 51 · R311.7.5.3",
    "title": "Stair nosing projection",
    "complies": "Where treads are under 11 in deep, a nosing of 3/4 in to 1-1/4 in (19–32 mm) on every tread of a stair with solid risers, uniform within 3/8 in.",
    "violates": "Treads under 11 in with no nosing or one under 3/4 in.",
@@ -44,7 +44,7 @@
   },
   {
    "id": "IRC-R308.4.3",
-   "section": "R308.4.3",
+   "section": "780 CMR 51 · R308.4.3",
    "title": "Safety glazing in hazardous window locations",
    "complies": "Glazing that meets all four conditions (pane over 9 sq ft, bottom edge under 18 in above the floor, top edge over 36 in, walking surface within 36 in) is tempered or laminated safety glazing; any other window may be annealed.",
    "violates": "A large, low pane like this that is specified as ordinary glass.",
@@ -54,7 +54,7 @@
   },
   {
    "id": "IRC-R302.3",
-   "section": "R302.3",
+   "section": "780 CMR 51 · R302.3",
    "title": "Two-family dwelling separation",
    "complies": "The wall separating the two dwelling units is fire-resistance rated for 1 hour (1/2 hour where the building is sprinklered per NFPA 13D), continuous to the underside of the roof deck.",
    "violates": "A separation wall with no fire-resistance rating in an unsprinklered two-family dwelling.",
@@ -64,7 +64,7 @@
   },
   {
    "id": "IRC-R314.3",
-   "section": "R314.3",
+   "section": "780 CMR 51 · R314.3",
    "title": "Smoke alarm locations",
    "complies": "A smoke alarm in each sleeping room, outside each separate sleeping area in the immediate vicinity of the bedrooms, and on each story.",
    "violates": "A sleeping area whose hallway has no smoke alarm (or a bedroom or story without one).",
@@ -74,7 +74,7 @@
   },
   {
    "id": "IRC-R315.2",
-   "section": "R315.2.1, R315.3",
+   "section": "780 CMR 51 · R315.2.1, R315.3",
    "title": "Carbon monoxide alarms where there are fuel-burning appliances",
    "complies": "A dwelling unit with a fuel-burning appliance has a CO alarm outside each separate sleeping area in the immediate vicinity of the bedrooms (and in any bedroom that contains such an appliance).",
    "violates": "A unit with a gas-fired appliance and no CO alarm outside its bedrooms.",
@@ -84,7 +84,7 @@
   },
   {
    "id": "IRC-R303.1",
-   "section": "R303.1",
+   "section": "780 CMR 51 · R303.1",
    "title": "Habitable room ventilation",
    "complies": "Openable area to the outdoors (operable windows, exterior doors) of at least 4% of each habitable room’s floor area, or a whole-house mechanical ventilation system per M1505.4.",
    "violates": "A habitable room with only fixed glazing and no whole-house mechanical ventilation.",
@@ -94,7 +94,7 @@
   },
   {
    "id": "IRC-R303.3",
-   "section": "R303.3, M1505",
+   "section": "780 CMR 51 · R303.3, M1505",
    "title": "Bathroom ventilation",
    "complies": "Each bathroom has a window of at least 3 sq ft, half of it openable, or a mechanical exhaust to the outdoors (50 cfm intermittent or 20 cfm continuous).",
    "violates": "A bathroom with no window and no exhaust fan or exhaust duct.",
@@ -104,13 +104,213 @@
   },
   {
    "id": "IRC-R307.1",
-   "section": "R307.1, P2705.1",
+   "section": "780 CMR 51 · R307.1, P2705.1",
    "title": "Plumbing fixture clearances",
    "complies": "Water closets and lavatories at least 15 in (381 mm) from their centre to a side wall or obstruction, and at least 30 in (762 mm) centre to centre from an adjacent fixture.",
    "violates": "Fixtures set closer than 30 in apart, or less than 15 in from a side wall.",
    "fix": "Respace the fixtures to 30 in centres, or replace the pair of lavatories with one.",
    "fail": 8,
    "pass": 10
+  },
+  {
+   "id": "IRC-R305.1",
+   "section": "780 CMR 51 · R305.1",
+   "title": "Minimum ceiling height in habitable rooms",
+   "complies": "Habitable rooms, hallways and portions of basements with habitable space have a ceiling height of at least 7 ft (2134 mm); bathrooms and toilet rooms at least 6 ft 8 in (2032 mm).",
+   "violates": "A habitable room with a finished ceiling under 7 ft.",
+   "fix": "Raise the ceiling or reclassify the low space as non-habitable (storage) on the plans.",
+   "fail": 0,
+   "pass": 8
+  },
+  {
+   "id": "IRC-R304.1",
+   "section": "780 CMR 51 · R304.1",
+   "title": "Minimum habitable room area",
+   "complies": "Every habitable room has at least 70 sq ft (6.5 m²) of floor area (kitchens are exempt from the 70 sq ft minimum).",
+   "violates": "A habitable room — other than a kitchen — smaller than 70 sq ft.",
+   "fix": "Combine the undersized room with an adjacent space, or reclassify it as an alcove/closet.",
+   "fail": 0,
+   "pass": 6
+  },
+  {
+   "id": "IRC-R304.2",
+   "section": "780 CMR 51 · R304.2",
+   "title": "Minimum habitable room dimension",
+   "complies": "Habitable rooms are at least 7 ft (2134 mm) in any horizontal direction.",
+   "violates": "A habitable room with a least-width under 7 ft.",
+   "fix": "Widen the room, or merge the narrow strip into the adjoining space.",
+   "fail": 0,
+   "pass": 8
+  },
+  {
+   "id": "IRC-R303.1-light",
+   "section": "780 CMR 51 · R303.1",
+   "title": "Natural light in habitable rooms",
+   "complies": "Glazing area opening to the outdoors of at least 8% of each habitable room’s floor area (artificial light at 6 fc is an accepted alternative).",
+   "violates": "A habitable room whose total glazing is under 8% of its floor area.",
+   "fix": "Enlarge or add a window, or document compliant artificial lighting for the room.",
+   "fail": 0,
+   "pass": 8
+  },
+  {
+   "id": "IRC-R311.3",
+   "section": "780 CMR 51 · R311.3",
+   "title": "Floor or landing at exterior doors",
+   "complies": "A landing or floor on each side of every required egress door, no more than 1-1/2 in (38 mm) lower than the threshold, at least as wide as the door and 36 in (914 mm) deep in the direction of travel.",
+   "violates": "An exterior egress door that opens into a room too shallow to hold a 36 in landing.",
+   "fix": "Provide a 36 in deep landing at the door, or relocate the door to a space that can hold one.",
+   "fail": 0,
+   "pass": 4
+  },
+  {
+   "id": "IRC-R311.2",
+   "section": "780 CMR 51 · R311.2",
+   "title": "Required egress door size",
+   "complies": "At least one side-hinged egress door per dwelling, at least 32 in (813 mm) clear width and 78 in (1981 mm) clear height.",
+   "violates": "A unit whose widest exterior door is under 32 in clear.",
+   "fix": "Widen the main entry door to a 36 in leaf (≈ 34 in clear), or designate a compliant door as the egress door.",
+   "fail": 0,
+   "pass": 2
+  },
+  {
+   "id": "IRC-R311.6",
+   "section": "780 CMR 51 · R311.6",
+   "title": "Minimum hallway width",
+   "complies": "Hallways at least 3 ft (914 mm) wide.",
+   "violates": "A corridor or hallway narrower than 36 in.",
+   "fix": "Widen the hall to 36 in clear between finished wall faces.",
+   "fail": 0,
+   "pass": 2
+  },
+  {
+   "id": "IRC-R312.2",
+   "section": "780 CMR 51 · R312.2.1",
+   "title": "Window fall protection",
+   "complies": "Where the sill of an operable window is less than 24 in (610 mm) above the finished floor and more than 72 in (1829 mm) above the exterior grade, the window limits its opening to 4 in or has a fall-prevention device.",
+   "violates": "A low operable window on an upper storey with no opening limiter noted.",
+   "fix": "Specify opening-control devices or window guards on low sills above the ground floor.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R312.1",
+   "section": "780 CMR 51 · R312.1.1, R312.1.2",
+   "title": "Guards at walking surfaces over 30 in",
+   "complies": "Guards at least 36 in (914 mm) high along open-sided walking surfaces, including stairs and landings, more than 30 in (762 mm) above the floor or grade below.",
+   "violates": "A raised floor edge, stair or landing over 30 in up with no guard element modeled.",
+   "fix": "Add a 36 in guard (with ≤ 4 in sphere-rule infill) along the open edges.",
+   "fail": 0,
+   "pass": 2
+  },
+  {
+   "id": "IRC-E3901.4",
+   "section": "780 CMR 51 · E3901.4",
+   "title": "Kitchen counter receptacles",
+   "complies": "A receptacle outlet serving each kitchen counter space, so no point along the counter wall line is more than 24 in (610 mm) from one (two or more outlets at a typical kitchen).",
+   "violates": "A kitchen with fewer than two small-appliance receptacles modeled.",
+   "fix": "Add counter-top receptacles on 20 A small-appliance branch circuits, spaced so every point is within 24 in of one.",
+   "fail": 0,
+   "pass": 2
+  },
+  {
+   "id": "IRC-E3901.6",
+   "section": "780 CMR 51 · E3901.6",
+   "title": "Bathroom receptacle",
+   "complies": "At least one receptacle outlet within 36 in (914 mm) of the outside edge of each lavatory basin, on a 20 A circuit.",
+   "violates": "A bathroom with a lavatory and no receptacle modeled.",
+   "fix": "Add a GFCI-protected receptacle beside the lavatory on a dedicated 20 A bathroom circuit.",
+   "fail": 0,
+   "pass": 4
+  },
+  {
+   "id": "IRC-E3902",
+   "section": "780 CMR 51 · E3902.1–E3902.11",
+   "title": "GFCI protection in wet locations",
+   "complies": "Receptacles in bathrooms, kitchens (serving counters), garages, and outdoors are GFCI-protected.",
+   "violates": "A receptacle in a wet-location room with no GFCI protection noted.",
+   "fix": "Protect the circuit with a GFCI breaker or GFCI receptacle.",
+   "fail": 2,
+   "pass": 18
+  },
+  {
+   "id": "IRC-E3903.2",
+   "section": "780 CMR 51 · E3903.2",
+   "title": "Lighting outlet in habitable rooms",
+   "complies": "At least one wall-switched lighting outlet in every habitable room, hallway, stairway, and bathroom.",
+   "violates": "A habitable room with no luminaire or lighting outlet modeled.",
+   "fix": "Add a switched lighting outlet (ceiling luminaire or switched receptacle) to the room.",
+   "fail": 4,
+   "pass": 11
+  },
+  {
+   "id": "IRC-P2804.6",
+   "section": "780 CMR 51 · P2804.6.1",
+   "title": "Water heater relief valve discharge",
+   "complies": "Each water heater has a temperature-and-pressure relief valve with a discharge pipe run to a safe location.",
+   "violates": "A water heater with no relief-valve discharge modeled or noted.",
+   "fix": "Provide a T&P relief valve and a full-size discharge pipe terminating per P2804.6.1.",
+   "fail": 2,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R307.1-front",
+   "section": "780 CMR 51 · R307.1, P2705.1",
+   "title": "Water closet front clearance",
+   "complies": "At least 21 in (533 mm) of clear space in front of a water closet, lavatory, or bidet.",
+   "violates": "A water closet with less than 21 in of clear floor in front of it.",
+   "fix": "Reposition the fixture or enlarge the room to give 21 in of front clearance.",
+   "fail": 0,
+   "pass": 4
+  },
+  {
+   "id": "IRC-R311.7.1",
+   "section": "780 CMR 51 · R311.7.1",
+   "title": "Stairway width",
+   "complies": "Stairways at least 36 in (914 mm) wide above the handrail height, with no more than one handrail projecting 4-1/2 in.",
+   "violates": "A stair flight narrower than 36 in.",
+   "fix": "Widen the stair opening and flight to at least 36 in clear.",
+   "fail": 0,
+   "pass": 2
+  },
+  {
+   "id": "IRC-R311.7.5.1",
+   "section": "780 CMR 51 · R311.7.5.1",
+   "title": "Stair riser height",
+   "complies": "Risers no more than 7-3/4 in (196 mm) high, the tallest and shortest within 3/8 in of each other.",
+   "violates": "Any riser taller than 7-3/4 in.",
+   "fix": "Add a riser to the flight to lower each step, or re-cut the stringers.",
+   "fail": 0,
+   "pass": 2
+  },
+  {
+   "id": "IRC-R311.7.8",
+   "section": "780 CMR 51 · R311.7.8.1",
+   "title": "Handrail height on stairs",
+   "complies": "Handrails 34–38 in (864–965 mm) above the stair nosings, continuous the full length of each flight of four or more risers.",
+   "violates": "A stair of four or more risers with no handrail, or one outside 34–38 in.",
+   "fix": "Add a graspable handrail at 34–38 in above the nosings for the full flight.",
+   "fail": 2,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R302.5.1",
+   "section": "780 CMR 51 · R302.5.1",
+   "title": "Door between garage and dwelling",
+   "complies": "Doors between a garage and the residence are solid wood (1-3/8 in), solid or honeycomb-core steel (1-3/8 in), or 20-minute fire-rated; no door opens directly into a sleeping room.",
+   "violates": "A garage-to-house door that is not rated/solid, or one opening into a bedroom.",
+   "fix": "Specify a 20-minute or 1-3/8 in solid-core door, and never into a sleeping room.",
+   "fail": 0,
+   "pass": 0
+  },
+  {
+   "id": "IRC-R314.3-story",
+   "section": "780 CMR 51 · R314.3(3)",
+   "title": "Smoke alarm on every story",
+   "complies": "A smoke alarm on each story of the dwelling, including basements and habitable attics.",
+   "violates": "A story with no smoke alarm anywhere on it.",
+   "fix": "Add an interconnected smoke alarm to the story with none.",
+   "fail": 1,
+   "pass": 2
   }
  ],
  "findings": [
@@ -2101,6 +2301,2976 @@
     "x": 0.35286,
     "y": 0.45333
    }
+  },
+  {
+   "id": "duplex-061",
+   "rule": "IRC-R305.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr2",
+    "ifcClass": "IfcSpace",
+    "name": "A102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A102 Living Room",
+   "measured": "2581 mm (101.61 in)",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "A102 Living Room: ceiling 2581 mm.",
+   "point": [
+    3.308,
+    -14.991,
+    2.5
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33697,
+    "y": 0.79005
+   }
+  },
+  {
+   "id": "duplex-062",
+   "rule": "IRC-R305.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr$",
+    "ifcClass": "IfcSpace",
+    "name": "A103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "2587 mm (101.85 in)",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "A103 Kitchen: ceiling 2587 mm.",
+   "point": [
+    3.322,
+    -11.485,
+    2.5
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33744,
+    "y": 0.6231
+   }
+  },
+  {
+   "id": "duplex-063",
+   "rule": "IRC-R305.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrb",
+    "ifcClass": "IfcSpace",
+    "name": "A203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A203 Bedroom 2",
+   "measured": "2581 mm (101.61 in)",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "A203 Bedroom 2: ceiling 2581 mm.",
+   "point": [
+    6.529,
+    -14.528,
+    5.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44542,
+    "y": 0.768
+   }
+  },
+  {
+   "id": "duplex-064",
+   "rule": "IRC-R305.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrc",
+    "ifcClass": "IfcSpace",
+    "name": "A202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A202 Bedroom 1",
+   "measured": "2581 mm (101.61 in)",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "A202 Bedroom 1: ceiling 2581 mm.",
+   "point": [
+    6.529,
+    -3.272,
+    5.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44542,
+    "y": 0.232
+   }
+  },
+  {
+   "id": "duplex-065",
+   "rule": "IRC-R305.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_CZ",
+    "ifcClass": "IfcSpace",
+    "name": "B102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B102 Living Room",
+   "measured": "2581 mm (101.61 in)",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "B102 Living Room: ceiling 2581 mm.",
+   "point": [
+    5.491,
+    -2.809,
+    2.5
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41047,
+    "y": 0.20995
+   }
+  },
+  {
+   "id": "duplex-066",
+   "rule": "IRC-R305.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3S",
+    "ifcClass": "IfcSpace",
+    "name": "B103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "2587 mm (101.85 in)",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "B103 Kitchen: ceiling 2587 mm.",
+   "point": [
+    5.478,
+    -6.315,
+    2.5
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41003,
+    "y": 0.3769
+   }
+  },
+  {
+   "id": "duplex-067",
+   "rule": "IRC-R305.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_39",
+    "ifcClass": "IfcSpace",
+    "name": "B203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B203 Bedroom 2",
+   "measured": "2581 mm (101.61 in)",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "B203 Bedroom 2: ceiling 2581 mm.",
+   "point": [
+    2.271,
+    -3.272,
+    5.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30205,
+    "y": 0.232
+   }
+  },
+  {
+   "id": "duplex-068",
+   "rule": "IRC-R305.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3A",
+    "ifcClass": "IfcSpace",
+    "name": "B202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B202 Bedroom 1",
+   "measured": "2581 mm (101.61 in)",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "B202 Bedroom 1: ceiling 2581 mm.",
+   "point": [
+    2.271,
+    -14.528,
+    5.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30205,
+    "y": 0.768
+   }
+  },
+  {
+   "id": "duplex-069",
+   "rule": "IRC-R304.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr2",
+    "ifcClass": "IfcSpace",
+    "name": "A102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A102 Living Room",
+   "measured": "27.7 m² (297.7 sq ft)",
+   "required": "≥ 6.5 m² (70 sq ft)",
+   "message": "A102 Living Room: 297.7 sq ft.",
+   "point": [
+    3.308,
+    -14.991,
+    1.219
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33697,
+    "y": 0.79005
+   }
+  },
+  {
+   "id": "duplex-070",
+   "rule": "IRC-R304.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrb",
+    "ifcClass": "IfcSpace",
+    "name": "A203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A203 Bedroom 2",
+   "measured": "22.0 m² (237.3 sq ft)",
+   "required": "≥ 6.5 m² (70 sq ft)",
+   "message": "A203 Bedroom 2: 237.3 sq ft.",
+   "point": [
+    6.529,
+    -14.528,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44542,
+    "y": 0.768
+   }
+  },
+  {
+   "id": "duplex-071",
+   "rule": "IRC-R304.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrc",
+    "ifcClass": "IfcSpace",
+    "name": "A202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A202 Bedroom 1",
+   "measured": "22.0 m² (237.3 sq ft)",
+   "required": "≥ 6.5 m² (70 sq ft)",
+   "message": "A202 Bedroom 1: 237.3 sq ft.",
+   "point": [
+    6.529,
+    -3.272,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44542,
+    "y": 0.232
+   }
+  },
+  {
+   "id": "duplex-072",
+   "rule": "IRC-R304.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_CZ",
+    "ifcClass": "IfcSpace",
+    "name": "B102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B102 Living Room",
+   "measured": "27.7 m² (297.7 sq ft)",
+   "required": "≥ 6.5 m² (70 sq ft)",
+   "message": "B102 Living Room: 297.7 sq ft.",
+   "point": [
+    5.491,
+    -2.809,
+    1.219
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41047,
+    "y": 0.20995
+   }
+  },
+  {
+   "id": "duplex-073",
+   "rule": "IRC-R304.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_39",
+    "ifcClass": "IfcSpace",
+    "name": "B203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B203 Bedroom 2",
+   "measured": "22.0 m² (237.3 sq ft)",
+   "required": "≥ 6.5 m² (70 sq ft)",
+   "message": "B203 Bedroom 2: 237.3 sq ft.",
+   "point": [
+    2.271,
+    -3.272,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30205,
+    "y": 0.232
+   }
+  },
+  {
+   "id": "duplex-074",
+   "rule": "IRC-R304.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3A",
+    "ifcClass": "IfcSpace",
+    "name": "B202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B202 Bedroom 1",
+   "measured": "22.0 m² (237.3 sq ft)",
+   "required": "≥ 6.5 m² (70 sq ft)",
+   "message": "B202 Bedroom 1: 237.3 sq ft.",
+   "point": [
+    2.271,
+    -14.528,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30205,
+    "y": 0.768
+   }
+  },
+  {
+   "id": "duplex-075",
+   "rule": "IRC-R304.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr2",
+    "ifcClass": "IfcSpace",
+    "name": "A102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A102 Living Room",
+   "measured": "4783 mm (188.31 in) least width",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "A102 Living Room: least width 4783 mm.",
+   "point": [
+    3.308,
+    -14.991,
+    1.219
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33697,
+    "y": 0.79005
+   }
+  },
+  {
+   "id": "duplex-076",
+   "rule": "IRC-R304.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr$",
+    "ifcClass": "IfcSpace",
+    "name": "A103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "2230 mm (87.80 in) least width",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "A103 Kitchen: least width 2230 mm.",
+   "point": [
+    3.322,
+    -11.485,
+    1.213
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33744,
+    "y": 0.6231
+   }
+  },
+  {
+   "id": "duplex-077",
+   "rule": "IRC-R304.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrb",
+    "ifcClass": "IfcSpace",
+    "name": "A203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A203 Bedroom 2",
+   "measured": "3708 mm (145.98 in) least width",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "A203 Bedroom 2: least width 3708 mm.",
+   "point": [
+    6.529,
+    -14.528,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44542,
+    "y": 0.768
+   }
+  },
+  {
+   "id": "duplex-078",
+   "rule": "IRC-R304.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrc",
+    "ifcClass": "IfcSpace",
+    "name": "A202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A202 Bedroom 1",
+   "measured": "3708 mm (145.98 in) least width",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "A202 Bedroom 1: least width 3708 mm.",
+   "point": [
+    6.529,
+    -3.272,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44542,
+    "y": 0.232
+   }
+  },
+  {
+   "id": "duplex-079",
+   "rule": "IRC-R304.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_CZ",
+    "ifcClass": "IfcSpace",
+    "name": "B102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B102 Living Room",
+   "measured": "4783 mm (188.31 in) least width",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "B102 Living Room: least width 4783 mm.",
+   "point": [
+    5.491,
+    -2.809,
+    1.219
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41047,
+    "y": 0.20995
+   }
+  },
+  {
+   "id": "duplex-080",
+   "rule": "IRC-R304.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3S",
+    "ifcClass": "IfcSpace",
+    "name": "B103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "2230 mm (87.80 in) least width",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "B103 Kitchen: least width 2230 mm.",
+   "point": [
+    5.478,
+    -6.315,
+    1.213
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41003,
+    "y": 0.3769
+   }
+  },
+  {
+   "id": "duplex-081",
+   "rule": "IRC-R304.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_39",
+    "ifcClass": "IfcSpace",
+    "name": "B203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B203 Bedroom 2",
+   "measured": "3708 mm (145.98 in) least width",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "B203 Bedroom 2: least width 3708 mm.",
+   "point": [
+    2.271,
+    -3.272,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30205,
+    "y": 0.232
+   }
+  },
+  {
+   "id": "duplex-082",
+   "rule": "IRC-R304.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3A",
+    "ifcClass": "IfcSpace",
+    "name": "B202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B202 Bedroom 1",
+   "measured": "3708 mm (145.98 in) least width",
+   "required": "≥ 2134 mm (7 ft)",
+   "message": "B202 Bedroom 1: least width 3708 mm.",
+   "point": [
+    2.271,
+    -14.528,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30205,
+    "y": 0.768
+   }
+  },
+  {
+   "id": "duplex-083",
+   "rule": "IRC-R303.1-light",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr2",
+    "ifcClass": "IfcSpace",
+    "name": "A102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A102 Living Room",
+   "measured": "13.35 m² glazing (143.7 sq ft) for 27.7 m² floor",
+   "required": "≥ 2.21 m² (23.8 sq ft), 8% of floor",
+   "message": "A102 Living Room: daylight adequate.",
+   "point": [
+    3.308,
+    -14.991,
+    1.219
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33697,
+    "y": 0.79005
+   }
+  },
+  {
+   "id": "duplex-084",
+   "rule": "IRC-R303.1-light",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr$",
+    "ifcClass": "IfcSpace",
+    "name": "A103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "1.65 m² glazing (17.8 sq ft) for 13.0 m² floor",
+   "required": "≥ 1.04 m² (11.2 sq ft), 8% of floor",
+   "message": "A103 Kitchen: daylight adequate.",
+   "point": [
+    3.322,
+    -11.485,
+    1.213
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33744,
+    "y": 0.6231
+   }
+  },
+  {
+   "id": "duplex-085",
+   "rule": "IRC-R303.1-light",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrb",
+    "ifcClass": "IfcSpace",
+    "name": "A203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A203 Bedroom 2",
+   "measured": "9.02 m² glazing (97.1 sq ft) for 22.0 m² floor",
+   "required": "≥ 1.76 m² (19.0 sq ft), 8% of floor",
+   "message": "A203 Bedroom 2: daylight adequate.",
+   "point": [
+    6.529,
+    -14.528,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44542,
+    "y": 0.768
+   }
+  },
+  {
+   "id": "duplex-086",
+   "rule": "IRC-R303.1-light",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrc",
+    "ifcClass": "IfcSpace",
+    "name": "A202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A202 Bedroom 1",
+   "measured": "7.37 m² glazing (79.3 sq ft) for 22.0 m² floor",
+   "required": "≥ 1.76 m² (19.0 sq ft), 8% of floor",
+   "message": "A202 Bedroom 1: daylight adequate.",
+   "point": [
+    6.529,
+    -3.272,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44542,
+    "y": 0.232
+   }
+  },
+  {
+   "id": "duplex-087",
+   "rule": "IRC-R303.1-light",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_CZ",
+    "ifcClass": "IfcSpace",
+    "name": "B102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B102 Living Room",
+   "measured": "13.35 m² glazing (143.7 sq ft) for 27.7 m² floor",
+   "required": "≥ 2.21 m² (23.8 sq ft), 8% of floor",
+   "message": "B102 Living Room: daylight adequate.",
+   "point": [
+    5.491,
+    -2.809,
+    1.219
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41047,
+    "y": 0.20995
+   }
+  },
+  {
+   "id": "duplex-088",
+   "rule": "IRC-R303.1-light",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3S",
+    "ifcClass": "IfcSpace",
+    "name": "B103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "1.65 m² glazing (17.8 sq ft) for 13.0 m² floor",
+   "required": "≥ 1.04 m² (11.2 sq ft), 8% of floor",
+   "message": "B103 Kitchen: daylight adequate.",
+   "point": [
+    5.478,
+    -6.315,
+    1.213
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41003,
+    "y": 0.3769
+   }
+  },
+  {
+   "id": "duplex-089",
+   "rule": "IRC-R303.1-light",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_39",
+    "ifcClass": "IfcSpace",
+    "name": "B203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B203 Bedroom 2",
+   "measured": "9.02 m² glazing (97.1 sq ft) for 22.0 m² floor",
+   "required": "≥ 1.76 m² (19.0 sq ft), 8% of floor",
+   "message": "B203 Bedroom 2: daylight adequate.",
+   "point": [
+    2.271,
+    -3.272,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30205,
+    "y": 0.232
+   }
+  },
+  {
+   "id": "duplex-090",
+   "rule": "IRC-R303.1-light",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3A",
+    "ifcClass": "IfcSpace",
+    "name": "B202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B202 Bedroom 1",
+   "measured": "7.37 m² glazing (79.3 sq ft) for 22.0 m² floor",
+   "required": "≥ 1.76 m² (19.0 sq ft), 8% of floor",
+   "message": "B202 Bedroom 1: daylight adequate.",
+   "point": [
+    2.271,
+    -14.528,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30205,
+    "y": 0.768
+   }
+  },
+  {
+   "id": "duplex-091",
+   "rule": "IRC-R311.3",
+   "status": "pass",
+   "target": {
+    "globalId": "1hOSvn6df7F8_7GcBWlRGQ",
+    "ifcClass": "IfcDoor",
+    "name": "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146596",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A101 Foyer",
+   "measured": "2183 mm (85.94 in) clear in front of the door",
+   "required": "≥ 914 mm (36 in) landing depth",
+   "message": "Door A101: landing depth adequate.",
+   "point": [
+    8.591,
+    -16.178,
+    1.005
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.51485,
+    "y": 0.84657
+   }
+  },
+  {
+   "id": "duplex-092",
+   "rule": "IRC-R311.3",
+   "status": "pass",
+   "target": {
+    "globalId": "1s1jVhK8z0pgKYcr9jt7AB",
+    "ifcClass": "IfcDoor",
+    "name": "M_Single-Glass 1:0813 x 2420mm:0813 x 2420mm:171975",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A102 Living Room",
+   "measured": "4783 mm (188.31 in) clear in front of the door",
+   "required": "≥ 914 mm (36 in) landing depth",
+   "message": "Door A102: landing depth adequate.",
+   "point": [
+    5.758,
+    -17.592,
+    1.21
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41946,
+    "y": 0.9139
+   }
+  },
+  {
+   "id": "duplex-093",
+   "rule": "IRC-R311.3",
+   "status": "pass",
+   "target": {
+    "globalId": "1hOSvn6df7F8_7GcBWlRH8",
+    "ifcClass": "IfcDoor",
+    "name": "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146678",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B101 Foyer",
+   "measured": "2183 mm (85.94 in) clear in front of the door",
+   "required": "≥ 914 mm (36 in) landing depth",
+   "message": "Door B101: landing depth adequate.",
+   "point": [
+    0.209,
+    -1.622,
+    1.005
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.23263,
+    "y": 0.15343
+   }
+  },
+  {
+   "id": "duplex-094",
+   "rule": "IRC-R311.3",
+   "status": "pass",
+   "target": {
+    "globalId": "1s1jVhK8z0pgKYcr9jt781",
+    "ifcClass": "IfcDoor",
+    "name": "M_Single-Glass 1:0813 x 2420mm:0813 x 2420mm:171853",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B102 Living Room",
+   "measured": "4783 mm (188.31 in) clear in front of the door",
+   "required": "≥ 914 mm (36 in) landing depth",
+   "message": "Door B102: landing depth adequate.",
+   "point": [
+    3.041,
+    -0.208,
+    1.21
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.32798,
+    "y": 0.0861
+   }
+  },
+  {
+   "id": "duplex-095",
+   "rule": "IRC-R311.2",
+   "status": "pass",
+   "target": {
+    "globalId": "1hOSvn6df7F8_7GcBWlRGQ",
+    "ifcClass": "IfcDoor",
+    "name": "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146596",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit A",
+   "measured": "widest egress door 1250 mm (49.21 in) leaf",
+   "required": "≥ 813 mm (32 in) clear",
+   "message": "Unit A: egress door 1250 mm.",
+   "point": [
+    8.591,
+    -16.178,
+    1.005
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.51485,
+    "y": 0.84657
+   }
+  },
+  {
+   "id": "duplex-096",
+   "rule": "IRC-R311.2",
+   "status": "pass",
+   "target": {
+    "globalId": "1hOSvn6df7F8_7GcBWlRH8",
+    "ifcClass": "IfcDoor",
+    "name": "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146678",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit B",
+   "measured": "widest egress door 1250 mm (49.21 in) leaf",
+   "required": "≥ 813 mm (32 in) clear",
+   "message": "Unit B: egress door 1250 mm.",
+   "point": [
+    0.209,
+    -1.622,
+    1.005
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.23263,
+    "y": 0.15343
+   }
+  },
+  {
+   "id": "duplex-097",
+   "rule": "IRC-R311.6",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXri",
+    "ifcClass": "IfcSpace",
+    "name": "A201 Hallway",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A201 Hallway",
+   "measured": "1965 mm (77.36 in) clear width",
+   "required": "≥ 914 mm (36 in)",
+   "message": "A201 Hallway: 1965 mm.",
+   "point": [
+    6.893,
+    -9.926,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.45768,
+    "y": 0.54886
+   }
+  },
+  {
+   "id": "duplex-098",
+   "rule": "IRC-R311.6",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3G",
+    "ifcClass": "IfcSpace",
+    "name": "B201 Hallway",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B201 Hallway",
+   "measured": "1965 mm (77.36 in) clear width",
+   "required": "≥ 914 mm (36 in)",
+   "message": "B201 Hallway: 1965 mm.",
+   "point": [
+    1.907,
+    -7.882,
+    4.319
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.2898,
+    "y": 0.45152
+   }
+  },
+  {
+   "id": "duplex-099",
+   "rule": "IRC-R312.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0wkEuT1wr1kOyafLY4v_O1",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Residential - 200mm Max Riser 250mm Tread:151086",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit A stair (A105 Stair)",
+   "measured": "a railing is present, guard ≈ 2957 mm",
+   "required": "guard ≥ 914 mm (36 in) at open edges > 30 in",
+   "message": "Unit A stair (A105 Stair): guard present.",
+   "point": [
+    7.876,
+    -9.939,
+    1.525
+   ],
+   "related": [
+    {
+     "globalId": "0wkEuT1wr1kOyafLY4v_PL",
+     "ifcClass": "IfcRailing",
+     "name": "Railing:900mm Handrail Only:151162",
+     "model": "duplex.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.49077,
+    "y": 0.54948
+   }
+  },
+  {
+   "id": "duplex-100",
+   "rule": "IRC-R312.1",
+   "status": "pass",
+   "target": {
+    "globalId": "21ldoMpbP4VfsJ0XGY_34d",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Residential - 200mm Max Riser 250mm Tread:198878",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit B stair (B105 Room)",
+   "measured": "a railing is present, guard ≈ 2957 mm",
+   "required": "guard ≥ 914 mm (36 in) at open edges > 30 in",
+   "message": "Unit B stair (B105 Room): guard present.",
+   "point": [
+    0.924,
+    -7.861,
+    1.525
+   ],
+   "related": [
+    {
+     "globalId": "21ldoMpbP4VfsJ0XGY_34P",
+     "ifcClass": "IfcRailing",
+     "name": "Railing:900mm Handrail Only:198880",
+     "model": "duplex.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.2567,
+    "y": 0.45052
+   }
+  },
+  {
+   "id": "duplex-101",
+   "rule": "IRC-E3901.4",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr$",
+    "ifcClass": "IfcSpace",
+    "name": "A103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "7 receptacle(s) modeled",
+   "required": "≥ 2 counter receptacles, none > 24 in from a point on the counter",
+   "message": "A103 Kitchen: 7 receptacles.",
+   "point": [
+    1.945,
+    -10.37,
+    1.068
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4DA",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575464",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4D8",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575466",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4DE",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575468",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4ob",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575495",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "3ffkyt4A92pAkW8PI4iuU$",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:606293",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1pq8_0PnP2dxhiUN2win6E",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Telephone Outlet:Telophone Outlet:Telophone Outlet:611904",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "3kSHn3rCT2Mgjzvy7hm5ie",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:615696",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.29108,
+    "y": 0.57
+   }
+  },
+  {
+   "id": "duplex-102",
+   "rule": "IRC-E3901.4",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3S",
+    "ifcClass": "IfcSpace",
+    "name": "B103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "7 receptacle(s) modeled",
+   "required": "≥ 2 counter receptacles, none > 24 in from a point on the counter",
+   "message": "B103 Kitchen: 7 receptacles.",
+   "point": [
+    7.916,
+    -7.43,
+    0.458
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4Dp",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575441",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4D6",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575460",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4D4",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575462",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4oa",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575494",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "3ffkyt4A92pAkW8PI4iuUP",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:606323",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1l2cgO2D5FS9t6u8i4CvoP",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Telephone Outlet:Telophone Outlet:Telophone Outlet:611989",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "3kSHn3rCT2Mgjzvy7hm5jq",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:615756",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.49212,
+    "y": 0.43
+   }
+  },
+  {
+   "id": "duplex-103",
+   "rule": "IRC-E3901.6",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXru",
+    "ifcClass": "IfcSpace",
+    "name": "A104 Bathroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A104 Bathroom 1",
+   "measured": "2 receptacle(s) modeled",
+   "required": "≥ 1 receptacle within 36 in of the lavatory",
+   "message": "A104 Bathroom 1: receptacle present.",
+   "point": [
+    4.77,
+    -8.942,
+    1.22
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4Dy",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575454",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4D2",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575456",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3862,
+    "y": 0.502
+   }
+  },
+  {
+   "id": "duplex-104",
+   "rule": "IRC-E3901.6",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXre",
+    "ifcClass": "IfcSpace",
+    "name": "A204 Bathroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A204 Bathroom 2",
+   "measured": "1 receptacle(s) modeled",
+   "required": "≥ 1 receptacle within 36 in of the lavatory",
+   "message": "A204 Bathroom 2: receptacle present.",
+   "point": [
+    4.77,
+    -8.741,
+    4.318
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4CG",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575410",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.3862,
+    "y": 0.49243
+   }
+  },
+  {
+   "id": "duplex-105",
+   "rule": "IRC-E3901.6",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3P",
+    "ifcClass": "IfcSpace",
+    "name": "B104 Bathroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B104 Bathroom 1",
+   "measured": "2 receptacle(s) modeled",
+   "required": "≥ 1 receptacle within 36 in of the lavatory",
+   "message": "B104 Bathroom 1: receptacle present.",
+   "point": [
+    4.03,
+    -8.669,
+    1.22
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4Dx",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575449",
+     "model": "Duplex_MEP_20110907.ifc"
+    },
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4Dv",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575451",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.36128,
+    "y": 0.489
+   }
+  },
+  {
+   "id": "duplex-106",
+   "rule": "IRC-E3901.6",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3C",
+    "ifcClass": "IfcSpace",
+    "name": "B204 Bathroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B204 Bathroom 2",
+   "measured": "1 receptacle(s) modeled",
+   "required": "≥ 1 receptacle within 36 in of the lavatory",
+   "message": "B204 Bathroom 2: receptacle present.",
+   "point": [
+    4.03,
+    -8.805,
+    4.318
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4CP",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575419",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.36128,
+    "y": 0.49548
+   }
+  },
+  {
+   "id": "duplex-107",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4CG",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575410",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A204 Bathroom 2",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A204 Bathroom 2: GFCI protection noted.",
+   "point": [
+    4.77,
+    -8.741,
+    4.318
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.3862,
+    "y": 0.49243
+   }
+  },
+  {
+   "id": "duplex-108",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4CP",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575419",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B204 Bathroom 2",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B204 Bathroom 2: GFCI protection noted.",
+   "point": [
+    4.03,
+    -8.805,
+    4.318
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.36128,
+    "y": 0.49548
+   }
+  },
+  {
+   "id": "duplex-109",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4Dp",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575441",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B103 Kitchen: GFCI protection noted.",
+   "point": [
+    7.916,
+    -7.43,
+    0.458
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.49212,
+    "y": 0.43
+   }
+  },
+  {
+   "id": "duplex-110",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4Dx",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575449",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B104 Bathroom 1",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B104 Bathroom 1: GFCI protection noted.",
+   "point": [
+    4.03,
+    -8.669,
+    1.22
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.36128,
+    "y": 0.489
+   }
+  },
+  {
+   "id": "duplex-111",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4Dv",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575451",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B104 Bathroom 1",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B104 Bathroom 1: GFCI protection noted.",
+   "point": [
+    2.574,
+    -9.091,
+    0.458
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.31226,
+    "y": 0.5091
+   }
+  },
+  {
+   "id": "duplex-112",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4Dy",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575454",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A104 Bathroom 1",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A104 Bathroom 1: GFCI protection noted.",
+   "point": [
+    4.77,
+    -8.942,
+    1.22
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.3862,
+    "y": 0.502
+   }
+  },
+  {
+   "id": "duplex-113",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4D2",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575456",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A104 Bathroom 1",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A104 Bathroom 1: GFCI protection noted.",
+   "point": [
+    6.226,
+    -8.695,
+    0.458
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.43522,
+    "y": 0.49024
+   }
+  },
+  {
+   "id": "duplex-114",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4D6",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575460",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B103 Kitchen: GFCI protection noted.",
+   "point": [
+    6.88,
+    -7.43,
+    1.068
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.45724,
+    "y": 0.43
+   }
+  },
+  {
+   "id": "duplex-115",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4D4",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575462",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B103 Kitchen: GFCI protection noted.",
+   "point": [
+    2.986,
+    -7.43,
+    1.068
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.32613,
+    "y": 0.43
+   }
+  },
+  {
+   "id": "duplex-116",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4DA",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575464",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A103 Kitchen: GFCI protection noted.",
+   "point": [
+    1.945,
+    -10.37,
+    1.068
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.29108,
+    "y": 0.57
+   }
+  },
+  {
+   "id": "duplex-117",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4D8",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575466",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A103 Kitchen: GFCI protection noted.",
+   "point": [
+    5.813,
+    -10.37,
+    1.068
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.42131,
+    "y": 0.57
+   }
+  },
+  {
+   "id": "duplex-118",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4DE",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575468",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A103 Kitchen: GFCI protection noted.",
+   "point": [
+    0.907,
+    -10.37,
+    0.458
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.25613,
+    "y": 0.57
+   }
+  },
+  {
+   "id": "duplex-119",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4oa",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575494",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B103 Kitchen: GFCI protection noted.",
+   "point": [
+    4.01,
+    -7.43,
+    0.458
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.36061,
+    "y": 0.43
+   }
+  },
+  {
+   "id": "duplex-120",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "1K7eM1Qof1dOc9$mY9I4ob",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:575495",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A103 Kitchen: GFCI protection noted.",
+   "point": [
+    4.861,
+    -10.37,
+    0.458
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.38926,
+    "y": 0.57
+   }
+  },
+  {
+   "id": "duplex-121",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "3ffkyt4A92pAkW8PI4iuU$",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:606293",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A103 Kitchen: GFCI protection noted.",
+   "point": [
+    4.045,
+    -10.37,
+    1.068
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.36178,
+    "y": 0.57
+   }
+  },
+  {
+   "id": "duplex-122",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "3ffkyt4A92pAkW8PI4iuUP",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:606323",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B103 Kitchen: GFCI protection noted.",
+   "point": [
+    4.78,
+    -7.43,
+    1.068
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.38653,
+    "y": 0.43
+   }
+  },
+  {
+   "id": "duplex-123",
+   "rule": "IRC-E3902",
+   "status": "fail",
+   "target": {
+    "globalId": "1pq8_0PnP2dxhiUN2win6E",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Telephone Outlet:Telophone Outlet:Telophone Outlet:611904",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "M_Telephone Outlet: no GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A103 Kitchen: receptacle \"M_Telephone Outlet\" has no GFCI protection noted.",
+   "point": [
+    6.226,
+    -10.742,
+    1.087
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.43522,
+    "y": 0.58771
+   }
+  },
+  {
+   "id": "duplex-124",
+   "rule": "IRC-E3902",
+   "status": "fail",
+   "target": {
+    "globalId": "1l2cgO2D5FS9t6u8i4CvoP",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Telephone Outlet:Telophone Outlet:Telophone Outlet:611989",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "M_Telephone Outlet: no GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B103 Kitchen: receptacle \"M_Telephone Outlet\" has no GFCI protection noted.",
+   "point": [
+    2.574,
+    -7.103,
+    1.136
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.31226,
+    "y": 0.41443
+   }
+  },
+  {
+   "id": "duplex-125",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "3kSHn3rCT2Mgjzvy7hm5ie",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:615696",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "A103 Kitchen: GFCI protection noted.",
+   "point": [
+    4.858,
+    -10.37,
+    1.7
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.38916,
+    "y": 0.57
+   }
+  },
+  {
+   "id": "duplex-126",
+   "rule": "IRC-E3902",
+   "status": "pass",
+   "target": {
+    "globalId": "3kSHn3rCT2Mgjzvy7hm5jq",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Duplex Receptacle:Duplex Receptacle:Duplex Receptacle:615756",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "M_Duplex Receptacle: GFCI noted",
+   "required": "GFCI protection in wet locations",
+   "message": "B103 Kitchen: GFCI protection noted.",
+   "point": [
+    3.913,
+    -7.43,
+    1.7
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.35734,
+    "y": 0.43
+   }
+  },
+  {
+   "id": "duplex-127",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr2",
+    "ifcClass": "IfcSpace",
+    "name": "A102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A102 Living Room",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "A102 Living Room: 1 lighting outlet(s).",
+   "point": [
+    6.2,
+    -14.27,
+    1.22
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4DP",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575483",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.43434,
+    "y": 0.75571
+   }
+  },
+  {
+   "id": "duplex-128",
+   "rule": "IRC-E3903.2",
+   "status": "fail",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXr$",
+    "ifcClass": "IfcSpace",
+    "name": "A103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A103 Kitchen",
+   "measured": "0 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "A103 Kitchen: no lighting outlet modeled.",
+   "point": [
+    3.322,
+    -11.485,
+    2.5
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.33744,
+    "y": 0.6231
+   }
+  },
+  {
+   "id": "duplex-129",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXru",
+    "ifcClass": "IfcSpace",
+    "name": "A104 Bathroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A104 Bathroom 1",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "A104 Bathroom 1: 1 lighting outlet(s).",
+   "point": [
+    6.226,
+    -9.023,
+    1.22
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4DU",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575484",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.43522,
+    "y": 0.50586
+   }
+  },
+  {
+   "id": "duplex-130",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXri",
+    "ifcClass": "IfcSpace",
+    "name": "A201 Hallway",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A201 Hallway",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "A201 Hallway: 1 lighting outlet(s).",
+   "point": [
+    8.383,
+    -7.822,
+    4.32
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4on",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575507",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.50785,
+    "y": 0.44867
+   }
+  },
+  {
+   "id": "duplex-131",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXre",
+    "ifcClass": "IfcSpace",
+    "name": "A204 Bathroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A204 Bathroom 2",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "A204 Bathroom 2: 1 lighting outlet(s).",
+   "point": [
+    6.294,
+    -8.979,
+    4.32
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4C4",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575398",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.43751,
+    "y": 0.50376
+   }
+  },
+  {
+   "id": "duplex-132",
+   "rule": "IRC-E3903.2",
+   "status": "fail",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrb",
+    "ifcClass": "IfcSpace",
+    "name": "A203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A203 Bedroom 2",
+   "measured": "0 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "A203 Bedroom 2: no lighting outlet modeled.",
+   "point": [
+    6.529,
+    -14.528,
+    5.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44542,
+    "y": 0.768
+   }
+  },
+  {
+   "id": "duplex-133",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dlXrc",
+    "ifcClass": "IfcSpace",
+    "name": "A202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A202 Bedroom 1",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "A202 Bedroom 1: 1 lighting outlet(s).",
+   "point": [
+    7.808,
+    -6.126,
+    4.32
+   ],
+   "related": [
+    {
+     "globalId": "1BZbxAG8L6z9EEpSZfugOW",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575392",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.48848,
+    "y": 0.3679
+   }
+  },
+  {
+   "id": "duplex-134",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_CZ",
+    "ifcClass": "IfcSpace",
+    "name": "B102 Living Room",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B102 Living Room",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "B102 Living Room: 1 lighting outlet(s).",
+   "point": [
+    2.6,
+    -3.656,
+    1.22
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4DS",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575486",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.31313,
+    "y": 0.25029
+   }
+  },
+  {
+   "id": "duplex-135",
+   "rule": "IRC-E3903.2",
+   "status": "fail",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3S",
+    "ifcClass": "IfcSpace",
+    "name": "B103 Kitchen",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B103 Kitchen",
+   "measured": "0 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "B103 Kitchen: no lighting outlet modeled.",
+   "point": [
+    5.478,
+    -6.315,
+    2.5
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.41003,
+    "y": 0.3769
+   }
+  },
+  {
+   "id": "duplex-136",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3P",
+    "ifcClass": "IfcSpace",
+    "name": "B104 Bathroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B104 Bathroom 1",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "B104 Bathroom 1: 1 lighting outlet(s).",
+   "point": [
+    2.574,
+    -8.732,
+    1.22
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4DV",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575485",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.31226,
+    "y": 0.492
+   }
+  },
+  {
+   "id": "duplex-137",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3G",
+    "ifcClass": "IfcSpace",
+    "name": "B201 Hallway",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B201 Hallway",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "B201 Hallway: 1 lighting outlet(s).",
+   "point": [
+    0.417,
+    -9.986,
+    4.32
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4oq",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575510",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.23963,
+    "y": 0.55171
+   }
+  },
+  {
+   "id": "duplex-138",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3C",
+    "ifcClass": "IfcSpace",
+    "name": "B204 Bathroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B204 Bathroom 2",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "B204 Bathroom 2: 1 lighting outlet(s).",
+   "point": [
+    2.506,
+    -8.832,
+    4.32
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4C6",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575396",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30997,
+    "y": 0.49676
+   }
+  },
+  {
+   "id": "duplex-139",
+   "rule": "IRC-E3903.2",
+   "status": "fail",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_39",
+    "ifcClass": "IfcSpace",
+    "name": "B203 Bedroom 2",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B203 Bedroom 2",
+   "measured": "0 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "B203 Bedroom 2: no lighting outlet modeled.",
+   "point": [
+    2.271,
+    -3.272,
+    5.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.30205,
+    "y": 0.232
+   }
+  },
+  {
+   "id": "duplex-140",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "0BTBFw6f90Nfh9rP1dl_3A",
+    "ifcClass": "IfcSpace",
+    "name": "B202 Bedroom 1",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B202 Bedroom 1",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "B202 Bedroom 1: 1 lighting outlet(s).",
+   "point": [
+    0.916,
+    -11.674,
+    4.32
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4CA",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575400",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.25643,
+    "y": 0.6321
+   }
+  },
+  {
+   "id": "duplex-141",
+   "rule": "IRC-E3903.2",
+   "status": "pass",
+   "target": {
+    "globalId": "10mjSDZJj9gPS2PrQaxa3z",
+    "ifcClass": "IfcSpace",
+    "name": "A105 Stair",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A105 Stair",
+   "measured": "1 lighting outlet(s)",
+   "required": "≥ 1 switched lighting outlet",
+   "message": "A105 Stair: 1 lighting outlet(s).",
+   "point": [
+    7.719,
+    -11.674,
+    4.32
+   ],
+   "related": [
+    {
+     "globalId": "1K7eM1Qof1dOc9$mY9I4C8",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Lighting Switches:Single Pole:Single Pole:575402",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.48549,
+    "y": 0.6321
+   }
+  },
+  {
+   "id": "duplex-142",
+   "rule": "IRC-P2804.6",
+   "status": "fail",
+   "target": {
+    "globalId": "1ZpBelQPb2z91uXg6Q1dzp",
+    "ifcClass": "IfcEnergyConversionDevice",
+    "name": "M_Hot Water Boiler - 59-440 kW:147 kW:147 kW:530072",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A205 Utility",
+   "measured": "M_Hot Water Boiler - 59-440 kW: no relief discharge noted",
+   "required": "T&P relief valve with discharge to a safe location",
+   "message": "A205 Utility: water heater \"M_Hot Water Boiler - 59-440 kW\" has no relief-valve discharge noted.",
+   "point": [
+    5.418,
+    -7.592,
+    3.119
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.40801,
+    "y": 0.43771
+   }
+  },
+  {
+   "id": "duplex-143",
+   "rule": "IRC-P2804.6",
+   "status": "fail",
+   "target": {
+    "globalId": "1jQu9wkdr0iwNuem13Fl5i",
+    "ifcClass": "IfcEnergyConversionDevice",
+    "name": "M_Hot Water Boiler - 59-440 kW:147 kW:147 kW:557516",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B205 Utility",
+   "measured": "M_Hot Water Boiler - 59-440 kW: no relief discharge noted",
+   "required": "T&P relief valve with discharge to a safe location",
+   "message": "B205 Utility: water heater \"M_Hot Water Boiler - 59-440 kW\" has no relief-valve discharge noted.",
+   "point": [
+    3.382,
+    -10.208,
+    3.119
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.33946,
+    "y": 0.56229
+   }
+  },
+  {
+   "id": "duplex-144",
+   "rule": "IRC-R307.1-front",
+   "status": "pass",
+   "target": {
+    "globalId": "02A38ateT5NgmAdzUlg9_5",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Water Closet - Flush Tank:Private - 6.1 Lpf:Private - 6.1 Lpf:582915",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "A104 Bathroom 1",
+   "measured": "1206 mm (47.48 in) clear in front",
+   "required": "≥ 533 mm (21 in)",
+   "message": "A104 Bathroom 1: front clearance 1206 mm.",
+   "point": [
+    5.02,
+    -10.026,
+    0.0
+   ],
+   "related": [
+    {
+     "globalId": "02A38ateT5NgmAdzUlg9_5",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Tank:Private - 6.1 Lpf:Private - 6.1 Lpf:582915",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.39461,
+    "y": 0.55362
+   }
+  },
+  {
+   "id": "duplex-145",
+   "rule": "IRC-R307.1-front",
+   "status": "pass",
+   "target": {
+    "globalId": "2h405XijT83A$BX7w5ki4m",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Water Closet - Flush Tank:Private - 6.1 Lpf:Private - 6.1 Lpf:582918",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "B104 Bathroom 1",
+   "measured": "1206 mm (47.48 in) clear in front",
+   "required": "≥ 533 mm (21 in)",
+   "message": "B104 Bathroom 1: front clearance 1206 mm.",
+   "point": [
+    3.78,
+    -7.774,
+    0.0
+   ],
+   "related": [
+    {
+     "globalId": "2h405XijT83A$BX7w5ki4m",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Tank:Private - 6.1 Lpf:Private - 6.1 Lpf:582918",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.35286,
+    "y": 0.44638
+   }
+  },
+  {
+   "id": "duplex-146",
+   "rule": "IRC-R307.1-front",
+   "status": "pass",
+   "target": {
+    "globalId": "2h405XijT83A$BX7w5ki4x",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Water Closet - Flush Tank:Private - 6.1 Lpf:Private - 6.1 Lpf:582925",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 2",
+   "room": "A204 Bathroom 2",
+   "measured": "1275 mm (50.20 in) clear in front",
+   "required": "≥ 533 mm (21 in)",
+   "message": "A204 Bathroom 2: front clearance 1275 mm.",
+   "point": [
+    5.019,
+    -9.896,
+    3.1
+   ],
+   "related": [
+    {
+     "globalId": "2h405XijT83A$BX7w5ki4x",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Tank:Private - 6.1 Lpf:Private - 6.1 Lpf:582925",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.39458,
+    "y": 0.54743
+   }
+  },
+  {
+   "id": "duplex-147",
+   "rule": "IRC-R307.1-front",
+   "status": "pass",
+   "target": {
+    "globalId": "2h405XijT83A$BX7w5ki4a",
+    "ifcClass": "IfcFlowTerminal",
+    "name": "M_Water Closet - Flush Tank:Private - 6.1 Lpf:Private - 6.1 Lpf:582930",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 2",
+   "room": "B204 Bathroom 2",
+   "measured": "1274 mm (50.16 in) clear in front",
+   "required": "≥ 533 mm (21 in)",
+   "message": "B204 Bathroom 2: front clearance 1274 mm.",
+   "point": [
+    3.78,
+    -7.92,
+    3.1
+   ],
+   "related": [
+    {
+     "globalId": "2h405XijT83A$BX7w5ki4a",
+     "ifcClass": "IfcFlowTerminal",
+     "name": "M_Water Closet - Flush Tank:Private - 6.1 Lpf:Private - 6.1 Lpf:582930",
+     "model": "Duplex_MEP_20110907.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.35286,
+    "y": 0.45333
+   }
+  },
+  {
+   "id": "duplex-148",
+   "rule": "IRC-R311.7.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0wkEuT1wr1kOyafLY4v_O1",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Residential - 200mm Max Riser 250mm Tread:151086",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit A stair (A105 Stair)",
+   "measured": "1000 mm (39.37 in) wide",
+   "required": "≥ 914 mm (36 in)",
+   "message": "Unit A stair (A105 Stair): 1000 mm wide.",
+   "point": [
+    7.876,
+    -9.939,
+    1.525
+   ],
+   "related": [
+    {
+     "globalId": "1oKjKg9PD3fP1iIwXLh3lK",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1",
+     "model": "duplex.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.49077,
+    "y": 0.54948
+   }
+  },
+  {
+   "id": "duplex-149",
+   "rule": "IRC-R311.7.1",
+   "status": "pass",
+   "target": {
+    "globalId": "21ldoMpbP4VfsJ0XGY_34d",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Residential - 200mm Max Riser 250mm Tread:198878",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit B stair (B105 Room)",
+   "measured": "1000 mm (39.37 in) wide",
+   "required": "≥ 914 mm (36 in)",
+   "message": "Unit B stair (B105 Room): 1000 mm wide.",
+   "point": [
+    0.924,
+    -7.861,
+    1.525
+   ],
+   "related": [
+    {
+     "globalId": "3KMJUyUe9DfQ2FOCd5ZoiN",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Residential - 200mm Max Riser 250mm Tread:198878:1",
+     "model": "duplex.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.2567,
+    "y": 0.45052
+   }
+  },
+  {
+   "id": "duplex-150",
+   "rule": "IRC-R311.7.5.1",
+   "status": "pass",
+   "target": {
+    "globalId": "0wkEuT1wr1kOyafLY4v_O1",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Residential - 200mm Max Riser 250mm Tread:151086",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit A stair (A105 Stair)",
+   "measured": "194 mm (7.63 in) risers",
+   "required": "≤ 196 mm (7-3/4 in)",
+   "message": "Unit A stair (A105 Stair): risers 194 mm.",
+   "point": [
+    7.876,
+    -9.939,
+    1.525
+   ],
+   "related": [
+    {
+     "globalId": "1oKjKg9PD3fP1iIwXLh3lK",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1",
+     "model": "duplex.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.49077,
+    "y": 0.54948
+   }
+  },
+  {
+   "id": "duplex-151",
+   "rule": "IRC-R311.7.5.1",
+   "status": "pass",
+   "target": {
+    "globalId": "21ldoMpbP4VfsJ0XGY_34d",
+    "ifcClass": "IfcStair",
+    "name": "Stair:Residential - 200mm Max Riser 250mm Tread:198878",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit B stair (B105 Room)",
+   "measured": "194 mm (7.63 in) risers",
+   "required": "≤ 196 mm (7-3/4 in)",
+   "message": "Unit B stair (B105 Room): risers 194 mm.",
+   "point": [
+    0.924,
+    -7.861,
+    1.525
+   ],
+   "related": [
+    {
+     "globalId": "3KMJUyUe9DfQ2FOCd5ZoiN",
+     "ifcClass": "IfcStairFlight",
+     "name": "Stair:Residential - 200mm Max Riser 250mm Tread:198878:1",
+     "model": "duplex.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.2567,
+    "y": 0.45052
+   }
+  },
+  {
+   "id": "duplex-152",
+   "rule": "IRC-R311.7.8",
+   "status": "fail",
+   "target": {
+    "globalId": "0wkEuT1wr1kOyafLY4v_PL",
+    "ifcClass": "IfcRailing",
+    "name": "Railing:900mm Handrail Only:151162",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit A stair (A105 Stair)",
+   "measured": "railing ≈ 2957 mm (116.41 in) tall",
+   "required": "864–965 mm (34–38 in) above the nosings",
+   "message": "Unit A stair (A105 Stair): handrail ≈ 2957 mm, outside the 34–38 in range.",
+   "point": [
+    7.876,
+    -9.939,
+    1.525
+   ],
+   "related": [
+    {
+     "globalId": "0wkEuT1wr1kOyafLY4v_O1",
+     "ifcClass": "IfcStair",
+     "name": "Stair:Residential - 200mm Max Riser 250mm Tread:151086",
+     "model": "duplex.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.49077,
+    "y": 0.54948
+   }
+  },
+  {
+   "id": "duplex-153",
+   "rule": "IRC-R311.7.8",
+   "status": "fail",
+   "target": {
+    "globalId": "21ldoMpbP4VfsJ0XGY_34P",
+    "ifcClass": "IfcRailing",
+    "name": "Railing:900mm Handrail Only:198880",
+    "model": "duplex.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Unit B stair (B105 Room)",
+   "measured": "railing ≈ 2957 mm (116.41 in) tall",
+   "required": "864–965 mm (34–38 in) above the nosings",
+   "message": "Unit B stair (B105 Room): handrail ≈ 2957 mm, outside the 34–38 in range.",
+   "point": [
+    0.924,
+    -7.861,
+    1.525
+   ],
+   "related": [
+    {
+     "globalId": "21ldoMpbP4VfsJ0XGY_34d",
+     "ifcClass": "IfcStair",
+     "name": "Stair:Residential - 200mm Max Riser 250mm Tread:198878",
+     "model": "duplex.ifc"
+    }
+   ],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.2567,
+    "y": 0.45052
+   }
+  },
+  {
+   "id": "duplex-154",
+   "rule": "IRC-R314.3-story",
+   "status": "pass",
+   "target": {
+    "globalId": "1d7reBWpf0fORIZse0_foY",
+    "ifcClass": "IfcFlowController",
+    "name": "M_Smoke Detector:Smoke Detector:Smoke Detector:610280",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 1",
+   "room": "Level 1",
+   "measured": "2 smoke alarm(s) on Level 1",
+   "required": "≥ 1 smoke alarm per story",
+   "message": "Level 1: 2 smoke alarm(s).",
+   "point": [
+    6.604,
+    -12.648,
+    2.6
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-101",
+    "page": 2,
+    "x": 0.44795,
+    "y": 0.67848
+   }
+  },
+  {
+   "id": "duplex-155",
+   "rule": "IRC-R314.3-story",
+   "status": "pass",
+   "target": {
+    "globalId": "1l2cgO2D5FS9t6u8i4Cve3",
+    "ifcClass": "IfcFlowController",
+    "name": "M_Smoke Detector:Smoke Detector:Smoke Detector:610319",
+    "model": "Duplex_MEP_20110907.ifc"
+   },
+   "storey": "Level 2",
+   "room": "Level 2",
+   "measured": "4 smoke alarm(s) on Level 2",
+   "required": "≥ 1 smoke alarm per story",
+   "message": "Level 2: 4 smoke alarm(s).",
+   "point": [
+    6.587,
+    -13.156,
+    5.7
+   ],
+   "related": [],
+   "sheet": {
+    "number": "A-102",
+    "page": 3,
+    "x": 0.44737,
+    "y": 0.70267
+   }
+  },
+  {
+   "id": "duplex-156",
+   "rule": "IRC-R314.3-story",
+   "status": "fail",
+   "target": {
+    "globalId": "0pNy6pOyf7JPmXRLgxs3sW",
+    "ifcClass": "IfcSpace",
+    "name": "R301 Roof",
+    "model": "duplex.ifc"
+   },
+   "storey": "Roof",
+   "room": "Roof",
+   "measured": "0 smoke alarm(s) on Roof",
+   "required": "≥ 1 smoke alarm per story",
+   "message": "Roof: no smoke alarm on this story.",
+   "point": [
+    4.4,
+    -8.9,
+    7.2
+   ],
+   "related": [],
+   "sheet": null
   }
  ]
 }

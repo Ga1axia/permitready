@@ -1,5 +1,13 @@
-"""Ten checks from the 2021 International Residential Code (IRC), written
-against what a Revit-exported residential model carries.
+"""Code checks for Boston, Massachusetts, written against what a Revit-exported
+residential model carries.
+
+Boston enforces the Massachusetts State Building Code, 780 CMR — its Residential
+Volume (780 CMR 51.00, the Massachusetts Residential Code, 10th Edition) adopts
+the 2021 IRC with Massachusetts amendments. Rules cite the IRC section as
+adopted into 780 CMR 51; electrical rules follow the Massachusetts Electrical
+Code (527 CMR 12, the amended NEC) and plumbing the state plumbing code
+(248 CMR). Boston adds local administration through the City's Inspectional
+Services Department, but the technical thresholds here are the 780 CMR ones.
 
 Each rule lists what complies and what violates in plain terms, then reports
 every element or room it examined. A finding is anchored on an element in
@@ -15,7 +23,8 @@ from shapely.geometry import LineString, Point
 
 from .context import MM_PER_IN, Context, Device, Space, inches, sq_ft
 
-CODE = '2021 International Residential Code (IRC)'
+CODE = '780 CMR — Massachusetts State Building Code, 10th Ed. (Residential Volume, 780 CMR 51.00, adopting the 2021 IRC with Massachusetts amendments), as enforced in Boston'
+
 
 
 @dataclass
@@ -163,7 +172,7 @@ def _sleeping_area_halls(ctx: Context) -> list[tuple[Space, list[Space]]]:
 
 @rule(
     id='IRC-R310.1',
-    section='R310.1, R310.2',
+    section='780 CMR 51 · R310.1, R310.2',
     title='Emergency escape and rescue opening in every sleeping room',
     complies='Every bedroom has an operable window or exterior door with at least 5.7 sq ft net clear opening '
              '(5.0 sq ft at grade floor), at least 24 in clear height and 20 in clear width, sill no more than 44 in above the floor.',
@@ -229,7 +238,7 @@ def _stair_label(ctx: Context, st, flights) -> str:
 
 @rule(
     id='IRC-R311.7.5.2',
-    section='R311.7.5.2',
+    section='780 CMR 51 · R311.7.5.2',
     title='Stair tread depth',
     complies='Tread depth at least 10 in (254 mm), measured horizontally nosing to nosing; the largest and smallest tread in a flight within 3/8 in.',
     violates='Any tread shallower than 10 in.',
@@ -255,7 +264,7 @@ def tread_depth(ctx: Context) -> list[Finding]:
 
 @rule(
     id='IRC-R311.7.5.3',
-    section='R311.7.5.3',
+    section='780 CMR 51 · R311.7.5.3',
     title='Stair nosing projection',
     complies='Where treads are under 11 in deep, a nosing of 3/4 in to 1-1/4 in (19–32 mm) on every tread of a stair with solid risers, uniform within 3/8 in.',
     violates='Treads under 11 in with no nosing or one under 3/4 in.',
@@ -288,7 +297,7 @@ def nosing(ctx: Context) -> list[Finding]:
 
 @rule(
     id='IRC-R308.4.3',
-    section='R308.4.3',
+    section='780 CMR 51 · R308.4.3',
     title='Safety glazing in hazardous window locations',
     complies='Glazing that meets all four conditions (pane over 9 sq ft, bottom edge under 18 in above the floor, top edge over 36 in, '
              'walking surface within 36 in) is tempered or laminated safety glazing; any other window may be annealed.',
@@ -323,7 +332,7 @@ def safety_glazing(ctx: Context) -> list[Finding]:
 
 @rule(
     id='IRC-R302.3',
-    section='R302.3',
+    section='780 CMR 51 · R302.3',
     title='Two-family dwelling separation',
     complies='The wall separating the two dwelling units is fire-resistance rated for 1 hour (1/2 hour where the building is '
              'sprinklered per NFPA 13D), continuous to the underside of the roof deck.',
@@ -383,7 +392,7 @@ def _hours(rating) -> float | None:
 
 @rule(
     id='IRC-R314.3',
-    section='R314.3',
+    section='780 CMR 51 · R314.3',
     title='Smoke alarm locations',
     complies='A smoke alarm in each sleeping room, outside each separate sleeping area in the immediate vicinity of the bedrooms, '
              'and on each story.',
@@ -415,7 +424,7 @@ def smoke_alarms(ctx: Context) -> list[Finding]:
 
 @rule(
     id='IRC-R315.2',
-    section='R315.2.1, R315.3',
+    section='780 CMR 51 · R315.2.1, R315.3',
     title='Carbon monoxide alarms where there are fuel-burning appliances',
     complies='A dwelling unit with a fuel-burning appliance has a CO alarm outside each separate sleeping area in the immediate '
              'vicinity of the bedrooms (and in any bedroom that contains such an appliance).',
@@ -457,7 +466,7 @@ def _whole_house_ventilation(ctx: Context) -> list[Device]:
 
 @rule(
     id='IRC-R303.1',
-    section='R303.1',
+    section='780 CMR 51 · R303.1',
     title='Habitable room ventilation',
     complies='Openable area to the outdoors (operable windows, exterior doors) of at least 4% of each habitable room’s floor area, '
              'or a whole-house mechanical ventilation system per M1505.4.',
@@ -489,7 +498,7 @@ def room_ventilation(ctx: Context) -> list[Finding]:
 
 @rule(
     id='IRC-R303.3',
-    section='R303.3, M1505',
+    section='780 CMR 51 · R303.3, M1505',
     title='Bathroom ventilation',
     complies='Each bathroom has a window of at least 3 sq ft, half of it openable, or a mechanical exhaust to the outdoors '
              '(50 cfm intermittent or 20 cfm continuous).',
@@ -520,7 +529,7 @@ def bathroom_ventilation(ctx: Context) -> list[Finding]:
 
 @rule(
     id='IRC-R307.1',
-    section='R307.1, P2705.1',
+    section='780 CMR 51 · R307.1, P2705.1',
     title='Plumbing fixture clearances',
     complies='Water closets and lavatories at least 15 in (381 mm) from their centre to a side wall or obstruction, and at least '
              '30 in (762 mm) centre to centre from an adjacent fixture.',
@@ -607,3 +616,704 @@ def _side_clearance(s: Space, f: Device, facing, edge) -> float | None:
             d = min(Point(x, y).distance(q) for q in pts) * 1000
             best = d if best is None else min(best, d)
     return best
+
+
+# ════════════════════════════════════════════════════════════════════════════
+#  Twenty further checks. Each examines only what a sample actually carries and
+#  reports a pass/fail per element or room; a sample missing the relevant
+#  element (e.g. the office has no MEP devices) simply yields no findings for
+#  that rule rather than failing to run.
+# ════════════════════════════════════════════════════════════════════════════
+
+
+# ---------------------------------------------------------------- 11. ceiling height
+
+
+@rule(
+    id='IRC-R305.1',
+    section='780 CMR 51 · R305.1',
+    title='Minimum ceiling height in habitable rooms',
+    complies='Habitable rooms, hallways and portions of basements with habitable space have a ceiling height of at least '
+             '7 ft (2134 mm); bathrooms and toilet rooms at least 6 ft 8 in (2032 mm).',
+    violates='A habitable room with a finished ceiling under 7 ft.',
+    fix='Raise the ceiling or reclassify the low space as non-habitable (storage) on the plans.',
+)
+def ceiling_height(ctx: Context) -> list[Finding]:
+    out = []
+    for s in ctx.spaces:
+        if not _is(s, HABITABLE):
+            continue
+        h = (s.ceiling - s.floor) * 1000
+        if h < 300:  # a slab-to-slab space with no real ceiling reading
+            continue
+        ok = h >= 2134 - 1
+        out.append(_finding(
+            ctx, 'IRC-R305.1', ok, _space_ref(s), _room_point(s, (s.ceiling - s.floor) - 0.1), s.label,
+            f'{h:.0f} mm ({inches(h)})', '≥ 2134 mm (7 ft)',
+            f'{s.label}: ceiling {h:.0f} mm, {2134 - h:.0f} mm short of 7 ft.' if not ok else f'{s.label}: ceiling {h:.0f} mm.',
+            storey=s.storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 12. minimum room area
+
+
+@rule(
+    id='IRC-R304.1',
+    section='780 CMR 51 · R304.1',
+    title='Minimum habitable room area',
+    complies='Every habitable room has at least 70 sq ft (6.5 m²) of floor area (kitchens are exempt from the 70 sq ft minimum).',
+    violates='A habitable room — other than a kitchen — smaller than 70 sq ft.',
+    fix='Combine the undersized room with an adjacent space, or reclassify it as an alcove/closet.',
+)
+def room_area(ctx: Context) -> list[Finding]:
+    out = []
+    for s in ctx.spaces:
+        if not _is(s, HABITABLE) or 'kitchen' in s.name.lower():
+            continue
+        area = s.outline.area
+        ok = area >= 6.5 - 0.01
+        out.append(_finding(
+            ctx, 'IRC-R304.1', ok, _space_ref(s), _room_point(s), s.label,
+            f'{area:.1f} m² ({sq_ft(area)})', '≥ 6.5 m² (70 sq ft)',
+            f'{s.label}: {sq_ft(area)}, below the 70 sq ft minimum.' if not ok else f'{s.label}: {sq_ft(area)}.',
+            storey=s.storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 13. minimum room width
+
+
+@rule(
+    id='IRC-R304.2',
+    section='780 CMR 51 · R304.2',
+    title='Minimum habitable room dimension',
+    complies='Habitable rooms are at least 7 ft (2134 mm) in any horizontal direction.',
+    violates='A habitable room with a least-width under 7 ft.',
+    fix='Widen the room, or merge the narrow strip into the adjoining space.',
+)
+def room_width(ctx: Context) -> list[Finding]:
+    out = []
+    for s in ctx.spaces:
+        if not _is(s, HABITABLE):
+            continue
+        width = _least_width(s) * 1000
+        if width <= 0:
+            continue
+        ok = width >= 2134 - 1
+        out.append(_finding(
+            ctx, 'IRC-R304.2', ok, _space_ref(s), _room_point(s), s.label,
+            f'{width:.0f} mm ({inches(width)}) least width', '≥ 2134 mm (7 ft)',
+            f'{s.label}: narrowest span {width:.0f} mm, under 7 ft.' if not ok else f'{s.label}: least width {width:.0f} mm.',
+            storey=s.storey,
+        ))
+    return out
+
+
+def _least_width(s: Space) -> float:
+    """Smallest side of the room's bounding rectangle (a cheap least-width proxy)."""
+    minx, miny, maxx, maxy = s.outline.bounds
+    return max(0.0, min(maxx - minx, maxy - miny))
+
+
+# ---------------------------------------------------------------- 14. natural light
+
+
+@rule(
+    id='IRC-R303.1-light',
+    section='780 CMR 51 · R303.1',
+    title='Natural light in habitable rooms',
+    complies='Glazing area opening to the outdoors of at least 8% of each habitable room’s floor area (artificial light at '
+             '6 fc is an accepted alternative).',
+    violates='A habitable room whose total glazing is under 8% of its floor area.',
+    fix='Enlarge or add a window, or document compliant artificial lighting for the room.',
+)
+def natural_light(ctx: Context) -> list[Finding]:
+    out = []
+    for s in ctx.spaces:
+        if not _is(s, HABITABLE):
+            continue
+        area = s.outline.area
+        glazing = sum((w.width or 0) * (w.height or 0) for w in ctx.data.windows if s.number in w.rooms)
+        need = 0.08 * area
+        ok = glazing >= need
+        out.append(_finding(
+            ctx, 'IRC-R303.1-light', ok, _space_ref(s), _room_point(s), s.label,
+            f'{glazing:.2f} m² glazing ({sq_ft(glazing)}) for {area:.1f} m² floor', f'≥ {need:.2f} m² ({sq_ft(need)}), 8% of floor',
+            f'{s.label}: glazing {glazing:.2f} m², needs {need:.2f} m².' if not ok else f'{s.label}: daylight adequate.',
+            storey=s.storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 15. landing at doors
+
+
+@rule(
+    id='IRC-R311.3',
+    section='780 CMR 51 · R311.3',
+    title='Floor or landing at exterior doors',
+    complies='A landing or floor on each side of every required egress door, no more than 1-1/2 in (38 mm) lower than the '
+             'threshold, at least as wide as the door and 36 in (914 mm) deep in the direction of travel.',
+    violates='An exterior egress door that opens into a room too shallow to hold a 36 in landing.',
+    fix='Provide a 36 in deep landing at the door, or relocate the door to a space that can hold one.',
+)
+def door_landing(ctx: Context) -> list[Finding]:
+    out = []
+    for d in ctx.data.doors:
+        if not d.external:
+            continue
+        rooms = [ctx.space_by_number(n) for n in d.rooms]
+        inner = next((r for r in rooms if r), None)
+        if inner is None:
+            continue
+        depth = _least_width(inner) * 1000
+        ok = depth >= 914 - 1
+        out.append(_finding(
+            ctx, 'IRC-R311.3', ok, _ref(ctx, d.guid), _opening_point(ctx, d), inner.label,
+            f'{depth:.0f} mm ({inches(depth)}) clear in front of the door', '≥ 914 mm (36 in) landing depth',
+            f'Door {d.mark} ({inner.label}): only {depth:.0f} mm in front, not enough for a 36 in landing.' if not ok
+            else f'Door {d.mark}: landing depth adequate.',
+            storey=d.level,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 16. egress door size
+
+
+@rule(
+    id='IRC-R311.2',
+    section='780 CMR 51 · R311.2',
+    title='Required egress door size',
+    complies='At least one side-hinged egress door per dwelling, at least 32 in (813 mm) clear width and 78 in (1981 mm) clear height.',
+    violates='A unit whose widest exterior door is under 32 in clear.',
+    fix='Widen the main entry door to a 36 in leaf (≈ 34 in clear), or designate a compliant door as the egress door.',
+)
+def egress_door(ctx: Context) -> list[Finding]:
+    units: dict[str, list[Opening]] = {}
+    for d in ctx.data.doors:
+        if not d.external:
+            continue
+        rooms = [ctx.space_by_number(n) for n in d.rooms]
+        unit = next((r.unit for r in rooms if r and r.unit), '')
+        units.setdefault(unit, []).append(d)
+    out = []
+    for unit, doors in units.items():
+        widest = max(doors, key=lambda d: d.width or 0)
+        w = (widest.width or 0) * 1000
+        ok = w >= 813 - 1
+        label = f'Unit {unit}' if unit else 'Building entry'
+        out.append(_finding(
+            ctx, 'IRC-R311.2', ok, _ref(ctx, widest.guid), _opening_point(ctx, widest), label,
+            f'widest egress door {w:.0f} mm ({inches(w)}) leaf', '≥ 813 mm (32 in) clear',
+            f'{label}: widest exterior door is only {w:.0f} mm, under the 32 in egress minimum.' if not ok
+            else f'{label}: egress door {w:.0f} mm.',
+            storey=widest.level,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 17. hallway width
+
+
+@rule(
+    id='IRC-R311.6',
+    section='780 CMR 51 · R311.6',
+    title='Minimum hallway width',
+    complies='Hallways at least 3 ft (914 mm) wide.',
+    violates='A corridor or hallway narrower than 36 in.',
+    fix='Widen the hall to 36 in clear between finished wall faces.',
+)
+def hallway_width(ctx: Context) -> list[Finding]:
+    out = []
+    for s in ctx.spaces:
+        if not any(k in s.name.lower() for k in ('hall', 'corridor', 'passage')):
+            continue
+        width = _least_width(s) * 1000
+        if width <= 0:
+            continue
+        ok = width >= 914 - 1
+        out.append(_finding(
+            ctx, 'IRC-R311.6', ok, _space_ref(s), _room_point(s), s.label,
+            f'{width:.0f} mm ({inches(width)}) clear width', '≥ 914 mm (36 in)',
+            f'{s.label}: {width:.0f} mm wide, under the 36 in minimum.' if not ok else f'{s.label}: {width:.0f} mm.',
+            storey=s.storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 18. window fall protection
+
+
+@rule(
+    id='IRC-R312.2',
+    section='780 CMR 51 · R312.2.1',
+    title='Window fall protection',
+    complies='Where the sill of an operable window is less than 24 in (610 mm) above the finished floor and more than 72 in '
+             '(1829 mm) above the exterior grade, the window limits its opening to 4 in or has a fall-prevention device.',
+    violates='A low operable window on an upper storey with no opening limiter noted.',
+    fix='Specify opening-control devices or window guards on low sills above the ground floor.',
+)
+def window_fall(ctx: Context) -> list[Finding]:
+    storeys = sorted(ctx.data.storeys, key=lambda s: s.elevation)
+    upper = {s.name for s in storeys[1:]} if len(storeys) > 1 else set()
+    out = []
+    for w in ctx.data.windows:
+        if w.sill is None or w.level not in upper or not _window_operable(ctx, w.guid):
+            continue
+        if w.sill * 1000 >= 610:
+            continue
+        ps = _psets(ctx, w.guid)
+        limited = bool(_pset(ps, 'Opening Limit', 'Fall Protection', 'OpeningControlDevice'))
+        out.append(_finding(
+            ctx, 'IRC-R312.2', limited, _ref(ctx, w.guid), _opening_point(ctx, w), ', '.join(w.rooms),
+            f'sill {inches(w.sill * 1000)} above floor on {w.level}, limiter: {"yes" if limited else "none noted"}',
+            'opening ≤ 4 in or fall-prevention device',
+            f'Window {w.mark} on {w.level}: low sill ({inches(w.sill * 1000)}) with no fall protection noted.' if not limited
+            else f'Window {w.mark}: fall protection noted.',
+            storey=w.level,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 19. guard at stairs/floors
+
+
+@rule(
+    id='IRC-R312.1',
+    section='780 CMR 51 · R312.1.1, R312.1.2',
+    title='Guards at walking surfaces over 30 in',
+    complies='Guards at least 36 in (914 mm) high along open-sided walking surfaces, including stairs and landings, more than '
+             '30 in (762 mm) above the floor or grade below.',
+    violates='A raised floor edge, stair or landing over 30 in up with no guard element modeled.',
+    fix='Add a 36 in guard (with ≤ 4 in sphere-rule infill) along the open edges.',
+)
+def guards(ctx: Context) -> list[Finding]:
+    rails = [el for el in ctx.arch.by_type('IfcRailing')]
+    out = []
+    for st, ps, flights, storey in _stairs(ctx):
+        near = _rail_near(ctx, rails, _stair_point(ctx, st, flights))
+        ok = near is not None
+        label = _stair_label(ctx, st, flights)
+        height = ''
+        if near is not None:
+            lo, hi = ctx.bbox(near)
+            height = f', guard ≈ {(hi[2] - lo[2]) * 1000:.0f} mm'
+        out.append(_finding(
+            ctx, 'IRC-R312.1', ok, _ref(ctx, st.GlobalId), _stair_point(ctx, st, flights), label,
+            f'{"a railing is present" if ok else "no railing modeled nearby"}{height}', 'guard ≥ 914 mm (36 in) at open edges > 30 in',
+            f'{label}: no guard/railing modeled at the stair.' if not ok else f'{label}: guard present.',
+            [_ref(ctx, near.GlobalId)] if near is not None else [], storey=storey,
+        ))
+    return out
+
+
+def _rail_near(ctx: Context, rails, p, radius: float = 3.0):
+    best, bestd = None, radius
+    for r in rails:
+        try:
+            lo, hi = ctx.bbox(r)
+        except Exception:
+            continue
+        c = ((lo[0] + hi[0]) / 2, (lo[1] + hi[1]) / 2)
+        d = math.dist(c, p[:2])
+        if d < bestd:
+            best, bestd = r, d
+    return best
+
+
+# ---------------------------------------------------------------- 20. kitchen counter receptacles
+
+
+@rule(
+    id='IRC-E3901.4',
+    section='780 CMR 51 · E3901.4',
+    title='Kitchen counter receptacles',
+    complies='A receptacle outlet serving each kitchen counter space, so no point along the counter wall line is more than '
+             '24 in (610 mm) from one (two or more outlets at a typical kitchen).',
+    violates='A kitchen with fewer than two small-appliance receptacles modeled.',
+    fix='Add counter-top receptacles on 20 A small-appliance branch circuits, spaced so every point is within 24 in of one.',
+)
+def kitchen_receptacles(ctx: Context) -> list[Finding]:
+    recep = ctx.devices_named('receptacle', 'outlet', 'socket')
+    if not recep:
+        return []
+    out = []
+    for s in ctx.spaces:
+        if 'kitchen' not in s.name.lower():
+            continue
+        here = [r for r in recep if r.space is s]
+        ok = len(here) >= 2
+        out.append(_finding(
+            ctx, 'IRC-E3901.4', ok, _space_ref(s), here[0].point if here else _room_point(s), s.label,
+            f'{len(here)} receptacle(s) modeled', '≥ 2 counter receptacles, none > 24 in from a point on the counter',
+            f'{s.label}: only {len(here)} receptacle(s) — kitchen counters need small-appliance outlets within 24 in.' if not ok
+            else f'{s.label}: {len(here)} receptacles.',
+            [_dev(r) for r in here], storey=s.storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 21. bathroom receptacle
+
+
+@rule(
+    id='IRC-E3901.6',
+    section='780 CMR 51 · E3901.6',
+    title='Bathroom receptacle',
+    complies='At least one receptacle outlet within 36 in (914 mm) of the outside edge of each lavatory basin, on a 20 A circuit.',
+    violates='A bathroom with a lavatory and no receptacle modeled.',
+    fix='Add a GFCI-protected receptacle beside the lavatory on a dedicated 20 A bathroom circuit.',
+)
+def bathroom_receptacle(ctx: Context) -> list[Finding]:
+    recep = ctx.devices_named('receptacle', 'outlet', 'socket')
+    if not recep:
+        return []
+    out = []
+    for s in ctx.spaces:
+        if not any(k in s.name.lower() for k in ('bath', 'toilet', 'wc', 'powder')):
+            continue
+        here = [r for r in recep if r.space is s]
+        ok = bool(here)
+        out.append(_finding(
+            ctx, 'IRC-E3901.6', ok, _space_ref(s), here[0].point if here else _room_point(s), s.label,
+            f'{len(here)} receptacle(s) modeled', '≥ 1 receptacle within 36 in of the lavatory',
+            f'{s.label}: no receptacle modeled near the lavatory.' if not ok else f'{s.label}: receptacle present.',
+            [_dev(r) for r in here], storey=s.storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 22. GFCI protection
+
+
+@rule(
+    id='IRC-E3902',
+    section='780 CMR 51 · E3902.1–E3902.11',
+    title='GFCI protection in wet locations',
+    complies='Receptacles in bathrooms, kitchens (serving counters), garages, and outdoors are GFCI-protected.',
+    violates='A receptacle in a wet-location room with no GFCI protection noted.',
+    fix='Protect the circuit with a GFCI breaker or GFCI receptacle.',
+)
+def gfci(ctx: Context) -> list[Finding]:
+    recep = ctx.devices_named('receptacle', 'outlet', 'socket')
+    if not recep:
+        return []
+    wet = ('bath', 'toilet', 'wc', 'powder', 'kitchen', 'garage', 'laundry', 'utility')
+    out = []
+    for r in recep:
+        s = r.space
+        if s is None or not any(k in s.name.lower() for k in wet):
+            continue
+        text = (r.name + ' ' + ' '.join(str(v) for p in r.psets.values() for v in p.values())).lower()
+        ok = 'gfci' in text or 'gfi' in text or 'ground fault' in text
+        out.append(_finding(
+            ctx, 'IRC-E3902', ok, _dev(r), r.point, s.label,
+            f'{r.name.split(":")[0]}: {"GFCI noted" if ok else "no GFCI noted"}', 'GFCI protection in wet locations',
+            f'{s.label}: receptacle "{r.name.split(":")[0]}" has no GFCI protection noted.' if not ok
+            else f'{s.label}: GFCI protection noted.',
+            storey=s.storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 23. lighting outlet per room
+
+
+@rule(
+    id='IRC-E3903.2',
+    section='780 CMR 51 · E3903.2',
+    title='Lighting outlet in habitable rooms',
+    complies='At least one wall-switched lighting outlet in every habitable room, hallway, stairway, and bathroom.',
+    violates='A habitable room with no luminaire or lighting outlet modeled.',
+    fix='Add a switched lighting outlet (ceiling luminaire or switched receptacle) to the room.',
+)
+def lighting_outlet(ctx: Context) -> list[Finding]:
+    lights = ctx.devices_named('lighting', 'luminaire', 'light fixture', 'downlight', 'ceiling light')
+    if not lights:
+        return []
+    out = []
+    for s in ctx.spaces:
+        if not (_is(s, HABITABLE) or any(k in s.name.lower() for k in ('hall', 'stair', 'bath'))):
+            continue
+        here = [l for l in lights if l.space is s]
+        ok = bool(here)
+        out.append(_finding(
+            ctx, 'IRC-E3903.2', ok, _space_ref(s), here[0].point if here else _room_point(s, s.ceiling - s.floor - 0.1), s.label,
+            f'{len(here)} lighting outlet(s)', '≥ 1 switched lighting outlet',
+            f'{s.label}: no lighting outlet modeled.' if not ok else f'{s.label}: {len(here)} lighting outlet(s).',
+            [_dev(l) for l in here], storey=s.storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 24. water heater T&P relief
+
+
+@rule(
+    id='IRC-P2804.6',
+    section='780 CMR 51 · P2804.6.1',
+    title='Water heater relief valve discharge',
+    complies='Each water heater has a temperature-and-pressure relief valve with a discharge pipe run to a safe location.',
+    violates='A water heater with no relief-valve discharge modeled or noted.',
+    fix='Provide a T&P relief valve and a full-size discharge pipe terminating per P2804.6.1.',
+)
+def water_heater_relief(ctx: Context) -> list[Finding]:
+    # Only genuine heater/boiler appliances — never piping, pipe types, or
+    # fittings that merely carry "hot water" in their name.
+    def is_heater(d: Device) -> bool:
+        n = d.name.lower()
+        if any(k in n for k in ('pipe', 'fitting', 'valve', 'tee', 'elbow', 'coupling', 'segment')):
+            return False
+        if d.ifc_class in ('IfcPipeSegment', 'IfcPipeFitting', 'IfcFlowSegment', 'IfcFlowFitting'):
+            return False
+        appliance = d.ifc_class in ('IfcFlowStorageDevice', 'IfcTank', 'IfcBoiler', 'IfcEnergyConversionDevice')
+        named = any(k in n for k in ('water heater', 'hot water boiler', 'water boiler', 'dhw tank', 'storage tank'))
+        return named or (appliance and 'boiler' in n)
+
+    heaters = [d for d in ctx.devices if is_heater(d)]
+    if not heaters:
+        return []
+    out = []
+    for h in heaters:
+        text = (h.name + ' ' + ' '.join(str(v) for p in h.psets.values() for v in p.values())).lower()
+        ok = any(k in text for k in ('relief', 't&p', 'tpr', 'discharge'))
+        room = h.space.label if h.space else ''
+        out.append(_finding(
+            ctx, 'IRC-P2804.6', ok, _dev(h), h.point, room,
+            f'{h.name.split(":")[0]}: {"relief discharge noted" if ok else "no relief discharge noted"}',
+            'T&P relief valve with discharge to a safe location',
+            f'{room}: water heater "{h.name.split(":")[0]}" has no relief-valve discharge noted.' if not ok
+            else f'{room}: relief discharge noted.',
+            storey=ctx.storey_at(h.point[2]),
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 25. water closet clearance (front)
+
+
+@rule(
+    id='IRC-R307.1-front',
+    section='780 CMR 51 · R307.1, P2705.1',
+    title='Water closet front clearance',
+    complies='At least 21 in (533 mm) of clear space in front of a water closet, lavatory, or bidet.',
+    violates='A water closet with less than 21 in of clear floor in front of it.',
+    fix='Reposition the fixture or enlarge the room to give 21 in of front clearance.',
+)
+def wc_front_clearance(ctx: Context) -> list[Finding]:
+    wcs = [d for d in ctx.devices_named('water closet', 'toilet') if d.space and d.ifc_class == 'IfcFlowTerminal']
+    if not wcs:
+        return []
+    out = []
+    for f in wcs:
+        s = f.space
+        facing, _edge = _against_wall(s, f)
+        front = _front_clearance(s, f, facing)
+        if front is None:
+            continue
+        ok = front >= 533 - 1
+        out.append(_finding(
+            ctx, 'IRC-R307.1-front', ok, _dev(f), _front(f, facing), s.label,
+            f'{front:.0f} mm ({inches(front)}) clear in front', '≥ 533 mm (21 in)',
+            f'{s.label}: {f.name.split(":")[0]} has {front:.0f} mm in front, {533 - front:.0f} mm short of 21 in.' if not ok
+            else f'{s.label}: front clearance {front:.0f} mm.',
+            [_dev(f)], storey=s.storey,
+        ))
+    return out
+
+
+def _front_clearance(s: Space, f: Device, facing) -> float | None:
+    """mm from a wall-set fixture's front edge straight out to the opposite wall."""
+    if facing is None:
+        return None
+    x, y = f.point[0] + facing[0] * 0.25, f.point[1] + facing[1] * 0.25
+    ray = LineString([(x, y), (x + facing[0] * 10, y + facing[1] * 10)])
+    hit = ray.intersection(s.outline.exterior)
+    pts = [hit] if hit.geom_type == 'Point' else [g for g in getattr(hit, 'geoms', []) if g.geom_type == 'Point']
+    return min(Point(x, y).distance(q) for q in pts) * 1000 if pts else None
+
+
+# ---------------------------------------------------------------- 26. stair width
+
+
+@rule(
+    id='IRC-R311.7.1',
+    section='780 CMR 51 · R311.7.1',
+    title='Stairway width',
+    complies='Stairways at least 36 in (914 mm) wide above the handrail height, with no more than one handrail projecting 4-1/2 in.',
+    violates='A stair flight narrower than 36 in.',
+    fix='Widen the stair opening and flight to at least 36 in clear.',
+)
+def stair_width(ctx: Context) -> list[Finding]:
+    out = []
+    for st, ps, flights, storey in _stairs(ctx):
+        width = _pset(ps, 'Actual Run Width', 'RunWidth', 'Width')
+        if width is None and flights:
+            lo, hi = ctx.bbox(flights[0])
+            width = min(hi[0] - lo[0], hi[1] - lo[1])
+        if width is None:
+            continue
+        mm = float(width) * 1000
+        ok = mm >= 914 - 2
+        label = _stair_label(ctx, st, flights)
+        out.append(_finding(
+            ctx, 'IRC-R311.7.1', ok, _ref(ctx, st.GlobalId), _stair_point(ctx, st, flights), label,
+            f'{mm:.0f} mm ({inches(mm)}) wide', '≥ 914 mm (36 in)',
+            f'{label}: {mm:.0f} mm wide, under the 36 in minimum.' if not ok else f'{label}: {mm:.0f} mm wide.',
+            [_ref(ctx, fl.GlobalId) for fl in flights], storey=storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 27. riser height
+
+
+@rule(
+    id='IRC-R311.7.5.1',
+    section='780 CMR 51 · R311.7.5.1',
+    title='Stair riser height',
+    complies='Risers no more than 7-3/4 in (196 mm) high, the tallest and shortest within 3/8 in of each other.',
+    violates='Any riser taller than 7-3/4 in.',
+    fix='Add a riser to the flight to lower each step, or re-cut the stringers.',
+)
+def riser_height(ctx: Context) -> list[Finding]:
+    out = []
+    for st, ps, flights, storey in _stairs(ctx):
+        riser = _pset(ps, 'RiserHeight', 'Actual Riser Height', 'Maximum Riser Height')
+        if riser is None:
+            continue
+        mm = float(riser) * 1000
+        ok = mm <= 196 + 0.5
+        label = _stair_label(ctx, st, flights)
+        out.append(_finding(
+            ctx, 'IRC-R311.7.5.1', ok, _ref(ctx, st.GlobalId), _stair_point(ctx, st, flights), label,
+            f'{mm:.0f} mm ({inches(mm)}) risers', '≤ 196 mm (7-3/4 in)',
+            f'{label}: risers {mm:.0f} mm, {mm - 196:.0f} mm over the 7-3/4 in maximum.' if not ok else f'{label}: risers {mm:.0f} mm.',
+            [_ref(ctx, fl.GlobalId) for fl in flights], storey=storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 28. handrail height
+
+
+@rule(
+    id='IRC-R311.7.8',
+    section='780 CMR 51 · R311.7.8.1',
+    title='Handrail height on stairs',
+    complies='Handrails 34–38 in (864–965 mm) above the stair nosings, continuous the full length of each flight of four or more risers.',
+    violates='A stair of four or more risers with no handrail, or one outside 34–38 in.',
+    fix='Add a graspable handrail at 34–38 in above the nosings for the full flight.',
+)
+def handrail_height(ctx: Context) -> list[Finding]:
+    rails = [el for el in ctx.arch.by_type('IfcRailing')]
+    out = []
+    for st, ps, flights, storey in _stairs(ctx):
+        near = _rail_near(ctx, rails, _stair_point(ctx, st, flights))
+        label = _stair_label(ctx, st, flights)
+        if near is None:
+            out.append(_finding(
+                ctx, 'IRC-R311.7.8', False, _ref(ctx, st.GlobalId), _stair_point(ctx, st, flights), label,
+                'no handrail modeled', '34–38 in (864–965 mm) above the nosings',
+                f'{label}: no handrail modeled on a stair that needs one.',
+                storey=storey,
+            ))
+            continue
+        lo, hi = ctx.bbox(near)
+        h = (hi[2] - lo[2]) * 1000
+        ok = 864 - 25 <= h <= 965 + 25
+        out.append(_finding(
+            ctx, 'IRC-R311.7.8', ok, _ref(ctx, near.GlobalId), _stair_point(ctx, st, flights), label,
+            f'railing ≈ {h:.0f} mm ({inches(h)}) tall', '864–965 mm (34–38 in) above the nosings',
+            f'{label}: handrail ≈ {h:.0f} mm, outside the 34–38 in range.' if not ok else f'{label}: handrail ≈ {h:.0f} mm.',
+            [_ref(ctx, st.GlobalId)], storey=storey,
+        ))
+    return out
+
+
+# ---------------------------------------------------------------- 29. door between garage and dwelling
+
+
+@rule(
+    id='IRC-R302.5.1',
+    section='780 CMR 51 · R302.5.1',
+    title='Door between garage and dwelling',
+    complies='Doors between a garage and the residence are solid wood (1-3/8 in), solid or honeycomb-core steel (1-3/8 in), '
+             'or 20-minute fire-rated; no door opens directly into a sleeping room.',
+    violates='A garage-to-house door that is not rated/solid, or one opening into a bedroom.',
+    fix='Specify a 20-minute or 1-3/8 in solid-core door, and never into a sleeping room.',
+)
+def garage_door(ctx: Context) -> list[Finding]:
+    garages = {s.number for s in ctx.spaces if 'garage' in s.name.lower()}
+    if not garages:
+        return []
+    out = []
+    for d in ctx.data.doors:
+        touches = [ctx.space_by_number(n) for n in d.rooms]
+        touches = [r for r in touches if r]
+        if not any(r.number in garages for r in touches):
+            continue
+        other = [r for r in touches if r.number not in garages]
+        into_bed = any(_is(r, SLEEPING) for r in other)
+        rated = _hours(d.fire_rating)
+        name = _type_name_lower(ctx, d.guid)
+        solid = any(k in name for k in ('solid', 'steel', 'fire', 'metal'))
+        ok = (rated is not None and rated >= 1 / 3 or solid) and not into_bed
+        room = ', '.join(r.label for r in touches)
+        why = 'opens into a sleeping room' if into_bed else ('not solid/rated' if not (solid or rated) else '')
+        out.append(_finding(
+            ctx, 'IRC-R302.5.1', ok, _ref(ctx, d.guid), _opening_point(ctx, d), room,
+            f'rating: {d.fire_rating or "none"}, type: {name.split(":")[0] or "unknown"}',
+            '20-min rated or 1-3/8 in solid, not into a bedroom',
+            f'Garage door {d.mark} ({room}): {why}.' if not ok else f'Garage door {d.mark}: compliant.',
+            storey=d.level,
+        ))
+    return out
+
+
+def _type_name_lower(ctx: Context, guid: str) -> str:
+    el = ctx.arch.by_guid(guid)
+    import ifcopenshell.util.element as ue
+
+    t = ue.get_type(el)
+    return f'{el.Name or ""} {t.Name if t else ""}'.lower()
+
+
+# ---------------------------------------------------------------- 30. smoke alarm per storey
+
+
+@rule(
+    id='IRC-R314.3-story',
+    section='780 CMR 51 · R314.3(3)',
+    title='Smoke alarm on every story',
+    complies='A smoke alarm on each story of the dwelling, including basements and habitable attics.',
+    violates='A story with no smoke alarm anywhere on it.',
+    fix='Add an interconnected smoke alarm to the story with none.',
+)
+def smoke_alarm_per_story(ctx: Context) -> list[Finding]:
+    alarms = ctx.devices_named('smoke detector', 'smoke alarm')
+    if not alarms:
+        return []
+    out = []
+    for st in ctx.data.storeys:
+        on_story = [a for a in alarms if a.space and a.space.storey == st.name]
+        # pick a representative room on this story for the marker
+        rooms_here = [s for s in ctx.spaces if s.storey == st.name]
+        anchor = (on_story[0].point if on_story
+                  else (_room_point(rooms_here[0]) if rooms_here else (0.0, 0.0, st.elevation + 1.2)))
+        ref = (_dev(on_story[0]) if on_story
+               else (_space_ref(rooms_here[0]) if rooms_here else {'globalId': '', 'ifcClass': 'IfcBuildingStorey', 'name': st.name, 'model': ''}))
+        if not ref['globalId']:
+            continue
+        ok = bool(on_story)
+        out.append(_finding(
+            ctx, 'IRC-R314.3-story', ok, ref, anchor, st.name,
+            f'{len(on_story)} smoke alarm(s) on {st.name}', '≥ 1 smoke alarm per story',
+            f'{st.name}: no smoke alarm on this story.' if not ok else f'{st.name}: {len(on_story)} smoke alarm(s).',
+            storey=st.name,
+        ))
+    return out

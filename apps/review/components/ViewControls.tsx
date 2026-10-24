@@ -104,7 +104,7 @@ export function ViewToolbar() {
 
   return (
     <div
-      className={`${chrome} flex flex-wrap items-center gap-0.5 p-1`}
+      className={`${chrome} drafted-settle flex flex-wrap items-center gap-0.5 p-1`}
       role="toolbar"
       aria-label="View"
     >
@@ -286,7 +286,7 @@ export function FloorPicker() {
   return (
     <nav
       aria-label="Floors"
-      className={`${chrome} pointer-events-auto absolute z-[2] flex w-44 flex-col gap-0.5 p-1`}
+      className={`${chrome} drafted-settle pointer-events-auto absolute z-[2] flex w-44 flex-col gap-0.5 p-1`}
       style={{ left: pos.x, top: pos.y }}
     >
       <div

@@ -50,8 +50,9 @@ function statusBadge(fail: number) {
 
 function CodeRef({ report }: { report: CheckReport }) {
   return (
-    <div className="rounded-lg border border-rule bg-paper px-3 py-2.5">
-      <p className="font-medium text-ink text-xs">{report.code}</p>
+    <div className="drafted-frame drafted-settle bg-paper px-3 py-2.5">
+      <p className="text-[10px] text-ink-faint uppercase tracking-[0.08em]">Code reference</p>
+      <p className="mt-1 font-medium text-ink text-xs">{report.code}</p>
       <p className="mt-1 text-[11px] text-ink-faint leading-relaxed">
         Checked against <span className="font-mono text-ink-soft">{report.model}</span> on{' '}
         {report.generated}.
@@ -79,17 +80,20 @@ function CodeRef({ report }: { report: CheckReport }) {
 function FindingRow({
   finding,
   onSelect,
+  index = 0,
 }: {
   finding: CheckFinding
   onSelect: (finding: CheckFinding) => void
+  index?: number
 }) {
   const isFail = finding.status === 'fail'
   return (
     <button
       className={[
-        'group flex w-full items-start gap-2 rounded-md px-2 py-2 text-left transition-colors hover:bg-paper',
+        'drafted-ink-in group flex w-full items-start gap-2 rounded-md px-2 py-2 text-left transition-colors hover:bg-paper',
         isFail ? 'hover:bg-fail/5' : '',
       ].join(' ')}
+      style={{ animationDelay: `calc(${Math.min(index, 10)} * var(--drafted-stagger))` }}
       onClick={() => onSelect(finding)}
       type="button"
       title="Select in model"
@@ -188,8 +192,8 @@ function RuleAccordion({
           {/* Failures */}
           {fails.length > 0 && (
             <div className="px-1">
-              {fails.map((f) => (
-                <FindingRow finding={f} key={f.id} onSelect={onSelect} />
+              {fails.map((f, i) => (
+                <FindingRow finding={f} index={i} key={f.id} onSelect={onSelect} />
               ))}
             </div>
           )}
@@ -213,7 +217,9 @@ function RuleAccordion({
                 {passes.length} passing check{passes.length !== 1 ? 's' : ''}
               </button>
               {showPasses &&
-                passes.map((f) => <FindingRow finding={f} key={f.id} onSelect={onSelect} />)}
+                passes.map((f, i) => (
+                  <FindingRow finding={f} index={i} key={f.id} onSelect={onSelect} />
+                ))}
             </div>
           )}
         </div>
@@ -463,10 +469,13 @@ export function CodeCheckPanel({ buildingId }: Props) {
               return (
                 <div
                   className={[
-                    'flex items-center gap-2 px-3 py-2 transition-colors',
+                    'drafted-ink-in flex items-center gap-2 px-3 py-2 transition-colors',
                     done ? 'opacity-100' : current ? 'opacity-100' : 'opacity-40',
                   ].join(' ')}
                   key={rule.id}
+                  style={{
+                    animationDelay: `calc(${Math.min(i, 10)} * var(--drafted-stagger))`,
+                  }}
                 >
                   {done ? (
                     <CheckCircle className="size-3.5 shrink-0 text-pass" />
