@@ -109,10 +109,7 @@ const ItemControlsOverlay = ({
   const proceduralHeight = useMemo(
     () =>
       node?.type === 'procedural-item' ? evaluateRecipe(node.recipe, node.parameters).max[1] : 0,
-    [
-      node?.type === 'procedural-item' ? node.recipe : null,
-      node?.type === 'procedural-item' ? node.parameters : null,
-    ],
+    [node?.type, node?.recipe, node?.parameters],
   )
 
   let descriptors: ControlDescriptor[] = []

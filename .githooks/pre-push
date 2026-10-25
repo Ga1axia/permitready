@@ -1,31 +1,62 @@
 #!/usr/bin/env bash
-# Fast local mirror of the CI quality job for what this branch changes.
+# Fast local checks for the commits being pushed.
 # Full parity: `bun run ci`. Skip once with `git push --no-verify`.
 set -euo pipefail
 
 # GUI clients often omit Homebrew from PATH (same as pre-commit).
 export PATH="/opt/homebrew/bin:/usr/local/bin:${HOME}/.bun/bin:${PATH}"
 
-# Prefer the push remote's main; fall back to upstream (pascalorg) when this
-# clone's origin is a personal repo that does not yet have main.
-base_ref=
-for candidate in origin/main upstream/main; do
-  if git rev-parse --verify "$candidate" >/dev/null 2>&1; then
-    base_ref=$candidate
-    break
+zero=0000000000000000000000000000000000000000
+changed_list=
+tips=
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+  # Deleting a remote ref — nothing to check.
+  if [ "$local_sha" = "$zero" ]; then
+    continue
+  fi
+
+  tips="${tips}${local_sha}"$'\n'
+
+  if [ "$remote_sha" = "$zero" ]; then
+    # New branch: diff against origin/main when this tip descends from it.
+    if git rev-parse --verify origin/main >/dev/null 2>&1 &&
+      git merge-base --is-ancestor origin/main "$local_sha" 2>/dev/null; then
+      paths=$(git diff --name-only origin/main "$local_sha")
+    else
+      paths=$(git diff-tree --no-commit-id --name-only -r "$local_sha")
+    fi
+  else
+    paths=$(git diff --name-only "$remote_sha" "$local_sha")
+  fi
+
+  if [ -n "$paths" ]; then
+    changed_list="${changed_list}${paths}"$'\n'
   fi
 done
-if [ -z "$base_ref" ]; then
-  echo "pre-push: no origin/main or upstream/main to diff against; skipping scoped checks." >&2
-  exit 0
-fi
-if ! base=$(git merge-base HEAD "$base_ref" 2>/dev/null); then
-  echo "pre-push: no shared history with $base_ref; skipping scoped checks." >&2
-  exit 0
-fi
-changed=$(git diff --name-only "$base" HEAD)
 
-if echo "$changed" | grep -qE '(^|/)package\.json$|^bun\.lock$'; then
+# Nothing to push (e.g. tags-only).
+if [ -z "$changed_list" ] && [ -z "$tips" ]; then
+  exit 0
+fi
+
+unique_files=$(printf '%s' "$changed_list" | awk 'NF && !seen[$0]++')
+
+lint_files=
+while IFS= read -r path; do
+  [ -n "$path" ] || continue
+  case "$path" in
+    *.ts | *.tsx | *.js | *.jsx | *.mjs | *.cjs | *.json | *.css)
+      if [ -f "$path" ]; then
+        lint_files="${lint_files}${path}"$'\n'
+      fi
+      ;;
+  esac
+done <<EOF
+$unique_files
+EOF
+
+if printf '%s' "$unique_files" | grep -qE '(^|/)package\.json$|^bun\.lock$'; then
   echo "pre-push: checking bun.lock is in sync"
   if ! bun install --frozen-lockfile --dry-run >/dev/null 2>&1; then
     echo "pre-push: bun.lock is out of date. Run \`bun install\` and commit bun.lock." >&2
@@ -33,11 +64,34 @@ if echo "$changed" | grep -qE '(^|/)package\.json$|^bun\.lock$'; then
   fi
 fi
 
-echo "pre-push: lint"
-bun run --silent check
+if [ -n "$lint_files" ]; then
+  count=$(printf '%s' "$lint_files" | grep -c . || true)
+  echo "pre-push: lint ${count} changed file(s)"
+  # Only the push diff — not the whole Pascal tree.
+  # shellcheck disable=SC2086
+  bunx biome check --files-ignore-unknown=true --no-errors-on-unmatched \
+    $(printf '%s' "$lint_files")
+else
+  echo "pre-push: no lintable files in push range"
+fi
 
-# Directly changed packages only: `...[$base]` also pulled in every dependent,
-# so a core edit typechecked and tested the whole graph before each push. CI
-# owns that parity; this hook is fast feedback.
-echo "pre-push: typecheck changed packages"
-bunx turbo run check-types --filter="[$base]" --output-logs=errors-only
+tip=$(printf '%s' "$tips" | awk 'NF{print; exit}')
+if [ -n "$tip" ]; then
+  base_ref=
+  for candidate in origin/main upstream/main; do
+    if git rev-parse --verify "$candidate" >/dev/null 2>&1 &&
+      git merge-base --is-ancestor "$candidate" "$tip" 2>/dev/null; then
+      base_ref=$candidate
+      break
+    fi
+  done
+  if [ -n "$base_ref" ]; then
+    echo "pre-push: typecheck packages changed since $base_ref"
+    bunx turbo run check-types --filter="[$base_ref]" --output-logs=errors-only
+  elif printf '%s' "$unique_files" | grep -qE '^apps/review/|^packages/(core|viewer|nodes|ifc-converter)/'; then
+    echo "pre-push: typecheck review (no shared base with origin/main)"
+    bunx turbo run check-types --filter=review --output-logs=errors-only
+  else
+    echo "pre-push: skipping typecheck (no shared base, review untouched)"
+  fi
+fi
