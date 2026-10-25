@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Strip AI co-author trailers that Cursor/Claude inject into commit messages.
+# macOS sed has no \b — match the trailer line plainly.
+set -euo pipefail
+msg_file=$1
+tmp=$(mktemp)
+sed -E \
+  -e '/^[[:space:]]*[Cc]o-[Aa]uthored-[Bb]y:[[:space:]]*Cursor/d' \
+  -e '/^[[:space:]]*[Cc]o-[Aa]uthored-[Bb]y:[[:space:]]*Claude/d' \
+  -e '/^[[:space:]]*Claude-Session:/d' \
+  -e '/^[[:space:]]*Made-with:[[:space:]]*Cursor/d' \
+  -e '/^[[:space:]]*Made with Cursor/d' \
+  "$msg_file" > "$tmp"
+# Drop trailing blank lines
+perl -i -pe 'chomp if eof' "$tmp" 2>/dev/null || true
+# Collapse trailing empties
+awk 'BEGIN{n=0} {lines[++n]=$0} END{while(n>0 && lines[n]~/^[[:space:]]*$/) n--; for(i=1;i<=n;i++) print lines[i]}' \
+  "$tmp" > "$msg_file"
+rm -f "$tmp"
